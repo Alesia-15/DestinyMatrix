@@ -1,0 +1,108 @@
+body{
+    background-color: #050215;
+    font-family: 'GFS Didot';
+    color: #ffffff;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 60px;
+    text-transform: uppercase;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+  
+.header-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+}
+
+.footer p {
+    margin-top: 159px;
+}
+
+a {
+    text-decoration: none; /* убираем линию подчеркивания */
+    color: inherit; /* цвет ссылки равен цвету текста */
+    outline: none; /* убираем подсветку при фокусировке */
+    cursor: default;
+}
+
+li {
+    list-style-type: none;
+    padding: 20px 20px 20px 30px;
+}
+
+.desteny-container{
+    display: flex;
+    justify-content: center;
+    /* text-shadow: 0px 0px 62px 65px rgba(255, 255, 255, 0.26); */
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.26);
+}
+
+.birthday-container {
+    display: flex;
+    justify-content: center;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.birthday-container input {
+    margin-right: 30px;
+}
+
+button {
+    background-color: #FFF8DB;
+    padding-left: 62px;
+    padding-right: 62px;
+    padding-bottom: 24px;
+    padding-top: 23px;
+    font-family: 'Inter';
+    font-size: 20px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    border: none;;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    height: 71px;
+}
+
+.gradient {
+    background: radial-gradient(ellipse, #ffffff, #050215);
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+   }
+th, td {
+    border: 1px solid rgb(255, 255, 255);
+    padding: 5px;
+    text-align: center;
+}
