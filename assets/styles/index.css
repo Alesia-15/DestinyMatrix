@@ -107,15 +107,7 @@ input {
 }
 
 text {
-    font-family: 'Open Sans',Arial,sans-serif;
     cursor: default;
-}
-
-.cls-1 {
-    fill: white;
-}
-.cls-1 {
-    isolation: isolate;
 }
 
 .cls-2 {
@@ -209,9 +201,7 @@ text {
 }
 .cls-52 {
     font-size: 32px;
-    
     fill: rgb(64, 196, 27);
-    font-family: 'Open Sans',Arial,sans-serif;
 }
 .cls-19 {
     fill:  #ef4141;
@@ -220,34 +210,56 @@ text {
     text-anchor: middle;
     alignment-baseline: middle;
 }
-.cls-54, .cls-55, .cls-56 {
-    font-size: 40px;
+
+.cls-28 {
+    font-size: 12.9501px;
+    line-height: 11px;
 }
 
-.cls-28, .cls-30, .cls-34, .cls-35, .cls-36, .cls-40, .cls-41, .cls-43, .cls-51, .cls-54, .cls-55, .cls-56, .cls-57, .cls-58, .cls-59, .cls-60 {
-    font-weight: 700;
+.cls-29 {
+    font-size: 12.0251px;
+    line-height: 10px;
 }
-.cls-28, .cls-30, .cls-34, .cls-35, .cls-36, .cls-39, .cls-43, .cls-51, .cls-54, .cls-55, .cls-56, .cls-57, .cls-58, .cls-59, .cls-60 {
-    font-family: 'Open Sans',Arial,sans-serif;
-}
-.cls-55 {
-    fill: #FFF;
-}
-.clss{
-    fill: #000;
-}
-.cls-30, .cls-43 {
+
+.cls-33 {
     font-size: 12px;
+    line-height: 81.9%;
 }
+
+.cls-43 {
+    font-size: 5.76471px;
+    line-height: 81.9%;
+}
+
+.cls-54, .cls-55 {
+    font-size: 29.7851px;
+    line-height: 37px;
+}
+
+.cls-57, .cls-58 {
+    font-size: 17.2946px;
+    line-height: 22px;
+}
+
 .cls-59, .cls-60 {
-    font-size: 25px;
+    font-size: 21.1378px;
+    line-height: 26px;
 }
-.cls-33, .cls-42, .cls-48 {
-    font-family: 'Open Sans',Arial,sans-serif;
+
+.cls-61 {
+    font-size: 6px;
+    line-height: 81.9%;
 }
-.cls-38 {
-    fill: #6a3432;
+
+.cls-28, .cls-29, .cls-33, .cls-43, .cls-54, .cls-57, .cls-59, .cls-61 {
+    fill: #F5F5F5;
 }
+
+.cls-55, .cls-58, .cls-60 {
+    fill: #000000;
+}
+
+
 
 /* health-map and purposes table styles */
 
