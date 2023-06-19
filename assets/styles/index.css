@@ -110,10 +110,6 @@ text {
     cursor: default;
 }
 
-.cls-2 {
-    opacity: .75;
-}
-
 .cls-4 {
     stroke-dasharray: 10,10;
 }
@@ -130,17 +126,10 @@ text {
 .cls-17, .cls-18, .cls-27, .cls-3, .cls-31, .cls-32, .cls-37, .cls-4, .cls-5, .cls-7 {
     fill: none;
 }
-.cls-28, .cls-33, .cls-39, .cls-44, .cls-48, .cls-51 {
-    font-size: 10px;
-}
-.cls-61 {
-    font-size: 6px;
-}
-.cls-29, .cls-35, .cls-41 {
-    letter-spacing: -0.01em;
-}
+
 .cls-10 {
-    fill: #8a46a3;
+    fill: #B653F7;
+    filter: blur(5px);
 }
 .cls-13 {
     fill: #526dfa;
