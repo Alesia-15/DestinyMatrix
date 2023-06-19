@@ -1,20 +1,8 @@
-*, *:before, *:after {
-    -webkit-box-sizing: content-box;
-    -moz-box-sizing: content-box;
-    box-sizing: content-box;
-}
+
 :not(svg) {
     transform-origin: 0px 0px;
 }
 
-image {
-    width: 348;
-    height: 347;
-    transform: translate(160.06, 122.9);
-}
-image {
-    overflow: hidden;
-}
 text {
     font-family: 'Open Sans',Arial,sans-serif;
     cursor: default;
