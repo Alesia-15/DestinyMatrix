@@ -129,20 +129,41 @@ text {
 
 .cls-10 {
     fill: #B653F7;
+}
+
+.cls-13 {
+    fill: #3D54F5;
+    filter: blur(3.54839px);
+}
+
+.cls-15 {
+    fill: #74E0F8;
+}
+
+.cls-19 {
+    fill:  #EA4631;
+}
+
+.cls-22 {
+    fill: #ED7233;
+}
+
+.cls-25 {
+    fill: #FBE49D;
+}
+
+.cls-26 {
+    fill: #B6FD57;
+}
+
+.cls-15, .cls-22, .cls-26 {
+    filter: blur(2.90323px);
+}
+
+.cls-10, .cls-19, .cls-25 {
     filter: blur(5px);
 }
-.cls-13 {
-    fill: #526dfa;
-}
-.cls-15 {
-    fill: #45cfe1;
-}
-.cls-25 {
-    fill: #ffed47;
-}
-.cls-22 {
-    fill: #ffae34;
-}
+
 .cls-24, .cls-21 {
     fill: #241301;
 }
@@ -192,9 +213,7 @@ text {
     font-size: 32px;
     fill: rgb(64, 196, 27);
 }
-.cls-19 {
-    fill:  #ef4141;
-}
+
 .matrix-value-point {
     text-anchor: middle;
     alignment-baseline: middle;
