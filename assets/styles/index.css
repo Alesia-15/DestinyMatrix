@@ -96,7 +96,16 @@ input {
     background: radial-gradient(ellipse, #ffffff, #050215);
 }
 
+.chakra_table {
+    border-collapse: collapse;
+    width: 100%;
+}
 
+.chakra_tr, .chakra_td {
+    border: 1px solid rgb(255, 255, 255);
+    padding: 5px;
+    text-align: center;
+}
 
 /* Matrix's styles */
 
