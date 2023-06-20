@@ -111,7 +111,7 @@ text {
 }
 
 .cls-4 {
-    stroke-dasharray: 10,10;
+    stroke-dasharray: 1,41,10,11,10,11,11,10,11,10,11,10,11,10,11,41;
 }
 
 .cls-3, .cls-5, .cls-7 {
@@ -128,7 +128,6 @@ text {
     stroke-miterlimit: 10;
     stroke: white;
     fill: none;
-    stroke-miterlimit: 10;
 }
 
 .cls-10 {
