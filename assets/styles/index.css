@@ -411,7 +411,8 @@ svg:not(:root) {
     margin-top: 30px;
     width: 100%;
 }
-#nebo1, #zemlia1, #for_self1, #male1, #female1, #socium1, #duhovnoe1, #planetarnoe1 {
+
+.base-circle {
     border: 2px solid white;
     border-radius: 50%;
     width: 34px;
