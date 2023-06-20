@@ -43,8 +43,8 @@
       </div>
       <div class="birthday-container">
         <input type="date" />
-        <input type="text" id="datepicker" placeholder="Name" />
-        <button id="get_the_answer">get the answer</button>
+        <input type="date" />
+        <button id="createChart">create your chart</button>
       </div>
       <div class="matrix-container">
         <div class="pento">
@@ -1184,78 +1184,20 @@
           </svg>
         </div>
         </div>
-        <table class="chakra_table">
-            <tr class="chakra_tr">
-              <th class="chakra_td">Chakra name</th>
-              <th class="chakra_td">Physics</th>
-              <th class="chakra_td">Energy</th>
-              <th class="chakra_td">Emotions</th>
-            </tr>
-            <tr class="chakra_tr">
-              <td class="chakra_td">Ячейка 1-1</td>
-              <td class="chakra_td">Ячейка 1-2</td>
-              <td class="chakra_td">Ячейка 1-3</td>
-              <td class="chakra_td">Ячейка 1-4</td>
-            </tr>
-            <tr class="chakra_tr">
-              <td class="chakra_td">Ячейка 2-1</td>
-              <td class="chakra_td">Ячейка 2-2</td>
-              <td class="chakra_td">Ячейка 2-3</td>
-              <td class="chakra_td">Ячейка 2-4</td>
-            </tr>
-            <tr class="chakra_tr">
-              <td class="chakra_td">Ячейка 3-1</td>
-              <td class="chakra_td">Ячейка 3-2</td>
-              <td class="chakra_td">Ячейка 3-3</td>
-              <td class="chakra_td">Ячейка 3-4</td>
-            </tr>
-            <tr class="chakra_tr">
-              <td class="chakra_td">Ячейка 4-1</td>
-              <td class="chakra_td">Ячейка 4-2</td>
-              <td class="chakra_td">Ячейка 4-3</td>
-              <td class="chakra_td">Ячейка 4-4</td>
-            </tr>
-            <tr class="chakra_tr">
-              <td class="chakra_td">Ячейка 5-1</td>
-              <td class="chakra_td">Ячейка 5-2</td>
-              <td class="chakra_td">Ячейка 5-3</td>
-              <td class="chakra_td">Ячейка 5-4</td>
-            </tr>
-            <tr class="chakra_tr">
-              <td class="chakra_td">Ячейка 6-1</td>
-              <td class="chakra_td">Ячейка 6-2</td>
-              <td class="chakra_td">Ячейка 6-3</td>
-              <td class="chakra_td">Ячейка 6-4</td>
-            </tr>
-            <tr class="chakra_tr">
-              <td class="chakra_td">Ячейка 7-1</td>
-              <td class="chakra_td">Ячейка 7-2</td>
-              <td class="chakra_td">Ячейка 7-3</td>
-              <td class="chakra_td">Ячейка 7-4</td>
-            </tr>
-            <tr class="chakra_tr">
-              <td class="chakra_td">Ячейка 8-1</td>
-              <td class="chakra_td">Ячейка 8-2</td>
-              <td class="chakra_td">Ячейка 8-3</td>
-              <td class="chakra_td">Ячейка 8-4</td>
-            </tr>
-            <tr class="chakra_tr">
-              <td class="chakra_td">Ячейка 9-1</td>
-              <td class="chakra_td">Ячейка 9-2</td>
-              <td class="chakra_td">Ячейка 9-3</td>
-              <td class="chakra_td">Ячейка 9-4</td>
-            </tr>
-          </table>
         <div class="info-txt">
-          <table id="table-purpose">
+          <table id="table-compatibility">
             <tbody>
               <tr valign="top">
                 <td colspan="4">
-                  <h3><b>Личное предназначение:</b></h3>
+                  <h3><b>Relationship::</b></h3>
                 </td>
                 <td width="10%"></td>
                 <td colspan="4">
-                  <h3><b>Предназначение для социума:</b></h3>
+                  <h3><b>Union:</b></h3>
+                </td>
+                <td width="10%"></td>
+                <td colspan="4">
+                  <h3><b>Harmony:</b></h3>
                 </td>
               </tr>
               <tr style="height: 5px">
@@ -1271,14 +1213,18 @@
                   Открытые задачи рода.<br />
                   Реализация, результаты и признание.
                 </td>
+                <td width="6%"></td>
+                <td colspan="4">
+                  test
+                </td>
               </tr>
               <tr style="height: 5px">
                 <td></td>
               </tr>
               <tr style="font-size: 140%; position: relative">
-                <td>Небо:</td>
+                <td>Sky:</td>
                 <td>
-                  <span id="nebo1">17</span>
+                  <span id="sky">17</span>
                 </td>
                 <td rowspan="2">
                   <svg
@@ -1298,9 +1244,9 @@
                   <span id="for_self1">11</span>
                 </td>
                 <td></td>
-                <td>М:</td>
+                <td>M:</td>
                 <td>
-                  <span id="male1">11</span>
+                  <span id="male">11</span>
                 </td>
                 <td rowspan="2">
                   <svg
@@ -1319,48 +1265,39 @@
                 <td rowspan="2">
                   <span id="socium1">4</span>
                 </td>
+                <td></td>
+                <td>
+                  <span id="male1">21</span>
+                </td>
+                <td rowspan="2">
+                  <svg
+                    width="38"
+                    height="48"
+                    viewBox="0 0 38 48"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0V2H18V46H0V48H20V25H38V23H20V0H0Z"
+                      fill="white"
+                    ></path>
+                  </svg>
+                </td>
+                <td rowspan="2">
+                  <span id="socium1">6</span>
+                </td>
               </tr>
               <tr style="font-size: 140%">
-                <td>Земля:</td>
-                <td><span id="zemlia1">21</span></td>
+                <td>Earth:</td>
+                <td><span id="earth">21</span></td>
                 <td></td>
-                <td>Ж:</td>
-                <td><span id="female1">20</span></td>
+                <td>F:</td>
+                <td><span id="female">20</span></td>
+                <td></td>
+                <td><span id="test">12</span></td>
               </tr>
               <tr>
                 <td style="height: 35px"></td>
-              </tr>
-              <tr>
-                <td colspan="4">
-                  <h3>Общее предназначение :</h3>
-                </td>
-                <td></td>
-                <td colspan="4">
-                  <h3>Планетарное:</h3>
-                </td>
-              </tr>
-              <tr style="height: 5px">
-                <td></td>
-              </tr>
-              <tr class="trade">
-                <td colspan="4">
-                  Духовный путь, глобальная задача,<br />где божественное во
-                  мне?
-                </td>
-                <td></td>
-                <td colspan="4">Глобальное предназначение души</td>
-              </tr>
-              <tr>
-                <td colspan="9" style="height: 10px"></td>
-              </tr>
-              <tr style="font-size: 160%">
-                <td colspan="4" id="blom" style="text-align: right">
-                  <span id="duhovnoe1">15</span>
-                </td>
-                <td></td>
-                <td colspan="4" id="blom2" style="text-align: right">
-                  <span id="planetarnoe1">19</span>
-                </td>
               </tr>
             </tbody>
           </table>
