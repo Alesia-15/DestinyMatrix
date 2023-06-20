@@ -114,17 +114,21 @@ text {
     stroke-dasharray: 10,10;
 }
 
-.cls-21, .cls-24, .cls-3, .cls-5, .cls-7 {
+.cls-3, .cls-5, .cls-7 {
     stroke-width: 2px;
 }
-.cls-17, .cls-18, .cls-21, .cls-24, .cls-27, .cls-3, .cls-31, .cls-32, .cls-37, .cls-4, .cls-5, .cls-7 {
+
+.cls-18 {
+    stroke-width: 0.5px;
+    stroke-dasharray: 5.04 5.04;
+    stroke-dasharray: 5.04 5.04;
+}
+
+.cls-18, .cls-3, .cls-4, .cls-5, .cls-7 {
     stroke-miterlimit: 10;
-}
-.cls-5, .cls-7, .cls-17, .cls-18, .cls-24, .cls-21, .cls-3, .cls-4 {
     stroke: white;
-}
-.cls-17, .cls-18, .cls-27, .cls-3, .cls-31, .cls-32, .cls-37, .cls-4, .cls-5, .cls-7 {
     fill: none;
+    stroke-miterlimit: 10;
 }
 
 .cls-10 {
@@ -133,7 +137,6 @@ text {
 
 .cls-13 {
     fill: #3D54F5;
-    filter: blur(3.54839px);
 }
 
 .cls-15 {
@@ -156,55 +159,22 @@ text {
     fill: #B6FD57;
 }
 
-.cls-15, .cls-22, .cls-26 {
+.cls-15, .cls-21, .cls-22, .cls-26 {
     filter: blur(2.90323px);
 }
 
-.cls-10, .cls-19, .cls-25 {
+.cls-13, .cls-23 {
+    filter: blur(3.54839px);
+}
+
+.cls-10, .cls-19, .cls-24, .cls-25 {
     filter: blur(5px);
 }
 
-.cls-53 {
+.cls-24, .cls-21, .cls-23, .cls-53 {
     fill: #FFFCF0;
 }
 
-.cls-24, .cls-21 {
-    fill: #241301;
-}
-.cls-32 {
-    stroke: #fff;
-}
-.cls-17, .cls-18, .cls-27, .cls-31, .cls-32, .cls-37 {
-    stroke-width: 0.5px;
-}
-.cls-17, .cls-18, .cls-21, .cls-24, .cls-27, .cls-3, .cls-31, .cls-32, .cls-37, .cls-4, .cls-5, .cls-7 {
-    stroke-miterlimit: 10;
-}
-.cls-17, .cls-18, .cls-27, .cls-31, .cls-32, .cls-37 {
-    stroke-width: 0.5px;
-}
-.cls-27 {
-    stroke: #5d3a8a;
-}
-.cls-31 {
-    stroke: #6a3432;
-}
-.cls-17, .cls-18, .cls-27, .cls-31, .cls-32, .cls-37 {
-    stroke-width: 0.5px;
-}
-.cls-17, .cls-18, .cls-21, .cls-24, .cls-27, .cls-3, .cls-31, .cls-32, .cls-37, .cls-4, .cls-5, .cls-7 {
-    stroke-miterlimit: 10;
-}
-.cls-37 {
-    stroke: #6a3432;
-}
-.cls-17, .cls-18, .cls-27, .cls-31, .cls-32, .cls-37 {
-    stroke-width: 0.5px;
-}
-
-.cls-18 {
-    stroke-dasharray: 5.04 5.04;
-}
 
 .matrix-value-point {
     text-anchor: middle;
