@@ -164,6 +164,10 @@ text {
     filter: blur(5px);
 }
 
+.cls-53 {
+    fill: #FFFCF0;
+}
+
 .cls-24, .cls-21 {
     fill: #241301;
 }
@@ -201,18 +205,6 @@ text {
 .cls-18 {
     stroke-dasharray: 5.04 5.04;
 }
-.cls-53 {
-    fill: rgb(176, 35, 35);
-    stroke-width: 3px;
-}
-.cls-53, .cls-52 {
-    stroke: #000000!important;
-
-}
-.cls-52 {
-    font-size: 32px;
-    fill: rgb(64, 196, 27);
-}
 
 .matrix-value-point {
     text-anchor: middle;
@@ -239,7 +231,12 @@ text {
     line-height: 81.9%;
 }
 
-.cls-54, .cls-55 {
+.cls-44 {
+    font-size: 11.5587px;
+    line-height: 81.9%;
+}
+
+.cls-54, .cls-55, .cls-56 {
     font-size: 29.7851px;
     line-height: 37px;
 }
@@ -259,12 +256,16 @@ text {
     line-height: 81.9%;
 }
 
-.cls-28, .cls-29, .cls-33, .cls-43, .cls-54, .cls-57, .cls-59, .cls-61 {
+.cls-28, .cls-29, .cls-33, .cls-43, .cls-44, .cls-54, .cls-57, .cls-59, .cls-61 {
     fill: #F5F5F5;
 }
 
 .cls-55, .cls-58, .cls-60 {
     fill: #000000;
+}
+
+.cls-56 {
+    fill: #D2B154;
 }
 
 
