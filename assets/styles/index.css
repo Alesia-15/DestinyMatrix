@@ -96,7 +96,16 @@ input {
     background: radial-gradient(ellipse, #ffffff, #050215);
 }
 
+.chakra_table {
+    border-collapse: collapse;
+    width: 100%;
+}
 
+.chakra_tr, .chakra_td {
+    border: 1px solid rgb(255, 255, 255);
+    padding: 5px;
+    text-align: center;
+}
 
 /* Matrix's styles */
 
@@ -422,7 +431,8 @@ svg:not(:root) {
     margin-top: 30px;
     width: 100%;
 }
-#nebo1, #zemlia1, #for_self1, #male1, #female1, #socium1, #duhovnoe1, #planetarnoe1 {
+
+.base-circle {
     border: 2px solid white;
     border-radius: 50%;
     width: 34px;
