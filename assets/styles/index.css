@@ -142,23 +142,36 @@ text {
 }
 
 .cls-4 {
-    stroke-dasharray: 1,41,10,11,10,11,11,10,11,10,11,10,11,10,11,41;
+    stroke-dasharray: 0,42,10,11,10,11,11,10,11,10,11,10,11,10,11,42;
 }
 
-.cls-3, .cls-5, .cls-7 {
-    stroke-width: 2px;
+.cls-3, .cls-4, .cls-18 {
+    stroke-width: 1.5px;
+}
+
+.cls-5, .cls-7 {
+    stroke-width: 1px;
 }
 
 .cls-18 {
-    stroke-width: 0.5px;
     stroke-dasharray: 5.04 5.04;
     stroke-dasharray: 5.04 5.04;
 }
 
-.cls-18, .cls-3, .cls-4, .cls-5, .cls-7 {
+.cls-18, .cls-3, .cls-4 {
     stroke-miterlimit: 10;
     stroke: white;
     fill: none;
+}
+
+.cls-5, .cls-6 {
+    stroke: #B653F7;
+    fill: #B653F7;
+}
+
+.cls-7, .cls-8 {
+    stroke: #EA4631;
+    fill: #EA4631;
 }
 
 .cls-10 {
@@ -551,4 +564,3 @@ element.style {
         text-align: center;
         line-height: 30px;
     }
-}
