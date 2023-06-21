@@ -74,7 +74,7 @@ button {
     border: none;;
 }
 
-#get_the_answer {
+#get_the_answer, #createChart {
     align-self: baseline;
 }
 
@@ -155,7 +155,7 @@ input {
 
 .glow {
     width: 790px;
-    height: 100px;
+    height: 30px;
     background: #FFF8DB;
     filter: blur(75px);
 }
