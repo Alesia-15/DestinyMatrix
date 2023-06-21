@@ -3,7 +3,6 @@ body{
     font-family: 'GFS Didot';
     color: #ffffff;
     font-style: normal;
-    font-weight: 400;
 }
 
 .header {
@@ -11,11 +10,10 @@ body{
     justify-content: space-between;
     align-items: center;
     font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 500;
     font-size: 20px;
-    line-height: 24px;
     text-transform: uppercase;
+    margin-left: 3%;
+    margin-right: 3%;
 }
   
 .header-right {
@@ -45,14 +43,6 @@ li {
     padding: 20px 20px 20px 30px;
 }
 
-.desteny-container{
-    display: flex;
-    justify-content: center;
-    font-size: 48px;
-    line-height: 60px;
-    text-transform: uppercase;
-    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.26);
-}
 
 .birthday-container {
     display: flex;
@@ -68,6 +58,7 @@ li {
 
 .birthday-container input {
     margin-right: 30px;
+    margin-bottom: 245px;
 }
 
 button {
@@ -83,6 +74,10 @@ button {
     border: none;;
 }
 
+#get_the_answer {
+    align-self: baseline;
+}
+
 .center {
     display: flex;
     justify-content: center;
@@ -92,19 +87,100 @@ input {
     height: 71px;
 }
 
-.gradient {
-    background: radial-gradient(ellipse, #ffffff, #050215);
+.desteny-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.26);
+    height: 389px;
+    padding: 0;
+    margin: 0;
 }
 
-.chakra_table {
+.chakra-table {
     border-collapse: collapse;
-    width: 100%;
+    border-radius: 10px;
+    width: 800px;
+    border: 1px solid #ffffff;
+    display: block;
+    /* border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    border: 1px solid #000;
+    display: block; */
 }
 
-.chakra_tr, .chakra_td {
+.chakra-name {
+    width: 260px;
+    height: 49px;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 5px;
+    text-align: left;
+}
+
+.chakra-td {
     border: 1px solid rgb(255, 255, 255);
     padding: 5px;
     text-align: center;
+    width: 200px;
+    size: 16px;
+}
+
+.chakra-tr {
+    font-family: 'Inter';
+    size: 20px;
+    text-align-last: center;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 5px;
+    text-align: center;
+}
+
+.glow__wrap {
+    /* positioning */
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    /* display */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.glow {
+    width: 790px;
+    height: 100px;
+    background: #FFF8DB;
+    filter: blur(75px);
+}
+
+.personal-calculator{
+    display: flex;
+    justify-content: center;
+    font-size: 54px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.personal-date {
+    display: flex;
+    justify-content: center;
+}
+
+.gray {
+    color: #827D78;
+}
+
+.smoky-white {
+    color: #F9F9F8;
 }
 
 /* Matrix's styles */
