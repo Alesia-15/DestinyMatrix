@@ -180,7 +180,7 @@ function createFirstPerson() {
 
 // создаем объект второго человека
 function createSecondPerson() {
-  calculatePoints(a, b, c);
+  calculatePoints(secondApoint, secondBpoint, secondCpoint);
   secondPerson.points = points;
   secondPerson.purposes = purposes;
   secondPerson.chartHeart = chartHeart;
@@ -271,4 +271,5 @@ createSecondPerson();
 
     // кнопка матрицы совместимости
     const buttonCreateChart = document.querySelector('#createChart');
+    console.log(buttonCreateChart);
     buttonCreateChart.addEventListener('click', outputCompatibilityMatrixValues);
