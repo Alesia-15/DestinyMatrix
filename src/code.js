@@ -28,10 +28,10 @@ let year = 1999; //year of birth
 let cpoint = calculateYear(year); // c - year of birth
 
 // значения для второго человека
-let a = 6;
-let b = 7;
-let y = 1998;
-let c = calculateYear(y);
+let secondApoint = 6;
+let secondBpoint = 7;
+let secondYear = 1998;
+let secondCpoint = calculateYear(secondYear);
 // ==========================
 
 const calculatePoints = (aPoint, bPoint, cPoint) => {
@@ -190,30 +190,85 @@ createFirstPerson();
 createSecondPerson();
 
 // общие значения матрицы
-const commonMatrix = {
-  A: reduceNumber(person.points.apoint + secondPerson.points.apoint),
-  B: reduceNumber(person.points.bpoint + secondPerson.points.bpoint),
-  C: reduceNumber(person.points.cpoint + secondPerson.points.cpoint),
-  D: reduceNumber(person.points.dpoint + secondPerson.points.dpoint),
-  E: reduceNumber(person.points.epoint + secondPerson.points.epoint),
-  F: reduceNumber(person.points.fpoint + secondPerson.points.fpoint),
-  G: reduceNumber(person.points.gpoint + secondPerson.points.gpoint),
-  H: reduceNumber(person.points.hpoint + secondPerson.points.hpoint),
-  I: reduceNumber(person.points.ipoint + secondPerson.points.ipoint),
-  J: reduceNumber(person.points.jpoint + secondPerson.points.jpoint),
-  N: reduceNumber(person.points.npoint + secondPerson.points.npoint),
-  L: reduceNumber(person.points.lpoint + secondPerson.points.lpoint),
-  K: reduceNumber(person.points.kpoint + secondPerson.points.kpoint),
-  M: reduceNumber(person.points.mpoint + secondPerson.points.mpoint),
-  S: reduceNumber(person.points.spoint + secondPerson.points.spoint),
-  O: reduceNumber(person.points.opoint + secondPerson.points.opoint),
-  T: reduceNumber(person.points.tpoint + secondPerson.points.tpoint),
-  P: reduceNumber(person.points.ppoint + secondPerson.points.ppoint),
-  Q: reduceNumber(person.points.qpoint + secondPerson.points.qpoint),
-  R: reduceNumber(person.points.rpoint + secondPerson.points.rpoint),
-  V: reduceNumber(person.points.vpoint + secondPerson.points.vpoint),
-  U: reduceNumber(person.points.upoint + secondPerson.points.upoint),
-};
-console.log(commonMatrix);
-console.log(person);
-console.log(secondPerson);
+    const compatibilityMatrix = [
+        {id: 'compatibilityApoint',
+        value: reduceNumber(person.points.apoint + secondPerson.points.apoint)},
+        {id:'compatibilityBpoint',
+        value: reduceNumber(person.points.bpoint + secondPerson.points.bpoint)},
+        {id: 'compatibilityCpoint',
+        value: reduceNumber(person.points.cpoint + secondPerson.points.cpoint)},
+        {id: 'compatibilityDpoint',
+        value: reduceNumber(person.points.dpoint + secondPerson.points.dpoint)},
+        {id: 'compatibilityEpoint',
+        value: reduceNumber(person.points.epoint + secondPerson.points.epoint)},
+        {id: 'compatibilityFpoint',
+        value: reduceNumber(person.points.fpoint + secondPerson.points.fpoint)},
+        {id: 'compatibilityGpoint',
+        value: reduceNumber(person.points.gpoint + secondPerson.points.gpoint)},
+        {id: 'compatibilityHpoint',
+        value: reduceNumber(person.points.hpoint + secondPerson.points.hpoint)},
+        {id: 'compatibilityIpoint',
+        value: reduceNumber(person.points.ipoint + secondPerson.points.ipoint)},
+        {id: 'compatibilityJpoint',
+        value: reduceNumber(person.points.jpoint + secondPerson.points.jpoint)},
+        {id: 'compatibilityNpoint',
+        value: reduceNumber(person.points.npoint + secondPerson.points.npoint)},
+        {id: 'compatibilityLpoint',
+        value: reduceNumber(person.points.lpoint + secondPerson.points.lpoint)},
+        {id: 'compatibilityKpoint',
+        value: reduceNumber(person.points.kpoint + secondPerson.points.kpoint)},
+        {id: 'compatibilityMpoint',
+        value: reduceNumber(person.points.mpoint + secondPerson.points.mpoint)},
+        {id: 'compatibilitySpoint',
+        value: reduceNumber(person.points.spoint + secondPerson.points.spoint)},
+        {id: 'compatibilityOpoint',
+        value: reduceNumber(person.points.opoint + secondPerson.points.opoint)},
+        {id: 'compatibilityTpoint',
+        value: reduceNumber(person.points.tpoint + secondPerson.points.tpoint)},
+        {id: 'compatibilityPpoint',
+        value: reduceNumber(person.points.ppoint + secondPerson.points.ppoint)},
+        {id: 'compatibilityQpoint',
+        value: reduceNumber(person.points.qpoint + secondPerson.points.qpoint)},
+        {id: 'compatibilityRpoint',
+        value: reduceNumber(person.points.rpoint + secondPerson.points.rpoint)},
+        {id: 'compatibilityVpoint',
+        value: reduceNumber(person.points.vpoint + secondPerson.points.vpoint)},
+        {id: 'compatibilityUpoint',
+        value: reduceNumber(person.points.upoint + secondPerson.points.upoint)},
+        {id: 'compatibilityWpoint',
+        value: reduceNumber(person.points.wpoint + secondPerson.points.wpoint)},
+        {id: 'compatibilityXpoint',
+        value: reduceNumber(person.points.xpoint + secondPerson.points.xpoint)},
+        {id: 'compatibilityF2point',
+        value: reduceNumber(person.points.f2point + secondPerson.points.f2point)},
+        {id: 'compatibilityF1point',
+        value: reduceNumber(person.points.f1point + secondPerson.points.f1point)},
+        {id: 'compatibilityG2point',
+        value: reduceNumber(person.points.g2point + secondPerson.points.g2point)},
+        {id: 'compatibilityG1point',
+        value: reduceNumber(person.points.g1point + secondPerson.points.g1point)},
+        {id: 'compatibilityI2point',
+        value: reduceNumber(person.points.i2point + secondPerson.points.i2point)},
+        {id: 'compatibilityI1point',
+        value: reduceNumber(person.points.i1point + secondPerson.points.i1point)},
+        {id: 'compatibilityH2point',
+        value: reduceNumber(person.points.h2point + secondPerson.points.h2point)},
+        {id: 'compatibilityH1point',
+        value: reduceNumber(person.points.h1point + secondPerson.points.h1point)}
+    ]
+
+    // функция, которая ищет одинаковые айдишники в матрице и массиве, и выводит значения
+    function outputCompatibilityMatrixValues(){
+        const elements = document.querySelectorAll('[id^="compatibility"]');
+        compatibilityMatrix.forEach(matrixItem => {
+          elements.forEach(el => {
+            if(el.id === matrixItem.id) {
+              el.innerHTML = matrixItem.value;
+            }
+          });
+        });
+    }
+
+    // кнопка матрицы совместимости
+    const buttonCreateChart = document.querySelector('#createChart');
+    buttonCreateChart.addEventListener('click', outputCompatibilityMatrixValues);
