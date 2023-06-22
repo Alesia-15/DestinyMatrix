@@ -3,6 +3,8 @@ const button = document.querySelector("#get_the_answer");
 button.addEventListener("click", () => {
   ChartHeart();
   Purposes();
+  outputName();
+  clearInputs(dateInput, nameInput);
 });
 
 function ChartHeart() {
