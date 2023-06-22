@@ -321,15 +321,16 @@ function outputCompatibilityMatrixValues() {
 }
 
 // скорее всего у Аэлиты они должны быть, так что надо будет эти убрать!!!
-const dateInput = document.getElementById("dateInput");
-const inputFirstDate = document.getElementById("inputFirstDate");
-const inputSecondDate = document.getElementById("inputSecondDate");
-// ------------
-const nameInput = document.getElementById("nameInput");
-const nameOutput = document.getElementById("nameOutput");
-const dateOutput = document.getElementById("dateOutput");
-const firstDate = document.getElementById("firstDate");
-const secondDate = document.getElementById("secondDate");
+//UPD: @clukva я закоментировала этот код, потому что с ним не работал вывод! Надо разобраться почему о_о
+// const dateInput = document.getElementById("dateInput");
+// const inputFirstDate = document.getElementById("inputFirstDate");
+// const inputSecondDate = document.getElementById("inputSecondDate");
+// // ------------
+// const nameInput = document.getElementById("nameInput");
+// const nameOutput = document.getElementById("nameOutput");
+// const dateOutput = document.getElementById("dateOutput");
+// const firstDate = document.getElementById("firstDate");
+// const secondDate = document.getElementById("secondDate");
 
 // выводит имя и дату на первой странице
 function outputName() {
