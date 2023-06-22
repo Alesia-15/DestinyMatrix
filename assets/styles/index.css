@@ -3,7 +3,6 @@ body{
     font-family: 'GFS Didot';
     color: #ffffff;
     font-style: normal;
-    font-weight: 400;
 }
 
 .header {
@@ -11,11 +10,10 @@ body{
     justify-content: space-between;
     align-items: center;
     font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 500;
     font-size: 20px;
-    line-height: 24px;
     text-transform: uppercase;
+    margin-left: 3%;
+    margin-right: 3%;
 }
   
 .header-right {
@@ -45,14 +43,6 @@ li {
     padding: 20px 20px 20px 30px;
 }
 
-.desteny-container{
-    display: flex;
-    justify-content: center;
-    font-size: 48px;
-    line-height: 60px;
-    text-transform: uppercase;
-    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.26);
-}
 
 .birthday-container {
     display: flex;
@@ -68,6 +58,7 @@ li {
 
 .birthday-container input {
     margin-right: 30px;
+    margin-bottom: 245px;
 }
 
 button {
@@ -83,6 +74,10 @@ button {
     border: none;;
 }
 
+#get_the_answer, #createChart {
+    align-self: baseline;
+}
+
 .center {
     display: flex;
     justify-content: center;
@@ -92,20 +87,220 @@ input {
     height: 71px;
 }
 
-.gradient {
-    background: radial-gradient(ellipse, #ffffff, #050215);
+.desteny-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.26);
+    height: 389px;
+    padding: 0;
+    margin: 0;
 }
 
-.chakra_table {
+.chakra-table {
     border-collapse: collapse;
-    width: 100%;
+    border-radius: 10px;
+    width: 800px;
+    border: 1px solid #ffffff;
+    display: block;
+    /* border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    border: 1px solid #000;
+    display: block; */
 }
 
-.chakra_tr, .chakra_td {
+.chakra-name {
+    width: 260px;
+    height: 49px;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 5px;
+    text-align: left;
+}
+
+.chakra-name-left {
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    padding-left: 47px;
+}
+
+#circle-sahastrara:before {
+    font-family: 'GFS Didot';
+    font-size: 22px;
+    content: '7';
+    width: 20px;
+    border-radius: calc(50%);
+    height: 20px;
+    display: inline-flex;
+    background: #B653F7;
+    justify-content: center;
+    margin-right: 20px;
+    box-shadow: 0 0 10px 10px #B653F7;
+}
+
+#circle-ajna:before {
+    font-family: 'GFS Didot';
+    font-size: 22px;
+    content: '6';
+    width: 20px;
+    border-radius: calc(50%);
+    height: 20px;
+    display: inline-flex;
+    background: #3D54F5;
+    justify-content: center;
+    margin-right: 20px;
+    box-shadow: 0 0 10px 10px #3D54F5;
+}
+
+#circle-vishuddha:before {
+    font-family: 'GFS Didot';
+    font-size: 22px;
+    content: '5';
+    width: 20px;
+    border-radius: calc(50%);
+    height: 20px;
+    display: inline-flex;
+    color: #000000;
+    background: #74E0F8;
+    justify-content: center;
+    margin-right: 20px;
+    box-shadow: 0 0 10px 10px #74E0F8;
+}
+
+#circle-anahata:before {
+    font-family: 'GFS Didot';
+    font-size: 22px;
+    content: '4';
+    width: 20px;
+    border-radius: calc(50%);
+    height: 20px;
+    display: inline-flex;
+    color: #000000;
+    background: #B6FD57;
+    justify-content: center;
+    margin-right: 20px;
+    box-shadow: 0 0 10px 10px #B6FD57;
+}
+
+#circle-manipura:before {
+    font-family: 'GFS Didot';
+    font-size: 22px;
+    content: '3';
+    width: 20px;
+    border-radius: calc(50%);
+    height: 20px;
+    display: inline-flex;
+    color: #000000;
+    background: #FBE49D;
+    justify-content: center;
+    margin-right: 20px;
+    box-shadow: 0 0 10px 10px #FBE49D;
+}
+
+#circle-svadhishtana:before {
+    font-family: 'GFS Didot';
+    font-size: 22px;
+    content: '2';
+    width: 20px;
+    border-radius: calc(50%);
+    height: 20px;
+    display: inline-flex;
+    color: #F5F5F5;
+    background: #ED7233;
+    justify-content: center;
+    margin-right: 20px;
+    box-shadow: 0 0 10px 10px #ED7233;
+}
+
+#circle-muladhara:before {
+    font-family: 'GFS Didot';
+    font-size: 22px;
+    content: '1';
+    width: 20px;
+    border-radius: calc(50%);
+    height: 20px;
+    display: inline-flex;
+    color: #F5F5F5;
+    background: #EA4631;
+    justify-content: center;
+    margin-right: 20px;
+    box-shadow: 0 0 10px 10px #EA4631;
+}
+
+.chakra-td {
+    border: 1px solid rgb(255, 255, 255);
+    padding: 5px;
+    text-align: center;
+    width: 200px;
+    size: 16px;
+}
+
+.chakra-tr {
+    font-family: 'Inter';
+    size: 20px;
+    text-align-last: center;
     border: 1px solid rgb(255, 255, 255);
     padding: 5px;
     text-align: center;
 }
+
+.chakra-table-header {
+    background-color: #827D78;
+    font-family: 'Inter';
+    size: 20px;
+    text-transform: uppercase;
+}
+
+.glow__wrap {
+    /* positioning */
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    /* display */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.glow {
+    width: 790px;
+    height: 30px;
+    background: #FFF8DB;
+    filter: blur(75px);
+}
+
+.personal-calculator{
+    display: flex;
+    justify-content: center;
+    font-size: 54px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.personal-date {
+    display: flex;
+    justify-content: center;
+}
+
+.gray {
+    color: #827D78;
+}
+
+.smoky-white {
+    color: #F9F9F8;
+}
+
 
 /* Matrix's styles */
 
@@ -122,7 +317,10 @@ input {
     height: 100%;
     display: flex;
     justify-content: center;
+}
 
+.display-none {
+    display: none;
 }
 
 #matrix {
@@ -142,23 +340,35 @@ text {
 }
 
 .cls-4 {
-    stroke-dasharray: 1,41,10,11,10,11,11,10,11,10,11,10,11,10,11,41;
+    stroke-dasharray: 0,42,10,11,10,11,11,10,11,10,11,10,11,10,11,42;
 }
 
-.cls-3, .cls-5, .cls-7 {
-    stroke-width: 2px;
+.cls-3, .cls-4, .cls-18 {
+    stroke-width: 1.5px;
+}
+
+.cls-5, .cls-7 {
+    stroke-width: 1px;
 }
 
 .cls-18 {
-    stroke-width: 0.5px;
-    stroke-dasharray: 5.04 5.04;
-    stroke-dasharray: 5.04 5.04;
+    stroke-dasharray: 0,25,10,50,10,50,10,25;
 }
 
-.cls-18, .cls-3, .cls-4, .cls-5, .cls-7 {
+.cls-18, .cls-3, .cls-4 {
     stroke-miterlimit: 10;
     stroke: white;
     fill: none;
+}
+
+.cls-5, .cls-6 {
+    stroke: #B653F7;
+    fill: #B653F7;
+}
+
+.cls-7, .cls-8 {
+    stroke: #EA4631;
+    fill: #EA4631;
 }
 
 .cls-10 {

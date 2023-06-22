@@ -32,19 +32,31 @@
   </header>
   <main>
     <div class="desteny-container">
-      <p class="gradient">Destiny matrix calculator</p>
+      <div class="glow__wrap">
+        <div class="glow"></div>
+      </div>
+      <p>Destiny matrix calculator</p>
     </div>
     <div class="birthday-container">
       <p>Enter your date of birth and name:</p>
     </div>
     <div class="birthday-container">
-      <form name="form">
         <input id="date" type="date" />
         <input id="name" type="text" placeholder="Name" />
         <button id="get_the_answer">get the answer</button>
-      </form>
+      <div class="output"></div>
     </div>
-    <div class="output"></div>
+    <div class="personal-calculator">
+      <p class="smoky-white">Personal calculation</p>
+    </div>
+    <div class="personal-date">
+      <div class="smoky-white" id="nameOutput"></div>
+      <div class="output2"></div>
+      &nbsp;
+      <div class="gray">Date of Birth:</div>
+      &nbsp;
+      <div class="smoky-white" id="dateOutput"></div>
+    </div>
     <div class="matrix-container">
       <div class="pento">
         <svg viewBox="0 0 680 600" id="matrix">
@@ -57,13 +69,28 @@
             </polygon>
             <line class="cls-3" x1="333.7" y1="27.76" x2="333.7" y2="564.68"></line>
             <line class="cls-3" x1="65.24" y1="296.22" x2="602.17" y2="296.22"></line>
-            <line class="cls-5" x1="456.22" y1="418.73" x2="212.02" y2="175.93"></line>
-            <line class="cls-7" x1="454.67" y1="175.25" x2="212.02" y2="417.91"></line>
-            <line class="cls-18" x1="491.28" y1="308.56" x2="343.26" y2="456.58"></line>
-            <text class="cls-44" transform="translate(244.77 198.48) rotate(45)">male generation line</text>
-            <text class="cls-44" transform="translate(351.7 267.98) rotate(-45)">female generation line</text>
 
-            <g transform="translate(95, 95)">
+            <g>
+              <line class="cls-5" x1="442" y1="405" x2="226" y2="189"></line>
+              <polygon class="cls-6" points="441 402 439 404 442 405 441 402">
+              </polygon>
+              <polygon class="cls-6" points="226 189 229 190 227 192 226 189">
+              </polygon>
+            </g>
+
+            <g>
+              <line class="cls-7" x1="442" y1="189" x2="226" y2="405"></line>
+              <polygon class="cls-8" points="442 189 439 190 441 192 442 189">
+              </polygon>
+              <polygon class="cls-8" points="226 405 227 402 229 404 226 405">
+              </polygon>
+            </g>
+
+            <line class="cls-18" x1="502" y1="297" x2="335" y2="465"></line>
+            <text class="cls-44" transform="translate(238.77 188.48) rotate(45)">male generation line</text>
+            <text class="cls-44" transform="translate(351.7 264.98) rotate(-45)">female generation line</text>
+
+            <g transform="translate(100, 100)">
               <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 27 27">
                 <path class="cls-53"
                   d="M437.54,366.8c-6.26,0-7.12,6-7.28,6s-1.42-6-7.24-6c-7,0-8.91,5.9-8.51,9.45.71,6.14,15.74,18.54,15.74,18.54s15.06-12.4,15.77-18.54C446.43,372.7,444.55,366.8,437.54,366.8Z"
@@ -71,46 +98,45 @@
               </svg>
             </g>
 
-            <g transform="translate(395, 340)">
+            <g transform="translate(410, 345)">
               <text class="cls-56">$</text>
             </g>
-
           </g>
 
           <g id="points-basic">
             <circle class="cls-10" cx="82.59" cy="296.22" r="32.5"></circle>
             <text class="cls-54 matrix-value-point" id="apoint" transform="translate(82.34 299.89)">5</text>
 
-            <circle class="cls-10" cx="333.7" cy="41.1" r="32.5"></circle>
+            <circle class="cls-10" cx="333.7" cy="42" r="32.5"></circle>
             <text class="cls-54 matrix-value-point" id="bpoint" transform="translate(334 44.83)">
               7
             </text>
 
-            <circle class="cls-19" cx="653.13" cy="296.22" r="32.5" transform="translate(-83.39 547.61) rotate(-45)">
+            <circle class="cls-19" cx="587.13" cy="296.22" r="32.5">
             </circle>
-            <text class="cls-54 matrix-value-point" id="cpoint" transform="translate(587.4 299.89)">
+            <text class="cls-54 matrix-value-point" id="cpoint" transform="translate(587.4 297.89)">
               11
             </text>
 
-            <circle class="cls-19" cx="397.95" cy="552.74" r="32.5" transform="translate(-338.53 441.89) rotate(-45)">
+            <circle class="cls-19" cx="332.7" cy="554" r="32.5">
             </circle>
             <text class="cls-54 matrix-value-point" id="dpoint" transform="translate(332.7 555.39)">
               10
             </text>
 
-            <circle class="cls-25" cx="397.94" cy="296.22" r="32.5" transform="translate(-158.13 367.16) rotate(-45)">
+            <circle class="cls-25" cx="334" cy="297" r="32.5">
             </circle>
-            <text class="cls-55 clss matrix-value-point" id="epoint" transform="translate(332 299.89)">
+            <text class="cls-55 clss matrix-value-point" id="epoint" transform="translate(333 299)">
               11
             </text>
 
-            <circle class="cls-24" cx="217.55" cy="117.22" r="32.5" transform="translate(-83.41 186.77) rotate(-45)">
+            <circle class="cls-24" cx="153" cy="116.22" r="32.5">
             </circle>
             <text class="cls-55 matrix-value-point" id="fpoint" transform="translate(153 119.42)">
               22
             </text>
 
-            <circle class="cls-24" cx="514.1" cy="115.82" r="32.5"></circle>
+            <circle class="cls-24" cx="514.1" cy="116.22" r="32.5"></circle>
             <text class="cls-55 matrix-value-point" id="gpoint" transform="translate(513.85 119.42)">
               13
             </text>
@@ -120,21 +146,21 @@
               16
             </text>
 
-            <circle class="cls-24" cx="217.55" cy="478.01" r="32.5" transform="translate(-338.53 292.44) rotate(-45)">
+            <circle class="cls-24" cx="153" cy="476.62" r="32.5">
             </circle>
             <text class="cls-55 matrix-value-point" id="hpoint" transform="translate(153.5 480.72)">
               7
             </text>
 
-            <circle class="cls-22" cx="399.59" cy="467.72" r="20" transform="translate(-279.93 417.32) rotate(-45)">
+            <circle class="cls-22" cx="332.59" cy="467.72" r="20">
             </circle>
-            <text class="cls-57 matrix-value-point" id="jpoint" transform="translate(333.69 467.62)">
+            <text class="cls-57 matrix-value-point" id="jpoint" transform="translate(332.69 467.62)">
               21
             </text>
 
-            <circle class="cls-22" cx="570.04" cy="296.22" r="20" transform="translate(-107.73 488.85) rotate(-45)">
+            <circle class="cls-22" cx="503" cy="297" r="20">
             </circle>
-            <text class="cls-57 matrix-value-point" id="npoint" transform="translate(504.79 297.56)">
+            <text class="cls-57 matrix-value-point" id="npoint" transform="translate(503 297.56)">
               17
             </text>
 
@@ -143,23 +169,24 @@
               11
             </text>
 
-            <circle class="cls-21" cx="451" cy="406.85" r="20" transform="translate(-230.82 454.47) rotate(-45)">
+            <circle class="cls-21" cx="375" cy="424" r="20">
             </circle>
-            <text class="cls-58 matrix-value-point" id="kpoint" transform="translate(375 424)">
+            <text class=" cls-58 matrix-value-point" id="kpoint" transform="translate(375 424)">
               5
             </text>
 
-            <circle class="cls-21" cx="543" cy="354" r="20" transform="translate(-172.01 472.52) rotate(-45)"></circle>
+            <circle class="cls-21" cx="461" cy="338" r="20">
+            </circle>
             <text class="cls-58 matrix-value-point" id="mpoint" transform="translate(461.3 339.5)">
               10
             </text>
 
-            <circle class="cls-15" cx="161.61" cy="296.22" r="20"></circle>
-            <text class="cls-58 matrix-value-point" id="spoint" transform="translate(161.59 297.56)">
+            <circle class="cls-15" cx="163.61" cy="296.22" r="20"></circle>
+            <text class="cls-58 matrix-value-point" id="spoint" transform="translate(163.59 297.56)">
               8
             </text>
 
-            <circle class="cls-15" cx="333.7" cy="124.12" r="20"></circle>
+            <circle class="cls-15" cx="333.7" cy="126" r="20"></circle>
             <text class="cls-58 matrix-value-point" id="tpoint" transform="translate(333.69 126.71)">
               18
             </text>
@@ -170,40 +197,43 @@
             </text>
 
             <circle class="cls-13" cx="333.7" cy="89.62" r="23"></circle>
-            <text class="cls-59 matrix-value-point" id="ppoint" transform="translate(333.9 93.24)">
+            <text class="cls-59 matrix-value-point" id="ppoint" transform="translate(333.9 91)">
               7
             </text>
 
-            <circle class="cls-21" cx="397.94" cy="503.22" r="23" transform="translate(-304.22 427.67) rotate(-45)">
+            <circle class="cls-23" cx="333" cy="505" r="23">
             </circle>
             <text class="cls-60 matrix-value-point" id="rpoint" transform="translate(332.81 504.91)">
               4
             </text>
 
-            <circle class="cls-21" cx="604.54" cy="296.22" r="23" transform="translate(-97.62 513.25) rotate(-45)">
+            <circle class="cls-23" cx="540" cy="297" r="23">
             </circle>
-            <text class="cls-60 matrix-value-point" id="qpoint" transform="translate(539.5 298.56)">
+            <text class="cls-60 matrix-value-point" id="qpoint" transform="translate(540 298.56)">
               5
             </text>
 
-            <circle class="cls-26" cx="295.5" cy="296.22" r="20" transform="translate(-188.1 294.7) rotate(-45)">
+            <circle class="cls-26" cx="245.26" cy="296.22" r="20">
             </circle>
-            <text class="cls-58 matrix-value-point" id="wpoint" transform="translate(230.26 297.56)">
+            <text class="
+              cls-58
+              matrix-value-point" id="wpoint" transform="translate(245.26 297.56)">
               19
             </text>
 
-            <circle class="cls-26" cx="397.9" cy="195.1" r="20" transform="translate(-85.6 337.1) rotate(-45)"></circle>
-            <text class="cls-58 matrix-value-point" id="xpoint" transform="translate(333.7 195.1)">
+            <circle class="cls-26" cx="333.7" cy="203" r="20">
+            </circle>
+            <text class="cls-58 matrix-value-point" id="xpoint" transform="translate(333.7 203)">
               11
             </text>
 
-            <circle class="cls-21" cx="276.25" cy="175.93" r="20" transform="translate(-107.73 245.47) rotate(-45)">
+            <circle class="cls-21" cx="212" cy="175.93" r="20">
             </circle>
-            <text class="cls-58 matrix-value-point" id="f2point" transform="translate(212 175.83)">
+            <text class=" cls-58 matrix-value-point" id="f2point" transform="translate(212 175.83)">
               8
             </text>
 
-            <circle class="cls-23" cx="251.86" cy="151.53" r="23" transform="translate(-97.62 221.08) rotate(-45)">
+            <circle class="cls-23" cx="186.71" cy="149.53" r="23">
             </circle>
             <text class="cls-60 matrix-value-point" id="f1point" transform="translate(186.71 152.27)">13</text>
 
@@ -223,13 +253,13 @@
             <circle class="cls-23" cx="479.79" cy="442.31" r="23"></circle>
             <text class="cls-60 matrix-value-point" id="i1point" transform="translate(480.89 445.41)">9</text>
 
-            <circle class="cls-21" cx="276.25" cy="419.31" r="20" transform="translate(-279.83 316.76) rotate(-45)">
+            <circle class="cls-21" cx="215" cy="417" r="20">
             </circle>
-            <text class="cls-58 matrix-value-point" id="h2point" transform="translate(212 419.06)">
+            <text class="cls-58 matrix-value-point" id="h2point" transform="translate(215 419.06)">
               20
             </text>
 
-            <circle class="cls-23" cx="251.86" cy="443.7" r="23" transform="translate(-304.22 306.65) rotate(-45)">
+            <circle class="cls-23" cx="188.71" cy="442.7" r="23">
             </circle>
             <text class="cls-60 matrix-value-point" id="h1point" transform="translate(188.71 445.41)">9</text>
 
@@ -238,58 +268,58 @@
               20
             </text>
 
-            <circle class="cls-23" cx="381.94" cy="296.22" r="23">
+            <circle class="cls-23" cx="381" cy="297" r="23">
             </circle>
-            <text class="cls-60 matrix-value-point" id="upoint" transform="translate(381.94 298)">9</text>
+            <text class="cls-60 matrix-value-point" id="upoint" transform="translate(381 298)">9</text>
           </g>
 
           <g id="points-years">
-            <text class="cls-28" transform="translate(35 295)">
+            <text class="cls-28" transform="translate(20 295)">
               0
-              <tspan x="-5" y="10">years</tspan>
+              <tspan x="-10" y="10">years</tspan>
               <tspan x="-5" y="20">old</tspan>
             </text>
 
-            <text class="cls-28" transform="translate(115 85)">
+            <text class="cls-28" transform="translate(100 70)">
               10
-              <tspan x="-3" y="10">years</tspan>
+              <tspan x="-8" y="10">years</tspan>
               <tspan x="-3" y="20">old</tspan>
             </text>
 
-            <text class="cls-28" transform="translate(330.34 -2)">
+            <text class="cls-28" transform="translate(330 -22)">
               20
-              <tspan x="-4" y="10">years</tspan>
-              <tspan x="-4" y="20">old</tspan>
+              <tspan x="-8" y="10">years</tspan>
+              <tspan x="-3" y="20">old</tspan>
             </text>
 
-            <text class="cls-28" transform="translate(540 80)">
+            <text class="cls-28" transform="translate(550 70)">
               30
-              <tspan x="-2" y="10">years</tspan>
-              <tspan x="-2" y="20">old</tspan>
+              <tspan x="-8" y="10">years</tspan>
+              <tspan x="-3" y="20">old</tspan>
             </text>
 
-            <text class="cls-28" transform="translate(623 295)">
+            <text class="cls-28" transform="translate(638 295)">
               40
-              <tspan x="-2" y="10">years</tspan>
-              <tspan x="-2" y="20">old</tspan>
+              <tspan x="-8" y="10">years</tspan>
+              <tspan x="-3" y="20">old</tspan>
             </text>
 
-            <text class="cls-28" transform="translate(540.34 510)">
+            <text class="cls-28" transform="translate(550 515)">
               50
-              <tspan x="-2" y="10">years</tspan>
-              <tspan x="-2" y="20">old</tspan>
+              <tspan x="-8" y="10">years</tspan>
+              <tspan x="-3" y="20">old</tspan>
             </text>
 
-            <text class="cls-28" transform="translate(328 595)">
+            <text class="cls-28" transform="translate(328 610)">
               60
-              <tspan x="-2" y="10">years</tspan>
-              <tspan x="-2" y="20">old</tspan>
+              <tspan x="-8" y="10">years</tspan>
+              <tspan x="-3" y="20">old</tspan>
             </text>
 
-            <text class="cls-28" transform="translate(115 504.16)">
+            <text class="cls-28" transform="translate(100 515)">
               70
-              <tspan x="-2" y="10">years</tspan>
-              <tspan x="-2" y="20">old</tspan>
+              <tspan x="-8" y="10">years</tspan>
+              <tspan x="-3" y="20">old</tspan>
             </text>
 
             <text class="cls-29" transform="translate(97.49 198.76)">
@@ -651,167 +681,201 @@
             </text>
           </g>
         </svg>
-      </div>
-      <table class="chakra_table">
-        <tr class="chakra_tr">
-          <th class="chakra_td">Chakra name</th>
-          <th class="chakra_td">Physics</th>
-          <th class="chakra_td">Energy</th>
-          <th class="chakra_td">Emotions</th>
-        </tr>
-        <tr class="chakra_tr">
-          <td class="chakra_td">7. Sahastrara</td>
-          <td class="chakra_td" id="sahphysics">Ячейка 1-2</td>
-          <td class="chakra_td" id="sahenergy">Ячейка 1-3</td>
-          <td class="chakra_td" id="sahemotions">Ячейка 1-4</td>
-        </tr>
-        <tr class="chakra_tr">
-          <td class="chakra_td">6. Ajna</td>
-          <td class="chakra_td" id="ajphysics">Ячейка 2-2</td>
-          <td class="chakra_td" id="ajenergy">Ячейка 2-3</td>
-          <td class="chakra_td" id="ajemotions">Ячейка 2-4</td>
-        </tr>
-        <tr class="chakra_tr">
-          <td class="chakra_td">5. Vishuddha</td>
-          <td class="chakra_td" id="vishphysics">Ячейка 3-2</td>
-          <td class="chakra_td" id="vishenergy">Ячейка 3-3</td>
-          <td class="chakra_td" id="vishemotions">Ячейка 3-4</td>
-        </tr>
-        <tr class="chakra_tr">
-          <td class="chakra_td">4. Anahata</td>
-          <td class="chakra_td" id="anahphysics">Ячейка 4-2</td>
-          <td class="chakra_td" id="anahenergy">Ячейка 4-3</td>
-          <td class="chakra_td" id="anahemotions">Ячейка 4-4</td>
-        </tr>
-        <tr class="chakra_tr">
-          <td class="chakra_td">3. Manipura</td>
-          <td class="chakra_td" id="manphysics">Ячейка 5-2</td>
-          <td class="chakra_td" id="manenergy">Ячейка 5-3</td>
-          <td class="chakra_td" id="manemotions">Ячейка 5-4</td>
-        </tr>
-        <tr class="chakra_tr">
-          <td class="chakra_td">2. Svadhishtana</td>
-          <td class="chakra_td" id="svadphysics">Ячейка 6-2</td>
-          <td class="chakra_td" id="svadenergy">Ячейка 6-3</td>
-          <td class="chakra_td" id="svademotions">Ячейка 6-4</td>
-        </tr>
-        <tr class="chakra_tr">
-          <td class="chakra_td">1. Muladhara</td>
-          <td class="chakra_td" id="mulphysics">Ячейка 7-2</td>
-          <td class="chakra_td" id="mulenergy">Ячейка 7-3</td>
-          <td class="chakra_td" id="mulemotions">Ячейка 7-4</td>
-        </tr>
-        <tr class="chakra_tr">
-          <td class="chakra_td">Result:</td>
-          <td class="chakra_td" id="resultphysics">Ячейка 8-2</td>
-          <td class="chakra_td" id="resultenergy">Ячейка 8-3</td>
-          <td class="chakra_td" id="resultemotions">Ячейка 8-4</td>
-        </tr>
-      </table>
-      <div class="info-txt">
-        <table id="prednazn">
-          <tbody>
-            <tr valign="top">
-              <td colspan="4">
-                <h3><b>Personal purpose:</b></h3>
-              </td>
-              <td width="10%"></td>
-              <td colspan="4">
-                <h3><b>Purpose for society and genus:</b></h3>
-              </td>
-            </tr>
-            <tr style="height: 5px">
-              <td></td>
-            </tr>
-            <tr>
-              <td colspan="4">
-                Soul searching, balance of feminine and masculine qualities, abilities, skills
-              </td>
-              <td width="6%"></td>
-              <td colspan="4">
-                Tasks for genus, results and recognition in society
-              </td>
-            </tr>
-            <tr style="height: 5px">
-              <td></td>
-            </tr>
-            <tr style="font-size: 140%; position: relative">
-              <td>Sky:</td>
-              <td>
-                <span id="skypoint" class="base-circle">18</span>
-              </td>
-              <td rowspan="2">
-                <svg width="38" height="48" viewBox="0 0 38 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M0 0V2H18V46H0V48H20V25H38V23H20V0H0Z" fill="white"></path>
-                </svg>
-              </td>
-              <td rowspan="2">
-                <span id="perspurpose" class="base-circle">12</span>
-              </td>
-              <td></td>
-              <td>M:</td>
-              <td>
-                <span id="malepoint" class="base-circle">21</span>
-              </td>
-              <td rowspan="2">
-                <svg width="38" height="48" viewBox="0 0 38 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M0 0V2H18V46H0V48H20V25H38V23H20V0H0Z" fill="white"></path>
-                </svg>
-              </td>
-              <td rowspan="2">
-                <span id="socialpurpose" class="base-circle">6</span>
-              </td>
-            </tr>
-            <tr style="font-size: 140%">
-              <td>Earth:</td>
-              <td><span id="earthpoint" class="base-circle">21</span></td>
-              <td></td>
-              <td>F:</td>
-              <td><span id="femalepoint" class="base-circle">12</span></td>
-            </tr>
-            <tr>
-              <td style="height: 35px"></td>
-            </tr>
-            <tr>
-              <td colspan="4">
-                <h3>General purpose for this lifetime:</h3>
-              </td>
-              <td></td>
-              <td colspan="4">
-                <h3>Planetary purpose:</h3>
-              </td>
-            </tr>
-            <tr style="height: 5px">
-              <td></td>
-            </tr>
-            <tr class="trade">
-              <td colspan="4">
-                Spiritual path, global task, where is the divine in me?
-              </td>
-              <td></td>
-              <td colspan="4">Global soul purpose</td>
-            </tr>
-            <tr>
-              <td colspan="9" style="height: 10px"></td>
-            </tr>
-            <tr style="font-size: 160%">
-              <td colspan="4" id="blom" style="text-align: right">
-                <span id="generalpurpose" class="base-circle">12</span>
-              </td>
-              <td></td>
-              <td colspan="4" id="blom2" style="text-align: right">
-                <span id="planetarypurpose" class="base-circle">15</span>
-              </td>
-            </tr>
-          </tbody>
+          </svg>
+        </div>
+        <table class="chakra-table">
+          <tr class="chakra-tr chakra-table-header">
+            <th class="chakra-name">Chakra name</th>
+            <th class="chakra-td">Physics</th>
+            <th class="chakra-td">Energy</th>
+            <th class="chakra-td">Emotions</th>
+          </tr>
+          <tr class="chakra-tr">
+            <td class="chakra-name chakra-name-left">
+              <span id="circle-sahastrara">Sahastrara</span>
+            </td>
+            <td class="chakra-td" id="sahphysics">Ячейка 1-2</td>
+            <td class="chakra-td" id="sahenergy">Ячейка 1-3</td>
+            <td class="chakra-td" id="sahemotions">Ячейка 1-4</td>
+          </tr>
+          <tr class="chakra-tr">
+            <td class="chakra-name chakra-name-left">
+              <span id="circle-ajna">Ajna</span>
+            </td>
+            <td class="chakra-td" id="ajphysics">Ячейка 2-2</td>
+            <td class="chakra-td" id="ajenergy">Ячейка 2-3</td>
+            <td class="chakra-td" id="ajemotions">Ячейка 2-4</td>
+          </tr>
+          <tr class="chakra-tr">
+            <td class="chakra-name chakra-name-left">
+              <span id="circle-vishuddha">Vishuddha</span>
+            </td>
+            <td class="chakra-td" id="vishphysics">Ячейка 3-2</td>
+            <td class="chakra-td" id="vishenergy">Ячейка 3-3</td>
+            <td class="chakra-td" id="vishemotions">Ячейка 3-4</td>
+          </tr>
+          <tr class="chakra-tr">
+            <td class="chakra-name chakra-name-left">
+              <span id="circle-anahata">Anahata</span>
+            </td>
+            <td class="chakra-td" id="anahphysics">Ячейка 4-2</td>
+            <td class="chakra-td" id="anahenergy">Ячейка 4-3</td>
+            <td class="chakra-td" id="anahemotions">Ячейка 4-4</td>
+          </tr>
+          <tr class="chakra-tr">
+            <td class="chakra-name chakra-name-left">
+              <span id="circle-manipura">Manipura</span>
+            </td>
+            <td class="chakra-td" id="manphysics">Ячейка 5-2</td>
+            <td class="chakra-td" id="manenergy">Ячейка 5-3</td>
+            <td class="chakra-td" id="manemotions">Ячейка 5-4</td>
+          </tr>
+          <tr class="chakra-tr">
+            <td class="chakra-name chakra-name-left">
+              <span id="circle-svadhishtana">Svadhishtana</span>
+            </td>
+            <td class="chakra-td" id="svadphysics">Ячейка 6-2</td>
+            <td class="chakra-td" id="svadenergy">Ячейка 6-3</td>
+            <td class="chakra-td" id="svademotions">Ячейка 6-4</td>
+          </tr>
+          <tr class="chakra-tr">
+            <td class="chakra-name chakra-name-left">
+              <span id="circle-muladhara">Muladhara</span>
+            </td>
+            <td class="chakra-td" id="mulphysics">Ячейка 7-2</td>
+            <td class="chakra-td" id="mulenergy">Ячейка 7-3</td>
+            <td class="chakra-td" id="mulemotions">Ячейка 7-4</td>
+          </tr>
+          <tr class="chakra-tr">
+            <td class="chakra-name">Result:</td>
+            <td class="chakra-td" id="resultphysics">Ячейка 8-2</td>
+            <td class="chakra-td" id="resultenergy">Ячейка 8-3</td>
+            <td class="chakra-td" id="resultemotions">Ячейка 8-4</td>
+          </tr>
         </table>
+        <div class="info-txt">
+          <table id="prednazn">
+            <tbody>
+              <tr valign="top">
+                <td colspan="4">
+                  <h3><b>Personal purpose:</b></h3>
+                </td>
+                <td width="10%"></td>
+                <td colspan="4">
+                  <h3><b>Purpose for society and genus:</b></h3>
+                </td>
+              </tr>
+              <tr style="height: 5px">
+                <td></td>
+              </tr>
+              <tr>
+                <td colspan="4">
+                  Soul searching, balance of feminine and masculine qualities,
+                  abilities, skills
+                </td>
+                <td width="6%"></td>
+                <td colspan="4">
+                  Tasks for genus, results and recognition in society
+                </td>
+              </tr>
+              <tr style="height: 5px">
+                <td></td>
+              </tr>
+              <tr style="font-size: 140%; position: relative">
+                <td>Sky:</td>
+                <td>
+                  <span id="skypoint" class="base-circle">18</span>
+                </td>
+                <td rowspan="2">
+                  <svg
+                    width="38"
+                    height="48"
+                    viewBox="0 0 38 48"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0V2H18V46H0V48H20V25H38V23H20V0H0Z"
+                      fill="white"
+                    ></path>
+                  </svg>
+                </td>
+                <td rowspan="2">
+                  <span id="perspurpose" class="base-circle">12</span>
+                </td>
+                <td></td>
+                <td>M:</td>
+                <td>
+                  <span id="malepoint" class="base-circle">21</span>
+                </td>
+                <td rowspan="2">
+                  <svg
+                    width="38"
+                    height="48"
+                    viewBox="0 0 38 48"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0V2H18V46H0V48H20V25H38V23H20V0H0Z"
+                      fill="white"
+                    ></path>
+                  </svg>
+                </td>
+                <td rowspan="2">
+                  <span id="socialpurpose" class="base-circle">6</span>
+                </td>
+              </tr>
+              <tr style="font-size: 140%">
+                <td>Earth:</td>
+                <td><span id="earthpoint" class="base-circle">21</span></td>
+                <td></td>
+                <td>F:</td>
+                <td><span id="femalepoint" class="base-circle">12</span></td>
+              </tr>
+              <tr>
+                <td style="height: 35px"></td>
+              </tr>
+              <tr>
+                <td colspan="4">
+                  <h3>General purpose for this lifetime:</h3>
+                </td>
+                <td></td>
+                <td colspan="4">
+                  <h3>Planetary purpose:</h3>
+                </td>
+              </tr>
+              <tr style="height: 5px">
+                <td></td>
+              </tr>
+              <tr class="trade">
+                <td colspan="4">
+                  Spiritual path, global task, where is the divine in me?
+                </td>
+                <td></td>
+                <td colspan="4">Global soul purpose</td>
+              </tr>
+              <tr>
+                <td colspan="9" style="height: 10px"></td>
+              </tr>
+              <tr style="font-size: 160%">
+                <td colspan="4" id="blom" style="text-align: right">
+                  <span id="generalpurpose" class="base-circle">12</span>
+                </td>
+                <td></td>
+                <td colspan="4" id="blom2" style="text-align: right">
+                  <span id="planetarypurpose" class="base-circle">15</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="center">
+          <button id="decode-matrix-btn">
+            Get your full Destiny Matrix reading
+          </button>
+        </div>
       </div>
-      <div class="center">
-        <button id="decode-matrix-btn">
-          Get your full Destiny Matrix reading
-        </button>
-      </div>
-
     </div>
   </main>
   <footer>
@@ -838,6 +902,9 @@
       </svg>
     </div>
   </footer>
+
+  <script src="./src/code.js"></script>
+  <script src="./src/script_person.js"></script>
   <script src="./src/inputs_perso.js"></script>
 </body>
 
