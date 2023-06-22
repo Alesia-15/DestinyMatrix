@@ -74,7 +74,7 @@ button {
     border: none;;
 }
 
-#get_the_answer {
+#get_the_answer, #createChart {
     align-self: baseline;
 }
 
@@ -122,6 +122,117 @@ input {
     text-align: left;
 }
 
+.chakra-name-left {
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    padding-left: 47px;
+}
+
+#circle-sahastrara:before {
+    font-family: 'GFS Didot';
+    font-size: 22px;
+    content: '7';
+    width: 20px;
+    border-radius: calc(50%);
+    height: 20px;
+    display: inline-flex;
+    background: #B653F7;
+    justify-content: center;
+    margin-right: 20px;
+    box-shadow: 0 0 10px 10px #B653F7;
+}
+
+#circle-ajna:before {
+    font-family: 'GFS Didot';
+    font-size: 22px;
+    content: '6';
+    width: 20px;
+    border-radius: calc(50%);
+    height: 20px;
+    display: inline-flex;
+    background: #3D54F5;
+    justify-content: center;
+    margin-right: 20px;
+    box-shadow: 0 0 10px 10px #3D54F5;
+}
+
+#circle-vishuddha:before {
+    font-family: 'GFS Didot';
+    font-size: 22px;
+    content: '5';
+    width: 20px;
+    border-radius: calc(50%);
+    height: 20px;
+    display: inline-flex;
+    color: #000000;
+    background: #74E0F8;
+    justify-content: center;
+    margin-right: 20px;
+    box-shadow: 0 0 10px 10px #74E0F8;
+}
+
+#circle-anahata:before {
+    font-family: 'GFS Didot';
+    font-size: 22px;
+    content: '4';
+    width: 20px;
+    border-radius: calc(50%);
+    height: 20px;
+    display: inline-flex;
+    color: #000000;
+    background: #B6FD57;
+    justify-content: center;
+    margin-right: 20px;
+    box-shadow: 0 0 10px 10px #B6FD57;
+}
+
+#circle-manipura:before {
+    font-family: 'GFS Didot';
+    font-size: 22px;
+    content: '3';
+    width: 20px;
+    border-radius: calc(50%);
+    height: 20px;
+    display: inline-flex;
+    color: #000000;
+    background: #FBE49D;
+    justify-content: center;
+    margin-right: 20px;
+    box-shadow: 0 0 10px 10px #FBE49D;
+}
+
+#circle-svadhishtana:before {
+    font-family: 'GFS Didot';
+    font-size: 22px;
+    content: '2';
+    width: 20px;
+    border-radius: calc(50%);
+    height: 20px;
+    display: inline-flex;
+    color: #F5F5F5;
+    background: #ED7233;
+    justify-content: center;
+    margin-right: 20px;
+    box-shadow: 0 0 10px 10px #ED7233;
+}
+
+#circle-muladhara:before {
+    font-family: 'GFS Didot';
+    font-size: 22px;
+    content: '1';
+    width: 20px;
+    border-radius: calc(50%);
+    height: 20px;
+    display: inline-flex;
+    color: #F5F5F5;
+    background: #EA4631;
+    justify-content: center;
+    margin-right: 20px;
+    box-shadow: 0 0 10px 10px #EA4631;
+}
+
 .chakra-td {
     border: 1px solid rgb(255, 255, 255);
     padding: 5px;
@@ -137,6 +248,13 @@ input {
     border: 1px solid rgb(255, 255, 255);
     padding: 5px;
     text-align: center;
+}
+
+.chakra-table-header {
+    background-color: #827D78;
+    font-family: 'Inter';
+    size: 20px;
+    text-transform: uppercase;
 }
 
 .glow__wrap {
@@ -155,7 +273,7 @@ input {
 
 .glow {
     width: 790px;
-    height: 100px;
+    height: 30px;
     background: #FFF8DB;
     filter: blur(75px);
 }
@@ -182,6 +300,7 @@ input {
 .smoky-white {
     color: #F9F9F8;
 }
+
 
 /* Matrix's styles */
 
