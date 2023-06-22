@@ -1,9 +1,24 @@
 const button = document.querySelector("#get_the_answer");
 
 button.addEventListener("click", () => {
+  // let apoint = 11; // day of birth
+  // let bpoint = 11; // month of birth
+  // let year = 1999; //year of birth
+  // let cpoint = calculateYear(year); // c - year of birth
+  // calculatePoints();
+  // Points();
   ChartHeart();
   Purposes();
 });
+
+function Points() {
+  document.querySelector('#apoint').textContent = points.apoint;
+  document.querySelector('#bpoint').textContent = points.bpoint;
+  document.querySelector('#cpoint').textContent = points.cpoint;
+  document.querySelector('#dpoint').textContent = points.dpoint;
+  document.querySelector('#epoint').textContent = points.epoint;
+  console.log('sss')
+}
 
 function ChartHeart() {
   // Physics
@@ -24,12 +39,12 @@ function ChartHeart() {
   const resultphysics = document.querySelector("#resultphysics");
   resultphysics.textContent = reduceNumber(
     chartHeart.sahphysics +
-      chartHeart.ajphysics +
-      chartHeart.vishphysics +
-      chartHeart.anahphysics +
-      chartHeart.manphysics +
-      chartHeart.svadphysics +
-      chartHeart.mulphysics
+    chartHeart.ajphysics +
+    chartHeart.vishphysics +
+    chartHeart.anahphysics +
+    chartHeart.manphysics +
+    chartHeart.svadphysics +
+    chartHeart.mulphysics
   );
 
   // Energy
@@ -50,12 +65,12 @@ function ChartHeart() {
   const resultenergy = document.querySelector("#resultenergy");
   resultenergy.textContent = reduceNumber(
     chartHeart.sahenergy +
-      chartHeart.ajenergy +
-      chartHeart.vishenergy +
-      chartHeart.anahenergy +
-      chartHeart.manenergy +
-      chartHeart.svadenergy +
-      chartHeart.mulenergy
+    chartHeart.ajenergy +
+    chartHeart.vishenergy +
+    chartHeart.anahenergy +
+    chartHeart.manenergy +
+    chartHeart.svadenergy +
+    chartHeart.mulenergy
   );
 
   // Emotions
@@ -76,12 +91,12 @@ function ChartHeart() {
   const resultemotions = document.querySelector("#resultemotions");
   resultemotions.textContent = reduceNumber(
     chartHeart.sahemotions +
-      chartHeart.ajemotions +
-      chartHeart.vishemotions +
-      chartHeart.anahemotions +
-      chartHeart.manemotions +
-      chartHeart.svademotions +
-      chartHeart.mulemotions
+    chartHeart.ajemotions +
+    chartHeart.vishemotions +
+    chartHeart.anahemotions +
+    chartHeart.manemotions +
+    chartHeart.svademotions +
+    chartHeart.mulemotions
   );
 }
 
