@@ -6,10 +6,10 @@ button.addEventListener("click", () => {
   Points(person);
   ChartHeart();
   Purposes();
-
   //для второго человека
   createPerson(secondPerson, secondApoint, secondBpoint, secondCpoint);
-
+  outputName();
+  clearInputs(dateInput, nameInput);
 });
 
 function Points(person) {

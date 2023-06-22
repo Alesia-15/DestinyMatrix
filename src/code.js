@@ -123,17 +123,17 @@ const calculatePoints = (aPoint, bPoint, cPoint) => {
     ),
     planetarypurpose: reduceNumber(
       aPoint +
-      bPoint +
-      cPoint +
-      dpoint +
-      gpoint +
-      hpoint +
-      fpoint +
-      ipoint +
-      gpoint +
-      hpoint +
-      fpoint +
-      ipoint
+        bPoint +
+        cPoint +
+        dpoint +
+        gpoint +
+        hpoint +
+        fpoint +
+        ipoint +
+        gpoint +
+        hpoint +
+        fpoint +
+        ipoint
     ),
   };
 
@@ -179,140 +179,140 @@ function createPerson(per, apoint, bpoint, cpoint) {
 // общие значения матрицы
 const compatibilityMatrix = [
   {
-    id: 'compatibilityApoint',
-    value: reduceNumber(person.points.apoint + secondPerson.points.apoint)
+    id: "compatibilityApoint",
+    value: reduceNumber(person.points.apoint + secondPerson.points.apoint),
   },
   {
-    id: 'compatibilityBpoint',
-    value: reduceNumber(person.points.bpoint + secondPerson.points.bpoint)
+    id: "compatibilityBpoint",
+    value: reduceNumber(person.points.bpoint + secondPerson.points.bpoint),
   },
   {
-    id: 'compatibilityCpoint',
-    value: reduceNumber(person.points.cpoint + secondPerson.points.cpoint)
+    id: "compatibilityCpoint",
+    value: reduceNumber(person.points.cpoint + secondPerson.points.cpoint),
   },
   {
-    id: 'compatibilityDpoint',
-    value: reduceNumber(person.points.dpoint + secondPerson.points.dpoint)
+    id: "compatibilityDpoint",
+    value: reduceNumber(person.points.dpoint + secondPerson.points.dpoint),
   },
   {
-    id: 'compatibilityEpoint',
-    value: reduceNumber(person.points.epoint + secondPerson.points.epoint)
+    id: "compatibilityEpoint",
+    value: reduceNumber(person.points.epoint + secondPerson.points.epoint),
   },
   {
-    id: 'compatibilityFpoint',
-    value: reduceNumber(person.points.fpoint + secondPerson.points.fpoint)
+    id: "compatibilityFpoint",
+    value: reduceNumber(person.points.fpoint + secondPerson.points.fpoint),
   },
   {
-    id: 'compatibilityGpoint',
-    value: reduceNumber(person.points.gpoint + secondPerson.points.gpoint)
+    id: "compatibilityGpoint",
+    value: reduceNumber(person.points.gpoint + secondPerson.points.gpoint),
   },
   {
-    id: 'compatibilityHpoint',
-    value: reduceNumber(person.points.hpoint + secondPerson.points.hpoint)
+    id: "compatibilityHpoint",
+    value: reduceNumber(person.points.hpoint + secondPerson.points.hpoint),
   },
   {
-    id: 'compatibilityIpoint',
-    value: reduceNumber(person.points.ipoint + secondPerson.points.ipoint)
+    id: "compatibilityIpoint",
+    value: reduceNumber(person.points.ipoint + secondPerson.points.ipoint),
   },
   {
-    id: 'compatibilityJpoint',
-    value: reduceNumber(person.points.jpoint + secondPerson.points.jpoint)
+    id: "compatibilityJpoint",
+    value: reduceNumber(person.points.jpoint + secondPerson.points.jpoint),
   },
   {
-    id: 'compatibilityNpoint',
-    value: reduceNumber(person.points.npoint + secondPerson.points.npoint)
+    id: "compatibilityNpoint",
+    value: reduceNumber(person.points.npoint + secondPerson.points.npoint),
   },
   {
-    id: 'compatibilityLpoint',
-    value: reduceNumber(person.points.lpoint + secondPerson.points.lpoint)
+    id: "compatibilityLpoint",
+    value: reduceNumber(person.points.lpoint + secondPerson.points.lpoint),
   },
   {
-    id: 'compatibilityKpoint',
-    value: reduceNumber(person.points.kpoint + secondPerson.points.kpoint)
+    id: "compatibilityKpoint",
+    value: reduceNumber(person.points.kpoint + secondPerson.points.kpoint),
   },
   {
-    id: 'compatibilityMpoint',
-    value: reduceNumber(person.points.mpoint + secondPerson.points.mpoint)
+    id: "compatibilityMpoint",
+    value: reduceNumber(person.points.mpoint + secondPerson.points.mpoint),
   },
   {
-    id: 'compatibilitySpoint',
-    value: reduceNumber(person.points.spoint + secondPerson.points.spoint)
+    id: "compatibilitySpoint",
+    value: reduceNumber(person.points.spoint + secondPerson.points.spoint),
   },
   {
-    id: 'compatibilityOpoint',
-    value: reduceNumber(person.points.opoint + secondPerson.points.opoint)
+    id: "compatibilityOpoint",
+    value: reduceNumber(person.points.opoint + secondPerson.points.opoint),
   },
   {
-    id: 'compatibilityTpoint',
-    value: reduceNumber(person.points.tpoint + secondPerson.points.tpoint)
+    id: "compatibilityTpoint",
+    value: reduceNumber(person.points.tpoint + secondPerson.points.tpoint),
   },
   {
-    id: 'compatibilityPpoint',
-    value: reduceNumber(person.points.ppoint + secondPerson.points.ppoint)
+    id: "compatibilityPpoint",
+    value: reduceNumber(person.points.ppoint + secondPerson.points.ppoint),
   },
   {
-    id: 'compatibilityQpoint',
-    value: reduceNumber(person.points.qpoint + secondPerson.points.qpoint)
+    id: "compatibilityQpoint",
+    value: reduceNumber(person.points.qpoint + secondPerson.points.qpoint),
   },
   {
-    id: 'compatibilityRpoint',
-    value: reduceNumber(person.points.rpoint + secondPerson.points.rpoint)
+    id: "compatibilityRpoint",
+    value: reduceNumber(person.points.rpoint + secondPerson.points.rpoint),
   },
   {
-    id: 'compatibilityVpoint',
-    value: reduceNumber(person.points.vpoint + secondPerson.points.vpoint)
+    id: "compatibilityVpoint",
+    value: reduceNumber(person.points.vpoint + secondPerson.points.vpoint),
   },
   {
-    id: 'compatibilityUpoint',
-    value: reduceNumber(person.points.upoint + secondPerson.points.upoint)
+    id: "compatibilityUpoint",
+    value: reduceNumber(person.points.upoint + secondPerson.points.upoint),
   },
   {
-    id: 'compatibilityWpoint',
-    value: reduceNumber(person.points.wpoint + secondPerson.points.wpoint)
+    id: "compatibilityWpoint",
+    value: reduceNumber(person.points.wpoint + secondPerson.points.wpoint),
   },
   {
-    id: 'compatibilityXpoint',
-    value: reduceNumber(person.points.xpoint + secondPerson.points.xpoint)
+    id: "compatibilityXpoint",
+    value: reduceNumber(person.points.xpoint + secondPerson.points.xpoint),
   },
   {
-    id: 'compatibilityF2point',
-    value: reduceNumber(person.points.f2point + secondPerson.points.f2point)
+    id: "compatibilityF2point",
+    value: reduceNumber(person.points.f2point + secondPerson.points.f2point),
   },
   {
-    id: 'compatibilityF1point',
-    value: reduceNumber(person.points.f1point + secondPerson.points.f1point)
+    id: "compatibilityF1point",
+    value: reduceNumber(person.points.f1point + secondPerson.points.f1point),
   },
   {
-    id: 'compatibilityG2point',
-    value: reduceNumber(person.points.g2point + secondPerson.points.g2point)
+    id: "compatibilityG2point",
+    value: reduceNumber(person.points.g2point + secondPerson.points.g2point),
   },
   {
-    id: 'compatibilityG1point',
-    value: reduceNumber(person.points.g1point + secondPerson.points.g1point)
+    id: "compatibilityG1point",
+    value: reduceNumber(person.points.g1point + secondPerson.points.g1point),
   },
   {
-    id: 'compatibilityI2point',
-    value: reduceNumber(person.points.i2point + secondPerson.points.i2point)
+    id: "compatibilityI2point",
+    value: reduceNumber(person.points.i2point + secondPerson.points.i2point),
   },
   {
-    id: 'compatibilityI1point',
-    value: reduceNumber(person.points.i1point + secondPerson.points.i1point)
+    id: "compatibilityI1point",
+    value: reduceNumber(person.points.i1point + secondPerson.points.i1point),
   },
   {
-    id: 'compatibilityH2point',
-    value: reduceNumber(person.points.h2point + secondPerson.points.h2point)
+    id: "compatibilityH2point",
+    value: reduceNumber(person.points.h2point + secondPerson.points.h2point),
   },
   {
-    id: 'compatibilityH1point',
-    value: reduceNumber(person.points.h1point + secondPerson.points.h1point)
-  }
-]
+    id: "compatibilityH1point",
+    value: reduceNumber(person.points.h1point + secondPerson.points.h1point),
+  },
+];
 
 // функция, которая ищет одинаковые айдишники в матрице и массиве, и выводит значения
 function outputCompatibilityMatrixValues() {
   const elements = document.querySelectorAll('[id^="compatibility"]');
-  compatibilityMatrix.forEach(matrixItem => {
-    elements.forEach(el => {
+  compatibilityMatrix.forEach((matrixItem) => {
+    elements.forEach((el) => {
       if (el.id === matrixItem.id) {
         el.innerHTML = matrixItem.value;
       }
@@ -320,7 +320,38 @@ function outputCompatibilityMatrixValues() {
   });
 }
 
+// скорее всего у Аэлиты они должны быть, так что надо будет эти убрать!!!
+const dateInput = document.getElementById("dateInput");
+const inputFirstDate = document.getElementById("inputFirstDate");
+const inputSecondDate = document.getElementById("inputSecondDate");
+// ------------
+const nameInput = document.getElementById("nameInput");
+const nameOutput = document.getElementById("nameOutput");
+const dateOutput = document.getElementById("dateOutput");
+const firstDate = document.getElementById("firstDate");
+const secondDate = document.getElementById("secondDate");
+
+// выводит имя и дату на первой странице
+function outputName() {
+  nameOutput.innerText = nameInput.value;
+  dateOutput.innerText = dateInput.value.split("-").reverse().join(".");
+}
+
+// выводит даты на второй странице
+function outputDates() {
+  firstDate.innerText = inputFirstDate.value.split("-").reverse().join(".");
+  secondDate.innerText = inputSecondDate.value.split("-").reverse().join(".");
+}
+// очищает инпуты
+function clearInputs(firtsInput, secondInput) {
+  firtsInput.value = "";
+  secondInput.value = "";
+}
+
 // кнопка матрицы совместимости
-const buttonCreateChart = document.querySelector('#createChart');
-console.log(buttonCreateChart);
-buttonCreateChart.addEventListener('click', outputCompatibilityMatrixValues);
+const buttonCreateChart = document.querySelector("#createChart");
+buttonCreateChart.addEventListener("click", () => {
+  outputCompatibilityMatrixValues();
+  outputDates();
+  clearInputs(inputFirstDate, inputSecondDate);
+});
