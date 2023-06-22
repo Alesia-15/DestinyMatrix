@@ -269,7 +269,38 @@ createSecondPerson();
         });
     }
 
+    // скорее всего у Аэлиты они должны быть, так что надо будет эти убрать!!!
+    const dateInput = document.getElementById('dateInput');
+    const inputFirstDate = document.getElementById('inputFirstDate');
+    const inputSecondDate = document.getElementById('inputSecondDate');
+    // ------------
+    const nameInput = document.getElementById('nameInput');
+    const nameOutput = document.getElementById('nameOutput');
+    const dateOutput = document.getElementById('dateOutput');
+    const firstDate = document.getElementById('firstDate');
+    const secondDate = document.getElementById('secondDate');
+
+    // выводит имя и дату на первой странице
+    function outputName () {
+        nameOutput.innerText = nameInput.value;
+        dateOutput.innerText = dateInput.value.split('-').reverse().join('.');
+    }
+
+    // выводит даты на второй странице
+    function outputDates(){
+      firstDate.innerText = inputFirstDate.value.split('-').reverse().join('.');
+      secondDate.innerText = inputSecondDate.value.split('-').reverse().join('.');
+    }
+    // очищает инпуты
+    function clearInputs(firtsInput, secondInput){
+      firtsInput.value = '';
+      secondInput.value = '';
+    }
+
     // кнопка матрицы совместимости
     const buttonCreateChart = document.querySelector('#createChart');
-    console.log(buttonCreateChart);
-    buttonCreateChart.addEventListener('click', outputCompatibilityMatrixValues);
+    buttonCreateChart.addEventListener("click", () => {
+      outputCompatibilityMatrixValues();
+      outputDates();
+      clearInputs(inputFirstDate, inputSecondDate);
+    });
