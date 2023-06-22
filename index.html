@@ -38,10 +38,13 @@
       <p>Enter your date of birth and name:</p>
     </div>
     <div class="birthday-container">
-      <input type="date" />
-      <input type="text" placeholder="Name" />
-      <button id="get_the_answer">get the answer</button>
+      <form name="form">
+        <input id="date" type="date" />
+        <input id="name" type="text" placeholder="Name" />
+        <button id="get_the_answer">get the answer</button>
+      </form>
     </div>
+    <div class="output"></div>
     <div class="matrix-container">
       <div class="pento">
         <svg viewBox="0 0 680 600" id="matrix">
@@ -835,6 +838,7 @@
       </svg>
     </div>
   </footer>
+  <script src="./src/inputs_perso.js"></script>
 </body>
 
 </html>

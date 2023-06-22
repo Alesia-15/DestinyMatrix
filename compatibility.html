@@ -42,10 +42,13 @@
         <p>Enter your date of birth and name:</p>
       </div>
       <div class="birthday-container">
-        <input type="date" />
-        <input type="date" />
+        <form name="form">
+          <input id="date_person1" type="date" />
+          <input id="date_person2" type="date" />
+        </form>
         <button id="createChart">create your chart</button>
       </div>
+      <div class="output2"></div>
       <div class="matrix-container">
         <div class="pento">
           <svg viewBox="0 0 680 600" id="matrix">
@@ -1342,5 +1345,6 @@
         </svg>
       </div>
     </footer>
+    <script src="./src/inputs_compatibility.js"></script>
   </body>
 </html>
