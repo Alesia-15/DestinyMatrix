@@ -1,11 +1,52 @@
 const button = document.querySelector("#get_the_answer");
 
 button.addEventListener("click", () => {
+  // для одного человека
+  createPerson(person, apoint, bpoint, cpoint);
+  Points(person);
   ChartHeart();
   Purposes();
+  //для второго человека
+  createPerson(secondPerson, secondApoint, secondBpoint, secondCpoint);
   outputName();
   clearInputs(dateInput, nameInput);
 });
+
+function Points(person) {
+  document.querySelector('#apoint').textContent = person.points.apoint;
+  document.querySelector('#bpoint').textContent = person.points.bpoint;
+  document.querySelector('#cpoint').textContent = person.points.cpoint;
+  document.querySelector('#dpoint').textContent = person.points.dpoint;
+  document.querySelector('#epoint').textContent = person.points.epoint;
+  document.querySelector('#fpoint').textContent = person.points.fpoint;
+  document.querySelector('#gpoint').textContent = person.points.gpoint;
+  document.querySelector('#hpoint').textContent = person.points.hpoint;
+  document.querySelector('#ipoint').textContent = person.points.ipoint;
+  document.querySelector('#jpoint').textContent = person.points.jpoint;
+  document.querySelector('#kpoint').textContent = person.points.kpoint;
+  document.querySelector('#lpoint').textContent = person.points.lpoint;
+  document.querySelector('#mpoint').textContent = person.points.mpoint;
+  document.querySelector('#npoint').textContent = person.points.npoint;
+  document.querySelector('#opoint').textContent = person.points.opoint;
+  document.querySelector('#ppoint').textContent = person.points.ppoint;
+  document.querySelector('#qpoint').textContent = person.points.qpoint;
+  document.querySelector('#rpoint').textContent = person.points.rpoint;
+  document.querySelector('#spoint').textContent = person.points.spoint;
+  document.querySelector('#tpoint').textContent = person.points.tpoint;
+  document.querySelector('#upoint').textContent = person.points.upoint;
+  document.querySelector('#vpoint').textContent = person.points.vpoint;
+  document.querySelector('#wpoint').textContent = person.points.wpoint;
+  document.querySelector('#xpoint').textContent = person.points.xpoint;
+  document.querySelector('#f2point').textContent = person.points.f2point;
+  document.querySelector('#f1point').textContent = person.points.f1point;
+  document.querySelector('#g1point').textContent = person.points.g1point;
+  document.querySelector('#g2point').textContent = person.points.g2point;
+  document.querySelector('#i1point').textContent = person.points.i1point;
+  document.querySelector('#i2point').textContent = person.points.i2point;
+  document.querySelector('#h1point').textContent = person.points.h1point;
+  document.querySelector('#h2point').textContent = person.points.h2point;
+  // console.log(person.points)
+}
 
 function ChartHeart() {
   // Physics
@@ -26,12 +67,12 @@ function ChartHeart() {
   const resultphysics = document.querySelector("#resultphysics");
   resultphysics.textContent = reduceNumber(
     chartHeart.sahphysics +
-      chartHeart.ajphysics +
-      chartHeart.vishphysics +
-      chartHeart.anahphysics +
-      chartHeart.manphysics +
-      chartHeart.svadphysics +
-      chartHeart.mulphysics
+    chartHeart.ajphysics +
+    chartHeart.vishphysics +
+    chartHeart.anahphysics +
+    chartHeart.manphysics +
+    chartHeart.svadphysics +
+    chartHeart.mulphysics
   );
 
   // Energy
@@ -52,12 +93,12 @@ function ChartHeart() {
   const resultenergy = document.querySelector("#resultenergy");
   resultenergy.textContent = reduceNumber(
     chartHeart.sahenergy +
-      chartHeart.ajenergy +
-      chartHeart.vishenergy +
-      chartHeart.anahenergy +
-      chartHeart.manenergy +
-      chartHeart.svadenergy +
-      chartHeart.mulenergy
+    chartHeart.ajenergy +
+    chartHeart.vishenergy +
+    chartHeart.anahenergy +
+    chartHeart.manenergy +
+    chartHeart.svadenergy +
+    chartHeart.mulenergy
   );
 
   // Emotions
@@ -78,12 +119,12 @@ function ChartHeart() {
   const resultemotions = document.querySelector("#resultemotions");
   resultemotions.textContent = reduceNumber(
     chartHeart.sahemotions +
-      chartHeart.ajemotions +
-      chartHeart.vishemotions +
-      chartHeart.anahemotions +
-      chartHeart.manemotions +
-      chartHeart.svademotions +
-      chartHeart.mulemotions
+    chartHeart.ajemotions +
+    chartHeart.vishemotions +
+    chartHeart.anahemotions +
+    chartHeart.manemotions +
+    chartHeart.svademotions +
+    chartHeart.mulemotions
   );
 }
 
