@@ -122,6 +122,14 @@ input {
     text-align: left;
 }
 
+.chakra-name-left {
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    padding-left: 47px;
+}
+
 #circle-sahastrara:before {
     font-family: 'GFS Didot';
     font-size: 22px;
