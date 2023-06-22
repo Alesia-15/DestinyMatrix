@@ -164,24 +164,17 @@ const calculatePoints = (aPoint, bPoint, cPoint) => {
   };
 };
 
-// создаем объект первого человека
-function createFirstPerson() {
+//одна универсальная функция для каждой персоны
+function createPerson(per, apoint, bpoint, cpoint) {
   calculatePoints(apoint, bpoint, cpoint);
-  person.points = points;
-  person.purposes = purposes;
-  person.chartHeart = chartHeart;
+  per.points = points;
+  per.purposes = purposes;
+  per.chartHeart = chartHeart;
+  // console.log(per.points);
 }
 
-// создаем объект второго человека
-function createSecondPerson() {
-  calculatePoints(secondApoint, secondBpoint, secondCpoint);
-  secondPerson.points = points;
-  secondPerson.purposes = purposes;
-  secondPerson.chartHeart = chartHeart;
-}
-
-createFirstPerson();
-createSecondPerson();
+// createFirstPerson();
+// createSecondPerson();
 
 // общие значения матрицы
 const compatibilityMatrix = [

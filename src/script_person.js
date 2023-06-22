@@ -2,14 +2,13 @@ const button = document.querySelector("#get_the_answer");
 
 button.addEventListener("click", () => {
   // для одного человека
-  createFirstPerson();
+  createPerson(person, apoint, bpoint, cpoint);
   Points(person);
   ChartHeart();
   Purposes();
 
-  // если нужно, то еще и для второго человека
-  // createSecondPerson();
-  // Points(secondPerson);
+  //для второго человека
+  createPerson(secondPerson, secondApoint, secondBpoint, secondCpoint);
 
 });
 
