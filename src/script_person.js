@@ -1,23 +1,52 @@
 const button = document.querySelector("#get_the_answer");
 
 button.addEventListener("click", () => {
-  // let apoint = 11; // day of birth
-  // let bpoint = 11; // month of birth
-  // let year = 1999; //year of birth
-  // let cpoint = calculateYear(year); // c - year of birth
-  // calculatePoints();
-  // Points();
+  // для одного человека
+  createFirstPerson();
+  Points(person);
   ChartHeart();
   Purposes();
+
+  // если нужно, то еще и для второго человека
+  // createSecondPerson();
+  // Points(secondPerson);
+
 });
 
-function Points() {
-  document.querySelector('#apoint').textContent = points.apoint;
-  document.querySelector('#bpoint').textContent = points.bpoint;
-  document.querySelector('#cpoint').textContent = points.cpoint;
-  document.querySelector('#dpoint').textContent = points.dpoint;
-  document.querySelector('#epoint').textContent = points.epoint;
-  console.log('sss')
+function Points(person) {
+  document.querySelector('#apoint').textContent = person.points.apoint;
+  document.querySelector('#bpoint').textContent = person.points.bpoint;
+  document.querySelector('#cpoint').textContent = person.points.cpoint;
+  document.querySelector('#dpoint').textContent = person.points.dpoint;
+  document.querySelector('#epoint').textContent = person.points.epoint;
+  document.querySelector('#fpoint').textContent = person.points.fpoint;
+  document.querySelector('#gpoint').textContent = person.points.gpoint;
+  document.querySelector('#hpoint').textContent = person.points.hpoint;
+  document.querySelector('#ipoint').textContent = person.points.ipoint;
+  document.querySelector('#jpoint').textContent = person.points.jpoint;
+  document.querySelector('#kpoint').textContent = person.points.kpoint;
+  document.querySelector('#lpoint').textContent = person.points.lpoint;
+  document.querySelector('#mpoint').textContent = person.points.mpoint;
+  document.querySelector('#npoint').textContent = person.points.npoint;
+  document.querySelector('#opoint').textContent = person.points.opoint;
+  document.querySelector('#ppoint').textContent = person.points.ppoint;
+  document.querySelector('#qpoint').textContent = person.points.qpoint;
+  document.querySelector('#rpoint').textContent = person.points.rpoint;
+  document.querySelector('#spoint').textContent = person.points.spoint;
+  document.querySelector('#tpoint').textContent = person.points.tpoint;
+  document.querySelector('#upoint').textContent = person.points.upoint;
+  document.querySelector('#vpoint').textContent = person.points.vpoint;
+  document.querySelector('#wpoint').textContent = person.points.wpoint;
+  document.querySelector('#xpoint').textContent = person.points.xpoint;
+  document.querySelector('#f2point').textContent = person.points.f2point;
+  document.querySelector('#f1point').textContent = person.points.f1point;
+  document.querySelector('#g1point').textContent = person.points.g1point;
+  document.querySelector('#g2point').textContent = person.points.g2point;
+  document.querySelector('#i1point').textContent = person.points.i1point;
+  document.querySelector('#i2point').textContent = person.points.i2point;
+  document.querySelector('#h1point').textContent = person.points.h1point;
+  document.querySelector('#h2point').textContent = person.points.h2point;
+  // console.log(person.points)
 }
 
 function ChartHeart() {
