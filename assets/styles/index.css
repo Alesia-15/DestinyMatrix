@@ -198,7 +198,10 @@ input {
     height: 100%;
     display: flex;
     justify-content: center;
+}
 
+.display-none {
+    display: none;
 }
 
 #matrix {
