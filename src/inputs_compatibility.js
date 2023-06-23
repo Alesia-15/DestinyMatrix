@@ -3,7 +3,8 @@ const inputFirstDate = document.getElementById("date_person1");
 const inputSecondDate = document.getElementById("date_person2");
 const btnChart = document.getElementById('createChart');
 const compatibilityContainer = document.querySelector('.compatibility-container');
-if (compatibilityContainer != undefined) compatibilityContainer.hidden = true;
+compatibilityContainer.classList.add('display-none');
+// if (compatibilityContainer != undefined) compatibilityContainer.hidden = true;
 
 // ставит ограничитель в календаре на даты, которые не наступили
 let today = new Date();
@@ -208,7 +209,8 @@ btnChart.addEventListener('click', (evt) => {
         createPerson(person, apoint, bpoint, cpoint);
         createPerson(secondPerson, secondApoint, secondBpoint, secondCpoint);
         fillMatrix(person, secondPerson);
-        compatibilityContainer.hidden = false;
+        // compatibilityContainer.hidden = false;
+        compatibilityContainer.classList.remove('display-none');
         outputCompatibilityMatrixValues();
         clearInputs(inputFirstDate, inputSecondDate);
     }
