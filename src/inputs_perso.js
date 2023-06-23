@@ -10,7 +10,7 @@ document.getElementById('date').setAttribute("max", today.toLocaleDateString("en
 let ancientDate = new Date (today.getFullYear() - 120, today.getMonth(), today.getDay());
 document.getElementById('date').setAttribute("min", ancientDate.toLocaleDateString("en-CA"));
 
-/* делает первую букву в имени заглавной, работает также для двойных имен, пишущихся через дефис или пробел */
+/* делает первую букву в имени заглавной, работает также для двойных имен, пишущихся через дефис */
 
 function titleCase(str) {
     return str.replace(/^[a-z]|[\- ][a-z]/g,function(a){return a.toUpperCase();})
@@ -22,21 +22,14 @@ btnAnswer.addEventListener('click', (evt) => {
     const date = new Date(document.getElementById('date').value);
     const name = document.getElementById('name').value;
     const output = document.querySelector('.output');
-    const gray = document.querySelector('.gray');
-    const nameOutput = document.getElementById('nameOutput');
-    const dateOutput = document.getElementById('dateOutput');
     const response = valide(date, name);
     if(response !== true) {
-        nameOutput.innerHTML = ''; 
-        dateOutput.innerHTML = '';
-        gray.innerHTML = '';
         output.innerHTML = response;
     } else {
-        nameOutput.innerHTML = titleCase(name); 
-        dateOutput.innerHTML = date.toLocaleDateString("ru");
+        output.innerHTML = titleCase(name) + ' ' + 'Date of birth :' + ' ' + date.toLocaleDateString("ru");
     }
-    document.getElementById('name').value = '';
-    document.getElementById('date').value = '';
+    
+    document.forms.form.reset();
 });
 
 function valide(date, name) {
@@ -45,26 +38,11 @@ function valide(date, name) {
     const nameValide = new RegExp("^[a-zA-Z\- ]*$");
 
     if(name === '' || isNaN(date.getFullYear()) === true) {
-        errorMessage += `<p>Date and name must be filled in.</p>`;
+        errorMessage += 'Date and name must be filled in.';
     }
-
-    let today = new Date();
-    if(date > today) {
-        errorMessage += `<p>Date can't be in the future.</p>`;
-    }
-
-    if(today.getFullYear() - date.getFullYear() > 120) {
-        errorMessage += `<p>Date can't be so far in the past.</p>`;
-    }
-
-    // ставит ограничитель в календаре на даты, которые были раньше 120 лет назад
-    let ancientDate = new Date (today.getFullYear() - 120, today.getMonth(), today.getDay());
-    document.getElementById('date').setAttribute("min", ancientDate.toLocaleDateString("en-CA"));
-
-    console.log('ici:' + date);
-
     if(! nameValide.test(name)) {
-        errorMessage += `<p>Name format is incorrect: allowed characters are letters, dash and space. Example: Anna, Anna-Maria, Anna Maria.</p>`;
+        console.log("LE NOM Est INCORRECT");
+        errorMessage += 'Name format is incorrect: allowed characters are letters, dash and space. Example: Anna, Anna-Maria, Anna Maria.';
     }
     if(errorMessage !== '') return errorMessage;
 
