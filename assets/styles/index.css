@@ -323,6 +323,15 @@ input[type="date"] {
     filter: invert(1);
 }
 
+.container__socialmedia {
+    display: flex;
+}
+
+.socialmedia-item {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
 /* Matrix's styles */
 
 .matrix-container, .compatibility-container{
