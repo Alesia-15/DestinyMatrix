@@ -1,19 +1,141 @@
-const dateInput = document.getElementById("dateInput");
-const nameInput = document.getElementById("nameInput");
-const inputFirstDate = document.getElementById("inputFirstDate");
-const inputSecondDate = document.getElementById("inputSecondDate");
-const compatibilityContainer = document.querySelector('.compatibility-container');
-// матрица скрыта
-compatibilityContainer.hidden = true;
+function Points(person) {
+  document.querySelector('#apoint').textContent = person.points.apoint;
+  document.querySelector('#bpoint').textContent = person.points.bpoint;
+  document.querySelector('#cpoint').textContent = person.points.cpoint;
+  document.querySelector('#dpoint').textContent = person.points.dpoint;
+  document.querySelector('#epoint').textContent = person.points.epoint;
+  document.querySelector('#fpoint').textContent = person.points.fpoint;
+  document.querySelector('#gpoint').textContent = person.points.gpoint;
+  document.querySelector('#hpoint').textContent = person.points.hpoint;
+  document.querySelector('#ipoint').textContent = person.points.ipoint;
+  document.querySelector('#jpoint').textContent = person.points.jpoint;
+  document.querySelector('#kpoint').textContent = person.points.kpoint;
+  document.querySelector('#lpoint').textContent = person.points.lpoint;
+  document.querySelector('#mpoint').textContent = person.points.mpoint;
+  document.querySelector('#npoint').textContent = person.points.npoint;
+  document.querySelector('#opoint').textContent = person.points.opoint;
+  document.querySelector('#ppoint').textContent = person.points.ppoint;
+  document.querySelector('#qpoint').textContent = person.points.qpoint;
+  document.querySelector('#rpoint').textContent = person.points.rpoint;
+  document.querySelector('#spoint').textContent = person.points.spoint;
+  document.querySelector('#tpoint').textContent = person.points.tpoint;
+  document.querySelector('#upoint').textContent = person.points.upoint;
+  document.querySelector('#vpoint').textContent = person.points.vpoint;
+  document.querySelector('#wpoint').textContent = person.points.wpoint;
+  document.querySelector('#xpoint').textContent = person.points.xpoint;
+  document.querySelector('#f2point').textContent = person.points.f2point;
+  document.querySelector('#f1point').textContent = person.points.f1point;
+  document.querySelector('#g1point').textContent = person.points.g1point;
+  document.querySelector('#g2point').textContent = person.points.g2point;
+  document.querySelector('#i1point').textContent = person.points.i1point;
+  document.querySelector('#i2point').textContent = person.points.i2point;
+  document.querySelector('#h1point').textContent = person.points.h1point;
+  document.querySelector('#h2point').textContent = person.points.h2point;
+  // console.log(person.points)
+}
 
-// кнопка матрицы совместимости
-const buttonCreateChart = document.querySelector("#createChart");
+function ChartHeart() {
+  // Physics
+  const sahphysics = document.querySelector("#sahphysics");
+  sahphysics.textContent = chartHeart.sahphysics;
+  const ajphysics = document.querySelector("#ajphysics");
+  ajphysics.textContent = chartHeart.ajphysics;
+  const vishphysics = document.querySelector("#vishphysics");
+  vishphysics.textContent = chartHeart.vishphysics;
+  const anahphysics = document.querySelector("#anahphysics");
+  anahphysics.textContent = chartHeart.anahphysics;
+  const manphysics = document.querySelector("#manphysics");
+  manphysics.textContent = chartHeart.manphysics;
+  const svadphysics = document.querySelector("#svadphysics");
+  svadphysics.textContent = chartHeart.svadphysics;
+  const mulphysics = document.querySelector("#mulphysics");
+  mulphysics.textContent = chartHeart.mulphysics;
+  const resultphysics = document.querySelector("#resultphysics");
+  resultphysics.textContent = reduceNumber(
+    chartHeart.sahphysics +
+    chartHeart.ajphysics +
+    chartHeart.vishphysics +
+    chartHeart.anahphysics +
+    chartHeart.manphysics +
+    chartHeart.svadphysics +
+    chartHeart.mulphysics
+  );
 
-// значение инпутов по умолчанию для перезагрузки страницы, пока выдает ошибку
-// dateInput.value = '';
-// nameInput.value = '';
-// inputFirstDate.value = '';
-// inputSecondDate.value = '';
+  // Energy
+  const sahenergy = document.querySelector("#sahenergy");
+  sahenergy.textContent = chartHeart.sahenergy;
+  const ajenergy = document.querySelector("#ajenergy");
+  ajenergy.textContent = chartHeart.ajenergy;
+  const vishenergy = document.querySelector("#vishenergy");
+  vishenergy.textContent = chartHeart.vishenergy;
+  const anahenergy = document.querySelector("#anahenergy");
+  anahenergy.textContent = chartHeart.anahenergy;
+  const manenergy = document.querySelector("#manenergy");
+  manenergy.textContent = chartHeart.manenergy;
+  const svadenergy = document.querySelector("#svadenergy");
+  svadenergy.textContent = chartHeart.svadenergy;
+  const mulenergy = document.querySelector("#mulenergy");
+  mulenergy.textContent = chartHeart.mulenergy;
+  const resultenergy = document.querySelector("#resultenergy");
+  resultenergy.textContent = reduceNumber(
+    chartHeart.sahenergy +
+    chartHeart.ajenergy +
+    chartHeart.vishenergy +
+    chartHeart.anahenergy +
+    chartHeart.manenergy +
+    chartHeart.svadenergy +
+    chartHeart.mulenergy
+  );
+
+  // Emotions
+  const sahemotions = document.querySelector("#sahemotions");
+  sahemotions.textContent = chartHeart.sahemotions;
+  const ajemotions = document.querySelector("#ajemotions");
+  ajemotions.textContent = chartHeart.ajemotions;
+  const vishemotions = document.querySelector("#vishemotions");
+  vishemotions.textContent = chartHeart.vishemotions;
+  const anahemotions = document.querySelector("#anahemotions");
+  anahemotions.textContent = chartHeart.anahemotions;
+  const manemotions = document.querySelector("#manemotions");
+  manemotions.textContent = chartHeart.manemotions;
+  const svademotions = document.querySelector("#svademotions");
+  svademotions.textContent = chartHeart.svademotions;
+  const mulemotions = document.querySelector("#mulemotions");
+  mulemotions.textContent = chartHeart.mulemotions;
+  const resultemotions = document.querySelector("#resultemotions");
+  resultemotions.textContent = reduceNumber(
+    chartHeart.sahemotions +
+    chartHeart.ajemotions +
+    chartHeart.vishemotions +
+    chartHeart.anahemotions +
+    chartHeart.manemotions +
+    chartHeart.svademotions +
+    chartHeart.mulemotions
+  );
+}
+
+function Purposes() {
+  // Personal purpose
+  const sky = document.querySelector("#skypoint");
+  sky.textContent = purposes.skypoint;
+  const earth = document.querySelector("#earthpoint");
+  earth.textContent = purposes.earthpoint;
+  const perspurpose = document.querySelector("#perspurpose");
+  perspurpose.textContent = purposes.perspurpose;
+  // Purpose for society and genus
+  const male = document.querySelector("#malepoint");
+  male.textContent = purposes.malepoint;
+  const female = document.querySelector("#femalepoint");
+  female.textContent = purposes.femalepoint;
+  const socialpurpose = document.querySelector("#socialpurpose");
+  socialpurpose.textContent = purposes.socialpurpose;
+  // General purpose for this lifetime
+  const generalpurpose = document.querySelector("#generalpurpose");
+  generalpurpose.textContent = purposes.generalpurpose;
+  // Planetary purpose
+  const planetarypurpose = document.querySelector("#planetarypurpose");
+  planetarypurpose.textContent = purposes.planetarypurpose;
+}
 
 const reduceNumber = (number) => {
   let num = number;
@@ -32,24 +154,6 @@ const calculateYear = (year) => {
   y = reduceNumber(y);
   return y;
 };
-
-let person = {};
-let secondPerson = {};
-let points = {};
-let purposes = {};
-let chartHeart = {};
-// ========== эти данные будем брать из текстового поля формы
-let apoint = 11; // day of birth
-let bpoint = 11; // month of birth
-let year = 1999; //year of birth
-let cpoint = calculateYear(year); // c - year of birth
-
-// значения для второго человека
-let secondApoint = 6;
-let secondBpoint = 7;
-let secondYear = 1998;
-let secondCpoint = calculateYear(secondYear);
-// ==========================
 
 const calculatePoints = (aPoint, bPoint, cPoint) => {
   dpoint = reduceNumber(aPoint + bPoint + cPoint);
@@ -140,17 +244,17 @@ const calculatePoints = (aPoint, bPoint, cPoint) => {
     ),
     planetarypurpose: reduceNumber(
       aPoint +
-        bPoint +
-        cPoint +
-        dpoint +
-        gpoint +
-        hpoint +
-        fpoint +
-        ipoint +
-        gpoint +
-        hpoint +
-        fpoint +
-        ipoint
+      bPoint +
+      cPoint +
+      dpoint +
+      gpoint +
+      hpoint +
+      fpoint +
+      ipoint +
+      gpoint +
+      hpoint +
+      fpoint +
+      ipoint
     ),
   };
 
@@ -181,170 +285,10 @@ const calculatePoints = (aPoint, bPoint, cPoint) => {
   };
 };
 
-//одна универсальная функция для каждой персоны
-function createPerson(per, apoint, bpoint, cpoint) {
-  calculatePoints(apoint, bpoint, cpoint);
-  per.points = points;
-  per.purposes = purposes;
-  per.chartHeart = chartHeart;
-}
-
-// создаем два объекта со значениями
-createPerson(person, apoint, bpoint, cpoint);
-createPerson(secondPerson, secondApoint, secondBpoint, secondCpoint);
-
-// общие значения матрицы
-const compatibilityMatrix = [
-  {
-    id: "compatibilityApoint",
-    value: reduceNumber(person.points.apoint + secondPerson.points.apoint),
-  },
-  {
-    id: "compatibilityBpoint",
-    value: reduceNumber(person.points.bpoint + secondPerson.points.bpoint),
-  },
-  {
-    id: "compatibilityCpoint",
-    value: reduceNumber(person.points.cpoint + secondPerson.points.cpoint),
-  },
-  {
-    id: "compatibilityDpoint",
-    value: reduceNumber(person.points.dpoint + secondPerson.points.dpoint),
-  },
-  {
-    id: "compatibilityEpoint",
-    value: reduceNumber(person.points.epoint + secondPerson.points.epoint),
-  },
-  {
-    id: "compatibilityFpoint",
-    value: reduceNumber(person.points.fpoint + secondPerson.points.fpoint),
-  },
-  {
-    id: "compatibilityGpoint",
-    value: reduceNumber(person.points.gpoint + secondPerson.points.gpoint),
-  },
-  {
-    id: "compatibilityHpoint",
-    value: reduceNumber(person.points.hpoint + secondPerson.points.hpoint),
-  },
-  {
-    id: "compatibilityIpoint",
-    value: reduceNumber(person.points.ipoint + secondPerson.points.ipoint),
-  },
-  {
-    id: "compatibilityJpoint",
-    value: reduceNumber(person.points.jpoint + secondPerson.points.jpoint),
-  },
-  {
-    id: "compatibilityNpoint",
-    value: reduceNumber(person.points.npoint + secondPerson.points.npoint),
-  },
-  {
-    id: "compatibilityLpoint",
-    value: reduceNumber(person.points.lpoint + secondPerson.points.lpoint),
-  },
-  {
-    id: "compatibilityKpoint",
-    value: reduceNumber(person.points.kpoint + secondPerson.points.kpoint),
-  },
-  {
-    id: "compatibilityMpoint",
-    value: reduceNumber(person.points.mpoint + secondPerson.points.mpoint),
-  },
-  {
-    id: "compatibilitySpoint",
-    value: reduceNumber(person.points.spoint + secondPerson.points.spoint),
-  },
-  {
-    id: "compatibilityOpoint",
-    value: reduceNumber(person.points.opoint + secondPerson.points.opoint),
-  },
-  {
-    id: "compatibilityTpoint",
-    value: reduceNumber(person.points.tpoint + secondPerson.points.tpoint),
-  },
-  {
-    id: "compatibilityPpoint",
-    value: reduceNumber(person.points.ppoint + secondPerson.points.ppoint),
-  },
-  {
-    id: "compatibilityQpoint",
-    value: reduceNumber(person.points.qpoint + secondPerson.points.qpoint),
-  },
-  {
-    id: "compatibilityRpoint",
-    value: reduceNumber(person.points.rpoint + secondPerson.points.rpoint),
-  },
-  {
-    id: "compatibilityVpoint",
-    value: reduceNumber(person.points.vpoint + secondPerson.points.vpoint),
-  },
-  {
-    id: "compatibilityUpoint",
-    value: reduceNumber(person.points.upoint + secondPerson.points.upoint),
-  },
-  {
-    id: "compatibilityWpoint",
-    value: reduceNumber(person.points.wpoint + secondPerson.points.wpoint),
-  },
-  {
-    id: "compatibilityXpoint",
-    value: reduceNumber(person.points.xpoint + secondPerson.points.xpoint),
-  },
-  {
-    id: "compatibilityF2point",
-    value: reduceNumber(person.points.f2point + secondPerson.points.f2point),
-  },
-  {
-    id: "compatibilityF1point",
-    value: reduceNumber(person.points.f1point + secondPerson.points.f1point),
-  },
-  {
-    id: "compatibilityG2point",
-    value: reduceNumber(person.points.g2point + secondPerson.points.g2point),
-  },
-  {
-    id: "compatibilityG1point",
-    value: reduceNumber(person.points.g1point + secondPerson.points.g1point),
-  },
-  {
-    id: "compatibilityI2point",
-    value: reduceNumber(person.points.i2point + secondPerson.points.i2point),
-  },
-  {
-    id: "compatibilityI1point",
-    value: reduceNumber(person.points.i1point + secondPerson.points.i1point),
-  },
-  {
-    id: "compatibilityH2point",
-    value: reduceNumber(person.points.h2point + secondPerson.points.h2point),
-  },
-  {
-    id: "compatibilityH1point",
-    value: reduceNumber(person.points.h1point + secondPerson.points.h1point),
-  },
-];
-
-// функция, которая ищет одинаковые айдишники в матрице и массиве, и выводит значения
-function outputCompatibilityMatrixValues() {
-  const elements = document.querySelectorAll('[id^="compatibility"]');
-  compatibilityMatrix.forEach((matrixItem) => {
-    elements.forEach((el) => {
-      if (el.id === matrixItem.id) {
-        el.innerHTML = matrixItem.value;
-      }
-    });
-  });
-}
-
 // очищает инпуты
 function clearInputs(firtsInput, secondInput) {
   firtsInput.value = "";
   secondInput.value = "";
 }
 
-buttonCreateChart.addEventListener("click", () => {
-  compatibilityContainer.hidden = false;
-  outputCompatibilityMatrixValues();
-  clearInputs(inputFirstDate, inputSecondDate);
-});
+

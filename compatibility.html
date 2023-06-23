@@ -1,60 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/styles/index.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="datepicker.min.css" />
-    <title>KRIS Universe</title>
-  </head>
-  <body>
-    <script src="datepicker.min.js"></script>
-    <header>
-      <nav class="header">
-        <div class="header-left">
-          <li><a href="#">KRIS Universe</a></li>
-        </div>
-        <div class="header-right">
-          <li><a href="#">main</a></li>
-          <li><a href="#">About me</a></li>
-          <li><a href="#">Reviews</a></li>
-          <li><a href="#">Contact</a></li>
-        </div>
-      </nav>
-    </header>
-    <main>
-      <div class="desteny-container">
-        <div class="glow__wrap">
-          <div class="glow"></div>
-        </div>
-        <p class="gradient">Destiny matrix calculator</p>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./assets/styles/index.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="datepicker.min.css" />
+  <title>KRIS Universe</title>
+</head>
+
+<body>
+  <script src="datepicker.min.js"></script>
+  <header>
+    <nav class="header">
+      <div class="header-left">
+        <li><a href="#">KRIS Universe</a></li>
       </div>
-      <div class="birthday-container">
-        <p>Enter your date of birth and name:</p>
+      <div class="header-right">
+        <li><a href="#">main</a></li>
+        <li><a href="#">About me</a></li>
+        <li><a href="#">Reviews</a></li>
+        <li><a href="#">Contact</a></li>
       </div>
-      <div class="birthday-container">
-          <input id="date_person1" type="date" />
-          <input id="date_person2" type="date" />
-          <button id="createChart">create your chart</button>
-          <div class="wrongDate"></div>
+    </nav>
+  </header>
+  <main>
+    <div class="desteny-container">
+      <div class="glow__wrap">
+        <div class="glow"></div>
       </div>
-      <div class="compatibility-container">
-        <div class="personal-calculator">
-          <p class="smoky-white">Your compatibility</p>
-        </div>
-        <div class="output2"></div>
+      <p class="gradient">Destiny matrix calculator</p>
+    </div>
+    <div class="birthday-container">
+      <p>Enter your date of birth and name:</p>
+    </div>
+    <div class="birthday-container">
+      <input id="date_person1" type="date" />
+      <input id="date_person2" type="date" />
+      <button id="createChart">create your chart</button>
+      <div class="wrongDate"></div>
+    </div>
+    <div class="compatibility-container">
+      <div class="personal-calculator">
+        <p class="smoky-white">Your compatibility</p>
+      </div>
+      <div class="output2"></div>
       <div class="matrix-container">
         <div class="pento">
           <svg viewBox="0 0 680 600" id="matrix">
@@ -67,7 +63,7 @@
               </polygon>
               <line class="cls-3" x1="333.7" y1="27.76" x2="333.7" y2="564.68"></line>
               <line class="cls-3" x1="65.24" y1="296.22" x2="602.17" y2="296.22"></line>
-  
+
               <g>
                 <line class="cls-5" x1="442" y1="405" x2="226" y2="189"></line>
                 <polygon class="cls-6" points="441 402 439 404 442 405 441 402">
@@ -75,7 +71,7 @@
                 <polygon class="cls-6" points="226 189 229 190 227 192 226 189">
                 </polygon>
               </g>
-  
+
               <g>
                 <line class="cls-7" x1="442" y1="189" x2="226" y2="405"></line>
                 <polygon class="cls-8" points="442 189 439 190 441 192 442 189">
@@ -83,192 +79,200 @@
                 <polygon class="cls-8" points="226 405 227 402 229 404 226 405">
                 </polygon>
               </g>
-  
+
               <line class="cls-18" x1="502" y1="297" x2="335" y2="465"></line>
               <text class="cls-44" transform="translate(238.77 188.48) rotate(45)">male generation line</text>
               <text class="cls-44" transform="translate(351.7 264.98) rotate(-45)">female generation line</text>
-  
+
               <g id="points-basic">
                 <circle class="cls-24" cx="82.59" cy="296.22" r="32.5"></circle>
                 <text class="cls-55 matrix-value-point" id="compatibilityApoint"
                   transform="translate(82.34 299.89)"></text>
-  
+
                 <circle class="cls-24" cx="333.7" cy="42" r="32.5"></circle>
-                <text class="cls-55 matrix-value-point" id="compatibilityBpoint" transform="translate(334 44.83)"></text>
-  
+                <text class="cls-55 matrix-value-point" id="compatibilityBpoint"
+                  transform="translate(334 44.83)"></text>
+
                 <circle class="cls-24" cx="587.13" cy="296.22" r="32.5">
                 </circle>
                 <text class="cls-55 matrix-value-point" id="compatibilityCpoint"
                   transform="translate(587.4 297.89)"></text>
-  
+
                 <circle class="cls-24" cx="332.7" cy="554" r="32.5">
                 </circle>
                 <text class="cls-55 matrix-value-point" id="compatibilityDpoint"
                   transform="translate(332.7 555.39)"></text>
-  
+
                 <circle class="cls-24" cx="334" cy="297" r="32.5">
                 </circle>
                 <text class="cls-55 clss matrix-value-point" id="compatibilityEpoint"
                   transform="translate(333 299)"></text>
-  
+
                 <circle class="cls-24" cx="153" cy="116.22" r="32.5">
                 </circle>
-                <text class="cls-55 matrix-value-point" id="compatibilityFpoint" transform="translate(153 119.42)"></text>
-  
+                <text class="cls-55 matrix-value-point" id="compatibilityFpoint"
+                  transform="translate(153 119.42)"></text>
+
                 <circle class="cls-24" cx="514.1" cy="116.22" r="32.5"></circle>
                 <text class="cls-55 matrix-value-point" id="compatibilityGpoint"
                   transform="translate(513.85 119.42)"></text>
-  
+
                 <circle class="cls-24" cx="514.1" cy="476.62" r="32.5"></circle>
-                <text class="cls-55 matrix-value-point" id="compatibilityIpoint" transform="translate(513 480.72)"></text>
-  
+                <text class="cls-55 matrix-value-point" id="compatibilityIpoint"
+                  transform="translate(513 480.72)"></text>
+
                 <circle class="cls-24" cx="153" cy="476.62" r="32.5">
                 </circle>
                 <text class="cls-55 matrix-value-point" id="compatibilityHpoint"
                   transform="translate(153.5 480.72)"></text>
-  
+
                 <circle class="cls-21" cx="332.59" cy="467.72" r="20">
                 </circle>
                 <text class="cls-58 matrix-value-point" id="compatibilityJpoint"
                   transform="translate(332.69 467.62)"></text>
-  
+
                 <circle class="cls-21" cx="503" cy="297" r="20">
                 </circle>
-                <text class="cls-58 matrix-value-point" id="compatibilityNpoint" transform="translate(503 297.56)"></text>
-  
+                <text class="cls-58 matrix-value-point" id="compatibilityNpoint"
+                  transform="translate(503 297.56)"></text>
+
                 <circle class="cls-21" cx="418.18" cy="380.69" r="20"></circle>
                 <text class="cls-58 matrix-value-point" id="compatibilityLpoint"
                   transform="translate(418.17 382.27)"></text>
-  
+
                 <circle class="cls-21" cx="375" cy="424" r="20">
                 </circle>
                 <text class=" cls-58 matrix-value-point" id="compatibilityKpoint" transform="translate(375 424)"></text>
-  
+
                 <circle class="cls-21" cx="461" cy="338" r="20">
                 </circle>
                 <text class="cls-58 matrix-value-point" id="compatibilityMpoint"
                   transform="translate(461.3 339.5)"></text>
-  
+
                 <circle class="cls-21" cx="163.61" cy="296.22" r="20"></circle>
                 <text class="cls-58 matrix-value-point" id="compatibilitySpoint"
                   transform="translate(163.59 297.56)"></text>
-  
+
                 <circle class="cls-21" cx="333.7" cy="126" r="20"></circle>
                 <text class="cls-58 matrix-value-point" id="compatibilityTpoint"
                   transform="translate(333.69 126.71)"></text>
-  
+
                 <circle class="cls-23" cx="127.11" cy="296.22" r="23"></circle>
-                <text class="cls-60 matrix-value-point" id="compatibilityOpoint" transform="translate(126.8 299)"></text>
-  
+                <text class="cls-60 matrix-value-point" id="compatibilityOpoint"
+                  transform="translate(126.8 299)"></text>
+
                 <circle class="cls-23" cx="333.7" cy="89.62" r="23"></circle>
                 <text class="cls-60 matrix-value-point" id="compatibilityPpoint" transform="translate(333.9 91)"></text>
-  
+
                 <circle class="cls-23" cx="333" cy="505" r="23">
                 </circle>
                 <text class="cls-60 matrix-value-point" id="compatibilityRpoint"
                   transform="translate(332.81 504.91)"></text>
-  
+
                 <circle class="cls-23" cx="540" cy="297" r="23">
                 </circle>
-                <text class="cls-60 matrix-value-point" id="compatibilityQpoint" transform="translate(540 298.56)"></text>
-  
+                <text class="cls-60 matrix-value-point" id="compatibilityQpoint"
+                  transform="translate(540 298.56)"></text>
+
                 <circle class="cls-21" cx="245.26" cy="296.22" r="20">
                 </circle>
                 <text class="
                 cls-58
                 matrix-value-point" id="compatibilityWpoint" transform="translate(245.26 297.56)"></text>
-  
+
                 <circle class="cls-21" cx="333.7" cy="203" r="20">
                 </circle>
-                <text class="cls-58 matrix-value-point" id="compatibilityXpoint" transform="translate(333.7 203)"></text>
-  
+                <text class="cls-58 matrix-value-point" id="compatibilityXpoint"
+                  transform="translate(333.7 203)"></text>
+
                 <circle class="cls-21" cx="212" cy="175.93" r="20">
                 </circle>
                 <text class=" cls-58 matrix-value-point" id="compatibilityF2point"
                   transform="translate(212 175.83)"></text>
-  
+
                 <circle class="cls-23" cx="186.71" cy="149.53" r="23">
                 </circle>
                 <text class="cls-60 matrix-value-point" id="compatibilityF1point"
                   transform="translate(186.71 152.27)"></text>
-  
+
                 <circle class="cls-21" cx="455.4" cy="174.53" r="20"></circle>
                 <text class="cls-58 matrix-value-point" id="compatibilityG2point"
                   transform="translate(455.38 175.83)"></text>
-  
+
                 <circle class="cls-23" cx="479.79" cy="150.13" r="23"></circle>
                 <text class="cls-60 matrix-value-point" id="compatibilityG1point"
                   transform="translate(479.89 151.77)"></text>
-  
+
                 <circle class="cls-21" cx="455.4" cy="417.91" r="20"></circle>
                 <text class="cls-58 matrix-value-point" id="compatibilityI2point"
                   transform="translate(455.39 420.05)"></text>
-  
+
                 <circle class="cls-23" cx="479.79" cy="442.31" r="23"></circle>
                 <text class="cls-60 matrix-value-point" id="compatibilityI1point"
                   transform="translate(480.89 445.41)"></text>
-  
+
                 <circle class="cls-21" cx="215" cy="417" r="20">
                 </circle>
                 <text class="cls-58 matrix-value-point" id="compatibilityH2point"
                   transform="translate(215 419.06)"></text>
-  
+
                 <circle class="cls-23" cx="188.71" cy="442.7" r="23">
                 </circle>
                 <text class="cls-60 matrix-value-point" id="compatibilityH1point"
                   transform="translate(188.71 445.41)"></text>
-  
+
                 <circle class="cls-21" cx="417.54" cy="296.22" r="20"></circle>
-                <text class="cls-58 matrix-value-point" id="compatibilityVpoint" transform="translate(417.54 297)"></text>
-  
+                <text class="cls-58 matrix-value-point" id="compatibilityVpoint"
+                  transform="translate(417.54 297)"></text>
+
                 <circle class="cls-23" cx="381" cy="297" r="23">
                 </circle>
                 <text class="cls-60 matrix-value-point" id="compatibilityUpoint" transform="translate(381 298)"></text>
               </g>
-  
+
               <g id="points-years">
                 <text class="cls-28" transform="translate(20 295)">
                   0
                   <tspan x="-10" y="10">years</tspan>
                   <tspan x="-5" y="20">old</tspan>
                 </text>
-  
+
                 <text class="cls-28" transform="translate(100 70)">
                   10
                   <tspan x="-8" y="10">years</tspan>
                   <tspan x="-3" y="20">old</tspan>
                 </text>
-  
+
                 <text class="cls-28" transform="translate(330 -22)">
                   20
                   <tspan x="-8" y="10">years</tspan>
                   <tspan x="-3" y="20">old</tspan>
                 </text>
-  
+
                 <text class="cls-28" transform="translate(550 70)">
                   30
                   <tspan x="-8" y="10">years</tspan>
                   <tspan x="-3" y="20">old</tspan>
                 </text>
-  
+
                 <text class="cls-28" transform="translate(638 295)">
                   40
                   <tspan x="-8" y="10">years</tspan>
                   <tspan x="-3" y="20">old</tspan>
                 </text>
-  
+
                 <text class="cls-28" transform="translate(550 515)">
                   50
                   <tspan x="-8" y="10">years</tspan>
                   <tspan x="-3" y="20">old</tspan>
                 </text>
-  
+
                 <text class="cls-28" transform="translate(328 610)">
                   60
                   <tspan x="-8" y="10">years</tspan>
                   <tspan x="-3" y="20">old</tspan>
                 </text>
-  
+
                 <text class="cls-28" transform="translate(100 515)">
                   70
                   <tspan x="-8" y="10">years</tspan>
@@ -367,14 +371,14 @@
           </tbody>
         </table>
       </div>
-      </div>
-      <div class="center">
-        <button id="decode-matrix-btn">
-          Get your full Destiny Matrix reading
-        </button>
-      </div>
-      </div>
- 
+    </div>
+    <div class="center">
+      <button id="decode-matrix-btn">
+        Get your full Destiny Matrix reading
+      </button>
+    </div>
+    </div>
+
   </main>
   <footer>
     <div class="footer">

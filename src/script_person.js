@@ -1,152 +1,113 @@
-const button = document.querySelector("#get_the_answer");
+const dateInput = document.getElementById("date");
+const nameInput = document.getElementById("name");
+
 const container = document.querySelector('.container');
-// матрица скрыта
 container.hidden = true;
 
-button.addEventListener("click", () => {
-  container.hidden = false;
-  Points(person);
-  ChartHeart();
-  Purposes();
+const btnAnswer = document.getElementById('get_the_answer');
 
-  clearInputs(dateInput, nameInput);
+// ставит ограничитель в календаре на даты, которые не наступили
+let today = new Date();
+document.getElementById('date').setAttribute("max", today.toLocaleDateString("en-CA"));
+// ставит ограничитель в календаре на даты, которые были раньше 120 лет назад
+let ancientDate = new Date(today.getFullYear() - 120, today.getMonth(), today.getDay());
+document.getElementById('date').setAttribute("min", ancientDate.toLocaleDateString("en-CA"));
+
+// значение инпутов по умолчанию для перезагрузки страницы, пока выдает ошибку
+dateInput.value = '';
+nameInput.value = '';
+
+let person = {};
+let points = {};
+let purposes = {};
+let chartHeart = {};
+
+//одна универсальная функция для каждой персоны
+function createPerson(per, apoint, bpoint, cpoint) {
+  calculatePoints(apoint, bpoint, cpoint);
+  per.points = points;
+  per.purposes = purposes;
+  per.chartHeart = chartHeart;
+  console.log(per.points)
+}
+
+// // очищает инпуты
+// function clearInputs(firtsInput, secondInput) {
+//   firtsInput.value = "";
+//   secondInput.value = "";
+// }
+
+function titleCase(str) {
+  return str.replace(/^[a-z]|[\- ][a-z]/g, function (a) { return a.toUpperCase(); })
+}
+
+btnAnswer.addEventListener('click', (evt) => {
+  evt.preventDefault();
+  const date = new Date(document.getElementById('date').value);
+  const name = document.getElementById('name').value;
+  const output = document.querySelector('.output');
+  const gray = document.querySelector('.gray');
+  const nameOutput = document.getElementById('nameOutput');
+  const dateOutput = document.getElementById('dateOutput');
+  const response = valide(date, name);
+
+  if (response !== true) {
+    nameOutput.innerHTML = '';
+    dateOutput.innerHTML = '';
+    gray.innerHTML = '';
+    output.innerHTML = response;
+  } else {
+    nameOutput.innerHTML = titleCase(name);
+    dateOutput.innerHTML = date.toLocaleDateString("ru");
+
+    container.hidden = false;
+    console.log(date)
+    let apoint = date.getDate(); // day of birth
+    let bpoint = date.getMonth(); // month of birth
+    let year = date.getFullYear(); //year of birth
+    let cpoint = calculateYear(year); // c - year of birth
+    // console.log(apoint + " " + bpoint + " " + cpoint)
+
+    createPerson(person, apoint, bpoint, cpoint);
+    // console.log(person.Points)
+    Points(person);
+    ChartHeart();
+    Purposes();
+
+    clearInputs(dateInput, nameInput);
+  }
+  document.getElementById('name').value = '';
+  document.getElementById('date').value = '';
 });
 
-function Points(person) {
-  document.querySelector('#apoint').textContent = person.points.apoint;
-  document.querySelector('#bpoint').textContent = person.points.bpoint;
-  document.querySelector('#cpoint').textContent = person.points.cpoint;
-  document.querySelector('#dpoint').textContent = person.points.dpoint;
-  document.querySelector('#epoint').textContent = person.points.epoint;
-  document.querySelector('#fpoint').textContent = person.points.fpoint;
-  document.querySelector('#gpoint').textContent = person.points.gpoint;
-  document.querySelector('#hpoint').textContent = person.points.hpoint;
-  document.querySelector('#ipoint').textContent = person.points.ipoint;
-  document.querySelector('#jpoint').textContent = person.points.jpoint;
-  document.querySelector('#kpoint').textContent = person.points.kpoint;
-  document.querySelector('#lpoint').textContent = person.points.lpoint;
-  document.querySelector('#mpoint').textContent = person.points.mpoint;
-  document.querySelector('#npoint').textContent = person.points.npoint;
-  document.querySelector('#opoint').textContent = person.points.opoint;
-  document.querySelector('#ppoint').textContent = person.points.ppoint;
-  document.querySelector('#qpoint').textContent = person.points.qpoint;
-  document.querySelector('#rpoint').textContent = person.points.rpoint;
-  document.querySelector('#spoint').textContent = person.points.spoint;
-  document.querySelector('#tpoint').textContent = person.points.tpoint;
-  document.querySelector('#upoint').textContent = person.points.upoint;
-  document.querySelector('#vpoint').textContent = person.points.vpoint;
-  document.querySelector('#wpoint').textContent = person.points.wpoint;
-  document.querySelector('#xpoint').textContent = person.points.xpoint;
-  document.querySelector('#f2point').textContent = person.points.f2point;
-  document.querySelector('#f1point').textContent = person.points.f1point;
-  document.querySelector('#g1point').textContent = person.points.g1point;
-  document.querySelector('#g2point').textContent = person.points.g2point;
-  document.querySelector('#i1point').textContent = person.points.i1point;
-  document.querySelector('#i2point').textContent = person.points.i2point;
-  document.querySelector('#h1point').textContent = person.points.h1point;
-  document.querySelector('#h2point').textContent = person.points.h2point;
-  // console.log(person.points)
-}
+function valide(date, name) {
+  /* проверка имени. Имя может содержать только буквы, тире или писаться через пробел (если несколько имён) */
+  let errorMessage = '';
+  const nameValide = new RegExp("^[a-zA-Z\- ]*$");
 
-function ChartHeart() {
-  // Physics
-  const sahphysics = document.querySelector("#sahphysics");
-  sahphysics.textContent = chartHeart.sahphysics;
-  const ajphysics = document.querySelector("#ajphysics");
-  ajphysics.textContent = chartHeart.ajphysics;
-  const vishphysics = document.querySelector("#vishphysics");
-  vishphysics.textContent = chartHeart.vishphysics;
-  const anahphysics = document.querySelector("#anahphysics");
-  anahphysics.textContent = chartHeart.anahphysics;
-  const manphysics = document.querySelector("#manphysics");
-  manphysics.textContent = chartHeart.manphysics;
-  const svadphysics = document.querySelector("#svadphysics");
-  svadphysics.textContent = chartHeart.svadphysics;
-  const mulphysics = document.querySelector("#mulphysics");
-  mulphysics.textContent = chartHeart.mulphysics;
-  const resultphysics = document.querySelector("#resultphysics");
-  resultphysics.textContent = reduceNumber(
-    chartHeart.sahphysics +
-    chartHeart.ajphysics +
-    chartHeart.vishphysics +
-    chartHeart.anahphysics +
-    chartHeart.manphysics +
-    chartHeart.svadphysics +
-    chartHeart.mulphysics
-  );
+  if (name === '' || isNaN(date.getFullYear()) === true) {
+    errorMessage += `<p>Date and name must be filled in.</p>`;
+  }
 
-  // Energy
-  const sahenergy = document.querySelector("#sahenergy");
-  sahenergy.textContent = chartHeart.sahenergy;
-  const ajenergy = document.querySelector("#ajenergy");
-  ajenergy.textContent = chartHeart.ajenergy;
-  const vishenergy = document.querySelector("#vishenergy");
-  vishenergy.textContent = chartHeart.vishenergy;
-  const anahenergy = document.querySelector("#anahenergy");
-  anahenergy.textContent = chartHeart.anahenergy;
-  const manenergy = document.querySelector("#manenergy");
-  manenergy.textContent = chartHeart.manenergy;
-  const svadenergy = document.querySelector("#svadenergy");
-  svadenergy.textContent = chartHeart.svadenergy;
-  const mulenergy = document.querySelector("#mulenergy");
-  mulenergy.textContent = chartHeart.mulenergy;
-  const resultenergy = document.querySelector("#resultenergy");
-  resultenergy.textContent = reduceNumber(
-    chartHeart.sahenergy +
-    chartHeart.ajenergy +
-    chartHeart.vishenergy +
-    chartHeart.anahenergy +
-    chartHeart.manenergy +
-    chartHeart.svadenergy +
-    chartHeart.mulenergy
-  );
+  let today = new Date();
+  if (date > today) {
+    errorMessage += `<p>Date can't be in the future.</p>`;
+  }
 
-  // Emotions
-  const sahemotions = document.querySelector("#sahemotions");
-  sahemotions.textContent = chartHeart.sahemotions;
-  const ajemotions = document.querySelector("#ajemotions");
-  ajemotions.textContent = chartHeart.ajemotions;
-  const vishemotions = document.querySelector("#vishemotions");
-  vishemotions.textContent = chartHeart.vishemotions;
-  const anahemotions = document.querySelector("#anahemotions");
-  anahemotions.textContent = chartHeart.anahemotions;
-  const manemotions = document.querySelector("#manemotions");
-  manemotions.textContent = chartHeart.manemotions;
-  const svademotions = document.querySelector("#svademotions");
-  svademotions.textContent = chartHeart.svademotions;
-  const mulemotions = document.querySelector("#mulemotions");
-  mulemotions.textContent = chartHeart.mulemotions;
-  const resultemotions = document.querySelector("#resultemotions");
-  resultemotions.textContent = reduceNumber(
-    chartHeart.sahemotions +
-    chartHeart.ajemotions +
-    chartHeart.vishemotions +
-    chartHeart.anahemotions +
-    chartHeart.manemotions +
-    chartHeart.svademotions +
-    chartHeart.mulemotions
-  );
-}
+  if (today.getFullYear() - date.getFullYear() > 120) {
+    errorMessage += `<p>Date can't be so far in the past.</p>`;
+  }
 
-function Purposes() {
-  // Personal purpose
-  const sky = document.querySelector("#skypoint");
-  sky.textContent = purposes.skypoint;
-  const earth = document.querySelector("#earthpoint");
-  earth.textContent = purposes.earthpoint;
-  const perspurpose = document.querySelector("#perspurpose");
-  perspurpose.textContent = purposes.perspurpose;
-  // Purpose for society and genus
-  const male = document.querySelector("#malepoint");
-  male.textContent = purposes.malepoint;
-  const female = document.querySelector("#femalepoint");
-  female.textContent = purposes.femalepoint;
-  const socialpurpose = document.querySelector("#socialpurpose");
-  socialpurpose.textContent = purposes.socialpurpose;
-  // General purpose for this lifetime
-  const generalpurpose = document.querySelector("#generalpurpose");
-  generalpurpose.textContent = purposes.generalpurpose;
-  // Planetary purpose
-  const planetarypurpose = document.querySelector("#planetarypurpose");
-  planetarypurpose.textContent = purposes.planetarypurpose;
+  // ставит ограничитель в календаре на даты, которые были раньше 120 лет назад
+  let ancientDate = new Date(today.getFullYear() - 120, today.getMonth(), today.getDay());
+  document.getElementById('date').setAttribute("min", ancientDate.toLocaleDateString("en-CA"));
+
+  console.log('ici:' + date);
+
+  if (!nameValide.test(name)) {
+    errorMessage += `<p>Name format is incorrect: allowed characters are letters, dash and space. Example: Anna, Anna-Maria, Anna Maria.</p>`;
+  }
+  if (errorMessage !== '') return errorMessage;
+
+  return true;
 }
