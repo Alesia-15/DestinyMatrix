@@ -301,6 +301,27 @@ input {
     color: #F9F9F8;
 }
 
+input[type="text"], textarea {
+    background-color : #050215;
+    color: #FFF8DB;
+    border: 1px #FFF8DB solid;
+    border-radius: 10px;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+input[type="date"] { 
+    background-color: #050215;
+    color: #FFF8DB;
+    border: 1px #FFF8DB solid;
+    border-radius: 10px;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
 
 /* Matrix's styles */
 
@@ -340,7 +361,7 @@ text {
 }
 
 .cls-4 {
-    stroke-dasharray: 0,42,10,11,10,11,11,10,11,10,11,10,11,10,11,42;
+    stroke-dasharray: 0,49,10,10,10,10,10,10,10,10,10,10,10,10,10,41;
 }
 
 .cls-3, .cls-4, .cls-18 {

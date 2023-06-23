@@ -1,3 +1,20 @@
+const dateInput = document.getElementById("dateInput");
+const nameInput = document.getElementById("nameInput");
+const inputFirstDate = document.getElementById("inputFirstDate");
+const inputSecondDate = document.getElementById("inputSecondDate");
+const compatibilityContainer = document.querySelector('.compatibility-container');
+// матрица скрыта
+compatibilityContainer.hidden = true;
+
+// кнопка матрицы совместимости
+const buttonCreateChart = document.querySelector("#createChart");
+
+// значение инпутов по умолчанию для перезагрузки страницы, пока выдает ошибку
+// dateInput.value = '';
+// nameInput.value = '';
+// inputFirstDate.value = '';
+// inputSecondDate.value = '';
+
 const reduceNumber = (number) => {
   let num = number;
   if (number > 22) {
@@ -170,11 +187,11 @@ function createPerson(per, apoint, bpoint, cpoint) {
   per.points = points;
   per.purposes = purposes;
   per.chartHeart = chartHeart;
-  // console.log(per.points);
 }
 
-// createFirstPerson();
-// createSecondPerson();
+// создаем два объекта со значениями
+createPerson(person, apoint, bpoint, cpoint);
+createPerson(secondPerson, secondApoint, secondBpoint, secondCpoint);
 
 // общие значения матрицы
 const compatibilityMatrix = [
@@ -320,38 +337,14 @@ function outputCompatibilityMatrixValues() {
   });
 }
 
-// скорее всего у Аэлиты они должны быть, так что надо будет эти убрать!!!
-const dateInput = document.getElementById("dateInput");
-const inputFirstDate = document.getElementById("inputFirstDate");
-const inputSecondDate = document.getElementById("inputSecondDate");
-// ------------
-const nameInput = document.getElementById("nameInput");
-const nameOutput = document.getElementById("nameOutput");
-const dateOutput = document.getElementById("dateOutput");
-const firstDate = document.getElementById("firstDate");
-const secondDate = document.getElementById("secondDate");
-
-// выводит имя и дату на первой странице
-function outputName() {
-  nameOutput.innerText = nameInput.value;
-  dateOutput.innerText = dateInput.value.split("-").reverse().join(".");
-}
-
-// выводит даты на второй странице
-function outputDates() {
-  firstDate.innerText = inputFirstDate.value.split("-").reverse().join(".");
-  secondDate.innerText = inputSecondDate.value.split("-").reverse().join(".");
-}
 // очищает инпуты
 function clearInputs(firtsInput, secondInput) {
   firtsInput.value = "";
   secondInput.value = "";
 }
 
-// кнопка матрицы совместимости
-const buttonCreateChart = document.querySelector("#createChart");
 buttonCreateChart.addEventListener("click", () => {
+  compatibilityContainer.hidden = false;
   outputCompatibilityMatrixValues();
-  outputDates();
   clearInputs(inputFirstDate, inputSecondDate);
 });
