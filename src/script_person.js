@@ -1,14 +1,14 @@
 const button = document.querySelector("#get_the_answer");
+const container = document.querySelector('.container');
+// матрица скрыта
+container.hidden = true;
 
 button.addEventListener("click", () => {
-  // для одного человека
-  createPerson(person, apoint, bpoint, cpoint);
+  container.hidden = false;
   Points(person);
   ChartHeart();
   Purposes();
-  //для второго человека
-  createPerson(secondPerson, secondApoint, secondBpoint, secondCpoint);
-  outputName();
+
   clearInputs(dateInput, nameInput);
 });
 
