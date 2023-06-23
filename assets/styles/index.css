@@ -48,12 +48,11 @@ li {
     display: flex;
     justify-content: center;
     font-family: 'Inter';
-    font-weight: 400;
     font-size: 24px;
-    line-height: 29px;
-    display: flex;
-    align-items: center;
-    text-align: center;
+}
+
+.birthday-container__item {
+    width: 23em;
 }
 
 .birthday-container input {
@@ -85,6 +84,9 @@ button {
 
 input {
     height: 71px;
+    font-family: 'Inter';
+    font-size: 20px;
+    text-transform: uppercase;
 }
 
 .desteny-container{
@@ -106,12 +108,6 @@ input {
     width: 800px;
     border: 1px solid #ffffff;
     display: block;
-    /* border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -khtml-border-radius: 10px;
-    border: 1px solid #000;
-    display: block; */
 }
 
 .chakra-name {
@@ -330,6 +326,22 @@ input[type="date"] {
 .socialmedia-item {
     margin-left: 0.5em;
     margin-right: 0.5em;
+}
+
+.star1 {
+    position: absolute;
+    top: -32px;
+    left: 228px;
+}
+
+.star2 {
+    position: absolute;
+    bottom: 212px;
+    right: 2px;
+}
+
+.star__wrap {
+    position: relative;
 }
 
 /* Matrix's styles */
