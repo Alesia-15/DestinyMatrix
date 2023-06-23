@@ -301,6 +301,20 @@ input {
     color: #F9F9F8;
 }
 
+input[type="text"], textarea {
+
+    background-color : #050215;
+    color: #FFF8DB;
+    border: 1px #FFF8DB solid;
+    border-radius: 10px;
+}
+
+input[type="date"] { 
+    background-color: #050215;
+    color: #FFF8DB;
+    border: 1px #FFF8DB solid;
+    border-radius: 10px;
+}
 
 /* Matrix's styles */
 
