@@ -1,8 +1,10 @@
 const dateInput = document.getElementById("date");
 const nameInput = document.getElementById("name");
 
-const container = document.querySelector('.container');
-container.hidden = true;
+const container = document.querySelector('.matrix-container');
+container.classList.add('display-none');
+// container.hidden = true;
+// container.classList.add('display-none');
 
 const btnAnswer = document.getElementById('get_the_answer');
 
@@ -60,7 +62,8 @@ btnAnswer.addEventListener('click', (evt) => {
     nameOutput.innerHTML = titleCase(name);
     dateOutput.innerHTML = date.toLocaleDateString("ru");
 
-    container.hidden = false;
+    // container.hidden = false;
+    container.classList.remove('display-none');
     console.log(date)
     let apoint = date.getDate(); // day of birth
     let bpoint = date.getMonth(); // month of birth
