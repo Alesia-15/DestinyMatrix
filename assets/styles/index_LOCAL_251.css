@@ -1,0 +1,782 @@
+body{
+    background-color: #050215;
+    font-family: 'GFS Didot';
+    color: #ffffff;
+    font-style: normal;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+  
+.header-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+}
+
+.footer p {
+    font-size: 48px;
+    font-family: 'GFS Didot';
+    text-transform: uppercase;
+    margin-top: 0px;
+}
+
+a {
+    text-decoration: none; /* убираем линию подчеркивания */
+    color: inherit; /* цвет ссылки равен цвету текста */
+    outline: none; /* убираем подсветку при фокусировке */
+    cursor: default;
+}
+
+li {
+    list-style-type: none;
+    padding: 20px 20px 20px 30px;
+}
+
+
+.birthday-container {
+    display: flex;
+    justify-content: center;
+    font-family: 'Inter';
+    font-size: 24px;
+}
+
+.birthday-container__item {
+    width: 20%;
+}
+
+.birthday-container input {
+    margin-right: 30px;
+    margin-bottom: 200px;
+}
+
+.birthday-container p {
+    margin-bottom: 3em;
+}
+
+button {
+    background-color: #FFF8DB;
+    padding-left: 62px;
+    padding-right: 62px;
+    padding-bottom: 24px;
+    padding-top: 23px;
+    font-family: 'Inter';
+    font-size: 20px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    border: none;
+    z-index: 1;
+}
+
+#get_the_answer, #createChart {
+    align-self: baseline;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    height: 71px;
+    font-family: 'Inter';
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.desteny-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.26);
+    height: 389px;
+    padding: 0;
+    margin: 0;
+}
+
+.chakra-table {
+    border-collapse: collapse;
+    border-radius: 10px;
+    width: 800px;
+    border: 1px solid #ffffff;
+    display: block;
+}
+
+.chakra-table__result {
+    margin-top: 1em;
+}
+
+.chakra-name {
+    width: 260px;
+    height: 49px;
+    /* border: 1px solid rgb(255, 255, 255); */
+    padding: 5px;
+    text-align: left;
+}
+
+.chakra-name-left {
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    padding-left: 47px;
+}
+
+#circle-sahastrara:before {
+    font-family: 'GFS Didot';
+    font-size: 22px;
+    content: '7';
+    width: 20px;
+    border-radius: calc(50%);
+    height: 20px;
+    display: inline-flex;
+    background: #B653F7;
+    justify-content: center;
+    margin-right: 20px;
+    box-shadow: 0 0 10px 10px #B653F7;
+}
+
+#circle-ajna:before {
+    font-family: 'GFS Didot';
+    font-size: 22px;
+    content: '6';
+    width: 20px;
+    border-radius: calc(50%);
+    height: 20px;
+    display: inline-flex;
+    background: #3D54F5;
+    justify-content: center;
+    margin-right: 20px;
+    box-shadow: 0 0 10px 10px #3D54F5;
+}
+
+#circle-vishuddha:before {
+    font-family: 'GFS Didot';
+    font-size: 22px;
+    content: '5';
+    width: 20px;
+    border-radius: calc(50%);
+    height: 20px;
+    display: inline-flex;
+    color: #000000;
+    background: #74E0F8;
+    justify-content: center;
+    margin-right: 20px;
+    box-shadow: 0 0 10px 10px #74E0F8;
+}
+
+#circle-anahata:before {
+    font-family: 'GFS Didot';
+    font-size: 22px;
+    content: '4';
+    width: 20px;
+    border-radius: calc(50%);
+    height: 20px;
+    display: inline-flex;
+    color: #000000;
+    background: #B6FD57;
+    justify-content: center;
+    margin-right: 20px;
+    box-shadow: 0 0 10px 10px #B6FD57;
+}
+
+#circle-manipura:before {
+    font-family: 'GFS Didot';
+    font-size: 22px;
+    content: '3';
+    width: 20px;
+    border-radius: calc(50%);
+    height: 20px;
+    display: inline-flex;
+    color: #000000;
+    background: #FBE49D;
+    justify-content: center;
+    margin-right: 20px;
+    box-shadow: 0 0 10px 10px #FBE49D;
+}
+
+#circle-svadhishtana:before {
+    font-family: 'GFS Didot';
+    font-size: 22px;
+    content: '2';
+    width: 20px;
+    border-radius: calc(50%);
+    height: 20px;
+    display: inline-flex;
+    color: #F5F5F5;
+    background: #ED7233;
+    justify-content: center;
+    margin-right: 20px;
+    box-shadow: 0 0 10px 10px #ED7233;
+}
+
+#circle-muladhara:before {
+    font-family: 'GFS Didot';
+    font-size: 22px;
+    content: '1';
+    width: 20px;
+    border-radius: calc(50%);
+    height: 20px;
+    display: inline-flex;
+    color: #F5F5F5;
+    background: #EA4631;
+    justify-content: center;
+    margin-right: 20px;
+    box-shadow: 0 0 10px 10px #EA4631;
+}
+
+.chakra-td {
+    /* border: 1px solid rgb(255, 255, 255); */
+    box-shadow: inset 1px 0px 0px rgb(255, 255, 255);
+    padding: 5px;
+    text-align: center;
+    width: 200px;
+    size: 16px;
+}
+
+.chakra-tr {
+    font-family: 'Inter';
+    size: 20px;
+    text-align-last: center;
+    box-shadow: 0px 1px 0px rgb(255, 255, 255);
+    /* border: 1px solid rgb(255, 255, 255); */
+    padding: 5px;
+    text-align: center;
+}
+
+.chakra-name__bottom {
+    box-shadow: none;
+}
+
+.chakra-name__radius-left {
+    background-color: #827D78;
+    border-top-left-radius: 10px;
+}
+
+.chakra-name__radius-right {
+    background-color: #827D78;
+    border-top-right-radius: 10px;
+}
+
+.chakra-table-header > :nth-child(2), .chakra-table-header > :nth-child(3) {
+    background-color: #827D78;
+  }
+
+
+.chakra-table-header {
+    /* background-color: #827D78; */
+    font-family: 'Inter';
+    size: 20px;
+    text-transform: uppercase;
+}
+
+.glow__wrap {
+    /* positioning */
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    /* display */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.glow {
+    width: 790px;
+    height: 30px;
+    background: #FFF8DB;
+    filter: blur(75px);
+}
+
+.personal-calculator{
+    display: flex;
+    justify-content: center;
+    font-size: 54px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.personal-date {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    font-family: Inter;
+}
+
+.gray {
+    color: #827D78;
+}
+
+.smoky-white {
+    color: #F9F9F8;
+}
+
+input[type="text"], textarea {
+    background-color : #050215;
+    color: #FFF8DB;
+    border: 1px #FFF8DB solid;
+    border-radius: 10px;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 80%;
+}
+
+input[type="date"] { 
+    background-color: #050215;
+    color: #FFF8DB;
+    border: 1px #FFF8DB solid;
+    border-radius: 10px;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 80%;
+}
+
+::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
+.container__socialmedia {
+    display: flex;
+    margin-bottom: 3em;
+}
+
+.socialmedia-item {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+.star1 {
+    position: absolute;
+    top: -32px;
+    left: 326px;
+}
+
+.star2 {
+    position: absolute;
+    bottom: 167px;
+    right: 10px
+}
+
+.stars-input {
+    position: absolute;
+    top: -115px;
+    left: 350px;
+}
+
+.star__wrap {
+    position: relative;
+}
+
+.wrapper-stars{
+    position: relative;
+}
+
+.stars-left {
+    position: absolute;
+    top: 49px;
+    left: -169px;
+}
+
+.stars-right {
+    position: absolute;
+    top: -108px;
+    right: -162px;
+}
+
+/* Matrix's styles */
+
+.matrix-container, .compatibility-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pento {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.display-none {
+    display: none;
+}
+
+#matrix {
+    float: none;
+    margin: 10% 0 10% 0;
+    width: 100%;
+    max-width: 800px;
+    min-width: 380px;
+}
+
+:not(svg) {
+    transform-origin: 0px 0px;
+}
+
+text {
+    cursor: default;
+}
+
+.cls-4 {
+    stroke-dasharray: 0,49,10,10,10,10,10,10,10,10,10,10,10,10,10,41;
+}
+
+.cls-3, .cls-4, .cls-18 {
+    stroke-width: 1.5px;
+}
+
+.cls-5, .cls-7 {
+    stroke-width: 1px;
+}
+
+.cls-18 {
+    stroke-dasharray: 0,25,10,50,10,50,10,25;
+}
+
+.cls-18, .cls-3, .cls-4 {
+    stroke-miterlimit: 10;
+    stroke: white;
+    fill: none;
+}
+
+.cls-5, .cls-6 {
+    stroke: #B653F7;
+    fill: #B653F7;
+}
+
+.cls-7, .cls-8 {
+    stroke: #EA4631;
+    fill: #EA4631;
+}
+
+.cls-10 {
+    fill: #B653F7;
+}
+
+.cls-13 {
+    fill: #3D54F5;
+}
+
+.cls-15 {
+    fill: #74E0F8;
+}
+
+.cls-19 {
+    fill:  #EA4631;
+}
+
+.cls-22 {
+    fill: #ED7233;
+}
+
+.cls-25 {
+    fill: #FBE49D;
+}
+
+.cls-26 {
+    fill: #B6FD57;
+}
+
+.cls-15, .cls-21, .cls-22, .cls-26 {
+    filter: blur(2.90323px);
+}
+
+.cls-13, .cls-23 {
+    filter: blur(3.54839px);
+}
+
+.cls-10, .cls-19, .cls-24, .cls-25 {
+    filter: blur(5px);
+}
+
+.cls-24, .cls-21, .cls-23, .cls-53 {
+    fill: #FFFCF0;
+}
+
+
+.matrix-value-point {
+    text-anchor: middle;
+    alignment-baseline: middle;
+}
+
+.cls-28 {
+    font-size: 12.9501px;
+    line-height: 11px;
+}
+
+.cls-29 {
+    font-size: 12.0251px;
+    line-height: 10px;
+}
+
+.cls-33 {
+    font-size: 12px;
+    line-height: 81.9%;
+}
+
+.cls-43 {
+    font-size: 5.76471px;
+    line-height: 81.9%;
+}
+
+.cls-44 {
+    font-size: 11.5587px;
+    line-height: 81.9%;
+}
+
+.cls-54, .cls-55, .cls-56 {
+    font-size: 29.7851px;
+    line-height: 37px;
+}
+
+.cls-57, .cls-58 {
+    font-size: 17.2946px;
+    line-height: 22px;
+}
+
+.cls-59, .cls-60 {
+    font-size: 21.1378px;
+    line-height: 26px;
+}
+
+.cls-61 {
+    font-size: 6px;
+    line-height: 81.9%;
+}
+
+.cls-28, .cls-29, .cls-33, .cls-43, .cls-44, .cls-54, .cls-57, .cls-59, .cls-61 {
+    fill: #F5F5F5;
+}
+
+.cls-55, .cls-58, .cls-60 {
+    fill: #000000;
+}
+
+.cls-56 {
+    fill: #D2B154;
+}
+
+
+
+/* health-map and purposes table styles */
+
+
+.trade td {
+    text-align: left;
+    vertical-align: top;
+}
+
+tbody {
+    font-family: 'Inter';
+    font-size: 20px;
+}
+
+tr {
+    font-family: 'Inter';
+    size: 20px;
+}
+
+.font-size16 {
+    font-family: 'Inter';
+    font-size: 16px;
+}
+
+.font-size18 {
+    font-family: 'Inter';
+    font-size: 18px; 
+}
+
+.table td, .table th {
+    padding: 0.45rem;
+}
+
+#purposes {
+    font-size: 70%;
+    margin-bottom: 20px;
+}
+
+#blom{
+    padding-right: 50px;
+}
+
+#blom2{
+    padding-right: 17px;
+}
+
+/*media desktop version */
+
+
+@media screen and (min-width: 1160px) {
+
+svg:not(:root) {
+    overflow-clip-margin: content-box;
+    overflow: visible;
+}
+
+.t-rec {
+    word-break: normal !important;
+}
+
+#allrecords {
+    -webkit-font-smoothing: antialiased;
+    background-color: none;
+}
+
+.table{
+    justify-items: center;
+    grid-row-start: 2;
+    grid-row-end:3;
+    grid-column-start: 2;
+    grid-column-end: 2;
+}
+
+.compatibility-table{
+    grid-row-start: 1;
+    grid-row-end:2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    width: 70em;
+}
+
+#table1 {
+    margin-top: 30px;
+    width: 100%;
+}
+
+.base-circle {
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    display: inline-block;
+    text-align: center;
+    line-height: 30px;
+}
+
+#purposes {
+    font-size: 70%;
+}
+
+#purposes {
+    margin-bottom: 20px;
+}
+
+element.style {
+    height: 5px;
+}
+}
+
+/*media max-width 1160px */
+
+
+@media screen and (max-width: 1160px) {
+
+#blom {
+    padding-right: 42px;
+}
+
+#blom2 {
+    padding-right: 0px; 
+}
+
+svg:not(:root) {
+    overflow-clip-margin: content-box;
+    overflow: visible;
+}
+    
+.t-rec {
+    word-break: normal !important;
+}
+    
+.cls-1 {
+    fill: white;
+}
+    
+.cls-1 {
+    isolation: isolate;
+}
+}  
+
+/*media max-width 900px */
+
+@media screen and (max-width: 900px) {
+
+    #blom{
+        padding-right: 42px;
+    }
+
+    #blom2{
+        padding-right: 0px;
+    }
+
+    #matrix {
+        float: none;
+        margin-left: 60px;
+        margin-right: 10%;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        width: 100%;
+        max-width: 800px;
+        min-width: 380px;
+    }
+    
+    svg:not(:root) {
+        overflow-clip-margin: content-box;
+        overflow: visible;
+    }
+    
+    .t-rec {
+        word-break: normal !important;
+    }
+    
+    .cls-1 {
+        fill: white;
+    }
+    
+    .cls-1 {
+        isolation: isolate;
+    }
+    
+/* Modify the styles for mobile devices */
+
+    .info-txt {
+        float: none;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        width: 100%;
+        grid-row: 2/3;
+        grid-column-start: auto;
+        grid-column-end: auto;
+    }
+
+    .chakra-table {
+        width: 100px;
+    }
+}
