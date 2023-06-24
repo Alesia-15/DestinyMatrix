@@ -550,84 +550,31 @@ text {
     vertical-align: top;
 }
 
-.table{
-    float: none;
-        margin-left: 30px !important;
-        margin-right: 10%;
-        margin-top: 25px;
-        margin-bottom: 25px;
-        width: 100%;
-          grid-row: 3/3;
-          grid-column-start: auto;
-          grid-column-end: auto;
-          justify-items: center;
-          margin-bottom: 10px;
-          min-width: 530px;
-} 
-
 tbody {
     font-family: 'Open Sans',Arial,sans-serif;
-        display: table-row-group;
-        vertical-align: middle;
-        border-color: inherit;
- }
- .health-map-table {
-    font-size: 70%;
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
 }
-.health-map-table {
-    width: 570px;
-    background: white!important;
-    text-align: center;
-}
+
 table {
     border-collapse: separate;
     text-indent: initial;
     border-spacing: 2px;
 }
-.health-map-table tr:nth-child(1) {
-    background: #241301!important;
-}
+
 tr {
     font-family: 'Open Sans',Arial,sans-serif;
     display: table-row;
     vertical-align: inherit;
     border-color: inherit;
 }
-.health-map-table tr:nth-child(2) {
-    background: #8a46a3!important;
-    background-color: #8a46a3!important;
-}
 
-.health-map-table tr:nth-child(3) {
-    background: #526dfa!important;
-}
-.health-map-table tr:nth-child(4) {
-    background: #45cfe1!important;
-}
-.health-map-table tr:nth-child(5) {
-    background: #4c8656!important;
-}
 .table td, .table th {
     padding: 0.45rem;
 }
-.health-map-table tr:nth-child(6) {
-    color: #000;
-    background: #ffed47!important;
-    background: #ffed47!important;
-}
-.health-map-table tr:nth-child(7) {
-    background: #ffae34!important;
-}
-.health-map-table tr:nth-child(8) {
-    background: #ef4141!important;
-}
-.health-map-table tr:nth-child(9) {
-    background: #241301!important;
-    font-weight: bold!important;
-}
 
-
-#prednazn {
+#purposes {
     font-size: 70%;
     margin-bottom: 20px;
 }
@@ -635,9 +582,9 @@ tr {
 #blom{
     padding-right: 50px;
 }
+
 #blom2{
     padding-right: 17px;
-    
 }
 
 /*media desktop version */
