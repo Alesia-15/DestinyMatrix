@@ -3,6 +3,11 @@ body {
   font-family: "GFS Didot";
   color: #ffffff;
   font-style: normal;
+  font-size: 1vw;
+}
+
+.container {
+  max-width: 1920px;
 }
 
 .header {
@@ -310,7 +315,7 @@ input {
   position: relative;
 }
 
-.glow-btn__wrap{
+.glow-btn__wrap {
   /* positioning */
 
   position: absolute;
@@ -359,7 +364,7 @@ input {
 }
 
 .smoky-white2 {
-  color: #FFF8DB;
+  color: #fff8db;
 }
 
 input[type="text"],
@@ -657,19 +662,19 @@ text {
 /* health-map and purposes table styles */
 
 tbody {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-size: 20px;
 }
 
 tr {
-  font-family: 'Inter';
+  font-family: "Inter";
   size: 20px;
   vertical-align: middle;
   text-align: center;
 }
 
 .font-size16 {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-size: 16px;
 }
 
@@ -682,8 +687,8 @@ tr {
 }
 
 .font-size18 {
-    font-family: 'Inter';
-    font-size: 18px;
+  font-family: "Inter";
+  font-size: 18px;
 }
 
 #purposes {
@@ -699,11 +704,25 @@ tr {
   padding-right: 100px;
 }
 
-.purposes-top{
+.purposes-top {
   margin-top: 5em;
 }
 
 /*media desktop version */
+
+@media screen and (min-width: 1920px) {
+  body {
+    font-size: 19.2px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  body {
+    font-size: 4.79px;
+  }
+}
+
+/*корявые медиа запросы*/
 
 @media screen and (min-width: 1160px) {
   /*  */
@@ -724,13 +743,13 @@ tr {
     grid-column-end: 2;
   }
 
-.compatibility-table{
+  .compatibility-table {
     grid-row-start: 1;
     grid-row-end: 2;
     grid-column-start: 2;
     grid-column-end: 3;
     width: 70em;
-}
+  }
 
   #table1 {
     margin-top: 30px;
