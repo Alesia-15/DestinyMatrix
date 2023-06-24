@@ -67,11 +67,12 @@ li {
 }
 
 button {
+  height: 71px;
   background-color: #fff8db;
-  padding-left: 62px;
-  padding-right: 62px;
-  padding-bottom: 24px;
-  padding-top: 23px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-top: 0px;
   font-family: "Inter";
   font-size: 20px;
   text-transform: uppercase;
@@ -242,7 +243,6 @@ input {
 }
 
 .chakra-td {
-  /* border: 1px solid rgb(255, 255, 255); */
   box-shadow: inset 1px 0px 0px rgb(255, 255, 255);
   padding: 5px;
   text-align: center;
@@ -255,7 +255,6 @@ input {
   size: 20px;
   text-align-last: center;
   box-shadow: 0px 1px 0px rgb(255, 255, 255);
-  /* border: 1px solid rgb(255, 255, 255); */
   padding: 5px;
   text-align: center;
 }
@@ -307,6 +306,32 @@ input {
   filter: blur(75px);
 }
 
+.center_container {
+  position: relative;
+}
+
+.glow-btn__wrap{
+  /* positioning */
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  /* display */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.glow-btn {
+  width: 790px;
+  height: 30px;
+  background: #fff8db;
+  filter: blur(75px);
+}
+
 .personal-calculator {
   display: flex;
   justify-content: center;
@@ -331,6 +356,10 @@ input {
 
 .smoky-white {
   color: #f9f9f8;
+}
+
+.smoky-white2 {
+  color: #FFF8DB;
 }
 
 input[type="text"],
@@ -404,6 +433,12 @@ input[type="date"] {
   position: absolute;
   top: -108px;
   right: -162px;
+}
+
+#decode-matrix-btn {
+  margin-top: 7em;
+  margin-bottom: 7em;
+  width: 400px;
 }
 
 /* Matrix's styles */
@@ -621,34 +656,34 @@ text {
 
 /* health-map and purposes table styles */
 
-.trade td {
-  text-align: left;
-  vertical-align: top;
-}
-
 tbody {
-  font-family: "Open Sans", Arial, sans-serif;
-  display: table-row-group;
-  vertical-align: middle;
-  border-color: inherit;
-}
-
-table {
-  border-collapse: separate;
-  text-indent: initial;
-  border-spacing: 2px;
+  font-family: 'Inter';
+  font-size: 20px;
 }
 
 tr {
-  font-family: "Open Sans", Arial, sans-serif;
-  display: table-row;
-  vertical-align: inherit;
-  border-color: inherit;
+  font-family: 'Inter';
+  size: 20px;
+  vertical-align: middle;
+  text-align: center;
 }
 
-.table td,
-.table th {
-  padding: 0.45rem;
+.font-size16 {
+  font-family: 'Inter';
+  font-size: 16px;
+}
+
+.table-padding {
+  padding-bottom: 20px;
+}
+
+.table-padding-top {
+  padding-top: 20px;
+}
+
+.font-size18 {
+    font-family: 'Inter';
+    font-size: 18px;
 }
 
 #purposes {
@@ -657,11 +692,15 @@ tr {
 }
 
 #blom {
-  padding-right: 50px;
+  padding-right: 100px;
 }
 
 #blom2 {
-  padding-right: 17px;
+  padding-right: 100px;
+}
+
+.purposes-top{
+  margin-top: 5em;
 }
 
 /*media desktop version */
@@ -685,12 +724,13 @@ tr {
     grid-column-end: 2;
   }
 
-  .info-txt {
+.compatibility-table{
     grid-row-start: 1;
     grid-row-end: 2;
     grid-column-start: 2;
     grid-column-end: 3;
-  }
+    width: 70em;
+}
 
   #table1 {
     margin-top: 30px;
@@ -819,22 +859,5 @@ tr {
   #table1 {
     margin-top: 30px;
     width: 100%;
-  }
-
-  #nebo1,
-  #zemlia1,
-  #for_self1,
-  #male1,
-  #female1,
-  #socium1,
-  #duhovnoe1,
-  #planetarnoe1 {
-    border: 2px solid white;
-    border-radius: 50%;
-    width: 34px;
-    height: 34px;
-    display: inline-block;
-    text-align: center;
-    line-height: 30px;
   }
 }
