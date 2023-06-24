@@ -358,6 +358,10 @@ input {
   color: #f9f9f8;
 }
 
+.smoky-white2 {
+  color: #FFF8DB;
+}
+
 input[type="text"],
 textarea {
   background-color: #050215;
@@ -652,21 +656,16 @@ text {
 
 /* health-map and purposes table styles */
 
-.trade td {
-  text-align: left;
-  vertical-align: top;
-}
-
 tbody {
-    font-family: 'Inter';
-    font-size: 20px;
+  font-family: 'Inter';
+  font-size: 20px;
 }
 
 tr {
-    font-family: 'Inter';
-    size: 20px;
-    vertical-align: middle;
-    text-align: center;
+  font-family: 'Inter';
+  size: 20px;
+  vertical-align: middle;
+  text-align: center;
 }
 
 .font-size16 {
@@ -676,6 +675,10 @@ tr {
 
 .table-padding {
   padding-bottom: 20px;
+}
+
+.table-padding-top {
+  padding-top: 20px;
 }
 
 .font-size18 {
@@ -689,11 +692,15 @@ tr {
 }
 
 #blom {
-  padding-right: 50px;
+  padding-right: 100px;
 }
 
 #blom2 {
-  padding-right: 17px;
+  padding-right: 100px;
+}
+
+.purposes-top{
+  margin-top: 5em;
 }
 
 /*media desktop version */
