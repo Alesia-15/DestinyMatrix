@@ -33,11 +33,11 @@ function createPerson(per, apoint, bpoint, cpoint) {
   console.log(per.points)
 }
 
-// // очищает инпуты
-// function clearInputs(firtsInput, secondInput) {
-//   firtsInput.value = "";
-//   secondInput.value = "";
-// }
+// очищает инпуты
+function clearInputs(firtsInput, secondInput) {
+  firtsInput.value = "";
+  secondInput.value = "";
+}
 
 function titleCase(str) {
   return str.replace(/^[a-z]|[\- ][a-z]/g, function (a) { return a.toUpperCase(); })
@@ -45,22 +45,21 @@ function titleCase(str) {
 
 btnAnswer.addEventListener('click', (evt) => {
   evt.preventDefault();
+
   const date = new Date(document.getElementById('date').value);
   const name = document.getElementById('name').value;
-  const output = document.querySelector('.output');
-  const gray = document.querySelector('.gray');
-  const nameOutput = document.getElementById('nameOutput');
-  const dateOutput = document.getElementById('dateOutput');
+  const errorOutput = document.querySelector('.errorOutput');
+  const output = document.querySelector('.output-personal-date');
   const response = valide(date, name);
 
+  output.innerHTML = '';
+  errorOutput.innerHTML = '';
+
   if (response !== true) {
-    nameOutput.innerHTML = '';
-    dateOutput.innerHTML = '';
-    gray.innerHTML = '';
-    output.innerHTML = response;
+    output.innerHTML = '';
+    errorOutput.innerHTML = response;
   } else {
-    nameOutput.innerHTML = titleCase(name);
-    dateOutput.innerHTML = date.toLocaleDateString("ru");
+    output.innerHTML = titleCase(name) + ' ' + '<span class="gray">Date of Birth:</span>' + ' ' + date.toLocaleDateString("ru");
 
     // container.hidden = false;
     container.classList.remove('display-none');
@@ -79,8 +78,6 @@ btnAnswer.addEventListener('click', (evt) => {
 
     clearInputs(dateInput, nameInput);
   }
-  document.getElementById('name').value = '';
-  document.getElementById('date').value = '';
 });
 
 function valide(date, name) {
@@ -88,8 +85,12 @@ function valide(date, name) {
   let errorMessage = '';
   const nameValide = new RegExp("^[a-zA-Z\- ]*$");
 
+  if(date === 'Invalid Date'){
+    console.log('la date est invalide');
+  }
+
   if (name === '' || isNaN(date.getFullYear()) === true) {
-    errorMessage += `<p>Date and name must be filled in.</p>`;
+    errorMessage += `<p>Date is not valid or one of the fields is empty.</p>`;
   }
 
   let today = new Date();
@@ -104,8 +105,6 @@ function valide(date, name) {
   // ставит ограничитель в календаре на даты, которые были раньше 120 лет назад
   let ancientDate = new Date(today.getFullYear() - 120, today.getMonth(), today.getDay());
   document.getElementById('date').setAttribute("min", ancientDate.toLocaleDateString("en-CA"));
-
-  console.log('ici:' + date);
 
   if (!nameValide.test(name)) {
     errorMessage += `<p>Name format is incorrect: allowed characters are letters, dash and space. Example: Anna, Anna-Maria, Anna Maria.</p>`;

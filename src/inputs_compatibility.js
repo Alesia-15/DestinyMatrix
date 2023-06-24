@@ -234,6 +234,10 @@ function valideDates(date1, date2) {
         errorMessage = `<p>The age difference is too big.</p>`;
     }
 
+    if (isNaN(date1.getFullYear()) === true || isNaN(date2.getFullYear()) === true) {
+        errorMessage += `<p>Date is not valid or one of the fields is empty.</p>`;
+    }
+
     if (errorMessage !== '') return errorMessage;
 
     return true;
