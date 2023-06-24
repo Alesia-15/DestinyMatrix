@@ -8,23 +8,32 @@ body {
 
 .container {
   max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header,
+main,
+footer {
+  padding-left: 13.125em;
+  padding-right: 13.125em;
 }
 
 .header {
+  padding: 1.875em 0 1.875em 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-family: "Inter", sans-serif;
-  font-size: 20px;
+  font-size: 1.25em;
   text-transform: uppercase;
-  margin-left: 3%;
-  margin-right: 3%;
 }
 
 .header-right {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
+  gap: 2.5em;
 }
 
 .footer {
@@ -33,10 +42,10 @@ body {
 }
 
 .footer p {
-  font-size: 48px;
+  font-size: 3em;
   font-family: "GFS Didot";
   text-transform: uppercase;
-  margin-top: 0px;
+  margin-top: 0;
 }
 
 a {
@@ -48,7 +57,6 @@ a {
 
 li {
   list-style-type: none;
-  padding: 20px 20px 20px 30px;
 }
 
 .birthday-container {
@@ -340,18 +348,16 @@ input {
 .personal-calculator {
   display: flex;
   justify-content: center;
-  font-size: 54px;
+  font-size: 3.375em;
   display: flex;
   align-items: center;
   text-align: center;
   text-transform: uppercase;
 }
 
-.personal-date {
-  display: flex;
-  justify-content: center;
+.output-personal-date {
   text-align: center;
-  font-size: 20px;
+  font-size: 1.25em;
   font-family: Inter;
 }
 
@@ -473,7 +479,7 @@ input[type="date"] {
   margin: 10% 0 10% 0;
   width: 100%;
   max-width: 800px;
-  min-width: 380px;
+  min-width: 375px;
 }
 
 :not(svg) {
@@ -790,21 +796,8 @@ tr {
     padding-right: 0px;
   }
 
-  svg:not(:root) {
-    overflow-clip-margin: content-box;
-    overflow: visible;
-  }
-
   .t-rec {
     word-break: normal !important;
-  }
-
-  .cls-1 {
-    fill: white;
-  }
-
-  .cls-1 {
-    isolation: isolate;
   }
 }
 
@@ -818,32 +811,8 @@ tr {
     padding-right: 0px;
   }
 
-  #matrix {
-    float: none;
-    margin-left: 60px;
-    margin-right: 10%;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    width: 100%;
-    max-width: 800px;
-    min-width: 380px;
-  }
-
-  svg:not(:root) {
-    overflow-clip-margin: content-box;
-    overflow: visible;
-  }
-
   .t-rec {
     word-break: normal !important;
-  }
-
-  .cls-1 {
-    fill: white;
-  }
-
-  .cls-1 {
-    isolation: isolate;
   }
 
   /* Modify the styles for mobile devices */
