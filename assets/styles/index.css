@@ -118,10 +118,14 @@ input {
     display: block;
 }
 
+.chakra-table__result {
+    margin-top: 1em;
+}
+
 .chakra-name {
     width: 260px;
     height: 49px;
-    border: 1px solid rgb(255, 255, 255);
+    /* border: 1px solid rgb(255, 255, 255); */
     padding: 5px;
     text-align: left;
 }
@@ -238,7 +242,8 @@ input {
 }
 
 .chakra-td {
-    border: 1px solid rgb(255, 255, 255);
+    /* border: 1px solid rgb(255, 255, 255); */
+    box-shadow: inset 1px 0px 0px rgb(255, 255, 255);
     padding: 5px;
     text-align: center;
     width: 200px;
@@ -249,13 +254,33 @@ input {
     font-family: 'Inter';
     size: 20px;
     text-align-last: center;
-    border: 1px solid rgb(255, 255, 255);
+    box-shadow: 0px 1px 0px rgb(255, 255, 255);
+    /* border: 1px solid rgb(255, 255, 255); */
     padding: 5px;
     text-align: center;
 }
 
-.chakra-table-header {
+.chakra-name__bottom {
+    box-shadow: none;
+}
+
+.chakra-name__radius-left {
     background-color: #827D78;
+    border-top-left-radius: 10px;
+}
+
+.chakra-name__radius-right {
+    background-color: #827D78;
+    border-top-right-radius: 10px;
+}
+
+.chakra-table-header > :nth-child(2), .chakra-table-header > :nth-child(3) {
+    background-color: #827D78;
+  }
+
+
+.chakra-table-header {
+    /* background-color: #827D78; */
     font-family: 'Inter';
     size: 20px;
     text-transform: uppercase;
@@ -722,21 +747,6 @@ svg:not(:root) {
     
 /* Modify the styles for mobile devices */
 
-    .table {
-        float: none;
-        margin-left: 25px !important;
-        margin-right: 10%;
-        margin-top: 25px;
-        margin-bottom: 25px;
-        width: 100%;
-        grid-row: 3/3;
-        grid-column-start: auto;
-        grid-column-end: auto;
-        justify-items: center;
-        margin-bottom: 10px;
-        min-width: 530px;
-    }   
-
     .info-txt {
         float: none;
         margin-left: 10%;
@@ -748,9 +758,8 @@ svg:not(:root) {
         grid-column-start: auto;
         grid-column-end: auto;
     }
-   
-    #table1 {
-        margin-top: 30px;
-        width: 100%;
+
+    .chakra-table {
+        width: 100px;
     }
 }
