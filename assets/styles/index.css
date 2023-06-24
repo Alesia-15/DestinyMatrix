@@ -389,6 +389,22 @@ input[type="date"] {
     position: relative;
 }
 
+.wrapper-stars{
+    position: relative;
+}
+
+.stars-left {
+    position: absolute;
+    top: 49px;
+    left: -169px;
+}
+
+.stars-right {
+    position: absolute;
+    top: -108px;
+    right: -162px;
+}
+
 /* Matrix's styles */
 
 .matrix-container, .compatibility-container{
