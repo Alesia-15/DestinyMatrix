@@ -28,7 +28,10 @@ body {
 }
 
 .footer p {
-  margin-top: 159px;
+  font-size: 48px;
+  font-family: "GFS Didot";
+  text-transform: uppercase;
+  margin-top: 0px;
 }
 
 a {
@@ -47,17 +50,20 @@ li {
   display: flex;
   justify-content: center;
   font-family: "Inter";
-  font-weight: 400;
   font-size: 24px;
-  line-height: 29px;
-  display: flex;
-  align-items: center;
-  text-align: center;
+}
+
+.birthday-container__item {
+  width: 20%;
 }
 
 .birthday-container input {
   margin-right: 30px;
-  margin-bottom: 245px;
+  margin-bottom: 200px;
+}
+
+.birthday-container p {
+  margin-bottom: 3em;
 }
 
 button {
@@ -71,6 +77,7 @@ button {
   text-transform: uppercase;
   border-radius: 10px;
   border: none;
+  z-index: 1;
 }
 
 #get_the_answer,
@@ -85,6 +92,9 @@ button {
 
 input {
   height: 71px;
+  font-family: "Inter";
+  font-size: 20px;
+  text-transform: uppercase;
 }
 
 .desteny-container {
@@ -106,18 +116,16 @@ input {
   width: 800px;
   border: 1px solid #ffffff;
   display: block;
-  /* border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -khtml-border-radius: 10px;
-    border: 1px solid #000;
-    display: block; */
+}
+
+.chakra-table__result {
+  margin-top: 1em;
 }
 
 .chakra-name {
   width: 260px;
   height: 49px;
-  border: 1px solid rgb(255, 255, 255);
+  /* border: 1px solid rgb(255, 255, 255); */
   padding: 5px;
   text-align: left;
 }
@@ -234,7 +242,8 @@ input {
 }
 
 .chakra-td {
-  border: 1px solid rgb(255, 255, 255);
+  /* border: 1px solid rgb(255, 255, 255); */
+  box-shadow: inset 1px 0px 0px rgb(255, 255, 255);
   padding: 5px;
   text-align: center;
   width: 200px;
@@ -245,13 +254,33 @@ input {
   font-family: "Inter";
   size: 20px;
   text-align-last: center;
-  border: 1px solid rgb(255, 255, 255);
+  box-shadow: 0px 1px 0px rgb(255, 255, 255);
+  /* border: 1px solid rgb(255, 255, 255); */
   padding: 5px;
   text-align: center;
 }
 
-.chakra-table-header {
+.chakra-name__bottom {
+  box-shadow: none;
+}
+
+.chakra-name__radius-left {
   background-color: #827d78;
+  border-top-left-radius: 10px;
+}
+
+.chakra-name__radius-right {
+  background-color: #827d78;
+  border-top-right-radius: 10px;
+}
+
+.chakra-table-header > :nth-child(2),
+.chakra-table-header > :nth-child(3) {
+  background-color: #827d78;
+}
+
+.chakra-table-header {
+  /* background-color: #827D78; */
   font-family: "Inter";
   size: 20px;
   text-transform: uppercase;
@@ -291,6 +320,9 @@ input {
 .personal-date {
   display: flex;
   justify-content: center;
+  text-align: center;
+  font-size: 20px;
+  font-family: Inter;
 }
 
 .gray {
@@ -309,6 +341,7 @@ textarea {
   border-radius: 10px;
   padding-left: 1em;
   padding-right: 1em;
+  width: 80%;
 }
 
 input[type="date"] {
@@ -318,6 +351,7 @@ input[type="date"] {
   border-radius: 10px;
   padding-left: 1em;
   padding-right: 1em;
+  width: 80%;
 }
 
 ::-webkit-calendar-picker-indicator {
@@ -326,11 +360,50 @@ input[type="date"] {
 
 .container__socialmedia {
   display: flex;
+  margin-bottom: 3em;
 }
 
 .socialmedia-item {
   margin-left: 0.5em;
   margin-right: 0.5em;
+}
+
+.star1 {
+  position: absolute;
+  top: -32px;
+  left: 326px;
+}
+
+.star2 {
+  position: absolute;
+  bottom: 167px;
+  right: 10px;
+}
+
+.stars-input {
+  position: absolute;
+  top: -115px;
+  left: 350px;
+}
+
+.star__wrap {
+  position: relative;
+}
+
+.wrapper-stars {
+  position: relative;
+}
+
+.stars-left {
+  position: absolute;
+  top: 49px;
+  left: -169px;
+}
+
+.stars-right {
+  position: absolute;
+  top: -108px;
+  right: -162px;
 }
 
 /* Matrix's styles */
@@ -553,84 +626,32 @@ text {
   vertical-align: top;
 }
 
-.table {
-  float: none;
-  margin-left: 30px !important;
-  margin-right: 10%;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  width: 100%;
-  grid-row: 3/3;
-  grid-column-start: auto;
-  grid-column-end: auto;
-  justify-items: center;
-  margin-bottom: 10px;
-  min-width: 530px;
-}
-
 tbody {
   font-family: "Open Sans", Arial, sans-serif;
   display: table-row-group;
   vertical-align: middle;
   border-color: inherit;
 }
-.health-map-table {
-  font-size: 70%;
-}
-.health-map-table {
-  width: 570px;
-  background: white !important;
-  text-align: center;
-}
+
 table {
   border-collapse: separate;
   text-indent: initial;
   border-spacing: 2px;
 }
-.health-map-table tr:nth-child(1) {
-  background: #241301 !important;
-}
+
 tr {
   font-family: "Open Sans", Arial, sans-serif;
   display: table-row;
   vertical-align: inherit;
   border-color: inherit;
 }
-.health-map-table tr:nth-child(2) {
-  background: #8a46a3 !important;
-  background-color: #8a46a3 !important;
-}
 
-.health-map-table tr:nth-child(3) {
-  background: #526dfa !important;
-}
-.health-map-table tr:nth-child(4) {
-  background: #45cfe1 !important;
-}
-.health-map-table tr:nth-child(5) {
-  background: #4c8656 !important;
-}
 .table td,
 .table th {
   padding: 0.45rem;
 }
-.health-map-table tr:nth-child(6) {
-  color: #000;
-  background: #ffed47 !important;
-  background: #ffed47 !important;
-}
-.health-map-table tr:nth-child(7) {
-  background: #ffae34 !important;
-}
-.health-map-table tr:nth-child(8) {
-  background: #ef4141 !important;
-}
-.health-map-table tr:nth-child(9) {
-  background: #241301 !important;
-  font-weight: bold !important;
-}
 
-#prednazn {
+#purposes {
   font-size: 70%;
   margin-bottom: 20px;
 }
@@ -638,6 +659,7 @@ tr {
 #blom {
   padding-right: 50px;
 }
+
 #blom2 {
   padding-right: 17px;
 }
@@ -649,6 +671,7 @@ tr {
   .t-rec {
     word-break: normal !important;
   }
+
   #allrecords {
     -webkit-font-smoothing: antialiased;
     background-color: none;
@@ -661,12 +684,14 @@ tr {
     grid-column-start: 2;
     grid-column-end: 2;
   }
+
   .info-txt {
     grid-row-start: 1;
     grid-row-end: 2;
     grid-column-start: 2;
     grid-column-end: 3;
   }
+
   #table1 {
     margin-top: 30px;
     width: 100%;
@@ -681,10 +706,12 @@ tr {
     text-align: center;
     line-height: 30px;
   }
-  #prednazn {
+
+  #purposes {
     font-size: 70%;
   }
-  #prednazn {
+
+  #purposes {
     margin-bottom: 20px;
   }
 
@@ -699,6 +726,7 @@ tr {
   #blom {
     padding-right: 42px;
   }
+
   #blom2 {
     padding-right: 0px;
   }
