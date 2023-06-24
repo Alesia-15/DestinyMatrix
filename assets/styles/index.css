@@ -592,19 +592,19 @@ tr {
 
 @media screen and (min-width: 1160px) {
 
-
 svg:not(:root) {
     overflow-clip-margin: content-box;
     overflow: visible;
 }
+
 .t-rec {
     word-break: normal !important;
 }
+
 #allrecords {
     -webkit-font-smoothing: antialiased;
     background-color: none;
 }
-
 
 .table{
     justify-items: center;
@@ -613,13 +613,14 @@ svg:not(:root) {
     grid-column-start: 2;
     grid-column-end: 2;
 }
-.info-txt{
 
+.info-txt{
     grid-row-start: 1;
     grid-row-end:2;
     grid-column-start: 2;
     grid-column-end: 3;
 }
+
 #table1 {
     margin-top: 30px;
     width: 100%;
@@ -634,10 +635,12 @@ svg:not(:root) {
     text-align: center;
     line-height: 30px;
 }
-#prednazn {
+
+#purposes {
     font-size: 70%;
 }
-#prednazn {
+
+#purposes {
     margin-bottom: 20px;
 }
 
@@ -651,44 +654,43 @@ element.style {
 
 @media screen and (max-width: 1160px) {
 
-    #blom{
+#blom {
     padding-right: 42px;
 }
-#blom2{
-    padding-right: 0px;
-    
+
+#blom2 {
+    padding-right: 0px; 
 }
 
-
-    svg:not(:root) {
-        overflow-clip-margin: content-box;
-        overflow: visible;
-    }
+svg:not(:root) {
+    overflow-clip-margin: content-box;
+    overflow: visible;
+}
     
-    .t-rec {
-        word-break: normal !important;
-    }
+.t-rec {
+    word-break: normal !important;
+}
     
-    .cls-1 {
-        fill: white;
-    }
+.cls-1 {
+    fill: white;
+}
     
-    .cls-1 {
-        isolation: isolate;
-    }
-    
+.cls-1 {
+    isolation: isolate;
+}
+}  
 
 /*media max-width 900px */
 
 @media screen and (max-width: 900px) {
 
-#blom{
-    padding-right: 42px;
-}
-#blom2{
-    padding-right: 0px;
-    
-}
+    #blom{
+        padding-right: 42px;
+    }
+
+    #blom2{
+        padding-right: 0px;
+    }
 
     #matrix {
         float: none;
@@ -720,7 +722,6 @@ element.style {
     
 /* Modify the styles for mobile devices */
 
-
     .table {
         float: none;
         margin-left: 25px !important;
@@ -734,8 +735,8 @@ element.style {
         justify-items: center;
         margin-bottom: 10px;
         min-width: 530px;
-    }
-    
+    }   
+
     .info-txt {
         float: none;
         margin-left: 10%;
@@ -746,28 +747,10 @@ element.style {
         grid-row: 2/3;
         grid-column-start: auto;
         grid-column-end: auto;
-        
     }
-    
+   
     #table1 {
         margin-top: 30px;
         width: 100%;
-    }
-    
-    #nebo1,
-    #zemlia1,
-    #for_self1,
-    #male1,
-    #female1,
-    #socium1,
-    #duhovnoe1,
-    #planetarnoe1 {
-        border: 2px solid white;
-        border-radius: 50%;
-        width: 34px;
-        height: 34px;
-        display: inline-block;
-        text-align: center;
-        line-height: 30px;
     }
 }
