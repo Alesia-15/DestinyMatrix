@@ -1,112 +1,112 @@
-body{
-    background-color: #050215;
-    font-family: 'GFS Didot';
-    color: #ffffff;
-    font-style: normal;
+body {
+  background-color: #050215;
+  font-family: "GFS Didot";
+  color: #ffffff;
+  font-style: normal;
 }
 
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-family: 'Inter', sans-serif;
-    font-size: 20px;
-    text-transform: uppercase;
-    margin-left: 3%;
-    margin-right: 3%;
-}
-  
-.header-right {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-left: 3%;
+  margin-right: 3%;
 }
 
-.footer{
-    display: flex;
-    justify-content: center;
+.header-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
 }
 
 .footer p {
-    margin-top: 159px;
+  margin-top: 159px;
 }
 
 a {
-    text-decoration: none; /* убираем линию подчеркивания */
-    color: inherit; /* цвет ссылки равен цвету текста */
-    outline: none; /* убираем подсветку при фокусировке */
-    cursor: default;
+  text-decoration: none; /* убираем линию подчеркивания */
+  color: inherit; /* цвет ссылки равен цвету текста */
+  outline: none; /* убираем подсветку при фокусировке */
+  cursor: default;
 }
 
 li {
-    list-style-type: none;
-    padding: 20px 20px 20px 30px;
+  list-style-type: none;
+  padding: 20px 20px 20px 30px;
 }
 
-
 .birthday-container {
-    display: flex;
-    justify-content: center;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 29px;
-    display: flex;
-    align-items: center;
-    text-align: center;
+  display: flex;
+  justify-content: center;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
 
 .birthday-container input {
-    margin-right: 30px;
-    margin-bottom: 245px;
+  margin-right: 30px;
+  margin-bottom: 245px;
 }
 
 button {
-    background-color: #FFF8DB;
-    padding-left: 62px;
-    padding-right: 62px;
-    padding-bottom: 24px;
-    padding-top: 23px;
-    font-family: 'Inter';
-    font-size: 20px;
-    text-transform: uppercase;
-    border-radius: 10px;
-    border: none;;
+  background-color: #fff8db;
+  padding-left: 62px;
+  padding-right: 62px;
+  padding-bottom: 24px;
+  padding-top: 23px;
+  font-family: "Inter";
+  font-size: 20px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  border: none;
 }
 
-#get_the_answer, #createChart {
-    align-self: baseline;
+#get_the_answer,
+#createChart {
+  align-self: baseline;
 }
 
 .center {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 input {
-    height: 71px;
+  height: 71px;
 }
 
-.desteny-container{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 60px;
-    text-transform: uppercase;
-    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.26);
-    height: 389px;
-    padding: 0;
-    margin: 0;
+.desteny-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.26);
+  height: 389px;
+  padding: 0;
+  margin: 0;
 }
 
 .chakra-table {
-    border-collapse: collapse;
-    border-radius: 10px;
-    width: 800px;
-    border: 1px solid #ffffff;
-    display: block;
-    /* border-radius: 10px;
+  border-collapse: collapse;
+  border-radius: 10px;
+  width: 800px;
+  border: 1px solid #ffffff;
+  display: block;
+  /* border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -khtml-border-radius: 10px;
@@ -115,538 +115,564 @@ input {
 }
 
 .chakra-name {
-    width: 260px;
-    height: 49px;
-    border: 1px solid rgb(255, 255, 255);
-    padding: 5px;
-    text-align: left;
+  width: 260px;
+  height: 49px;
+  border: 1px solid rgb(255, 255, 255);
+  padding: 5px;
+  text-align: left;
 }
 
 .chakra-name-left {
-    display: flex;
-    justify-content: center;
-    flex-direction: column-reverse;
-    align-items: flex-start;
-    padding-left: 47px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column-reverse;
+  align-items: flex-start;
+  padding-left: 47px;
 }
 
 #circle-sahastrara:before {
-    font-family: 'GFS Didot';
-    font-size: 22px;
-    content: '7';
-    width: 20px;
-    border-radius: calc(50%);
-    height: 20px;
-    display: inline-flex;
-    background: #B653F7;
-    justify-content: center;
-    margin-right: 20px;
-    box-shadow: 0 0 10px 10px #B653F7;
+  font-family: "GFS Didot";
+  font-size: 22px;
+  content: "7";
+  width: 20px;
+  border-radius: calc(50%);
+  height: 20px;
+  display: inline-flex;
+  background: #b653f7;
+  justify-content: center;
+  margin-right: 20px;
+  box-shadow: 0 0 10px 10px #b653f7;
 }
 
 #circle-ajna:before {
-    font-family: 'GFS Didot';
-    font-size: 22px;
-    content: '6';
-    width: 20px;
-    border-radius: calc(50%);
-    height: 20px;
-    display: inline-flex;
-    background: #3D54F5;
-    justify-content: center;
-    margin-right: 20px;
-    box-shadow: 0 0 10px 10px #3D54F5;
+  font-family: "GFS Didot";
+  font-size: 22px;
+  content: "6";
+  width: 20px;
+  border-radius: calc(50%);
+  height: 20px;
+  display: inline-flex;
+  background: #3d54f5;
+  justify-content: center;
+  margin-right: 20px;
+  box-shadow: 0 0 10px 10px #3d54f5;
 }
 
 #circle-vishuddha:before {
-    font-family: 'GFS Didot';
-    font-size: 22px;
-    content: '5';
-    width: 20px;
-    border-radius: calc(50%);
-    height: 20px;
-    display: inline-flex;
-    color: #000000;
-    background: #74E0F8;
-    justify-content: center;
-    margin-right: 20px;
-    box-shadow: 0 0 10px 10px #74E0F8;
+  font-family: "GFS Didot";
+  font-size: 22px;
+  content: "5";
+  width: 20px;
+  border-radius: calc(50%);
+  height: 20px;
+  display: inline-flex;
+  color: #000000;
+  background: #74e0f8;
+  justify-content: center;
+  margin-right: 20px;
+  box-shadow: 0 0 10px 10px #74e0f8;
 }
 
 #circle-anahata:before {
-    font-family: 'GFS Didot';
-    font-size: 22px;
-    content: '4';
-    width: 20px;
-    border-radius: calc(50%);
-    height: 20px;
-    display: inline-flex;
-    color: #000000;
-    background: #B6FD57;
-    justify-content: center;
-    margin-right: 20px;
-    box-shadow: 0 0 10px 10px #B6FD57;
+  font-family: "GFS Didot";
+  font-size: 22px;
+  content: "4";
+  width: 20px;
+  border-radius: calc(50%);
+  height: 20px;
+  display: inline-flex;
+  color: #000000;
+  background: #b6fd57;
+  justify-content: center;
+  margin-right: 20px;
+  box-shadow: 0 0 10px 10px #b6fd57;
 }
 
 #circle-manipura:before {
-    font-family: 'GFS Didot';
-    font-size: 22px;
-    content: '3';
-    width: 20px;
-    border-radius: calc(50%);
-    height: 20px;
-    display: inline-flex;
-    color: #000000;
-    background: #FBE49D;
-    justify-content: center;
-    margin-right: 20px;
-    box-shadow: 0 0 10px 10px #FBE49D;
+  font-family: "GFS Didot";
+  font-size: 22px;
+  content: "3";
+  width: 20px;
+  border-radius: calc(50%);
+  height: 20px;
+  display: inline-flex;
+  color: #000000;
+  background: #fbe49d;
+  justify-content: center;
+  margin-right: 20px;
+  box-shadow: 0 0 10px 10px #fbe49d;
 }
 
 #circle-svadhishtana:before {
-    font-family: 'GFS Didot';
-    font-size: 22px;
-    content: '2';
-    width: 20px;
-    border-radius: calc(50%);
-    height: 20px;
-    display: inline-flex;
-    color: #F5F5F5;
-    background: #ED7233;
-    justify-content: center;
-    margin-right: 20px;
-    box-shadow: 0 0 10px 10px #ED7233;
+  font-family: "GFS Didot";
+  font-size: 22px;
+  content: "2";
+  width: 20px;
+  border-radius: calc(50%);
+  height: 20px;
+  display: inline-flex;
+  color: #f5f5f5;
+  background: #ed7233;
+  justify-content: center;
+  margin-right: 20px;
+  box-shadow: 0 0 10px 10px #ed7233;
 }
 
 #circle-muladhara:before {
-    font-family: 'GFS Didot';
-    font-size: 22px;
-    content: '1';
-    width: 20px;
-    border-radius: calc(50%);
-    height: 20px;
-    display: inline-flex;
-    color: #F5F5F5;
-    background: #EA4631;
-    justify-content: center;
-    margin-right: 20px;
-    box-shadow: 0 0 10px 10px #EA4631;
+  font-family: "GFS Didot";
+  font-size: 22px;
+  content: "1";
+  width: 20px;
+  border-radius: calc(50%);
+  height: 20px;
+  display: inline-flex;
+  color: #f5f5f5;
+  background: #ea4631;
+  justify-content: center;
+  margin-right: 20px;
+  box-shadow: 0 0 10px 10px #ea4631;
 }
 
 .chakra-td {
-    border: 1px solid rgb(255, 255, 255);
-    padding: 5px;
-    text-align: center;
-    width: 200px;
-    size: 16px;
+  border: 1px solid rgb(255, 255, 255);
+  padding: 5px;
+  text-align: center;
+  width: 200px;
+  size: 16px;
 }
 
 .chakra-tr {
-    font-family: 'Inter';
-    size: 20px;
-    text-align-last: center;
-    border: 1px solid rgb(255, 255, 255);
-    padding: 5px;
-    text-align: center;
+  font-family: "Inter";
+  size: 20px;
+  text-align-last: center;
+  border: 1px solid rgb(255, 255, 255);
+  padding: 5px;
+  text-align: center;
 }
 
 .chakra-table-header {
-    background-color: #827D78;
-    font-family: 'Inter';
-    size: 20px;
-    text-transform: uppercase;
+  background-color: #827d78;
+  font-family: "Inter";
+  size: 20px;
+  text-transform: uppercase;
 }
 
 .glow__wrap {
-    /* positioning */
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+  /* positioning */
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 
-    /* display */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  /* display */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .glow {
-    width: 790px;
-    height: 30px;
-    background: #FFF8DB;
-    filter: blur(75px);
+  width: 790px;
+  height: 30px;
+  background: #fff8db;
+  filter: blur(75px);
 }
 
-.personal-calculator{
-    display: flex;
-    justify-content: center;
-    font-size: 54px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    text-transform: uppercase;
+.personal-calculator {
+  display: flex;
+  justify-content: center;
+  font-size: 54px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .personal-date {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .gray {
-    color: #827D78;
+  color: #827d78;
 }
 
 .smoky-white {
-    color: #F9F9F8;
+  color: #f9f9f8;
 }
 
-input[type="text"], textarea {
-    background-color : #050215;
-    color: #FFF8DB;
-    border: 1px #FFF8DB solid;
-    border-radius: 10px;
-    padding-left: 1em;
-    padding-right: 1em;
+input[type="text"],
+textarea {
+  background-color: #050215;
+  color: #fff8db;
+  border: 1px #fff8db solid;
+  border-radius: 10px;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
-input[type="date"] { 
-    background-color: #050215;
-    color: #FFF8DB;
-    border: 1px #FFF8DB solid;
-    border-radius: 10px;
-    padding-left: 1em;
-    padding-right: 1em;
+input[type="date"] {
+  background-color: #050215;
+  color: #fff8db;
+  border: 1px #fff8db solid;
+  border-radius: 10px;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 ::-webkit-calendar-picker-indicator {
-    filter: invert(1);
+  filter: invert(1);
 }
 
 .container__socialmedia {
-    display: flex;
+  display: flex;
 }
 
 .socialmedia-item {
-    margin-left: 0.5em;
-    margin-right: 0.5em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
 }
 
 /* Matrix's styles */
 
-.matrix-container, .compatibility-container{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.matrix-container,
+.compatibility-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .pento {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .display-none {
-    display: none;
+  display: none;
 }
 
 #matrix {
-    float: none;
-    margin: 10% 0 10% 0;
-    width: 100%;
-    max-width: 800px;
-    min-width: 380px;
+  float: none;
+  margin: 10% 0 10% 0;
+  width: 100%;
+  max-width: 800px;
+  min-width: 380px;
 }
 
 :not(svg) {
-    transform-origin: 0px 0px;
+  transform-origin: 0px 0px;
+}
+
+svg:not(:root) {
+  overflow-clip-margin: content-box;
+  overflow: visible;
 }
 
 text {
-    cursor: default;
+  cursor: default;
 }
 
 .cls-4 {
-    stroke-dasharray: 0,49,10,10,10,10,10,10,10,10,10,10,10,10,10,41;
+  stroke-dasharray: 0, 49, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10,
+    41;
 }
 
-.cls-3, .cls-4, .cls-18 {
-    stroke-width: 1.5px;
+.cls-3,
+.cls-4,
+.cls-18 {
+  stroke-width: 1.5px;
 }
 
-.cls-5, .cls-7 {
-    stroke-width: 1px;
+.cls-5,
+.cls-7 {
+  stroke-width: 1px;
 }
 
 .cls-18 {
-    stroke-dasharray: 0,25,10,50,10,50,10,25;
+  stroke-dasharray: 0, 25, 10, 50, 10, 50, 10, 25;
 }
 
-.cls-18, .cls-3, .cls-4 {
-    stroke-miterlimit: 10;
-    stroke: white;
-    fill: none;
+.cls-18,
+.cls-3,
+.cls-4 {
+  stroke-miterlimit: 10;
+  stroke: white;
+  fill: none;
 }
 
-.cls-5, .cls-6 {
-    stroke: #B653F7;
-    fill: #B653F7;
+.cls-5,
+.cls-6 {
+  stroke: #b653f7;
+  fill: #b653f7;
 }
 
-.cls-7, .cls-8 {
-    stroke: #EA4631;
-    fill: #EA4631;
+.cls-7,
+.cls-8 {
+  stroke: #ea4631;
+  fill: #ea4631;
 }
 
 .cls-10 {
-    fill: #B653F7;
+  fill: #b653f7;
 }
 
 .cls-13 {
-    fill: #3D54F5;
+  fill: #3d54f5;
 }
 
 .cls-15 {
-    fill: #74E0F8;
+  fill: #74e0f8;
 }
 
 .cls-19 {
-    fill:  #EA4631;
+  fill: #ea4631;
 }
 
 .cls-22 {
-    fill: #ED7233;
+  fill: #ed7233;
 }
 
 .cls-25 {
-    fill: #FBE49D;
+  fill: #fbe49d;
 }
 
 .cls-26 {
-    fill: #B6FD57;
+  fill: #b6fd57;
 }
 
-.cls-15, .cls-21, .cls-22, .cls-26 {
-    filter: blur(2.90323px);
+.cls-15,
+.cls-21,
+.cls-22,
+.cls-26 {
+  filter: blur(2.90323px);
 }
 
-.cls-13, .cls-23 {
-    filter: blur(3.54839px);
+.cls-13,
+.cls-23 {
+  filter: blur(3.54839px);
 }
 
-.cls-10, .cls-19, .cls-24, .cls-25 {
-    filter: blur(5px);
+.cls-10,
+.cls-19,
+.cls-24,
+.cls-25 {
+  filter: blur(5px);
 }
 
-.cls-24, .cls-21, .cls-23, .cls-53 {
-    fill: #FFFCF0;
+.cls-24,
+.cls-21,
+.cls-23,
+.cls-53 {
+  fill: #fffcf0;
 }
-
 
 .matrix-value-point {
-    text-anchor: middle;
-    alignment-baseline: middle;
+  text-anchor: middle;
+  alignment-baseline: middle;
 }
 
 .cls-28 {
-    font-size: 12.9501px;
-    line-height: 11px;
+  font-size: 12.9501px;
+  line-height: 11px;
 }
 
 .cls-29 {
-    font-size: 12.0251px;
-    line-height: 10px;
+  font-size: 12.0251px;
+  line-height: 10px;
 }
 
 .cls-33 {
-    font-size: 12px;
-    line-height: 81.9%;
+  font-size: 12px;
+  line-height: 81.9%;
 }
 
 .cls-43 {
-    font-size: 5.76471px;
-    line-height: 81.9%;
+  font-size: 5.76471px;
+  line-height: 81.9%;
 }
 
 .cls-44 {
-    font-size: 11.5587px;
-    line-height: 81.9%;
+  font-size: 11.5587px;
+  line-height: 81.9%;
 }
 
-.cls-54, .cls-55, .cls-56 {
-    font-size: 29.7851px;
-    line-height: 37px;
+.cls-54,
+.cls-55,
+.cls-56 {
+  font-size: 29.7851px;
+  line-height: 37px;
 }
 
-.cls-57, .cls-58 {
-    font-size: 17.2946px;
-    line-height: 22px;
+.cls-57,
+.cls-58 {
+  font-size: 17.2946px;
+  line-height: 22px;
 }
 
-.cls-59, .cls-60 {
-    font-size: 21.1378px;
-    line-height: 26px;
+.cls-59,
+.cls-60 {
+  font-size: 21.1378px;
+  line-height: 26px;
 }
 
 .cls-61 {
-    font-size: 6px;
-    line-height: 81.9%;
+  font-size: 6px;
+  line-height: 81.9%;
 }
 
-.cls-28, .cls-29, .cls-33, .cls-43, .cls-44, .cls-54, .cls-57, .cls-59, .cls-61 {
-    fill: #F5F5F5;
+.cls-28,
+.cls-29,
+.cls-33,
+.cls-43,
+.cls-44,
+.cls-54,
+.cls-57,
+.cls-59,
+.cls-61 {
+  fill: #f5f5f5;
 }
 
-.cls-55, .cls-58, .cls-60 {
-    fill: #000000;
+.cls-55,
+.cls-58,
+.cls-60 {
+  fill: #000000;
 }
 
 .cls-56 {
-    fill: #D2B154;
+  fill: #d2b154;
 }
-
-
 
 /* health-map and purposes table styles */
 
-
 .trade td {
-    text-align: left;
-    vertical-align: top;
+  text-align: left;
+  vertical-align: top;
 }
 
-.table{
-    float: none;
-        margin-left: 30px !important;
-        margin-right: 10%;
-        margin-top: 25px;
-        margin-bottom: 25px;
-        width: 100%;
-          grid-row: 3/3;
-          grid-column-start: auto;
-          grid-column-end: auto;
-          justify-items: center;
-          margin-bottom: 10px;
-          min-width: 530px;
-} 
+.table {
+  float: none;
+  margin-left: 30px !important;
+  margin-right: 10%;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  width: 100%;
+  grid-row: 3/3;
+  grid-column-start: auto;
+  grid-column-end: auto;
+  justify-items: center;
+  margin-bottom: 10px;
+  min-width: 530px;
+}
 
 tbody {
-    font-family: 'Open Sans',Arial,sans-serif;
-        display: table-row-group;
-        vertical-align: middle;
-        border-color: inherit;
- }
- .health-map-table {
-    font-size: 70%;
+  font-family: "Open Sans", Arial, sans-serif;
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
 }
 .health-map-table {
-    width: 570px;
-    background: white!important;
-    text-align: center;
+  font-size: 70%;
+}
+.health-map-table {
+  width: 570px;
+  background: white !important;
+  text-align: center;
 }
 table {
-    border-collapse: separate;
-    text-indent: initial;
-    border-spacing: 2px;
+  border-collapse: separate;
+  text-indent: initial;
+  border-spacing: 2px;
 }
 .health-map-table tr:nth-child(1) {
-    background: #241301!important;
+  background: #241301 !important;
 }
 tr {
-    font-family: 'Open Sans',Arial,sans-serif;
-    display: table-row;
-    vertical-align: inherit;
-    border-color: inherit;
+  font-family: "Open Sans", Arial, sans-serif;
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
 }
 .health-map-table tr:nth-child(2) {
-    background: #8a46a3!important;
-    background-color: #8a46a3!important;
+  background: #8a46a3 !important;
+  background-color: #8a46a3 !important;
 }
 
 .health-map-table tr:nth-child(3) {
-    background: #526dfa!important;
+  background: #526dfa !important;
 }
 .health-map-table tr:nth-child(4) {
-    background: #45cfe1!important;
+  background: #45cfe1 !important;
 }
 .health-map-table tr:nth-child(5) {
-    background: #4c8656!important;
+  background: #4c8656 !important;
 }
-.table td, .table th {
-    padding: 0.45rem;
+.table td,
+.table th {
+  padding: 0.45rem;
 }
 .health-map-table tr:nth-child(6) {
-    color: #000;
-    background: #ffed47!important;
-    background: #ffed47!important;
+  color: #000;
+  background: #ffed47 !important;
+  background: #ffed47 !important;
 }
 .health-map-table tr:nth-child(7) {
-    background: #ffae34!important;
+  background: #ffae34 !important;
 }
 .health-map-table tr:nth-child(8) {
-    background: #ef4141!important;
+  background: #ef4141 !important;
 }
 .health-map-table tr:nth-child(9) {
-    background: #241301!important;
-    font-weight: bold!important;
+  background: #241301 !important;
+  font-weight: bold !important;
 }
-
 
 #prednazn {
-    font-size: 70%;
-    margin-bottom: 20px;
+  font-size: 70%;
+  margin-bottom: 20px;
 }
 
-#blom{
-    padding-right: 50px;
+#blom {
+  padding-right: 50px;
 }
-#blom2{
-    padding-right: 17px;
-    
+#blom2 {
+  padding-right: 17px;
 }
 
 /*media desktop version */
 
-
 @media screen and (min-width: 1160px) {
-
-
-svg:not(:root) {
-    overflow-clip-margin: content-box;
-    overflow: visible;
-}
-.t-rec {
+  /*  */
+  .t-rec {
     word-break: normal !important;
-}
-#allrecords {
+  }
+  #allrecords {
     -webkit-font-smoothing: antialiased;
     background-color: none;
-}
+  }
 
-
-.table{
+  .table {
     justify-items: center;
     grid-row-start: 2;
-    grid-row-end:3;
+    grid-row-end: 3;
     grid-column-start: 2;
     grid-column-end: 2;
-}
-.info-txt{
-
+  }
+  .info-txt {
     grid-row-start: 1;
-    grid-row-end:2;
+    grid-row-end: 2;
     grid-column-start: 2;
     grid-column-end: 3;
-}
-#table1 {
+  }
+  #table1 {
     margin-top: 30px;
     width: 100%;
-}
+  }
 
-.base-circle {
+  .base-circle {
     border: 2px solid white;
     border-radius: 50%;
     width: 34px;
@@ -654,141 +680,133 @@ svg:not(:root) {
     display: inline-block;
     text-align: center;
     line-height: 30px;
-}
-#prednazn {
+  }
+  #prednazn {
     font-size: 70%;
-}
-#prednazn {
+  }
+  #prednazn {
     margin-bottom: 20px;
-}
+  }
 
-element.style {
+  element.style {
     height: 5px;
-}
+  }
 }
 
 /*media max-width 1160px */
 
-
 @media screen and (max-width: 1160px) {
-
-    #blom{
+  #blom {
     padding-right: 42px;
-}
-#blom2{
+  }
+  #blom2 {
     padding-right: 0px;
-    
+  }
+
+  svg:not(:root) {
+    overflow-clip-margin: content-box;
+    overflow: visible;
+  }
+
+  .t-rec {
+    word-break: normal !important;
+  }
+
+  .cls-1 {
+    fill: white;
+  }
+
+  .cls-1 {
+    isolation: isolate;
+  }
 }
-
-
-    svg:not(:root) {
-        overflow-clip-margin: content-box;
-        overflow: visible;
-    }
-    
-    .t-rec {
-        word-break: normal !important;
-    }
-    
-    .cls-1 {
-        fill: white;
-    }
-    
-    .cls-1 {
-        isolation: isolate;
-    }
-    
 
 /*media max-width 900px */
 
 @media screen and (max-width: 900px) {
-
-#blom{
+  #blom {
     padding-right: 42px;
-}
-#blom2{
+  }
+  #blom2 {
     padding-right: 0px;
-    
-}
+  }
 
-    #matrix {
-        float: none;
-        margin-left: 60px;
-        margin-right: 10%;
-        margin-top: 25px;
-        margin-bottom: 25px;
-        width: 100%;
-        max-width: 800px;
-        min-width: 380px;
-    }
-    
-    svg:not(:root) {
-        overflow-clip-margin: content-box;
-        overflow: visible;
-    }
-    
-    .t-rec {
-        word-break: normal !important;
-    }
-    
-    .cls-1 {
-        fill: white;
-    }
-    
-    .cls-1 {
-        isolation: isolate;
-    }
-    
-/* Modify the styles for mobile devices */
+  #matrix {
+    float: none;
+    margin-left: 60px;
+    margin-right: 10%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 100%;
+    max-width: 800px;
+    min-width: 380px;
+  }
 
+  svg:not(:root) {
+    overflow-clip-margin: content-box;
+    overflow: visible;
+  }
 
-    .table {
-        float: none;
-        margin-left: 25px !important;
-        margin-right: 10%;
-        margin-top: 25px;
-        margin-bottom: 25px;
-        width: 100%;
-        grid-row: 3/3;
-        grid-column-start: auto;
-        grid-column-end: auto;
-        justify-items: center;
-        margin-bottom: 10px;
-        min-width: 530px;
-    }
-    
-    .info-txt {
-        float: none;
-        margin-left: 10%;
-        margin-right: 10%;
-        margin-top: 25px;
-        margin-bottom: 25px;
-        width: 100%;
-        grid-row: 2/3;
-        grid-column-start: auto;
-        grid-column-end: auto;
-        
-    }
-    
-    #table1 {
-        margin-top: 30px;
-        width: 100%;
-    }
-    
-    #nebo1,
-    #zemlia1,
-    #for_self1,
-    #male1,
-    #female1,
-    #socium1,
-    #duhovnoe1,
-    #planetarnoe1 {
-        border: 2px solid white;
-        border-radius: 50%;
-        width: 34px;
-        height: 34px;
-        display: inline-block;
-        text-align: center;
-        line-height: 30px;
-    }
+  .t-rec {
+    word-break: normal !important;
+  }
+
+  .cls-1 {
+    fill: white;
+  }
+
+  .cls-1 {
+    isolation: isolate;
+  }
+
+  /* Modify the styles for mobile devices */
+
+  .table {
+    float: none;
+    margin-left: 25px !important;
+    margin-right: 10%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 100%;
+    grid-row: 3/3;
+    grid-column-start: auto;
+    grid-column-end: auto;
+    justify-items: center;
+    margin-bottom: 10px;
+    min-width: 530px;
+  }
+
+  .info-txt {
+    float: none;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 100%;
+    grid-row: 2/3;
+    grid-column-start: auto;
+    grid-column-end: auto;
+  }
+
+  #table1 {
+    margin-top: 30px;
+    width: 100%;
+  }
+
+  #nebo1,
+  #zemlia1,
+  #for_self1,
+  #male1,
+  #female1,
+  #socium1,
+  #duhovnoe1,
+  #planetarnoe1 {
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    display: inline-block;
+    text-align: center;
+    line-height: 30px;
+  }
 }
