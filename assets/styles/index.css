@@ -592,23 +592,23 @@ text {
 }
 
 tbody {
-    font-family: 'Open Sans',Arial,sans-serif;
-    display: table-row-group;
-    vertical-align: middle;
-    border-color: inherit;
-}
-
-table {
-    border-collapse: separate;
-    text-indent: initial;
-    border-spacing: 2px;
+    font-family: 'Inter';
+    font-size: 20px;
 }
 
 tr {
-    font-family: 'Open Sans',Arial,sans-serif;
-    display: table-row;
-    vertical-align: inherit;
-    border-color: inherit;
+    font-family: 'Inter';
+    size: 20px;
+}
+
+.font-size16 {
+    font-family: 'Inter';
+    font-size: 16px;
+}
+
+.font-size18 {
+    font-family: 'Inter';
+    font-size: 18px; 
 }
 
 .table td, .table th {
@@ -655,11 +655,12 @@ svg:not(:root) {
     grid-column-end: 2;
 }
 
-.info-txt{
+.compatibility-table{
     grid-row-start: 1;
     grid-row-end:2;
     grid-column-start: 2;
     grid-column-end: 3;
+    width: 70em;
 }
 
 #table1 {

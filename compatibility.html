@@ -5,18 +5,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./assets/styles/index.css" />
+  <link rel="stylesheet" href="normalize.css">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap" rel="stylesheet" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="datepicker.min.css" />
   <title>KRIS Universe</title>
 </head>
 
 <body>
-  <script src="datepicker.min.js"></script>
   <header>
     <nav class="header">
       <div class="header-left">
@@ -38,12 +37,28 @@
       <p class="gradient">Destiny matrix calculator</p>
     </div>
     <div class="birthday-container">
-      <p>Enter your date of birth and name:</p>
+      <p>Enter your date of birth:</p>
     </div>
     <div class="birthday-container">
-      <input id="date_person1" type="date" />
-      <input id="date_person2" type="date" />
-      <button id="createChart">create your chart</button>
+      <div class="birthday-container__item">
+        <div class="star__wrap">
+          <img class="stars-input" src="./assets/img/starsinput.svg" />
+        </div>
+      </div>
+      <div class="birthday-container__item">
+        <div class="star__wrap">
+          <img class="star1" src="./assets/img/star.svg" />
+          <input id="date_person1" type="date" />
+        </div>
+      </div>
+    <div class="birthday-container__item">
+        <div class="star__wrap">
+          <img class="star2" src="./assets/img/star.svg" />
+          <input id="date_person2" type="date" />
+        </div>
+    </div>
+      <button class="birthday-container__item" id="createChart">create your chart</button>
+    <div class="birthday-container__item"></div>
       <div class="wrongDate"></div>
     </div>
     <div class="compatibility-container">
@@ -281,10 +296,10 @@
               </g>
           </svg>
         </div>
-        <div class="info-txt">
+        <div class="compatibility-table">
           <table id="table-compatibility">
             <tbody>
-              <tr valign="top">
+              <tr>
                 <td colspan="4">
                   <h3><b>Relationship:</b></h3>
                 </td>
@@ -300,7 +315,7 @@
               <tr style="height: 5px">
                 <td></td>
               </tr>
-              <tr>
+              <tr class="font-size16">
                 <td colspan="4">
                   Shared goals, spiritual growth, search for financial stability
                 </td>
@@ -318,7 +333,7 @@
               <tr style="height: 5px">
                 <td></td>
               </tr>
-              <tr style="font-size: 140%; position: relative">
+              <tr class="font-size18" style="position: relative">
                 <td>Sky:</td>
                 <td>
                   <span id="skypoint-comp" class="base-circle">18</span>
@@ -357,7 +372,7 @@
                   <span id="harmony" class="base-circle">6</span>
                 </td>
               </tr>
-              <tr style="font-size: 140%">
+              <tr class="font-size18">
                 <td>Earth:</td>
                 <td><span id="earthpoint-comp" class="base-circle">21</span></td>
                 <td></td>
