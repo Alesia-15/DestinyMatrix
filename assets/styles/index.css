@@ -60,6 +60,7 @@ li {
 }
 
 .birthday-container {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -74,12 +75,38 @@ li {
 }
 
 .birthday-container__inputs-wrapper {
-  width: 100%;
+  width: 83%;
   margin-top: 3.1875em;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas: "input1 input2 button";
   grid-gap: 1.875em;
+}
+
+.birthday-container__inputs-wrapper-comp {
+  width: 83%;
+  margin-top: 1.6875em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 1fr;
+  grid-template-areas:
+    "label-partner1 label-partner2 0"
+    "input1 input2 button";
+  grid-column-gap: 1.875em;
+  grid-row-gap: 0.3em;
+}
+
+label {
+  padding-left: 1em;
+  font-size: 1em;
+}
+
+.label-partner1 {
+  grid-area: label-partner1;
+}
+
+.label-partner2 {
+  grid-area: label-partner2;
 }
 
 .errorOutput,
@@ -113,7 +140,7 @@ input {
 }
 
 button {
-  padding: 1.25em 3.25em 1.25em 3.25em;
+  padding: 1.25em 3em 1.25em 3em;
   background-color: #fff8db;
   font-family: "Inter";
   font-size: 1.25em;
@@ -123,10 +150,38 @@ button {
   z-index: 1;
 }
 
+#createChart {
+  padding: 1.25em 2em 1.25em 2em;
+}
+
 #get_the_answer,
 #createChart {
   grid-area: button;
   align-self: baseline;
+}
+
+.star__wrap1 {
+  position: absolute;
+  top: 0em;
+  left: -2em;
+}
+
+.star__wrap1 {
+  position: absolute;
+  top: 0em;
+  left: -2em;
+}
+
+.star-size-m {
+  width: 3.625em;
+}
+
+.star-size-s {
+  width: 2.3125em;
+}
+
+.star-size-l {
+  width: 5.375em;
 }
 
 .center {
@@ -411,48 +466,11 @@ button {
   margin-right: 0.5em;
 }
 
-.star1 {
-  position: absolute;
-  top: -32px;
-  left: 326px;
-}
-
-.star2 {
-  position: absolute;
-  bottom: 167px;
-  right: 10px;
-}
-
-.stars-input {
-  position: absolute;
-  top: -115px;
-  left: 350px;
-}
-
-.star__wrap {
-  position: relative;
-}
-
-.wrapper-stars {
-  position: relative;
-}
-
-.stars-left {
-  position: absolute;
-  top: 49px;
-  left: -169px;
-}
-
-.stars-right {
-  position: absolute;
-  top: -108px;
-  right: -162px;
-}
-
 #decode-matrix-btn {
-  margin-top: 7em;
-  margin-bottom: 7em;
-  width: 400px;
+  max-width: 20em;
+  margin-top: 6.5em;
+  margin-bottom: 6.5em;
+  padding: 1.25em 2em 1.25em 2em;
 }
 
 /* Matrix's styles */
