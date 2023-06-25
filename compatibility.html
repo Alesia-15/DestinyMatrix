@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/styles/normalize.css" />
     <link rel="stylesheet" href="./assets/styles/index.css" />
-    <link rel="stylesheet" href="normalize.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -43,26 +42,45 @@
           <div class="glow__wrap">
             <div class="glow"></div>
           </div>
-          <p>Compatibility matrix calculator</p>
+          <p class="gradient">compatibility matrix calculator</p>
         </div>
         <div class="birthday-container">
           <p>Enter your date of birth:</p>
-          <div class="birthday-container__inputs-wrapper">
-            <input id="date_person1" type="date" />
-            <input id="date_person2" type="date" />
-            <button class="birthday-container__item" id="createChart">
-              create your chart
-            </button>
+          <div class="birthday-container__inputs-wrapper-comp">
+            <label class="label-partner1" for="partner1">Partner 1</label>
+            <div class="input1-wrap">
+              <input id="date_person1" name="partner1" type="date" />
+              <div class="star__wrap2">
+                <img class="star-size-m" src="./assets/img/starmedium.svg" />
+              </div>
+            </div>
+            <label class="label-partner2" for="partner2">Partner 2</label>
+            <div class="input2-wrap">
+              <input id="date_person2" name="partner2" type="date" />
+              <div class="star__wrap3">
+                <img class="star-size-m" src="./assets/img/starmedium.svg" />
+              </div>
+            </div>
+            <button id="createChart">create your chart</button>
           </div>
           <div class="wrongDate"></div>
-          <div class="star__wrap">
-            <img class="stars-input" src="./assets/img/starsinput.svg" />
+          <div class="star__wrap1">
+            <img class="star-size-m" src="./assets/img/starmedium.svg" />
           </div>
-          <div class="star__wrap">
-            <img class="star1" src="./assets/img/star.svg" />
+          <div class="star__wrap4">
+            <img class="star-size-l" src="./assets/img/starlarge.svg" />
           </div>
-          <div class="star__wrap">
-            <img class="star2" src="./assets/img/star.svg" />
+          <div class="star__wrap5">
+            <img class="star-size-l" src="./assets/img/starlarge.svg" />
+          </div>
+          <div class="star__wrap6">
+            <img class="star-size-s" src="./assets/img/starsmall.svg" />
+          </div>
+          <div class="star__wrap7">
+            <img class="star-size-s" src="./assets/img/starsmall.svg" />
+          </div>
+          <div class="star__wrap8">
+            <img class="star-size-s" src="./assets/img/starsmall.svg" />
           </div>
         </div>
         <div class="compatibility-container">
