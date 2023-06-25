@@ -1,629 +1,424 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/styles/normalize.css" />
-    <link rel="stylesheet" href="./assets/styles/index.css" />
-    <link rel="stylesheet" href="normalize.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
-      rel="stylesheet"
-    />
-    <title>KRIS Universe</title>
-  </head>
 
-  <body>
-    <header>
-      <div class="container">
-        <nav class="header">
-          <div class="header-left">
-            <li><a href="#">KRIS Universe</a></li>
-          </div>
-          <div class="header-right">
-            <li><a href="#">main</a></li>
-            <li><a href="#">About me</a></li>
-            <li><a href="#">Reviews</a></li>
-            <li><a href="#">Contact</a></li>
-          </div>
-        </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./assets/styles/normalize.css" />
+  <link rel="stylesheet" href="./assets/styles/index.css" />
+  <link rel="stylesheet" href="normalize.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
+  <title>KRIS Universe</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <nav class="header">
+        <div class="header-left">
+          <li><a href="#">KRIS Universe</a></li>
+        </div>
+        <div class="header-right">
+          <li><a href="#">main</a></li>
+          <li><a href="#">About me</a></li>
+          <li><a href="#">Reviews</a></li>
+          <li><a href="#">Contact</a></li>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <div class="desteny-container">
+        <div class="glow__wrap">
+          <div class="glow"></div>
+        </div>
+        <p class="gradient">Destiny matrix calculator</p>
       </div>
-    </header>
-    <main>
-      <div class="container">
-        <div class="desteny-container">
-          <div class="glow__wrap">
-            <div class="glow"></div>
-          </div>
-          <p class="gradient">Destiny matrix calculator</p>
-        </div>
-        <div class="birthday-container">
-          <p>Enter your date of birth:</p>
-        </div>
-        <div class="birthday-container">
-          <div class="birthday-container__item">
-            <div class="star__wrap">
-              <img class="stars-input" src="./assets/img/starsinput.svg" />
-            </div>
-          </div>
-          <div class="birthday-container__item">
-            <div class="star__wrap">
-              <img class="star1" src="./assets/img/star.svg" />
-              <input id="date_person1" type="date" />
-            </div>
-          </div>
-          <div class="birthday-container__item">
-            <div class="star__wrap">
-              <img class="star2" src="./assets/img/star.svg" />
-              <input id="date_person2" type="date" />
-            </div>
-          </div>
+      <div class="birthday-container">
+        <p>Enter your date of birth:</p>
+        <div class="birthday-container__inputs-wrapper">
+          <input id="date_person1" type="date" />
+          <input id="date_person2" type="date" />
           <button class="birthday-container__item" id="createChart">
             create your chart
           </button>
-          <div class="birthday-container__item"></div>
-          <div class="wrongDate"></div>
         </div>
-        <div class="compatibility-container">
-          <div class="personal-calculator">
-            <p class="smoky-white">Your compatibility</p>
-          </div>
-          <div class="output2"></div>
-          <div class="pento">
-            <svg viewBox="0 0 680 600" id="matrix">
-              <g id="matrix-frame">
-                <rect
-                  class="cls-3"
-                  x="163.63"
-                  y="126.14"
-                  width="340.16"
-                  height="340.16"
-                ></rect>
-                <rect
-                  class="cls-3"
-                  x="227.87"
-                  y="127.54"
-                  width="340.16"
-                  height="340.16"
-                  transform="translate(-158.13 367.16) rotate(-45)"
-                ></rect>
-                <polygon
-                  class="cls-4"
-                  points="333.7 7.76 537.64 92.28 622.17 296.22 537.64 501.16 333.7 584.68 129.76 500.16 45.24 296.22 129.76 92.28 333.7 7.76"
-                ></polygon>
-                <line
-                  class="cls-3"
-                  x1="333.7"
-                  y1="27.76"
-                  x2="333.7"
-                  y2="564.68"
-                ></line>
-                <line
-                  class="cls-3"
-                  x1="65.24"
-                  y1="296.22"
-                  x2="602.17"
-                  y2="296.22"
-                ></line>
+        <div class="wrongDate"></div>
+        <div class="star__wrap">
+          <img class="stars-input" src="./assets/img/starsinput.svg" />
+        </div>
+        <div class="star__wrap">
+          <img class="star1" src="./assets/img/star.svg" />
+        </div>
+        <div class="star__wrap">
+          <img class="star2" src="./assets/img/star.svg" />
+        </div>
+      </div>
+      <div class="compatibility-container">
+        <div class="personal-calculator">
+          <p class="smoky-white">Your compatibility</p>
+        </div>
+        <div class="output2"></div>
+        <div class="pento">
+          <svg viewBox="0 0 680 600" id="matrix">
+            <g id="matrix-frame">
+              <rect class="cls-3" x="163.63" y="126.14" width="340.16" height="340.16"></rect>
+              <rect class="cls-3" x="227.87" y="127.54" width="340.16" height="340.16"
+                transform="translate(-158.13 367.16) rotate(-45)"></rect>
+              <polygon class="cls-4"
+                points="333.7 7.76 537.64 92.28 622.17 296.22 537.64 501.16 333.7 584.68 129.76 500.16 45.24 296.22 129.76 92.28 333.7 7.76">
+              </polygon>
+              <line class="cls-3" x1="333.7" y1="27.76" x2="333.7" y2="564.68"></line>
+              <line class="cls-3" x1="65.24" y1="296.22" x2="602.17" y2="296.22"></line>
 
-                <g>
-                  <line
-                    class="cls-5"
-                    x1="442"
-                    y1="405"
-                    x2="226"
-                    y2="189"
-                  ></line>
-                  <polygon
-                    class="cls-6"
-                    points="441 402 439 404 442 405 441 402"
-                  ></polygon>
-                  <polygon
-                    class="cls-6"
-                    points="226 189 229 190 227 192 226 189"
-                  ></polygon>
-                </g>
-
-                <g>
-                  <line
-                    class="cls-7"
-                    x1="442"
-                    y1="189"
-                    x2="226"
-                    y2="405"
-                  ></line>
-                  <polygon
-                    class="cls-8"
-                    points="442 189 439 190 441 192 442 189"
-                  ></polygon>
-                  <polygon
-                    class="cls-8"
-                    points="226 405 227 402 229 404 226 405"
-                  ></polygon>
-                </g>
-
-                <line class="cls-18" x1="502" y1="297" x2="335" y2="465"></line>
-                <text
-                  class="cls-44"
-                  transform="translate(238.77 188.48) rotate(45)"
-                >
-                  male generation line
-                </text>
-                <text
-                  class="cls-44"
-                  transform="translate(351.7 264.98) rotate(-45)"
-                >
-                  female generation line
-                </text>
+              <g>
+                <line class="cls-5" x1="442" y1="405" x2="226" y2="189"></line>
+                <polygon class="cls-6" points="441 402 439 404 442 405 441 402"></polygon>
+                <polygon class="cls-6" points="226 189 229 190 227 192 226 189"></polygon>
               </g>
 
-              <g id="points-basic">
-                <circle class="cls-24" cx="82.59" cy="296.22" r="32.5"></circle>
-                <text
-                  class="cls-55 matrix-value-point"
-                  id="compatibilityApoint"
-                  transform="translate(82.34 299.89)"
-                ></text>
-
-                <circle class="cls-24" cx="333.7" cy="42" r="32.5"></circle>
-                <text
-                  class="cls-55 matrix-value-point"
-                  id="compatibilityBpoint"
-                  transform="translate(334 44.83)"
-                ></text>
-
-                <circle
-                  class="cls-24"
-                  cx="587.13"
-                  cy="296.22"
-                  r="32.5"
-                ></circle>
-                <text
-                  class="cls-55 matrix-value-point"
-                  id="compatibilityCpoint"
-                  transform="translate(587.4 297.89)"
-                ></text>
-
-                <circle class="cls-24" cx="332.7" cy="554" r="32.5"></circle>
-                <text
-                  class="cls-55 matrix-value-point"
-                  id="compatibilityDpoint"
-                  transform="translate(332.7 555.39)"
-                ></text>
-
-                <circle class="cls-24" cx="334" cy="297" r="32.5"></circle>
-                <text
-                  class="cls-55 clss matrix-value-point"
-                  id="compatibilityEpoint"
-                  transform="translate(333 299)"
-                ></text>
-
-                <circle class="cls-24" cx="153" cy="116.22" r="32.5"></circle>
-                <text
-                  class="cls-55 matrix-value-point"
-                  id="compatibilityFpoint"
-                  transform="translate(153 119.42)"
-                ></text>
-
-                <circle class="cls-24" cx="514.1" cy="116.22" r="32.5"></circle>
-                <text
-                  class="cls-55 matrix-value-point"
-                  id="compatibilityGpoint"
-                  transform="translate(513.85 119.42)"
-                ></text>
-
-                <circle class="cls-24" cx="514.1" cy="476.62" r="32.5"></circle>
-                <text
-                  class="cls-55 matrix-value-point"
-                  id="compatibilityIpoint"
-                  transform="translate(513 480.72)"
-                ></text>
-
-                <circle class="cls-24" cx="153" cy="476.62" r="32.5"></circle>
-                <text
-                  class="cls-55 matrix-value-point"
-                  id="compatibilityHpoint"
-                  transform="translate(153.5 480.72)"
-                ></text>
-
-                <circle class="cls-21" cx="332.59" cy="467.72" r="20"></circle>
-                <text
-                  class="cls-58 matrix-value-point"
-                  id="compatibilityJpoint"
-                  transform="translate(332.69 467.62)"
-                ></text>
-
-                <circle class="cls-21" cx="503" cy="297" r="20"></circle>
-                <text
-                  class="cls-58 matrix-value-point"
-                  id="compatibilityNpoint"
-                  transform="translate(503 297.56)"
-                ></text>
-
-                <circle class="cls-21" cx="418.18" cy="380.69" r="20"></circle>
-                <text
-                  class="cls-58 matrix-value-point"
-                  id="compatibilityLpoint"
-                  transform="translate(418.17 382.27)"
-                ></text>
-
-                <circle class="cls-21" cx="375" cy="424" r="20"></circle>
-                <text
-                  class="cls-58 matrix-value-point"
-                  id="compatibilityKpoint"
-                  transform="translate(375 424)"
-                ></text>
-
-                <circle class="cls-21" cx="461" cy="338" r="20"></circle>
-                <text
-                  class="cls-58 matrix-value-point"
-                  id="compatibilityMpoint"
-                  transform="translate(461.3 339.5)"
-                ></text>
-
-                <circle class="cls-21" cx="163.61" cy="296.22" r="20"></circle>
-                <text
-                  class="cls-58 matrix-value-point"
-                  id="compatibilitySpoint"
-                  transform="translate(163.59 297.56)"
-                ></text>
-
-                <circle class="cls-21" cx="333.7" cy="126" r="20"></circle>
-                <text
-                  class="cls-58 matrix-value-point"
-                  id="compatibilityTpoint"
-                  transform="translate(333.69 126.71)"
-                ></text>
-
-                <circle class="cls-23" cx="127.11" cy="296.22" r="23"></circle>
-                <text
-                  class="cls-60 matrix-value-point"
-                  id="compatibilityOpoint"
-                  transform="translate(126.8 299)"
-                ></text>
-
-                <circle class="cls-23" cx="333.7" cy="89.62" r="23"></circle>
-                <text
-                  class="cls-60 matrix-value-point"
-                  id="compatibilityPpoint"
-                  transform="translate(333.9 91)"
-                ></text>
-
-                <circle class="cls-23" cx="333" cy="505" r="23"></circle>
-                <text
-                  class="cls-60 matrix-value-point"
-                  id="compatibilityRpoint"
-                  transform="translate(332.81 504.91)"
-                ></text>
-
-                <circle class="cls-23" cx="540" cy="297" r="23"></circle>
-                <text
-                  class="cls-60 matrix-value-point"
-                  id="compatibilityQpoint"
-                  transform="translate(540 298.56)"
-                ></text>
-
-                <circle class="cls-21" cx="245.26" cy="296.22" r="20"></circle>
-                <text
-                  class="cls-58 matrix-value-point"
-                  id="compatibilityWpoint"
-                  transform="translate(245.26 297.56)"
-                ></text>
-
-                <circle class="cls-21" cx="333.7" cy="203" r="20"></circle>
-                <text
-                  class="cls-58 matrix-value-point"
-                  id="compatibilityXpoint"
-                  transform="translate(333.7 203)"
-                ></text>
-
-                <circle class="cls-21" cx="212" cy="175.93" r="20"></circle>
-                <text
-                  class="cls-58 matrix-value-point"
-                  id="compatibilityF2point"
-                  transform="translate(212 175.83)"
-                ></text>
-
-                <circle class="cls-23" cx="186.71" cy="149.53" r="23"></circle>
-                <text
-                  class="cls-60 matrix-value-point"
-                  id="compatibilityF1point"
-                  transform="translate(186.71 152.27)"
-                ></text>
-
-                <circle class="cls-21" cx="455.4" cy="174.53" r="20"></circle>
-                <text
-                  class="cls-58 matrix-value-point"
-                  id="compatibilityG2point"
-                  transform="translate(455.38 175.83)"
-                ></text>
-
-                <circle class="cls-23" cx="479.79" cy="150.13" r="23"></circle>
-                <text
-                  class="cls-60 matrix-value-point"
-                  id="compatibilityG1point"
-                  transform="translate(479.89 151.77)"
-                ></text>
-
-                <circle class="cls-21" cx="455.4" cy="417.91" r="20"></circle>
-                <text
-                  class="cls-58 matrix-value-point"
-                  id="compatibilityI2point"
-                  transform="translate(455.39 420.05)"
-                ></text>
-
-                <circle class="cls-23" cx="479.79" cy="442.31" r="23"></circle>
-                <text
-                  class="cls-60 matrix-value-point"
-                  id="compatibilityI1point"
-                  transform="translate(480.89 445.41)"
-                ></text>
-
-                <circle class="cls-21" cx="215" cy="417" r="20"></circle>
-                <text
-                  class="cls-58 matrix-value-point"
-                  id="compatibilityH2point"
-                  transform="translate(215 419.06)"
-                ></text>
-
-                <circle class="cls-23" cx="188.71" cy="442.7" r="23"></circle>
-                <text
-                  class="cls-60 matrix-value-point"
-                  id="compatibilityH1point"
-                  transform="translate(188.71 445.41)"
-                ></text>
-
-                <circle class="cls-21" cx="417.54" cy="296.22" r="20"></circle>
-                <text
-                  class="cls-58 matrix-value-point"
-                  id="compatibilityVpoint"
-                  transform="translate(417.54 297)"
-                ></text>
-
-                <circle class="cls-23" cx="381" cy="297" r="23"></circle>
-                <text
-                  class="cls-60 matrix-value-point"
-                  id="compatibilityUpoint"
-                  transform="translate(381 298)"
-                ></text>
+              <g>
+                <line class="cls-7" x1="442" y1="189" x2="226" y2="405"></line>
+                <polygon class="cls-8" points="442 189 439 190 441 192 442 189"></polygon>
+                <polygon class="cls-8" points="226 405 227 402 229 404 226 405"></polygon>
               </g>
 
-              <g id="points-years">
-                <text class="cls-28" transform="translate(20 295)">
-                  0
-                  <tspan x="-10" y="10">years</tspan>
-                  <tspan x="-5" y="20">old</tspan>
-                </text>
+              <line class="cls-18" x1="502" y1="297" x2="335" y2="465"></line>
+              <text class="cls-44" transform="translate(238.77 188.48) rotate(45)">
+                male generation line
+              </text>
+              <text class="cls-44" transform="translate(351.7 264.98) rotate(-45)">
+                female generation line
+              </text>
+            </g>
 
-                <text class="cls-28" transform="translate(100 70)">
-                  10
-                  <tspan x="-8" y="10">years</tspan>
-                  <tspan x="-3" y="20">old</tspan>
-                </text>
+            <g id="points-basic">
+              <circle class="cls-24" cx="82.59" cy="296.22" r="32.5"></circle>
+              <text class="cls-55 matrix-value-point" id="compatibilityApoint"
+                transform="translate(82.34 299.89)"></text>
 
-                <text class="cls-28" transform="translate(330 -22)">
-                  20
-                  <tspan x="-8" y="10">years</tspan>
-                  <tspan x="-3" y="20">old</tspan>
-                </text>
+              <circle class="cls-24" cx="333.7" cy="42" r="32.5"></circle>
+              <text class="cls-55 matrix-value-point" id="compatibilityBpoint" transform="translate(334 44.83)"></text>
 
-                <text class="cls-28" transform="translate(550 70)">
-                  30
-                  <tspan x="-8" y="10">years</tspan>
-                  <tspan x="-3" y="20">old</tspan>
-                </text>
+              <circle class="cls-24" cx="587.13" cy="296.22" r="32.5"></circle>
+              <text class="cls-55 matrix-value-point" id="compatibilityCpoint"
+                transform="translate(587.4 297.89)"></text>
 
-                <text class="cls-28" transform="translate(638 295)">
-                  40
-                  <tspan x="-8" y="10">years</tspan>
-                  <tspan x="-3" y="20">old</tspan>
-                </text>
+              <circle class="cls-24" cx="332.7" cy="554" r="32.5"></circle>
+              <text class="cls-55 matrix-value-point" id="compatibilityDpoint"
+                transform="translate(332.7 555.39)"></text>
 
-                <text class="cls-28" transform="translate(550 515)">
-                  50
-                  <tspan x="-8" y="10">years</tspan>
-                  <tspan x="-3" y="20">old</tspan>
-                </text>
+              <circle class="cls-24" cx="334" cy="297" r="32.5"></circle>
+              <text class="cls-55 clss matrix-value-point" id="compatibilityEpoint"
+                transform="translate(333 299)"></text>
 
-                <text class="cls-28" transform="translate(328 610)">
-                  60
-                  <tspan x="-8" y="10">years</tspan>
-                  <tspan x="-3" y="20">old</tspan>
-                </text>
+              <circle class="cls-24" cx="153" cy="116.22" r="32.5"></circle>
+              <text class="cls-55 matrix-value-point" id="compatibilityFpoint" transform="translate(153 119.42)"></text>
 
-                <text class="cls-28" transform="translate(100 515)">
-                  70
-                  <tspan x="-8" y="10">years</tspan>
-                  <tspan x="-3" y="20">old</tspan>
-                </text>
-              </g>
-            </svg>
+              <circle class="cls-24" cx="514.1" cy="116.22" r="32.5"></circle>
+              <text class="cls-55 matrix-value-point" id="compatibilityGpoint"
+                transform="translate(513.85 119.42)"></text>
+
+              <circle class="cls-24" cx="514.1" cy="476.62" r="32.5"></circle>
+              <text class="cls-55 matrix-value-point" id="compatibilityIpoint" transform="translate(513 480.72)"></text>
+
+              <circle class="cls-24" cx="153" cy="476.62" r="32.5"></circle>
+              <text class="cls-55 matrix-value-point" id="compatibilityHpoint"
+                transform="translate(153.5 480.72)"></text>
+
+              <circle class="cls-21" cx="332.59" cy="467.72" r="20"></circle>
+              <text class="cls-58 matrix-value-point" id="compatibilityJpoint"
+                transform="translate(332.69 467.62)"></text>
+
+              <circle class="cls-21" cx="503" cy="297" r="20"></circle>
+              <text class="cls-58 matrix-value-point" id="compatibilityNpoint" transform="translate(503 297.56)"></text>
+
+              <circle class="cls-21" cx="418.18" cy="380.69" r="20"></circle>
+              <text class="cls-58 matrix-value-point" id="compatibilityLpoint"
+                transform="translate(418.17 382.27)"></text>
+
+              <circle class="cls-21" cx="375" cy="424" r="20"></circle>
+              <text class="cls-58 matrix-value-point" id="compatibilityKpoint" transform="translate(375 424)"></text>
+
+              <circle class="cls-21" cx="461" cy="338" r="20"></circle>
+              <text class="cls-58 matrix-value-point" id="compatibilityMpoint"
+                transform="translate(461.3 339.5)"></text>
+
+              <circle class="cls-21" cx="163.61" cy="296.22" r="20"></circle>
+              <text class="cls-58 matrix-value-point" id="compatibilitySpoint"
+                transform="translate(163.59 297.56)"></text>
+
+              <circle class="cls-21" cx="333.7" cy="126" r="20"></circle>
+              <text class="cls-58 matrix-value-point" id="compatibilityTpoint"
+                transform="translate(333.69 126.71)"></text>
+
+              <circle class="cls-23" cx="127.11" cy="296.22" r="23"></circle>
+              <text class="cls-60 matrix-value-point" id="compatibilityOpoint" transform="translate(126.8 299)"></text>
+
+              <circle class="cls-23" cx="333.7" cy="89.62" r="23"></circle>
+              <text class="cls-60 matrix-value-point" id="compatibilityPpoint" transform="translate(333.9 91)"></text>
+
+              <circle class="cls-23" cx="333" cy="505" r="23"></circle>
+              <text class="cls-60 matrix-value-point" id="compatibilityRpoint"
+                transform="translate(332.81 504.91)"></text>
+
+              <circle class="cls-23" cx="540" cy="297" r="23"></circle>
+              <text class="cls-60 matrix-value-point" id="compatibilityQpoint" transform="translate(540 298.56)"></text>
+
+              <circle class="cls-21" cx="245.26" cy="296.22" r="20"></circle>
+              <text class="cls-58 matrix-value-point" id="compatibilityWpoint"
+                transform="translate(245.26 297.56)"></text>
+
+              <circle class="cls-21" cx="333.7" cy="203" r="20"></circle>
+              <text class="cls-58 matrix-value-point" id="compatibilityXpoint" transform="translate(333.7 203)"></text>
+
+              <circle class="cls-21" cx="212" cy="175.93" r="20"></circle>
+              <text class="cls-58 matrix-value-point" id="compatibilityF2point"
+                transform="translate(212 175.83)"></text>
+
+              <circle class="cls-23" cx="186.71" cy="149.53" r="23"></circle>
+              <text class="cls-60 matrix-value-point" id="compatibilityF1point"
+                transform="translate(186.71 152.27)"></text>
+
+              <circle class="cls-21" cx="455.4" cy="174.53" r="20"></circle>
+              <text class="cls-58 matrix-value-point" id="compatibilityG2point"
+                transform="translate(455.38 175.83)"></text>
+
+              <circle class="cls-23" cx="479.79" cy="150.13" r="23"></circle>
+              <text class="cls-60 matrix-value-point" id="compatibilityG1point"
+                transform="translate(479.89 151.77)"></text>
+
+              <circle class="cls-21" cx="455.4" cy="417.91" r="20"></circle>
+              <text class="cls-58 matrix-value-point" id="compatibilityI2point"
+                transform="translate(455.39 420.05)"></text>
+
+              <circle class="cls-23" cx="479.79" cy="442.31" r="23"></circle>
+              <text class="cls-60 matrix-value-point" id="compatibilityI1point"
+                transform="translate(480.89 445.41)"></text>
+
+              <circle class="cls-21" cx="215" cy="417" r="20"></circle>
+              <text class="cls-58 matrix-value-point" id="compatibilityH2point"
+                transform="translate(215 419.06)"></text>
+
+              <circle class="cls-23" cx="188.71" cy="442.7" r="23"></circle>
+              <text class="cls-60 matrix-value-point" id="compatibilityH1point"
+                transform="translate(188.71 445.41)"></text>
+
+              <circle class="cls-21" cx="417.54" cy="296.22" r="20"></circle>
+              <text class="cls-58 matrix-value-point" id="compatibilityVpoint" transform="translate(417.54 297)"></text>
+
+              <circle class="cls-23" cx="381" cy="297" r="23"></circle>
+              <text class="cls-60 matrix-value-point" id="compatibilityUpoint" transform="translate(381 298)"></text>
+            </g>
+
+            <g id="points-years">
+              <text class="cls-28" transform="translate(20 295)">
+                0
+                <tspan x="-10" y="10">years</tspan>
+                <tspan x="-5" y="20">old</tspan>
+              </text>
+
+              <text class="cls-28" transform="translate(100 70)">
+                10
+                <tspan x="-8" y="10">years</tspan>
+                <tspan x="-3" y="20">old</tspan>
+              </text>
+
+              <text class="cls-28" transform="translate(330 -22)">
+                20
+                <tspan x="-8" y="10">years</tspan>
+                <tspan x="-3" y="20">old</tspan>
+              </text>
+
+              <text class="cls-28" transform="translate(550 70)">
+                30
+                <tspan x="-8" y="10">years</tspan>
+                <tspan x="-3" y="20">old</tspan>
+              </text>
+
+              <text class="cls-28" transform="translate(638 295)">
+                40
+                <tspan x="-8" y="10">years</tspan>
+                <tspan x="-3" y="20">old</tspan>
+              </text>
+
+              <text class="cls-28" transform="translate(550 515)">
+                50
+                <tspan x="-8" y="10">years</tspan>
+                <tspan x="-3" y="20">old</tspan>
+              </text>
+
+              <text class="cls-28" transform="translate(328 610)">
+                60
+                <tspan x="-8" y="10">years</tspan>
+                <tspan x="-3" y="20">old</tspan>
+              </text>
+
+              <text class="cls-28" transform="translate(100 515)">
+                70
+                <tspan x="-8" y="10">years</tspan>
+                <tspan x="-3" y="20">old</tspan>
+              </text>
+            </g>
+          </svg>
+        </div>
+        <div class="compatibility-table">
+          <table id="table-compatibility">
+            <tbody>
+              <tr>
+                <td colspan="4">
+                  <img src="./assets/img/compatibilityStar.svg" />
+                </td>
+                <td width="10%"></td>
+                <td colspan="4">
+                  <img src="./assets/img/compatibilityStar.svg" />
+                </td>
+                <td width="10%"></td>
+                <td colspan="4">
+                  <img src="./assets/img/compatibilityStar.svg" />
+                </td>
+              </tr>
+              <tr>
+                <td colspan="4">
+                  <h3><b>Relationship:</b></h3>
+                </td>
+                <td width="10%"></td>
+                <td colspan="4">
+                  <h3><b>Union:</b></h3>
+                </td>
+                <td width="10%"></td>
+                <td colspan="4">
+                  <h3><b>Harmony:</b></h3>
+                </td>
+              </tr>
+              <tr style="height: 5px">
+                <td></td>
+              </tr>
+              <tr class="font-size16">
+                <td colspan="4" class="table-padding">
+                  Shared goals, spiritual growth, search for financial
+                  stability
+                </td>
+                <td width="6%"></td>
+                <td colspan="4" class="table-padding">
+                  Realization of financial potential, solution of generic
+                  tasks, union of 2 genus. Realization in society
+                </td>
+                <td width="6%"></td>
+                <td colspan="4" class="table-padding">
+                  A stage in a relationship where both partners respect each
+                  other’s personalities and feel complete unity
+                </td>
+              </tr>
+              <tr style="height: 5px">
+                <td></td>
+              </tr>
+              <tr class="font-size18" style="position: relative">
+                <td>Sky:</td>
+                <td>
+                  <span id="skypoint-comp" class="base-circle">18</span>
+                </td>
+                <td rowspan="2">
+                  <svg width="38" height="48" viewBox="0 0 38 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0V2H18V46H0V48H20V25H38V23H20V0H0Z" fill="white"></path>
+                  </svg>
+                </td>
+                <td rowspan="2">
+                  <span id="relationship" class="base-circle">12</span>
+                </td>
+                <td></td>
+                <td>M:</td>
+                <td>
+                  <span id="malepoint-comp" class="base-circle">21</span>
+                </td>
+                <td rowspan="2">
+                  <svg width="38" height="48" viewBox="0 0 38 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0V2H18V46H0V48H20V25H38V23H20V0H0Z" fill="white"></path>
+                  </svg>
+                </td>
+                <td rowspan="2">
+                  <span id="union" class="base-circle">6</span>
+                </td>
+                <td></td>
+                <td>
+                  <span id="earthpoint-comp" class="base-circle">21</span>
+                </td>
+                <td rowspan="2">
+                  <svg width="38" height="48" viewBox="0 0 38 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0V2H18V46H0V48H20V25H38V23H20V0H0Z" fill="white"></path>
+                  </svg>
+                </td>
+                <td rowspan="2">
+                  <span id="harmony" class="base-circle">6</span>
+                </td>
+              </tr>
+              <tr class="font-size18">
+                <td>Earth:</td>
+                <td>
+                  <span id="earthpoint-comp" class="base-circle">21</span>
+                </td>
+                <td></td>
+                <td>F:</td>
+                <td>
+                  <span id="femalepoint-comp" class="base-circle">12</span>
+                </td>
+                <td></td>
+                <td><span id="harmony2" class="base-circle">12</span></td>
+              </tr>
+              <tr>
+                <td style="height: 35px"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="center center_container">
+          <div class="glow-btn__wrap">
+            <div class="glow-btn"></div>
           </div>
-          <div class="compatibility-table">
-            <table id="table-compatibility">
-              <tbody>
-                <tr>
-                  <td colspan="4">
-                    <img src="./assets/img/compatibilityStar.svg" />
-                  </td>
-                  <td width="10%"></td>
-                  <td colspan="4">
-                    <img src="./assets/img/compatibilityStar.svg" />
-                  </td>
-                  <td width="10%"></td>
-                  <td colspan="4">
-                    <img src="./assets/img/compatibilityStar.svg" />
-                  </td>
-                </tr>
-                <tr>
-                  <td colspan="4">
-                    <h3><b>Relationship:</b></h3>
-                  </td>
-                  <td width="10%"></td>
-                  <td colspan="4">
-                    <h3><b>Union:</b></h3>
-                  </td>
-                  <td width="10%"></td>
-                  <td colspan="4">
-                    <h3><b>Harmony:</b></h3>
-                  </td>
-                </tr>
-                <tr style="height: 5px">
-                  <td></td>
-                </tr>
-                <tr class="font-size16">
-                  <td colspan="4" class="table-padding">
-                    Shared goals, spiritual growth, search for financial
-                    stability
-                  </td>
-                  <td width="6%"></td>
-                  <td colspan="4" class="table-padding">
-                    Realization of financial potential, solution of generic
-                    tasks, union of 2 genus. Realization in society
-                  </td>
-                  <td width="6%"></td>
-                  <td colspan="4" class="table-padding">
-                    A stage in a relationship where both partners respect each
-                    other’s personalities and feel complete unity
-                  </td>
-                </tr>
-                <tr style="height: 5px">
-                  <td></td>
-                </tr>
-                <tr class="font-size18" style="position: relative">
-                  <td>Sky:</td>
-                  <td>
-                    <span id="skypoint-comp" class="base-circle">18</span>
-                  </td>
-                  <td rowspan="2">
-                    <svg
-                      width="38"
-                      height="48"
-                      viewBox="0 0 38 48"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M0 0V2H18V46H0V48H20V25H38V23H20V0H0Z"
-                        fill="white"
-                      ></path>
-                    </svg>
-                  </td>
-                  <td rowspan="2">
-                    <span id="relationship" class="base-circle">12</span>
-                  </td>
-                  <td></td>
-                  <td>M:</td>
-                  <td>
-                    <span id="malepoint-comp" class="base-circle">21</span>
-                  </td>
-                  <td rowspan="2">
-                    <svg
-                      width="38"
-                      height="48"
-                      viewBox="0 0 38 48"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M0 0V2H18V46H0V48H20V25H38V23H20V0H0Z"
-                        fill="white"
-                      ></path>
-                    </svg>
-                  </td>
-                  <td rowspan="2">
-                    <span id="union" class="base-circle">6</span>
-                  </td>
-                  <td></td>
-                  <td>
-                    <span id="earthpoint-comp" class="base-circle">21</span>
-                  </td>
-                  <td rowspan="2">
-                    <svg
-                      width="38"
-                      height="48"
-                      viewBox="0 0 38 48"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M0 0V2H18V46H0V48H20V25H38V23H20V0H0Z"
-                        fill="white"
-                      ></path>
-                    </svg>
-                  </td>
-                  <td rowspan="2">
-                    <span id="harmony" class="base-circle">6</span>
-                  </td>
-                </tr>
-                <tr class="font-size18">
-                  <td>Earth:</td>
-                  <td>
-                    <span id="earthpoint-comp" class="base-circle">21</span>
-                  </td>
-                  <td></td>
-                  <td>F:</td>
-                  <td>
-                    <span id="femalepoint-comp" class="base-circle">12</span>
-                  </td>
-                  <td></td>
-                  <td><span id="harmony2" class="base-circle">12</span></td>
-                </tr>
-                <tr>
-                  <td style="height: 35px"></td>
-                </tr>
-              </tbody>
-            </table>
+          <button id="decode-matrix-btn">
+            Get your full Destiny Matrix reading
+          </button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="container">
+      <div class="footer">
+        <p>Find me on social media</p>
+      </div>
+      <div class="footer">
+        <div class="container__socialmedia">
+          <div class="socialmedia-item">
+            <img src="./assets/img/instagram.svg" alt="" />
           </div>
-          <div class="center center_container">
-            <div class="glow-btn__wrap">
-              <div class="glow-btn"></div>
-            </div>
-            <button id="decode-matrix-btn">
-              Get your full Destiny Matrix reading
-            </button>
+          <div class="socialmedia-item">
+            <img src="./assets/img/pinterest.svg" />
+          </div>
+          <div class="socialmedia-item">
+            <img src="./assets/img/tiktok.svg" />
+          </div>
+          <div class="socialmedia-item">
+            <img src="./assets/img/youtube.svg" />
+          </div>
+          <div class="socialmedia-item">
+            <img src="./assets/img/whatsapp.svg" />
+          </div>
+          <div class="socialmedia-item">
+            <img src="./assets/img/viber.svg" />
           </div>
         </div>
       </div>
-    </main>
-    <footer>
-      <div class="container">
-        <div class="footer">
-          <p>Find me on social media</p>
-        </div>
-        <div class="footer">
-          <div class="container__socialmedia">
-            <div class="socialmedia-item">
-              <img src="./assets/img/instagram.svg" alt="" />
-            </div>
-            <div class="socialmedia-item">
-              <img src="./assets/img/pinterest.svg" />
-            </div>
-            <div class="socialmedia-item">
-              <img src="./assets/img/tiktok.svg" />
-            </div>
-            <div class="socialmedia-item">
-              <img src="./assets/img/youtube.svg" />
-            </div>
-            <div class="socialmedia-item">
-              <img src="./assets/img/whatsapp.svg" />
-            </div>
-            <div class="socialmedia-item">
-              <img src="./assets/img/viber.svg" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <script src="./src/code.js"></script>
-    <script src="./src/inputs_compatibility.js"></script>
-  </body>
+    </div>
+  </footer>
+  <script src="./src/code.js"></script>
+  <script src="./src/inputs_compatibility.js"></script>
+</body>
+
 </html>
