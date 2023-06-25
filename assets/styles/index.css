@@ -115,13 +115,24 @@ label {
   font-size: 1.5em;
 }
 
-#date,
-#date_person1 {
+.input1-wrap,
+.input2-wrap {
+  position: relative;
+}
+
+.input1-wrap {
   grid-area: input1;
 }
 
+#date,
 #name,
+#date_person1,
 #date_person2 {
+  width: 8.55em;
+  height: 1.25em;
+}
+
+.input2-wrap {
   grid-area: input2;
 }
 
@@ -132,7 +143,7 @@ input {
   background-color: #050215;
   color: #fff8db;
   border: 1px #fff8db solid;
-  border-radius: 10px;
+  border-radius: 0.5em;
 }
 
 ::-webkit-calendar-picker-indicator {
@@ -140,19 +151,15 @@ input {
 }
 
 button {
-  padding: 1.25em 3em 1.25em 3em;
+  padding: 1.25em 2em 1.25em 2em;
   background-color: #fff8db;
   font-family: "Inter";
   font-size: 1.25em;
   line-height: 125%;
   text-transform: uppercase;
-  border-radius: 10px;
+  border-radius: 0.5em;
   border: 1px #fff8db solid;
   z-index: 1;
-}
-
-#createChart {
-  padding: 1.25em 2em 1.25em 2em;
 }
 
 #get_the_answer,
@@ -170,8 +177,52 @@ button {
 
 .star__wrap2 {
   position: absolute;
-  top: 2.35em;
-  left: 18.7em;
+  top: -1.56em;
+  right: -1.38em;
+  font-size: 1.25em;
+}
+
+.star__wrap3 {
+  position: absolute;
+  bottom: -1.8em;
+  right: -1.38em;
+  font-size: 1.25em;
+}
+
+.star__wrap4 {
+  position: absolute;
+  top: -2.5em;
+  right: -1em;
+  font-size: 1.25em;
+}
+
+.star__wrap5 {
+  position: absolute;
+  top: 7em;
+  right: -1.5em;
+  font-size: 1.25em;
+  opacity: 0.1;
+}
+
+.star__wrap6 {
+  position: absolute;
+  top: 10em;
+  left: 9em;
+  font-size: 1.25em;
+}
+
+.star__wrap7 {
+  position: absolute;
+  top: -1em;
+  left: 6em;
+  font-size: 1.25em;
+  opacity: 0.1;
+}
+
+.star__wrap8 {
+  position: absolute;
+  top: 11em;
+  right: 9em;
   font-size: 1.25em;
 }
 
@@ -180,11 +231,11 @@ button {
 }
 
 .star-size-s {
-  width: 2.3125em;
+  width: 1.85em;
 }
 
 .star-size-l {
-  width: 5.375em;
+  width: 4.3em;
 }
 
 .center {
@@ -473,7 +524,6 @@ button {
   max-width: 20em;
   margin-top: 6.5em;
   margin-bottom: 6.5em;
-  padding: 1.25em 2em 1.25em 2em;
 }
 
 /* Matrix's styles */
