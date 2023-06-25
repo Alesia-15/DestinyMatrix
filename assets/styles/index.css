@@ -15,8 +15,8 @@ body {
 header,
 main,
 footer {
-  padding-left: 13.125em;
-  padding-right: 13.125em;
+  padding-left: 12.9em;
+  padding-right: 12.9em;
 }
 
 .header {
@@ -144,9 +144,10 @@ button {
   background-color: #fff8db;
   font-family: "Inter";
   font-size: 1.25em;
+  line-height: 125%;
   text-transform: uppercase;
   border-radius: 10px;
-  border: none;
+  border: 1px #fff8db solid;
   z-index: 1;
 }
 
@@ -164,16 +165,18 @@ button {
   position: absolute;
   top: 0em;
   left: -2em;
+  font-size: 1.25em;
 }
 
-.star__wrap1 {
+.star__wrap2 {
   position: absolute;
-  top: 0em;
-  left: -2em;
+  top: 2.35em;
+  left: 18.7em;
+  font-size: 1.25em;
 }
 
 .star-size-m {
-  width: 3.625em;
+  width: 2.9em;
 }
 
 .star-size-s {
