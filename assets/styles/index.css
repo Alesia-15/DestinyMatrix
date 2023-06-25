@@ -127,6 +127,14 @@ button {
   z-index: 1;
 }
 
+button:hover {
+  opacity: 0.8;
+}
+
+button:active {
+  background-color: #ffffff;
+}
+
 #get_the_answer,
 #createChart {
   grid-area: button;
@@ -148,6 +156,7 @@ button {
   text-align: center;
   padding: 9.25em 0 8.5em 0;
   margin: 0;
+  /* width: 74em; */
 }
 
 .desteny-container p {
@@ -346,6 +355,13 @@ button {
 .glow {
   width: 49.775em;
   height: 1.875em;
+  background: #fff8db;
+  filter: blur(4.6875em);
+}
+
+.glow2 {
+  width: 49.063em;
+  height: 29.938em;
   background: #fff8db;
   filter: blur(4.6875em);
 }
