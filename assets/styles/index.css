@@ -74,9 +74,10 @@ li {
 }
 
 .birthday-container__inputs-wrapper {
+  width: 100%;
   margin-top: 3.1875em;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas: "input1 input2 button";
   grid-gap: 1.875em;
 }
@@ -105,7 +106,6 @@ input {
   color: #fff8db;
   border: 1px #fff8db solid;
   border-radius: 10px;
-  text-transform: uppercase;
 }
 
 ::-webkit-calendar-picker-indicator {
@@ -113,14 +113,10 @@ input {
 }
 
 button {
-  height: 71px;
+  padding: 1.25em 3.25em 1.25em 3.25em;
   background-color: #fff8db;
-  padding-left: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
-  padding-top: 0px;
   font-family: "Inter";
-  font-size: 20px;
+  font-size: 1.25em;
   text-transform: uppercase;
   border-radius: 10px;
   border: none;
