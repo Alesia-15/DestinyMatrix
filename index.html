@@ -1107,78 +1107,111 @@
               </g>
             </svg>
           </div>
-          <table class="chakra-table">
-            <tr class="chakra-tr chakra-table-header">
-              <th class="chakra-name chakra-name__radius-left">Chakra name</th>
-              <th class="chakra-td">Physics</th>
-              <th class="chakra-td">Energy</th>
-              <th class="chakra-td chakra-name__radius-right">Emotions</th>
-            </tr>
-            <tr class="chakra-tr">
-              <td class="chakra-name chakra-name-left">
-                <span id="circle-sahastrara">Sahastrara</span>
-              </td>
-              <td class="chakra-td" id="sahphysics">Ячейка 1-2</td>
-              <td class="chakra-td" id="sahenergy">Ячейка 1-3</td>
-              <td class="chakra-td" id="sahemotions">Ячейка 1-4</td>
-            </tr>
-            <tr class="chakra-tr">
-              <td class="chakra-name chakra-name-left">
-                <span id="circle-ajna">Ajna</span>
-              </td>
-              <td class="chakra-td" id="ajphysics">Ячейка 2-2</td>
-              <td class="chakra-td" id="ajenergy">Ячейка 2-3</td>
-              <td class="chakra-td" id="ajemotions">Ячейка 2-4</td>
-            </tr>
-            <tr class="chakra-tr">
-              <td class="chakra-name chakra-name-left">
-                <span id="circle-vishuddha">Vishuddha</span>
-              </td>
-              <td class="chakra-td" id="vishphysics">Ячейка 3-2</td>
-              <td class="chakra-td" id="vishenergy">Ячейка 3-3</td>
-              <td class="chakra-td" id="vishemotions">Ячейка 3-4</td>
-            </tr>
-            <tr class="chakra-tr">
-              <td class="chakra-name chakra-name-left">
-                <span id="circle-anahata">Anahata</span>
-              </td>
-              <td class="chakra-td" id="anahphysics">Ячейка 4-2</td>
-              <td class="chakra-td" id="anahenergy">Ячейка 4-3</td>
-              <td class="chakra-td" id="anahemotions">Ячейка 4-4</td>
-            </tr>
-            <tr class="chakra-tr">
-              <td class="chakra-name chakra-name-left">
-                <span id="circle-manipura">Manipura</span>
-              </td>
-              <td class="chakra-td" id="manphysics">Ячейка 5-2</td>
-              <td class="chakra-td" id="manenergy">Ячейка 5-3</td>
-              <td class="chakra-td" id="manemotions">Ячейка 5-4</td>
-            </tr>
-            <tr class="chakra-tr">
-              <td class="chakra-name chakra-name-left">
-                <span id="circle-svadhishtana">Svadhishtana</span>
-              </td>
-              <td class="chakra-td" id="svadphysics">Ячейка 6-2</td>
-              <td class="chakra-td" id="svadenergy">Ячейка 6-3</td>
-              <td class="chakra-td" id="svademotions">Ячейка 6-4</td>
-            </tr>
-            <tr class="chakra-tr chakra-name__bottom">
-              <td class="chakra-name chakra-name-left">
-                <span id="circle-muladhara">Muladhara</span>
-              </td>
-              <td class="chakra-td" id="mulphysics">Ячейка 7-2</td>
-              <td class="chakra-td" id="mulenergy">Ячейка 7-3</td>
-              <td class="chakra-td" id="mulemotions">Ячейка 7-4</td>
-            </tr>
-          </table>
-          <table class="chakra-table chakra-table__result">
-            <tr class="chakra-tr chakra-name__bottom chakra-name__top">
-              <td class="chakra-name chakra-name-left">Result:</td>
-              <td class="chakra-td" id="resultphysics">Ячейка 8-2</td>
-              <td class="chakra-td" id="resultenergy">Ячейка 8-3</td>
-              <td class="chakra-td" id="resultemotions">Ячейка 8-4</td>
-            </tr>
-          </table>
+          <div id="chakra_table">
+            <div class="glow__wrap" style="z-index: -1">
+              <div class="glow2"></div>
+            </div>
+            <table class="chakra-table">
+              <tr class="chakra-tr chakra-table-header">
+                <th class="chakra-name chakra-name__radius-left">
+                  Chakra name
+                </th>
+                <th class="chakra-td">Physics</th>
+                <th class="chakra-td">Energy</th>
+                <th class="chakra-td chakra-name__radius-right">Emotions</th>
+              </tr>
+              <tr class="chakra-tr">
+                <td class="chakra-name chakra-name-left">
+                  <span class="chakra-name-flex" id="circle-sahastrara"
+                    >Sahastrara</span
+                  >
+                </td>
+                <td class="chakra-td" id="sahphysics">Ячейка 1-2</td>
+                <td class="chakra-td" id="sahenergy">Ячейка 1-3</td>
+                <td class="chakra-td" id="sahemotions">Ячейка 1-4</td>
+              </tr>
+              <tr class="chakra-tr">
+                <td class="chakra-name chakra-name-left">
+                  <span class="chakra-name-flex" id="circle-ajna">Ajna</span>
+                </td>
+                <td class="chakra-td" id="ajphysics">Ячейка 2-2</td>
+                <td class="chakra-td" id="ajenergy">Ячейка 2-3</td>
+                <td class="chakra-td" id="ajemotions">Ячейка 2-4</td>
+              </tr>
+              <tr class="chakra-tr">
+                <td class="chakra-name chakra-name-left">
+                  <span class="chakra-name-flex" id="circle-vishuddha"
+                    >Vishuddha</span
+                  >
+                </td>
+                <td class="chakra-td" id="vishphysics">Ячейка 3-2</td>
+                <td class="chakra-td" id="vishenergy">Ячейка 3-3</td>
+                <td class="chakra-td" id="vishemotions">Ячейка 3-4</td>
+              </tr>
+              <tr class="chakra-tr">
+                <td class="chakra-name chakra-name-left">
+                  <span class="chakra-name-flex" id="circle-anahata"
+                    >Anahata</span
+                  >
+                </td>
+                <td class="chakra-td" id="anahphysics">Ячейка 4-2</td>
+                <td class="chakra-td" id="anahenergy">Ячейка 4-3</td>
+                <td class="chakra-td" id="anahemotions">Ячейка 4-4</td>
+              </tr>
+              <tr class="chakra-tr">
+                <td class="chakra-name chakra-name-left">
+                  <span class="chakra-name-flex" id="circle-manipura"
+                    >Manipura</span
+                  >
+                </td>
+                <td class="chakra-td" id="manphysics">Ячейка 5-2</td>
+                <td class="chakra-td" id="manenergy">Ячейка 5-3</td>
+                <td class="chakra-td" id="manemotions">Ячейка 5-4</td>
+              </tr>
+              <tr class="chakra-tr">
+                <td class="chakra-name chakra-name-left">
+                  <span class="chakra-name-flex" id="circle-svadhishtana"
+                    >Svadhishtana</span
+                  >
+                </td>
+                <td class="chakra-td" id="svadphysics">Ячейка 6-2</td>
+                <td class="chakra-td" id="svadenergy">Ячейка 6-3</td>
+                <td class="chakra-td" id="svademotions">Ячейка 6-4</td>
+              </tr>
+              <tr class="chakra-tr chakra-name__bottom">
+                <td
+                  class="chakra-name chakra-name-left"
+                  style="border-bottom-left-radius: 10px"
+                >
+                  <span class="chakra-name-flex" id="circle-muladhara"
+                    >Muladhara</span
+                  >
+                </td>
+                <td class="chakra-td" id="mulphysics">Ячейка 7-2</td>
+                <td class="chakra-td" id="mulenergy">Ячейка 7-3</td>
+                <td
+                  class="chakra-td chakra-name__radius-right-bottom2"
+                  id="mulemotions"
+                >
+                  Ячейка 7-4
+                </td>
+              </tr>
+              <tr style="height: 20px"></tr>
+              <tr class="chakra-tr chakra-name__bottom chakra-name__top">
+                <td class="chakra-name chakra-name__radius-left-bottom">
+                  Result:
+                </td>
+                <td class="chakra-td" id="resultphysics">Ячейка 8-2</td>
+                <td class="chakra-td" id="resultenergy">Ячейка 8-3</td>
+                <td
+                  class="chakra-td chakra-name__radius-right-bottom"
+                  id="resultemotions"
+                >
+                  Ячейка 8-4
+                </td>
+              </tr>
+            </table>
+          </div>
           <div class="info-txt">
             <table id="purposes">
               <tbody>
@@ -1200,7 +1233,7 @@
                     <h3><b>Purpose for society and genus:</b></h3>
                   </td>
                 </tr>
-                <tr style="height: 5px">
+                <tr style="height: 0.375em">
                   <td></td>
                 </tr>
                 <tr class="font-size16">
