@@ -61,22 +61,55 @@ li {
 
 .birthday-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   font-family: "Inter";
-  font-size: 24px;
-}
-
-.birthday-container__item {
-  width: 20%;
-}
-
-.birthday-container input {
-  margin-right: 30px;
-  margin-bottom: 200px;
+  margin-bottom: 10em;
 }
 
 .birthday-container p {
-  margin-bottom: 3em;
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.birthday-container__inputs-wrapper {
+  margin-top: 3.1875em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "input1 input2 button";
+  grid-gap: 1.875em;
+}
+
+.errorOutput,
+.wrongDate {
+  padding-top: 5em;
+  font-size: 1.5em;
+}
+
+#date,
+#date_person1 {
+  grid-area: input1;
+}
+
+#name,
+#date_person2 {
+  grid-area: input2;
+}
+
+input {
+  padding: 1.25em 3.25em 1.25em 3.25em;
+  font-family: "Inter";
+  font-size: 1.25em;
+  background-color: #050215;
+  color: #fff8db;
+  border: 1px #fff8db solid;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+
+::-webkit-calendar-picker-indicator {
+  filter: invert(1);
 }
 
 button {
@@ -96,6 +129,7 @@ button {
 
 #get_the_answer,
 #createChart {
+  grid-area: button;
   align-self: baseline;
 }
 
@@ -104,24 +138,21 @@ button {
   justify-content: center;
 }
 
-input {
-  height: 71px;
-  font-family: "Inter";
-  font-size: 20px;
-  text-transform: uppercase;
-}
-
 .desteny-container {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 60px;
   text-transform: uppercase;
   text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.26);
-  height: 389px;
-  padding: 0;
+  text-align: center;
+  padding: 9.25em 0 8.5em 0;
   margin: 0;
+}
+
+.desteny-container p {
+  margin: 0;
+  font-size: 3.75em;
 }
 
 .chakra-table {
@@ -313,10 +344,10 @@ input {
 }
 
 .glow {
-  width: 790px;
-  height: 30px;
+  width: 49.775em;
+  height: 1.875em;
   background: #fff8db;
-  filter: blur(75px);
+  filter: blur(4.6875em);
 }
 
 .center_container {
@@ -355,7 +386,8 @@ input {
   text-transform: uppercase;
 }
 
-.output-personal-date {
+.output-personal-date,
+.output2 {
   text-align: center;
   font-size: 1.25em;
   font-family: Inter;
@@ -371,31 +403,6 @@ input {
 
 .smoky-white2 {
   color: #fff8db;
-}
-
-input[type="text"],
-textarea {
-  background-color: #050215;
-  color: #fff8db;
-  border: 1px #fff8db solid;
-  border-radius: 10px;
-  padding-left: 1em;
-  padding-right: 1em;
-  width: 80%;
-}
-
-input[type="date"] {
-  background-color: #050215;
-  color: #fff8db;
-  border: 1px #fff8db solid;
-  border-radius: 10px;
-  padding-left: 1em;
-  padding-right: 1em;
-  width: 80%;
-}
-
-::-webkit-calendar-picker-indicator {
-  filter: invert(1);
 }
 
 .container__socialmedia {
