@@ -49,9 +49,12 @@ footer {
 }
 
 a {
-  text-decoration: none; /* убираем линию подчеркивания */
-  color: inherit; /* цвет ссылки равен цвету текста */
-  outline: none; /* убираем подсветку при фокусировке */
+  text-decoration: none;
+  /* убираем линию подчеркивания */
+  color: inherit;
+  /* цвет ссылки равен цвету текста */
+  outline: none;
+  /* убираем подсветку при фокусировке */
   cursor: default;
 }
 
@@ -476,8 +479,8 @@ button:active {
   border-bottom-right-radius: 10px;
 }
 
-.chakra-table-header > :nth-child(2),
-.chakra-table-header > :nth-child(3) {
+.chakra-table-header> :nth-child(2),
+.chakra-table-header> :nth-child(3) {
   background-color: #827d78;
 }
 
@@ -529,7 +532,7 @@ button:active {
   right: 0;
   bottom: 0;
   left: 0;
-
+  z-index: -1;
   /* display */
   display: flex;
   justify-content: center;
@@ -908,110 +911,112 @@ h3 {
   label {
     font-size: 14px;
   }
-}
 
-#date,
-#name,
-#date_person1,
-#date_person2 {
-  width: 138px;
-  height: 38px;
-  padding: 5px 30px;
-  font-size: 16px;
-}
 
-#get_the_answer,
-#createChart {
-  width: 200px;
-  height: 50px;
-  padding: 5px;
-  font-size: 16px;
-}
+  #date,
+  #name,
+  #date_person1,
+  #date_person2 {
+    width: 138px;
+    height: 38px;
+    padding: 5px 30px;
+    font-size: 16px;
+  }
 
-.footer p,
-.desteny-container p,
-.personal-calculator {
-  font-size: 28px;
-  text-align: center;
-}
+  #get_the_answer,
+  #createChart {
+    width: 200px;
+    height: 50px;
+    padding: 5px;
+    font-size: 16px;
+  }
 
-.desteny-container,
-.personal-calculator p {
-  padding: 40px 0;
-}
+  .footer p,
+  .desteny-container p,
+  .personal-calculator {
+    font-size: 28px;
+    text-align: center;
+  }
 
-.birthday-container {
-  margin-bottom: 0;
-}
+  .desteny-container,
+  .personal-calculator p {
+    padding: 40px 0;
+  }
 
-.birthday-container p,
-.output-personal-date,
-.output2 {
-  font-size: 16px;
-  text-align: center;
-}
+  .birthday-container {
+    margin-bottom: 0;
+  }
 
-.personal-calculator p {
-  margin: 0;
-}
+  .birthday-container p,
+  .output-personal-date,
+  .output2 {
+    font-size: 16px;
+    text-align: center;
+  }
 
-tbody {
-  font-size: 10px;
-}
+  .personal-calculator p {
+    margin: 0;
+  }
 
-.chakra-table {
-  max-width: 100%;
-}
+  tbody {
+    font-size: 10px;
+  }
 
-.errorOutput,
-.wrongDate {
-  font-size: 16px;
-}
+  .chakra-table {
+    max-width: 100%;
+  }
 
-.star__wrap1,
-.star__wrap2,
-.star__wrap3,
-.star__wrap4,
-.star__wrap5,
-.star__wrap6,
-.star__wrap7,
-.star__wrap8 {
-  display: none;
-}
+  .errorOutput,
+  .wrongDate {
+    font-size: 16px;
+  }
 
-.glow,
-.glow2,
-.glow-btn {
-  display: none;
-}
+  .star__wrap1,
+  .star__wrap2,
+  .star__wrap3,
+  .star__wrap4,
+  .star__wrap5,
+  .star__wrap6,
+  .star__wrap7,
+  .star__wrap8 {
+    display: none;
+  }
 
-#decode-matrix-btn {
-  margin: 0 0 40px 0;
-  width: 300px;
-  height: 70px;
-  padding: 5px;
-  font-size: 16px;
-}
+  .glow,
+  .glow2,
+  .glow-btn {
+    display: none;
+  }
 
-.cls-54,
-.cls-55,
-.cls-56 {
-  font-size: 36px;
-}
+  #decode-matrix-btn {
+    margin: 0 0 40px 0;
+    width: 300px;
+    height: 70px;
+    padding: 5px;
+    font-size: 16px;
+  }
 
-.cls-57,
-.cls-58 {
-  font-size: 22px;
-}
+  .cls-54,
+  .cls-55,
+  .cls-56 {
+    font-size: 36px;
+  }
 
-.cls-59,
-.cls-60 {
-  font-size: 24px;
+  .cls-57,
+  .cls-58 {
+    font-size: 22px;
+  }
+
+  .cls-59,
+  .cls-60 {
+    font-size: 24px;
+  }
 }
 
 /*корявые медиа запросы*/
 
 @media screen and (min-width: 1160px) {
+
   /*  */
   .t-rec {
     word-break: normal !important;
@@ -1088,6 +1093,7 @@ tbody {
   #blom {
     padding-right: 42px;
   }
+
   #blom2 {
     padding-right: 0px;
   }
