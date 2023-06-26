@@ -3,8 +3,6 @@ const nameInput = document.getElementById("name");
 
 const container = document.querySelector('.matrix-container');
 container.classList.add('display-none');
-// container.hidden = true;
-// container.classList.add('display-none');
 
 const btnAnswer = document.getElementById('get_the_answer');
 
@@ -30,7 +28,6 @@ function createPerson(per, apoint, bpoint, cpoint) {
   per.points = points;
   per.purposes = purposes;
   per.chartHeart = chartHeart;
-  console.log(per.points)
 }
 
 // очищает инпуты
@@ -61,17 +58,13 @@ btnAnswer.addEventListener('click', (evt) => {
   } else {
     output.innerHTML = titleCase(name) + ' ' + '<span class="gray">Date of Birth:</span>' + ' ' + date.toLocaleDateString("ru");
 
-    // container.hidden = false;
     container.classList.remove('display-none');
-    console.log(date)
     let apoint = date.getDate(); // day of birth
     let bpoint = date.getMonth(); // month of birth
     let year = date.getFullYear(); //year of birth
     let cpoint = calculateYear(year); // c - year of birth
-    // console.log(apoint + " " + bpoint + " " + cpoint)
 
     createPerson(person, apoint, bpoint, cpoint);
-    // console.log(person.Points)
     Points(person);
     ChartHeart();
     Purposes();
