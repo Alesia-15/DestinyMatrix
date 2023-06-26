@@ -15,8 +15,8 @@ body {
 header,
 main,
 footer {
-  padding-left: 13.125em;
-  padding-right: 13.125em;
+  padding-left: 12.9em;
+  padding-right: 12.9em;
 }
 
 .header {
@@ -60,6 +60,7 @@ li {
 }
 
 .birthday-container {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -74,11 +75,38 @@ li {
 }
 
 .birthday-container__inputs-wrapper {
+  width: 83%;
   margin-top: 3.1875em;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas: "input1 input2 button";
   grid-gap: 1.875em;
+}
+
+.birthday-container__inputs-wrapper-comp {
+  width: 83%;
+  margin-top: 1.6875em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 1fr;
+  grid-template-areas:
+    "label-partner1 label-partner2 0"
+    "input1 input2 button";
+  grid-column-gap: 1.875em;
+  grid-row-gap: 0.3em;
+}
+
+label {
+  padding-left: 1em;
+  font-size: 1em;
+}
+
+.label-partner1 {
+  grid-area: label-partner1;
+}
+
+.label-partner2 {
+  grid-area: label-partner2;
 }
 
 .errorOutput,
@@ -87,13 +115,24 @@ li {
   font-size: 1.5em;
 }
 
-#date,
-#date_person1 {
+.input1-wrap,
+.input2-wrap {
+  position: relative;
+}
+
+.input1-wrap {
   grid-area: input1;
 }
 
+#date,
 #name,
+#date_person1,
 #date_person2 {
+  width: 8.55em;
+  height: 1.25em;
+}
+
+.input2-wrap {
   grid-area: input2;
 }
 
@@ -104,8 +143,7 @@ input {
   background-color: #050215;
   color: #fff8db;
   border: 1px #fff8db solid;
-  border-radius: 10px;
-  text-transform: uppercase;
+  border-radius: 0.5em;
 }
 
 ::-webkit-calendar-picker-indicator {
@@ -113,17 +151,14 @@ input {
 }
 
 button {
-  height: 71px;
+  padding: 1.25em 2em 1.25em 2em;
   background-color: #fff8db;
-  padding-left: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
-  padding-top: 0px;
   font-family: "Inter";
-  font-size: 20px;
+  font-size: 1.25em;
+  line-height: 125%;
   text-transform: uppercase;
-  border-radius: 10px;
-  border: none;
+  border-radius: 0.5em;
+  border: 1px #fff8db solid;
   z-index: 1;
 }
 
@@ -139,6 +174,76 @@ button:active {
 #createChart {
   grid-area: button;
   align-self: baseline;
+}
+
+.star__wrap1 {
+  position: absolute;
+  top: 0em;
+  left: -2em;
+  font-size: 1.25em;
+}
+
+.star__wrap2 {
+  position: absolute;
+  top: -1.56em;
+  right: -1.38em;
+  font-size: 1.25em;
+}
+
+.star__wrap3 {
+  position: absolute;
+  bottom: -1.8em;
+  right: -1.38em;
+  font-size: 1.25em;
+}
+
+.star__wrap4 {
+  position: absolute;
+  top: -2.5em;
+  right: -1em;
+  font-size: 1.25em;
+}
+
+.star__wrap5 {
+  position: absolute;
+  top: 7em;
+  right: -1.5em;
+  font-size: 1.25em;
+  opacity: 0.1;
+}
+
+.star__wrap6 {
+  position: absolute;
+  top: 10em;
+  left: 9em;
+  font-size: 1.25em;
+}
+
+.star__wrap7 {
+  position: absolute;
+  top: -1em;
+  left: 6em;
+  font-size: 1.25em;
+  opacity: 0.1;
+}
+
+.star__wrap8 {
+  position: absolute;
+  top: 11em;
+  right: 9em;
+  font-size: 1.25em;
+}
+
+.star-size-m {
+  width: 2.9em;
+}
+
+.star-size-s {
+  width: 1.85em;
+}
+
+.star-size-l {
+  width: 4.3em;
 }
 
 .center {
@@ -473,48 +578,10 @@ button:active {
   margin-right: 0.5em;
 }
 
-.star1 {
-  position: absolute;
-  top: -32px;
-  left: 326px;
-}
-
-.star2 {
-  position: absolute;
-  bottom: 167px;
-  right: 10px;
-}
-
-.stars-input {
-  position: absolute;
-  top: -115px;
-  left: 350px;
-}
-
-.star__wrap {
-  position: relative;
-}
-
-.wrapper-stars {
-  position: relative;
-}
-
-.stars-left {
-  position: absolute;
-  top: 49px;
-  left: -169px;
-}
-
-.stars-right {
-  position: absolute;
-  top: -108px;
-  right: -162px;
-}
-
 #decode-matrix-btn {
-  margin-top: 7em;
-  margin-bottom: 7em;
-  width: 400px;
+  max-width: 20em;
+  margin-top: 6.5em;
+  margin-bottom: 6.5em;
 }
 
 /* Matrix's styles */
