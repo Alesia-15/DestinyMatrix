@@ -186,7 +186,7 @@ const calculatePoints = (aPoint, bPoint, cPoint) => {
   g2point = reduceNumber(gpoint + upoint);
   g1point = reduceNumber(gpoint + g2point);
   i2point = reduceNumber(ipoint + upoint);
-  i1point = reduceNumber((ipoint = i2point));
+  i1point = reduceNumber(ipoint + i2point);
   h2point = reduceNumber(hpoint + upoint);
   h1point = reduceNumber(hpoint + h2point);
 

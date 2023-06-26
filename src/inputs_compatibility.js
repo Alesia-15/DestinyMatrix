@@ -195,14 +195,14 @@ btnChart.addEventListener('click', (evt) => {
     } else {
         output2.innerHTML = date1.toLocaleDateString("ru") + ' ' + '+' + ' ' + date2.toLocaleDateString("ru");
         // создаем два объекта со значениями
-        let apoint = date1.getDate(); // day of birth
-        let bpoint = date1.getMonth(); // month of birth
+        let apoint = reduceNumber(date1.getDate()); // day of birth
+        let bpoint = date1.getMonth()+1; // month of birth
         let year = date1.getFullYear(); //year of birth
         let cpoint = calculateYear(year); // c - year of bir
         createPerson(person, apoint, bpoint, cpoint);
 
-        let secondApoint = date2.getDate(); // day of birth
-        let secondBpoint = date2.getMonth(); // month of birth
+        let secondApoint = reduceNumber(date2.getDate()); // day of birth
+        let secondBpoint = date2.getMonth()+1; // month of birth
         let year2 = date2.getFullYear(); //year of birth
         let secondCpoint = calculateYear(year2); // c - year of bir
         createPerson(person, apoint, bpoint, cpoint);
