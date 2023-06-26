@@ -59,8 +59,8 @@ btnAnswer.addEventListener('click', (evt) => {
     output.innerHTML = titleCase(name) + ' ' + '<span class="gray">Date of Birth:</span>' + ' ' + date.toLocaleDateString("ru");
 
     container.classList.remove('display-none');
-    let apoint = date.getDate(); // day of birth
-    let bpoint = date.getMonth(); // month of birth
+    let apoint = reduceNumber(date.getDate()); // day of birth
+    let bpoint = date.getMonth()+1; // month of birth
     let year = date.getFullYear(); //year of birth
     let cpoint = calculateYear(year); // c - year of birth
 
