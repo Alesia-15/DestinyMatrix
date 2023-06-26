@@ -162,6 +162,14 @@ button {
   z-index: 1;
 }
 
+button:hover {
+  opacity: 0.8;
+}
+
+button:active {
+  background-color: #ffffff;
+}
+
 #get_the_answer,
 #createChart {
   grid-area: button;
@@ -261,11 +269,30 @@ button {
 }
 
 .chakra-table {
-  border-collapse: collapse;
+  border-spacing: 0;
   border-radius: 10px;
   width: 800px;
-  border: 1px solid #ffffff;
   display: block;
+}
+
+.chakra-table td:first-child,
+.chakra-table th:first-child {
+  border-left: 1px solid white;
+}
+
+.chakra-table tr:first-child th,
+.chakra-table tr:last-child td {
+  border-top: 1px solid white;
+}
+
+.chakra-table td,
+.chakra-table th {
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+}
+
+.chakra-name__bottom td:first {
+  border-bottom-left-radius: 10px;
 }
 
 .chakra-table__result {
@@ -281,11 +308,15 @@ button {
 }
 
 .chakra-name-left {
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   flex-direction: column-reverse;
   align-items: flex-start;
   padding-left: 47px;
+}
+
+.chakra-name-flex {
+  display: flex;
 }
 
 #circle-sahastrara:before {
@@ -392,7 +423,6 @@ button {
 }
 
 .chakra-td {
-  box-shadow: inset 1px 0px 0px rgb(255, 255, 255);
   padding: 5px;
   text-align: center;
   width: 200px;
@@ -403,9 +433,9 @@ button {
   font-family: "Inter";
   size: 20px;
   text-align-last: center;
-  box-shadow: 0px 1px 0px rgb(255, 255, 255);
   padding: 5px;
   text-align: center;
+  background-color: #050215;
 }
 
 .chakra-name__bottom {
@@ -422,13 +452,32 @@ button {
   border-top-right-radius: 10px;
 }
 
+.chakra-name__radius-left-bottom {
+  background-color: #050215;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.chakra-name__radius-left-bottom {
+  border-bottom-left-radius: 10px;
+}
+
+.chakra-name__radius-right-bottom {
+  background-color: #050215;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.chakra-name__radius-right-bottom2 {
+  border-bottom-right-radius: 10px;
+}
+
 .chakra-table-header > :nth-child(2),
 .chakra-table-header > :nth-child(3) {
   background-color: #827d78;
 }
 
 .chakra-table-header {
-  /* background-color: #827D78; */
   font-family: "Inter";
   size: 20px;
   text-transform: uppercase;
@@ -446,6 +495,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: -1;
 }
 
 .glow {
@@ -455,13 +505,21 @@ button {
   filter: blur(4.6875em);
 }
 
+.glow2 {
+  position: absolute;
+  width: 51.063em;
+  height: 32.938em;
+  background: #fff8db;
+  filter: blur(4.6875em);
+  z-index: -1;
+}
+
 .center_container {
   position: relative;
 }
 
 .glow-btn__wrap {
   /* positioning */
-
   position: absolute;
   top: 0;
   right: 0;
@@ -747,9 +805,6 @@ tbody {
 }
 
 tr {
-  font-family: "Inter";
-  size: 20px;
-  vertical-align: middle;
   text-align: center;
 }
 
@@ -786,6 +841,10 @@ tr {
 
 .purposes-top {
   margin-top: 5em;
+}
+
+#chakra_table {
+  position: relative;
 }
 
 /*media desktop version */
