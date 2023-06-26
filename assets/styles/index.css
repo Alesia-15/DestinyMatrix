@@ -79,6 +79,7 @@ li {
   margin-top: 3.1875em;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
   grid-template-areas: "input1 input2 button";
   grid-gap: 1.875em;
 }
@@ -866,6 +867,146 @@ h3 {
   body {
     font-size: 4.79px;
   }
+
+  header,
+  main,
+  footer {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .birthday-container__inputs-wrapper {
+    width: 100%;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      "input1"
+      "input2"
+      "button";
+    grid-gap: 10px;
+    justify-items: center;
+  }
+
+  .birthday-container__inputs-wrapper-comp {
+    width: 100%;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 1fr 0.2fr 1fr 1fr;
+    grid-template-areas:
+      "label-partner1"
+      "input1"
+      "label-partner2"
+      "input2"
+      "button";
+    grid-row-gap: 10px;
+    justify-items: center;
+  }
+
+  label {
+    font-size: 14px;
+  }
+}
+
+#date,
+#name,
+#date_person1,
+#date_person2 {
+  width: 138px;
+  height: 38px;
+  padding: 5px 30px;
+  font-size: 16px;
+}
+
+#get_the_answer,
+#createChart {
+  width: 200px;
+  height: 50px;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.footer p,
+.desteny-container p,
+.personal-calculator {
+  font-size: 28px;
+  text-align: center;
+}
+
+.desteny-container,
+.personal-calculator p {
+  padding: 40px 0;
+}
+
+.birthday-container {
+  margin-bottom: 0;
+}
+
+.birthday-container p,
+.output-personal-date,
+.output2 {
+  font-size: 16px;
+  text-align: center;
+}
+
+.personal-calculator p {
+  margin: 0;
+}
+
+tbody {
+  font-size: 10px;
+}
+
+.chakra-table {
+  max-width: 100%;
+}
+
+.errorOutput,
+.wrongDate {
+  font-size: 16px;
+}
+
+.star__wrap1,
+.star__wrap2,
+.star__wrap3,
+.star__wrap4,
+.star__wrap5,
+.star__wrap6,
+.star__wrap7,
+.star__wrap8 {
+  display: none;
+}
+
+.glow,
+.glow2,
+.glow-btn {
+  display: none;
+}
+
+#decode-matrix-btn {
+  margin: 0 0 40px 0;
+  width: 300px;
+  height: 70px;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.cls-54,
+.cls-55,
+.cls-56 {
+  font-size: 36px;
+}
+
+.cls-57,
+.cls-58 {
+  font-size: 22px;
+}
+
+.cls-59,
+.cls-60 {
+  font-size: 24px;
 }
 
 /*корявые медиа запросы*/
