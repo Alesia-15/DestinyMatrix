@@ -31,7 +31,6 @@ function Points(person) {
   document.querySelector('#i2point').textContent = person.points.i2point;
   document.querySelector('#h1point').textContent = person.points.h1point;
   document.querySelector('#h2point').textContent = person.points.h2point;
-  // console.log(person.points)
 }
 
 function ChartHeart() {
@@ -190,8 +189,7 @@ const calculatePoints = (aPoint, bPoint, cPoint) => {
   i1point = reduceNumber((ipoint = i2point));
   h2point = reduceNumber(hpoint + upoint);
   h1point = reduceNumber(hpoint + h2point);
-  // points.push(apoint, bpoint, cpoint, dpoint, epoint, fpoint, gpoint, hpoint, ipoint, jpoint, kpoint, lpoint, mpoint, npoint, opoint, ppoint,
-  // qpoint, rpoint, spoint, tpoint, upoint, vpoint, wpoint, xpoint, f2point, f1point, g2point, g1point, i2point, i1point, h2point, h1point);
+
   points = {
     apoint: aPoint,
     bpoint: bPoint,
@@ -233,7 +231,6 @@ const calculatePoints = (aPoint, bPoint, cPoint) => {
     skypoint: reduceNumber(bPoint + dpoint),
     earthpoint: reduceNumber(aPoint + cPoint),
     perspurpose: reduceNumber(skypoint + earthpoint),
-    // 'perspurpose': reduceNumber(apoint + bpoint + cpoint + dpoint),
 
     femalepoint: reduceNumber(gpoint + hpoint),
     malepoint: reduceNumber(fpoint + ipoint),
@@ -290,5 +287,3 @@ function clearInputs(firtsInput, secondInput) {
   firtsInput.value = "";
   secondInput.value = "";
 }
-
-
