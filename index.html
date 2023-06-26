@@ -1,1413 +1,943 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/styles/normalize.css" />
-    <link rel="stylesheet" href="./assets/styles/index.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
-      rel="stylesheet"
-    />
-    <title>KRIS Universe</title>
-  </head>
 
-  <body>
-    <header>
-      <div class="container">
-        <nav class="header">
-          <div class="header-left">
-            <li><a href="#">KRIS Universe</a></li>
-          </div>
-          <div class="header-right">
-            <li><a href="#">main</a></li>
-            <li><a href="#">About me</a></li>
-            <li><a href="#">Reviews</a></li>
-            <li><a href="#">Contact</a></li>
-          </div>
-        </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./assets/styles/normalize.css" />
+  <link rel="stylesheet" href="./assets/styles/index.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
+  <title>KRIS Universe</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <nav class="header">
+        <div class="header-left">
+          <li><a href="#">KRIS Universe</a></li>
+        </div>
+        <div class="header-right">
+          <li><a href="#">main</a></li>
+          <li><a href="#">About me</a></li>
+          <li><a href="#">Reviews</a></li>
+          <li><a href="#">Contact</a></li>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <div class="desteny-container">
+        <div class="glow__wrap">
+          <div class="glow"></div>
+        </div>
+        <p>Destiny matrix calculator</p>
       </div>
-    </header>
-    <main>
-      <div class="container">
-        <div class="desteny-container">
-          <div class="glow__wrap">
-            <div class="glow"></div>
-          </div>
-          <p>Destiny matrix calculator</p>
-        </div>
-        <div class="birthday-container">
-          <p>Enter your date of birth and name:</p>
-          <div class="birthday-container__inputs-wrapper">
-            <div class="input1-wrap">
-              <input id="date" type="date" />
-              <div class="star__wrap2">
-                <img class="star-size-m" src="./assets/img/starmedium.svg" />
-              </div>
+      <div class="birthday-container">
+        <p>Enter your date of birth and name:</p>
+        <div class="birthday-container__inputs-wrapper">
+          <div class="input1-wrap">
+            <input id="date" type="date" />
+            <div class="star__wrap2">
+              <img class="star-size-m" src="./assets/img/starmedium.svg" />
             </div>
-            <div class="input2-wrap">
-              <input id="name" type="text" placeholder="Name" size="10" />
-              <div class="star__wrap3">
-                <img class="star-size-m" src="./assets/img/starmedium.svg" />
-              </div>
+          </div>
+          <div class="input2-wrap">
+            <input id="name" type="text" placeholder="Name" size="10" />
+            <div class="star__wrap3">
+              <img class="star-size-m" src="./assets/img/starmedium.svg" />
             </div>
-            <button id="get_the_answer">get the answer</button>
           </div>
-          <div class="errorOutput"></div>
-          <div class="star__wrap1">
-            <img class="star-size-m" src="./assets/img/starmedium.svg" />
-          </div>
-          <div class="star__wrap4">
-            <img class="star-size-l" src="./assets/img/starlarge.svg" />
-          </div>
-          <div class="star__wrap5">
-            <img class="star-size-l" src="./assets/img/starlarge.svg" />
-          </div>
-          <div class="star__wrap6">
-            <img class="star-size-s" src="./assets/img/starsmall.svg" />
-          </div>
-          <div class="star__wrap7">
-            <img class="star-size-s" src="./assets/img/starsmall.svg" />
-          </div>
-          <div class="star__wrap8">
-            <img class="star-size-s" src="./assets/img/starsmall.svg" />
-          </div>
+          <button id="get_the_answer">
+            get the answer
+          </button>
         </div>
-        <div class="matrix-container">
-          <div class="personal-calculator">
-            <p class="smoky-white">Personal calculation</p>
+        <div class="errorOutput"></div>
+        <div class="star__wrap1">
+          <img class="star-size-m" src="./assets/img/starmedium.svg" />
+        </div>
+        <div class="star__wrap4">
+          <img class="star-size-l" src="./assets/img/starlarge.svg" />
+        </div>
+        <div class="star__wrap5">
+          <img class="star-size-l" src="./assets/img/starlarge.svg" />
+        </div>
+        <div class="star__wrap6">
+          <img class="star-size-s" src="./assets/img/starsmall.svg" />
+        </div>
+        <div class="star__wrap7">
+          <img class="star-size-s" src="./assets/img/starsmall.svg" />
+        </div>
+        <div class="star__wrap8">
+          <img class="star-size-s" src="./assets/img/starsmall.svg" />
+        </div>
+      </div>
+
+      <div class="matrix-container">
+        <div class="personal-calculator">
+          <p class="smoky-white">Personal calculation</p>
+        </div>
+        <div class="output-personal-date smoky-white"></div>
+        <div class="pento">
+          <svg viewBox="0 0 680 600" id="matrix">
+            <g id="matrix-frame">
+              <rect class="cls-3" x="163.63" y="126.14" width="340.16" height="340.16"></rect>
+              <rect class="cls-3" x="227.87" y="127.54" width="340.16" height="340.16"
+                transform="translate(-158.13 367.16) rotate(-45)"></rect>
+              <polygon class="cls-4"
+                points="333.7 7.76 537.64 92.28 622.17 296.22 537.64 501.16 333.7 584.68 129.76 500.16 45.24 296.22 129.76 92.28 333.7 7.76">
+              </polygon>
+              <line class="cls-3" x1="333.7" y1="27.76" x2="333.7" y2="564.68"></line>
+              <line class="cls-3" x1="65.24" y1="296.22" x2="602.17" y2="296.22"></line>
+
+              <g>
+                <line class="cls-5" x1="442" y1="405" x2="226" y2="189"></line>
+                <polygon class="cls-6" points="441 402 439 404 442 405 441 402"></polygon>
+                <polygon class="cls-6" points="226 189 229 190 227 192 226 189"></polygon>
+              </g>
+
+              <g>
+                <line class="cls-7" x1="442" y1="189" x2="226" y2="405"></line>
+                <polygon class="cls-8" points="442 189 439 190 441 192 442 189"></polygon>
+                <polygon class="cls-8" points="226 405 227 402 229 404 226 405"></polygon>
+              </g>
+
+              <line class="cls-18" x1="502" y1="297" x2="335" y2="465"></line>
+              <text class="cls-44" transform="translate(238.77 188.48) rotate(45)">
+                male generation line
+              </text>
+              <text class="cls-44" transform="translate(351.7 264.98) rotate(-45)">
+                female generation line
+              </text>
+
+              <g transform="translate(100, 100)">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 27 27">
+                  <path class="cls-53"
+                    d="M437.54,366.8c-6.26,0-7.12,6-7.28,6s-1.42-6-7.24-6c-7,0-8.91,5.9-8.51,9.45.71,6.14,15.74,18.54,15.74,18.54s15.06-12.4,15.77-18.54C446.43,372.7,444.55,366.8,437.54,366.8Z"
+                    transform="translate(-70 -8)"></path>
+                </svg>
+              </g>
+
+              <g transform="translate(410, 345)">
+                <text class="cls-56">$</text>
+              </g>
+            </g>
+
+            <g id="points-basic">
+              <circle class="cls-10" cx="82.59" cy="296.22" r="32.5"></circle>
+              <text class="cls-54 matrix-value-point" id="apoint" transform="translate(82.34 299.89)">
+                5
+              </text>
+
+              <circle class="cls-10" cx="333.7" cy="42" r="32.5"></circle>
+              <text class="cls-54 matrix-value-point" id="bpoint" transform="translate(334 44.83)">
+                7
+              </text>
+
+              <circle class="cls-19" cx="587.13" cy="296.22" r="32.5"></circle>
+              <text class="cls-54 matrix-value-point" id="cpoint" transform="translate(587.4 297.89)">
+                11
+              </text>
+
+              <circle class="cls-19" cx="332.7" cy="554" r="32.5"></circle>
+              <text class="cls-54 matrix-value-point" id="dpoint" transform="translate(332.7 555.39)">
+                10
+              </text>
+
+              <circle class="cls-25" cx="334" cy="297" r="32.5"></circle>
+              <text class="cls-55 clss matrix-value-point" id="epoint" transform="translate(333 299)">
+                11
+              </text>
+
+              <circle class="cls-24" cx="153" cy="116.22" r="32.5"></circle>
+              <text class="cls-55 matrix-value-point" id="fpoint" transform="translate(153 119.42)">
+                22
+              </text>
+
+              <circle class="cls-24" cx="514.1" cy="116.22" r="32.5"></circle>
+              <text class="cls-55 matrix-value-point" id="gpoint" transform="translate(513.85 119.42)">
+                13
+              </text>
+
+              <circle class="cls-24" cx="514.1" cy="476.62" r="32.5"></circle>
+              <text class="cls-55 matrix-value-point" id="ipoint" transform="translate(513 480.72)">
+                16
+              </text>
+
+              <circle class="cls-24" cx="153" cy="476.62" r="32.5"></circle>
+              <text class="cls-55 matrix-value-point" id="hpoint" transform="translate(153.5 480.72)">
+                7
+              </text>
+
+              <circle class="cls-22" cx="332.59" cy="467.72" r="20"></circle>
+              <text class="cls-57 matrix-value-point" id="jpoint" transform="translate(332.69 467.62)">
+                21
+              </text>
+
+              <circle class="cls-22" cx="503" cy="297" r="20"></circle>
+              <text class="cls-57 matrix-value-point" id="npoint" transform="translate(503 297.56)">
+                17
+              </text>
+
+              <circle class="cls-21" cx="418.18" cy="380.69" r="20"></circle>
+              <text class="cls-58 matrix-value-point" id="lpoint" transform="translate(418.17 382.27)">
+                11
+              </text>
+
+              <circle class="cls-21" cx="375" cy="424" r="20"></circle>
+              <text class="cls-58 matrix-value-point" id="kpoint" transform="translate(375 424)">
+                5
+              </text>
+
+              <circle class="cls-21" cx="461" cy="338" r="20"></circle>
+              <text class="cls-58 matrix-value-point" id="mpoint" transform="translate(461.3 339.5)">
+                10
+              </text>
+
+              <circle class="cls-15" cx="163.61" cy="296.22" r="20"></circle>
+              <text class="cls-58 matrix-value-point" id="spoint" transform="translate(163.59 297.56)">
+                8
+              </text>
+
+              <circle class="cls-15" cx="333.7" cy="126" r="20"></circle>
+              <text class="cls-58 matrix-value-point" id="tpoint" transform="translate(333.69 126.71)">
+                18
+              </text>
+
+              <circle class="cls-13" cx="127.11" cy="296.22" r="23"></circle>
+              <text class="cls-59 matrix-value-point" id="opoint" transform="translate(126.8 299)">
+                5
+              </text>
+
+              <circle class="cls-13" cx="333.7" cy="89.62" r="23"></circle>
+              <text class="cls-59 matrix-value-point" id="ppoint" transform="translate(333.9 91)">
+                7
+              </text>
+
+              <circle class="cls-23" cx="333" cy="505" r="23"></circle>
+              <text class="cls-60 matrix-value-point" id="rpoint" transform="translate(332.81 504.91)">
+                4
+              </text>
+
+              <circle class="cls-23" cx="540" cy="297" r="23"></circle>
+              <text class="cls-60 matrix-value-point" id="qpoint" transform="translate(540 298.56)">
+                5
+              </text>
+
+              <circle class="cls-26" cx="245.26" cy="296.22" r="20"></circle>
+              <text class="cls-58 matrix-value-point" id="wpoint" transform="translate(245.26 297.56)">
+                19
+              </text>
+
+              <circle class="cls-26" cx="333.7" cy="203" r="20"></circle>
+              <text class="cls-58 matrix-value-point" id="xpoint" transform="translate(333.7 203)">
+                11
+              </text>
+
+              <circle class="cls-21" cx="212" cy="175.93" r="20"></circle>
+              <text class="cls-58 matrix-value-point" id="f2point" transform="translate(212 175.83)">
+                8
+              </text>
+
+              <circle class="cls-23" cx="186.71" cy="149.53" r="23"></circle>
+              <text class="cls-60 matrix-value-point" id="f1point" transform="translate(186.71 152.27)">
+                13
+              </text>
+
+              <circle class="cls-21" cx="455.4" cy="174.53" r="20"></circle>
+              <text class="cls-58 matrix-value-point" id="g2point" transform="translate(455.38 175.83)">
+                8
+              </text>
+
+              <circle class="cls-23" cx="479.79" cy="150.13" r="23"></circle>
+              <text class="cls-60 matrix-value-point" id="g1point" transform="translate(479.89 151.77)">
+                21
+              </text>
+
+              <circle class="cls-21" cx="455.4" cy="417.91" r="20"></circle>
+              <text class="cls-58 matrix-value-point" id="i2point" transform="translate(455.39 420.05)">
+                11
+              </text>
+
+              <circle class="cls-23" cx="479.79" cy="442.31" r="23"></circle>
+              <text class="cls-60 matrix-value-point" id="i1point" transform="translate(480.89 445.41)">
+                9
+              </text>
+
+              <circle class="cls-21" cx="215" cy="417" r="20"></circle>
+              <text class="cls-58 matrix-value-point" id="h2point" transform="translate(215 419.06)">
+                20
+              </text>
+
+              <circle class="cls-23" cx="188.71" cy="442.7" r="23"></circle>
+              <text class="cls-60 matrix-value-point" id="h1point" transform="translate(188.71 445.41)">
+                9
+              </text>
+
+              <circle class="cls-21" cx="417.54" cy="296.22" r="20"></circle>
+              <text class="cls-58 matrix-value-point" id="vpoint" transform="translate(417.54 297)">
+                20
+              </text>
+
+              <circle class="cls-23" cx="381" cy="297" r="23"></circle>
+              <text class="cls-60 matrix-value-point" id="upoint" transform="translate(381 298)">
+                9
+              </text>
+            </g>
+
+            <g id="points-years">
+              <text class="cls-28" transform="translate(20 295)">
+                0
+                <tspan x="-10" y="10">years</tspan>
+                <tspan x="-4" y="20">old</tspan>
+              </text>
+
+              <text class="cls-28" transform="translate(100 70)">
+                10
+                <tspan x="-8" y="10">years</tspan>
+                <tspan x="-2" y="20">old</tspan>
+              </text>
+
+              <text class="cls-28" transform="translate(330 -22)">
+                20
+                <tspan x="-8" y="10">years</tspan>
+                <tspan x="-2" y="20">old</tspan>
+              </text>
+
+              <text class="cls-28" transform="translate(550 70)">
+                30
+                <tspan x="-8" y="10">years</tspan>
+                <tspan x="-2" y="20">old</tspan>
+              </text>
+
+              <text class="cls-28" transform="translate(638 295)">
+                40
+                <tspan x="-8" y="10">years</tspan>
+                <tspan x="-2" y="20">old</tspan>
+              </text>
+
+              <text class="cls-28" transform="translate(550 515)">
+                50
+                <tspan x="-8" y="10">years</tspan>
+                <tspan x="-2" y="20">old</tspan>
+              </text>
+
+              <text class="cls-28" transform="translate(328 610)">
+                60
+                <tspan x="-8" y="10">years</tspan>
+                <tspan x="-2" y="20">old</tspan>
+              </text>
+
+              <text class="cls-28" transform="translate(100 515)">
+                70
+                <tspan x="-8" y="10">years</tspan>
+                <tspan x="-2" y="20">old</tspan>
+              </text>
+
+              <text class="cls-29" transform="translate(97.49 198.76)">
+                5
+                <tspan class="cls-43" x="8.34" y="-6">years</tspan>
+                <tspan class="cls-43" x="8.34" y="0">old</tspan>
+              </text>
+
+              <text class="cls-29" transform="translate(232.22 66.42)">
+                15
+                <tspan class="cls-43" x="13.9" y="-6">years</tspan>
+                <tspan class="cls-43" x="13.9" y="0">old</tspan>
+              </text>
+
+              <text class="cls-29" transform="translate(405.8 67.22)">
+                25
+                <tspan class="cls-43" x="14.9" y="-6">years</tspan>
+                <tspan class="cls-43" x="14.9" y="0">old</tspan>
+              </text>
+
+              <text class="cls-29" transform="translate(540.55 204.76)">
+                35
+                <tspan class="cls-43" x="14.9" y="-6">years</tspan>
+                <tspan class="cls-43" x="14.9" y="0">old</tspan>
+              </text>
+
+              <text class="cls-29" transform="translate(542.76 402.12)">
+                45
+                <tspan class="cls-43" x="14.9" y="-6">years</tspan>
+                <tspan class="cls-43" x="14.9" y="0">old</tspan>
+              </text>
+
+              <text class="cls-29" transform="translate(403.8 539.38)">
+                55
+                <tspan class="cls-43" x="14.9" y="-6">years</tspan>
+                <tspan class="cls-43" x="14.9" y="0">old</tspan>
+              </text>
+
+              <text class="cls-29" transform="translate(235.6 539.38)">
+                65
+                <tspan class="cls-43" x="14.9" y="-6">years</tspan>
+                <tspan class="cls-43" x="14.9" y="0">old</tspan>
+              </text>
+
+              <text class="cls-29" transform="translate(97.69 400.12)">
+                75
+                <tspan class="cls-43" x="14.9" y="-6">years</tspan>
+                <tspan class="cls-43" x="14.9" y="0">old</tspan>
+              </text>
+
+              <text class="cls-61" transform="translate(71.7 252.94)">
+                1-2,5
+              </text>
+              <text class="cls-61" transform="translate(79.14 234.61)">
+                2,5-3,5
+              </text>
+              <text class="cls-61" transform="translate(86.39 216.23)">
+                3,5-4
+              </text>
+              <text class="cls-61" transform="translate(102.39 179.23)">
+                6-7,5
+              </text>
+              <text class="cls-61" transform="translate(109.39 160.23)">
+                7,5-8,5
+              </text>
+              <text class="cls-61" transform="translate(117.39 143.23)">
+                8,5-9
+              </text>
+              <text class="cls-61" transform="translate(176.55 85.51)">
+                11-12,5
+              </text>
+              <text class="cls-61" transform="translate(195.09 77.79)">
+                12,5-13,5
+              </text>
+              <text class="cls-61" transform="translate(214.38 70.22)">
+                13,5-14
+              </text>
+              <text class="cls-61" transform="translate(250.51 54.83)">
+                16-17,5
+              </text>
+              <text class="cls-61" transform="translate(268.88 47.18)">
+                17,5-18,5
+              </text>
+              <text class="cls-61" transform="translate(287.83 39.52)">
+                18,5-19
+              </text>
+              <text class="cls-61" transform="translate(360 38.52)">
+                21-22,5
+              </text>
+              <text class="cls-61" transform="translate(372.75 47.17)">
+                22,5-23,5
+              </text>
+              <text class="cls-61" transform="translate(397.13 54.83)">
+                23,5-24
+              </text>
+              <text class="cls-61" transform="translate(433.01 70.14)">
+                26-27,5
+              </text>
+              <text class="cls-61" transform="translate(448.01 77.79)">
+                27,5-28,5
+              </text>
+              <text class="cls-61" transform="translate(469.26 85.51)">
+                28,5-29
+              </text>
+              <text class="cls-61" transform="translate(528.75 146.23)">
+                31-32,5
+              </text>
+              <text class="cls-61" transform="translate(529.12 163.23)">
+                32,5-33,5
+              </text>
+              <text class="cls-61" transform="translate(543.78 182.23)">
+                33,5-34
+              </text>
+              <text class="cls-61" transform="translate(558.77 219.23)">
+                36-37,5
+              </text>
+              <text class="cls-61" transform="translate(560.77 237.61)">
+                37,5-38,5
+              </text>
+              <text class="cls-61" transform="translate(573.07 255.94)">
+                38,5-39
+              </text>
+              <text class="cls-61" transform="translate(572.49 345.82)">
+                41-42,5
+              </text>
+              <text class="cls-61" transform="translate(558.89 363.52)">
+                42,5-43,5
+              </text>
+              <text class="cls-61" transform="translate(557.3 382.28)">
+                43,5-44
+              </text>
+              <text class="cls-61" transform="translate(541.66 419.27)">
+                46-47,5
+              </text>
+              <text class="cls-61" transform="translate(528.32 437.69)">
+                47,5-48,5
+              </text>
+              <text class="cls-61" transform="translate(526.7 456.08)">
+                48,5-49
+              </text>
+              <text class="cls-61" transform="translate(357.55 559.01)">
+                58,5-59
+              </text>
+              <text class="cls-61" transform="translate(369.09 552.29)">
+                57,5-58,5
+              </text>
+              <text class="cls-61" transform="translate(387.38 545.68)">
+                56-57,5
+              </text>
+              <text class="cls-61" transform="translate(430.51 529.33)">
+                53,5-54
+              </text>
+              <text class="cls-61" transform="translate(441.88 522.68)">
+                52,5-53,5
+              </text>
+              <text class="cls-61" transform="translate(463.83 515.02)">
+                51-52,5
+              </text>
+              <text class="cls-61" transform="translate(178 514.02)">
+                68,5-69
+              </text>
+              <text class="cls-61" transform="translate(196.75 521.67)">
+                67,5-68,5
+              </text>
+              <text class="cls-61" transform="translate(215.13 529.33)">
+                66-67,5
+              </text>
+              <text class="cls-61" transform="translate(254.01 545.68)">
+                63,5-64
+              </text>
+              <text class="cls-61" transform="translate(271.01 552.29)">
+                62,5-63,5
+              </text>
+              <text class="cls-61" transform="translate(285.26 559.01)">
+                61-62,5
+              </text>
+              <text class="cls-61" transform="translate(73.75 343.82)">
+                78,5-79
+              </text>
+              <text class="cls-61" transform="translate(81.12 361.52)">
+                77,5-78,5
+              </text>
+              <text class="cls-61" transform="translate(88.78 380.28)">
+                76-77,5
+              </text>
+              <text class="cls-61" transform="translate(103.77 417.27)">
+                73,5-74
+              </text>
+              <text class="cls-61" transform="translate(111.77 435.69)">
+                72,5-73,5
+              </text>
+              <text class="cls-61" transform="translate(119.07 454.08)">
+                71-72,5
+              </text>
+
+              <text class="cls-33 matrix-value-point" id="af2point" transform="translate(52 246) rotate(-67.5)">
+                2
+              </text>
+              <text class="cls-33 matrix-value-point" id="af1point" transform="translate(60 227.5) rotate(-67.5)">
+                3
+              </text>
+              <text class="cls-33 matrix-value-point" id="af3point" transform="translate(68 209) rotate(-67.5)">
+                4
+              </text>
+              <text class="cls-33 matrix-value-point" id="afpoint" transform="translate(76 190.5) rotate(-67.5)">
+                5
+              </text>
+              <text class="cls-33 matrix-value-point" id="af5point" transform="translate(82 172.5) rotate(-67.5)">
+                6
+              </text>
+              <text class="cls-33 matrix-value-point" id="af4point" transform="translate(90 154) rotate(-67.5)">
+                7
+              </text>
+              <text class="cls-33 matrix-value-point" id="af6point" transform="translate(98 135.5) rotate(-67.5)">
+                9
+              </text>
+              <text class="cls-33 matrix-value-point" id="fb2point" transform="translate(169 63) rotate(-22.5)">
+                22
+              </text>
+              <text class="cls-33 matrix-value-point" id="fb1point" transform="translate(188 55) rotate(-22.5)">
+                23
+              </text>
+              <text class="cls-33 matrix-value-point" id="fb3point" transform="translate(206 47) rotate(-22.5)">
+                24
+              </text>
+              <text class="cls-33 matrix-value-point" id="fbpoint" transform="translate(224 39) rotate(-22.5)">
+                25
+              </text>
+              <text class="cls-33 matrix-value-point" id="fb5point" transform="translate(243 31) rotate(-22.5)">
+                26
+              </text>
+              <text class="cls-33 matrix-value-point" id="fb4point" transform="translate(261 23.5) rotate(-22.5)">
+                27
+              </text>
+              <text class="cls-33 matrix-value-point" id="fb6point" transform="translate(280 16) rotate(-22.5)">
+                28
+              </text>
+              <text class="cls-33 matrix-value-point" id="bg2point" transform="translate(388 16) rotate(22.5)">
+                22
+              </text>
+              <text class="cls-33 matrix-value-point" id="bg1point" transform="translate(407 24) rotate(22.5)">
+                23
+              </text>
+              <text class="cls-33 matrix-value-point" id="bg3point" transform="translate(426 32) rotate(22.5)">
+                24
+              </text>
+              <text class="cls-33 matrix-value-point" id="bgpoint" transform="translate(444 40) rotate(22.5)">
+                25
+              </text>
+              <text class="cls-33 matrix-value-point" id="bg5point" transform="translate(463 48) rotate(22.5)">
+                26
+              </text>
+              <text class="cls-33 matrix-value-point" id="bg4point" transform="translate(481 55) rotate(22.5)">
+                27
+              </text>
+              <text class="cls-33 matrix-value-point" id="bg6point" transform="translate(500 63) rotate(22.5)">
+                28
+              </text>
+              <text class="cls-33 matrix-value-point" id="gc2point" transform="translate(570 135) rotate(67.5)">
+                22
+              </text>
+              <text class="cls-33 matrix-value-point" id="gc1point" transform="translate(578 153.5) rotate(67.5)">
+                23
+              </text>
+              <text class="cls-33 matrix-value-point" id="gc3point" transform="translate(586 172) rotate(67.5)">
+                24
+              </text>
+              <text class="cls-33 matrix-value-point" id="gcpoint" transform="translate(594 190.5) rotate(67.5)">
+                25
+              </text>
+              <text class="cls-33 matrix-value-point" id="gc5point" transform="translate(602 209) rotate(67.5)">
+                26
+              </text>
+              <text class="cls-33 matrix-value-point" id="gc4point" transform="translate(610 227.5) rotate(67.5)">
+                27
+              </text>
+              <text class="cls-33 matrix-value-point" id="gc6point" transform="translate(618 246) rotate(67.5)">
+                28
+              </text>
+              <text class="cls-33 matrix-value-point" id="ci2point" transform="translate(615 348) rotate(-67.5)">
+                26
+              </text>
+              <text class="cls-33 matrix-value-point" id="ci1point" transform="translate(607 367) rotate(-67.5)">
+                20
+              </text>
+              <text class="cls-33 matrix-value-point" id="ci3point" transform="translate(599 385.5) rotate(-67.5)">
+                25
+              </text>
+              <text class="cls-33 matrix-value-point" id="cipoint" transform="translate(591 404) rotate(-67.5)">
+                22
+              </text>
+              <text class="cls-33 matrix-value-point" id="ci5point" transform="translate(583 422.5) rotate(-67.5)">
+                26
+              </text>
+              <text class="cls-33 matrix-value-point" id="ci4point" transform="translate(575 441) rotate(-67.5)">
+                21
+              </text>
+              <text class="cls-33 matrix-value-point" id="ci6point" transform="translate(567 459.5) rotate(-67.5)">
+                29
+              </text>
+              <text class="cls-33 matrix-value-point" id="id2point" transform="translate(496 532) rotate(-22.5)">
+                22
+              </text>
+              <text class="cls-33 matrix-value-point" id="id1point" transform="translate(477.5 540) rotate(-22.5)">
+                23
+              </text>
+              <text class="cls-33 matrix-value-point" id="id3point" transform="translate(459.5 548) rotate(-22.5)">
+                24
+              </text>
+              <text class="cls-33 matrix-value-point" id="idpoint" transform="translate(441 555.5) rotate(-22.5)">
+                25
+              </text>
+              <text class="cls-33 matrix-value-point" id="id5point" transform="translate(422.5 563) rotate(-22.5)">
+                26
+              </text>
+              <text class="cls-33 matrix-value-point" id="id4point" transform="translate(404 571) rotate(-22.5)">
+                27
+              </text>
+              <text class="cls-33 matrix-value-point" id="id6point" transform="translate(385 578.5) rotate(-22.5)">
+                28
+              </text>
+              <text class="cls-33 matrix-value-point" id="dh2point" transform="translate(282 578.5) rotate(22.5)">
+                22
+              </text>
+              <text class="cls-33 matrix-value-point" id="dh1point" transform="translate(263.5 571) rotate(22.5)">
+                23
+              </text>
+              <text class="cls-33 matrix-value-point" id="dh3point" transform="translate(244.5 563) rotate(22.5)">
+                24
+              </text>
+              <text class="cls-33 matrix-value-point" id="dhpoint" transform="translate(226 555.5) rotate(22.5)">
+                25
+              </text>
+              <text class="cls-33 matrix-value-point" id="dh5point" transform="translate(207 548) rotate(22.5)">
+                26
+              </text>
+              <text class="cls-33 matrix-value-point" id="dh4point" transform="translate(188.5 540) rotate(22.5)">
+                27
+              </text>
+              <text class="cls-33 matrix-value-point" id="dh6point" transform="translate(170 532) rotate(22.5)">
+                28
+              </text>
+              <text class="cls-33 matrix-value-point" id="ha2point" transform="translate(97 459) rotate(67.5)">
+                22
+              </text>
+              <text class="cls-33 matrix-value-point" id="ha1point" transform="translate(89 441) rotate(67.5)">
+                23
+              </text>
+              <text class="cls-33 matrix-value-point" id="ha3point" transform="translate(81 423) rotate(67.5)">
+                24
+              </text>
+              <text class="cls-33 matrix-value-point" id="hapoint" transform="translate(73 405) rotate(67.5)">
+                25
+              </text>
+              <text class="cls-33 matrix-value-point" id="ha5point" transform="translate(65 386.5) rotate(67.5)">
+                26
+              </text>
+              <text class="cls-33 matrix-value-point" id="ha4point" transform="translate(57 368) rotate(67.5)">
+                27
+              </text>
+              <text class="cls-33 matrix-value-point" id="ha6point" transform="translate(49 349.5) rotate(67.5)">
+                28
+              </text>
+            </g>
+          </svg>
+        </div>
+        <div id="chakra_table">
+          <div class="glow__wrap" style="z-index: -1">
+            <div class="glow2"></div>
           </div>
-          <div class="output-personal-date smoky-white"></div>
-          <div class="pento">
-            <svg viewBox="0 0 680 600" id="matrix">
-              <g id="matrix-frame">
-                <rect
-                  class="cls-3"
-                  x="163.63"
-                  y="126.14"
-                  width="340.16"
-                  height="340.16"
-                ></rect>
-                <rect
-                  class="cls-3"
-                  x="227.87"
-                  y="127.54"
-                  width="340.16"
-                  height="340.16"
-                  transform="translate(-158.13 367.16) rotate(-45)"
-                ></rect>
-                <polygon
-                  class="cls-4"
-                  points="333.7 7.76 537.64 92.28 622.17 296.22 537.64 501.16 333.7 584.68 129.76 500.16 45.24 296.22 129.76 92.28 333.7 7.76"
-                ></polygon>
-                <line
-                  class="cls-3"
-                  x1="333.7"
-                  y1="27.76"
-                  x2="333.7"
-                  y2="564.68"
-                ></line>
-                <line
-                  class="cls-3"
-                  x1="65.24"
-                  y1="296.22"
-                  x2="602.17"
-                  y2="296.22"
-                ></line>
-
-                <g>
-                  <line
-                    class="cls-5"
-                    x1="442"
-                    y1="405"
-                    x2="226"
-                    y2="189"
-                  ></line>
-                  <polygon
-                    class="cls-6"
-                    points="441 402 439 404 442 405 441 402"
-                  ></polygon>
-                  <polygon
-                    class="cls-6"
-                    points="226 189 229 190 227 192 226 189"
-                  ></polygon>
-                </g>
-
-                <g>
-                  <line
-                    class="cls-7"
-                    x1="442"
-                    y1="189"
-                    x2="226"
-                    y2="405"
-                  ></line>
-                  <polygon
-                    class="cls-8"
-                    points="442 189 439 190 441 192 442 189"
-                  ></polygon>
-                  <polygon
-                    class="cls-8"
-                    points="226 405 227 402 229 404 226 405"
-                  ></polygon>
-                </g>
-
-                <line class="cls-18" x1="502" y1="297" x2="335" y2="465"></line>
-                <text
-                  class="cls-44"
-                  transform="translate(238.77 188.48) rotate(45)"
-                >
-                  male generation line
-                </text>
-                <text
-                  class="cls-44"
-                  transform="translate(351.7 264.98) rotate(-45)"
-                >
-                  female generation line
-                </text>
-
-                <g transform="translate(100, 100)">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20px"
-                    height="20px"
-                    viewBox="0 0 27 27"
-                  >
-                    <path
-                      class="cls-53"
-                      d="M437.54,366.8c-6.26,0-7.12,6-7.28,6s-1.42-6-7.24-6c-7,0-8.91,5.9-8.51,9.45.71,6.14,15.74,18.54,15.74,18.54s15.06-12.4,15.77-18.54C446.43,372.7,444.55,366.8,437.54,366.8Z"
-                      transform="translate(-70 -8)"
-                    ></path>
+          <table class="chakra-table">
+            <tr class="chakra-tr chakra-table-header">
+              <th class="chakra-name chakra-name__radius-left">Chakra name</th>
+              <th class="chakra-td">Physics</th>
+              <th class="chakra-td">Energy</th>
+              <th class="chakra-td chakra-name__radius-right">Emotions</th>
+            </tr>
+            <tr class="chakra-tr">
+              <td class="chakra-name chakra-name-left">
+                <span class="chakra-name-flex" id="circle-sahastrara">
+                  Sahastrara
+                  </span>
+              </td>
+              <td class="chakra-td" id="sahphysics">Ячейка 1-2</td>
+              <td class="chakra-td" id="sahenergy">Ячейка 1-3</td>
+              <td class="chakra-td" id="sahemotions">Ячейка 1-4</td>
+            </tr>
+            <tr class="chakra-tr">
+              <td class="chakra-name chakra-name-left">
+                <span class="chakra-name-flex" id="circle-ajna">Ajna</span>
+              </td>
+              <td class="chakra-td" id="ajphysics">Ячейка 2-2</td>
+              <td class="chakra-td" id="ajenergy">Ячейка 2-3</td>
+              <td class="chakra-td" id="ajemotions">Ячейка 2-4</td>
+            </tr>
+            <tr class="chakra-tr">
+              <td class="chakra-name chakra-name-left">
+                <span class="chakra-name-flex" id="circle-vishuddha">Vishuddha</span>
+              </td>
+              <td class="chakra-td" id="vishphysics">Ячейка 3-2</td>
+              <td class="chakra-td" id="vishenergy">Ячейка 3-3</td>
+              <td class="chakra-td" id="vishemotions">Ячейка 3-4</td>
+            </tr>
+            <tr class="chakra-tr">
+              <td class="chakra-name chakra-name-left">
+                <span class="chakra-name-flex" id="circle-anahata">Anahata</span>
+              </td>
+              <td class="chakra-td" id="anahphysics">Ячейка 4-2</td>
+              <td class="chakra-td" id="anahenergy">Ячейка 4-3</td>
+              <td class="chakra-td" id="anahemotions">Ячейка 4-4</td>
+            </tr>
+            <tr class="chakra-tr">
+              <td class="chakra-name chakra-name-left">
+                <span class="chakra-name-flex" id="circle-manipura">Manipura</span>
+              </td>
+              <td class="chakra-td" id="manphysics">Ячейка 5-2</td>
+              <td class="chakra-td" id="manenergy">Ячейка 5-3</td>
+              <td class="chakra-td" id="manemotions">Ячейка 5-4</td>
+            </tr>
+            <tr class="chakra-tr">
+              <td class="chakra-name chakra-name-left">
+                <span class="chakra-name-flex" id="circle-svadhishtana">Svadhishtana</span>
+              </td>
+              <td class="chakra-td" id="svadphysics">Ячейка 6-2</td>
+              <td class="chakra-td" id="svadenergy">Ячейка 6-3</td>
+              <td class="chakra-td" id="svademotions">Ячейка 6-4</td>
+            </tr>
+            <tr class="chakra-tr chakra-name__bottom">
+              <td class="chakra-name chakra-name-left" style="border-bottom-left-radius: 10px">
+                <span class="chakra-name-flex" id="circle-muladhara">Muladhara</span>
+              </td>
+              <td class="chakra-td" id="mulphysics">Ячейка 7-2</td>
+              <td class="chakra-td" id="mulenergy">Ячейка 7-3</td>
+              <td class="chakra-td chakra-name__radius-right-bottom2" id="mulemotions">Ячейка 7-4</td>
+            </tr>
+            <tr style="height: 20px"></tr>
+            <tr class="chakra-tr chakra-name__bottom chakra-name__top">
+              <td class="chakra-name chakra-name__radius-left-bottom">Result:</td>
+              <td class="chakra-td" id="resultphysics">Ячейка 8-2</td>
+              <td class="chakra-td" id="resultenergy">Ячейка 8-3</td>
+              <td class="chakra-td chakra-name__radius-right-bottom" id="resultemotions">Ячейка 8-4</td>
+            </tr>
+          </table>
+        </div>
+        <div class="info-txt">
+          <table id="purposes">
+            <tbody>
+              <tr class="purposes-top">
+                <td colspan="4" class="table-padding-top">
+                  <img src="./assets/img/compatibilityStar.svg" />
+                </td>
+                <td width="10%"></td>
+                <td colspan="4" class="table-padding-top">
+                  <img src="./assets/img/compatibilityStar.svg" />
+                </td>
+              </tr>
+              <tr class="smoky-white2">
+                <td colspan="4">
+                  <h3><b>Personal purpose:</b></h3>
+                </td>
+                <td width="10%"></td>
+                <td colspan="4">
+                  <h3><b>Purpose for society and genus:</b></h3>
+                </td>
+              </tr>
+              <tr style="height: 5px">
+                <td></td>
+              </tr>
+              <tr class="font-size16">
+                <td colspan="4" class="table-padding"> Soul searching, balance of feminine and masculine qualities, abilities, skills</td>
+                <td width="6%"></td>
+                <td colspan="4" class="table-padding">Tasks for genus, results and recognition in society</td>
+              </tr>
+              <tr style="height: 5px">
+                <td></td>
+              </tr>
+              <tr class="font-size18" style="position: relative">
+                <td>Sky:</td>
+                <td>
+                  <span id="skypoint" class="base-circle">18</span>
+                </td>
+                <td rowspan="2">
+                  <svg width="38" height="48" viewBox="0 0 38 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0V2H18V46H0V48H20V25H38V23H20V0H0Z" fill="white"></path>
                   </svg>
-                </g>
-
-                <g transform="translate(410, 345)">
-                  <text class="cls-56">$</text>
-                </g>
-              </g>
-
-              <g id="points-basic">
-                <circle class="cls-10" cx="82.59" cy="296.22" r="32.5"></circle>
-                <text
-                  class="cls-54 matrix-value-point"
-                  id="apoint"
-                  transform="translate(82.34 299.89)"
-                >
-                  5
-                </text>
-
-                <circle class="cls-10" cx="333.7" cy="42" r="32.5"></circle>
-                <text
-                  class="cls-54 matrix-value-point"
-                  id="bpoint"
-                  transform="translate(334 44.83)"
-                >
-                  7
-                </text>
-
-                <circle
-                  class="cls-19"
-                  cx="587.13"
-                  cy="296.22"
-                  r="32.5"
-                ></circle>
-                <text
-                  class="cls-54 matrix-value-point"
-                  id="cpoint"
-                  transform="translate(587.4 297.89)"
-                >
-                  11
-                </text>
-
-                <circle class="cls-19" cx="332.7" cy="554" r="32.5"></circle>
-                <text
-                  class="cls-54 matrix-value-point"
-                  id="dpoint"
-                  transform="translate(332.7 555.39)"
-                >
-                  10
-                </text>
-
-                <circle class="cls-25" cx="334" cy="297" r="32.5"></circle>
-                <text
-                  class="cls-55 clss matrix-value-point"
-                  id="epoint"
-                  transform="translate(333 299)"
-                >
-                  11
-                </text>
-
-                <circle class="cls-24" cx="153" cy="116.22" r="32.5"></circle>
-                <text
-                  class="cls-55 matrix-value-point"
-                  id="fpoint"
-                  transform="translate(153 119.42)"
-                >
-                  22
-                </text>
-
-                <circle class="cls-24" cx="514.1" cy="116.22" r="32.5"></circle>
-                <text
-                  class="cls-55 matrix-value-point"
-                  id="gpoint"
-                  transform="translate(513.85 119.42)"
-                >
-                  13
-                </text>
-
-                <circle class="cls-24" cx="514.1" cy="476.62" r="32.5"></circle>
-                <text
-                  class="cls-55 matrix-value-point"
-                  id="ipoint"
-                  transform="translate(513 480.72)"
-                >
-                  16
-                </text>
-
-                <circle class="cls-24" cx="153" cy="476.62" r="32.5"></circle>
-                <text
-                  class="cls-55 matrix-value-point"
-                  id="hpoint"
-                  transform="translate(153.5 480.72)"
-                >
-                  7
-                </text>
-
-                <circle class="cls-22" cx="332.59" cy="467.72" r="20"></circle>
-                <text
-                  class="cls-57 matrix-value-point"
-                  id="jpoint"
-                  transform="translate(332.69 467.62)"
-                >
-                  21
-                </text>
-
-                <circle class="cls-22" cx="503" cy="297" r="20"></circle>
-                <text
-                  class="cls-57 matrix-value-point"
-                  id="npoint"
-                  transform="translate(503 297.56)"
-                >
-                  17
-                </text>
-
-                <circle class="cls-21" cx="418.18" cy="380.69" r="20"></circle>
-                <text
-                  class="cls-58 matrix-value-point"
-                  id="lpoint"
-                  transform="translate(418.17 382.27)"
-                >
-                  11
-                </text>
-
-                <circle class="cls-21" cx="375" cy="424" r="20"></circle>
-                <text
-                  class="cls-58 matrix-value-point"
-                  id="kpoint"
-                  transform="translate(375 424)"
-                >
-                  5
-                </text>
-
-                <circle class="cls-21" cx="461" cy="338" r="20"></circle>
-                <text
-                  class="cls-58 matrix-value-point"
-                  id="mpoint"
-                  transform="translate(461.3 339.5)"
-                >
-                  10
-                </text>
-
-                <circle class="cls-15" cx="163.61" cy="296.22" r="20"></circle>
-                <text
-                  class="cls-58 matrix-value-point"
-                  id="spoint"
-                  transform="translate(163.59 297.56)"
-                >
-                  8
-                </text>
-
-                <circle class="cls-15" cx="333.7" cy="126" r="20"></circle>
-                <text
-                  class="cls-58 matrix-value-point"
-                  id="tpoint"
-                  transform="translate(333.69 126.71)"
-                >
-                  18
-                </text>
-
-                <circle class="cls-13" cx="127.11" cy="296.22" r="23"></circle>
-                <text
-                  class="cls-59 matrix-value-point"
-                  id="opoint"
-                  transform="translate(126.8 299)"
-                >
-                  5
-                </text>
-
-                <circle class="cls-13" cx="333.7" cy="89.62" r="23"></circle>
-                <text
-                  class="cls-59 matrix-value-point"
-                  id="ppoint"
-                  transform="translate(333.9 91)"
-                >
-                  7
-                </text>
-
-                <circle class="cls-23" cx="333" cy="505" r="23"></circle>
-                <text
-                  class="cls-60 matrix-value-point"
-                  id="rpoint"
-                  transform="translate(332.81 504.91)"
-                >
-                  4
-                </text>
-
-                <circle class="cls-23" cx="540" cy="297" r="23"></circle>
-                <text
-                  class="cls-60 matrix-value-point"
-                  id="qpoint"
-                  transform="translate(540 298.56)"
-                >
-                  5
-                </text>
-
-                <circle class="cls-26" cx="245.26" cy="296.22" r="20"></circle>
-                <text
-                  class="cls-58 matrix-value-point"
-                  id="wpoint"
-                  transform="translate(245.26 297.56)"
-                >
-                  19
-                </text>
-
-                <circle class="cls-26" cx="333.7" cy="203" r="20"></circle>
-                <text
-                  class="cls-58 matrix-value-point"
-                  id="xpoint"
-                  transform="translate(333.7 203)"
-                >
-                  11
-                </text>
-
-                <circle class="cls-21" cx="212" cy="175.93" r="20"></circle>
-                <text
-                  class="cls-58 matrix-value-point"
-                  id="f2point"
-                  transform="translate(212 175.83)"
-                >
-                  8
-                </text>
-
-                <circle class="cls-23" cx="186.71" cy="149.53" r="23"></circle>
-                <text
-                  class="cls-60 matrix-value-point"
-                  id="f1point"
-                  transform="translate(186.71 152.27)"
-                >
-                  13
-                </text>
-
-                <circle class="cls-21" cx="455.4" cy="174.53" r="20"></circle>
-                <text
-                  class="cls-58 matrix-value-point"
-                  id="g2point"
-                  transform="translate(455.38 175.83)"
-                >
-                  8
-                </text>
-
-                <circle class="cls-23" cx="479.79" cy="150.13" r="23"></circle>
-                <text
-                  class="cls-60 matrix-value-point"
-                  id="g1point"
-                  transform="translate(479.89 151.77)"
-                >
-                  21
-                </text>
-
-                <circle class="cls-21" cx="455.4" cy="417.91" r="20"></circle>
-                <text
-                  class="cls-58 matrix-value-point"
-                  id="i2point"
-                  transform="translate(455.39 420.05)"
-                >
-                  11
-                </text>
-
-                <circle class="cls-23" cx="479.79" cy="442.31" r="23"></circle>
-                <text
-                  class="cls-60 matrix-value-point"
-                  id="i1point"
-                  transform="translate(480.89 445.41)"
-                >
-                  9
-                </text>
-
-                <circle class="cls-21" cx="215" cy="417" r="20"></circle>
-                <text
-                  class="cls-58 matrix-value-point"
-                  id="h2point"
-                  transform="translate(215 419.06)"
-                >
-                  20
-                </text>
-
-                <circle class="cls-23" cx="188.71" cy="442.7" r="23"></circle>
-                <text
-                  class="cls-60 matrix-value-point"
-                  id="h1point"
-                  transform="translate(188.71 445.41)"
-                >
-                  9
-                </text>
-
-                <circle class="cls-21" cx="417.54" cy="296.22" r="20"></circle>
-                <text
-                  class="cls-58 matrix-value-point"
-                  id="vpoint"
-                  transform="translate(417.54 297)"
-                >
-                  20
-                </text>
-
-                <circle class="cls-23" cx="381" cy="297" r="23"></circle>
-                <text
-                  class="cls-60 matrix-value-point"
-                  id="upoint"
-                  transform="translate(381 298)"
-                >
-                  9
-                </text>
-              </g>
-
-              <g id="points-years">
-                <text class="cls-28" transform="translate(20 295)">
-                  0
-                  <tspan x="-10" y="10">years</tspan>
-                  <tspan x="-4" y="20">old</tspan>
-                </text>
-
-                <text class="cls-28" transform="translate(100 70)">
-                  10
-                  <tspan x="-8" y="10">years</tspan>
-                  <tspan x="-2" y="20">old</tspan>
-                </text>
-
-                <text class="cls-28" transform="translate(330 -22)">
-                  20
-                  <tspan x="-8" y="10">years</tspan>
-                  <tspan x="-2" y="20">old</tspan>
-                </text>
-
-                <text class="cls-28" transform="translate(550 70)">
-                  30
-                  <tspan x="-8" y="10">years</tspan>
-                  <tspan x="-2" y="20">old</tspan>
-                </text>
-
-                <text class="cls-28" transform="translate(638 295)">
-                  40
-                  <tspan x="-8" y="10">years</tspan>
-                  <tspan x="-2" y="20">old</tspan>
-                </text>
-
-                <text class="cls-28" transform="translate(550 515)">
-                  50
-                  <tspan x="-8" y="10">years</tspan>
-                  <tspan x="-2" y="20">old</tspan>
-                </text>
-
-                <text class="cls-28" transform="translate(328 610)">
-                  60
-                  <tspan x="-8" y="10">years</tspan>
-                  <tspan x="-2" y="20">old</tspan>
-                </text>
-
-                <text class="cls-28" transform="translate(100 515)">
-                  70
-                  <tspan x="-8" y="10">years</tspan>
-                  <tspan x="-2" y="20">old</tspan>
-                </text>
-
-                <text class="cls-29" transform="translate(97.49 198.76)">
-                  5
-                  <tspan class="cls-43" x="8.34" y="-6">years</tspan>
-                  <tspan class="cls-43" x="8.34" y="0">old</tspan>
-                </text>
-
-                <text class="cls-29" transform="translate(232.22 66.42)">
-                  15
-                  <tspan class="cls-43" x="13.9" y="-6">years</tspan>
-                  <tspan class="cls-43" x="13.9" y="0">old</tspan>
-                </text>
-
-                <text class="cls-29" transform="translate(405.8 67.22)">
-                  25
-                  <tspan class="cls-43" x="14.9" y="-6">years</tspan>
-                  <tspan class="cls-43" x="14.9" y="0">old</tspan>
-                </text>
-
-                <text class="cls-29" transform="translate(540.55 204.76)">
-                  35
-                  <tspan class="cls-43" x="14.9" y="-6">years</tspan>
-                  <tspan class="cls-43" x="14.9" y="0">old</tspan>
-                </text>
-
-                <text class="cls-29" transform="translate(542.76 402.12)">
-                  45
-                  <tspan class="cls-43" x="14.9" y="-6">years</tspan>
-                  <tspan class="cls-43" x="14.9" y="0">old</tspan>
-                </text>
-
-                <text class="cls-29" transform="translate(403.8 539.38)">
-                  55
-                  <tspan class="cls-43" x="14.9" y="-6">years</tspan>
-                  <tspan class="cls-43" x="14.9" y="0">old</tspan>
-                </text>
-
-                <text class="cls-29" transform="translate(235.6 539.38)">
-                  65
-                  <tspan class="cls-43" x="14.9" y="-6">years</tspan>
-                  <tspan class="cls-43" x="14.9" y="0">old</tspan>
-                </text>
-
-                <text class="cls-29" transform="translate(97.69 400.12)">
-                  75
-                  <tspan class="cls-43" x="14.9" y="-6">years</tspan>
-                  <tspan class="cls-43" x="14.9" y="0">old</tspan>
-                </text>
-
-                <text class="cls-61" transform="translate(71.7 252.94)">
-                  1-2,5
-                </text>
-                <text class="cls-61" transform="translate(79.14 234.61)">
-                  2,5-3,5
-                </text>
-                <text class="cls-61" transform="translate(86.39 216.23)">
-                  3,5-4
-                </text>
-                <text class="cls-61" transform="translate(102.39 179.23)">
-                  6-7,5
-                </text>
-                <text class="cls-61" transform="translate(109.39 160.23)">
-                  7,5-8,5
-                </text>
-                <text class="cls-61" transform="translate(117.39 143.23)">
-                  8,5-9
-                </text>
-                <text class="cls-61" transform="translate(176.55 85.51)">
-                  11-12,5
-                </text>
-                <text class="cls-61" transform="translate(195.09 77.79)">
-                  12,5-13,5
-                </text>
-                <text class="cls-61" transform="translate(214.38 70.22)">
-                  13,5-14
-                </text>
-                <text class="cls-61" transform="translate(250.51 54.83)">
-                  16-17,5
-                </text>
-                <text class="cls-61" transform="translate(268.88 47.18)">
-                  17,5-18,5
-                </text>
-                <text class="cls-61" transform="translate(287.83 39.52)">
-                  18,5-19
-                </text>
-                <text class="cls-61" transform="translate(360 38.52)">
-                  21-22,5
-                </text>
-                <text class="cls-61" transform="translate(372.75 47.17)">
-                  22,5-23,5
-                </text>
-                <text class="cls-61" transform="translate(397.13 54.83)">
-                  23,5-24
-                </text>
-                <text class="cls-61" transform="translate(433.01 70.14)">
-                  26-27,5
-                </text>
-                <text class="cls-61" transform="translate(448.01 77.79)">
-                  27,5-28,5
-                </text>
-                <text class="cls-61" transform="translate(469.26 85.51)">
-                  28,5-29
-                </text>
-                <text class="cls-61" transform="translate(528.75 146.23)">
-                  31-32,5
-                </text>
-                <text class="cls-61" transform="translate(529.12 163.23)">
-                  32,5-33,5
-                </text>
-                <text class="cls-61" transform="translate(543.78 182.23)">
-                  33,5-34
-                </text>
-                <text class="cls-61" transform="translate(558.77 219.23)">
-                  36-37,5
-                </text>
-                <text class="cls-61" transform="translate(560.77 237.61)">
-                  37,5-38,5
-                </text>
-                <text class="cls-61" transform="translate(573.07 255.94)">
-                  38,5-39
-                </text>
-                <text class="cls-61" transform="translate(572.49 345.82)">
-                  41-42,5
-                </text>
-                <text class="cls-61" transform="translate(558.89 363.52)">
-                  42,5-43,5
-                </text>
-                <text class="cls-61" transform="translate(557.3 382.28)">
-                  43,5-44
-                </text>
-                <text class="cls-61" transform="translate(541.66 419.27)">
-                  46-47,5
-                </text>
-                <text class="cls-61" transform="translate(528.32 437.69)">
-                  47,5-48,5
-                </text>
-                <text class="cls-61" transform="translate(526.7 456.08)">
-                  48,5-49
-                </text>
-                <text class="cls-61" transform="translate(357.55 559.01)">
-                  58,5-59
-                </text>
-                <text class="cls-61" transform="translate(369.09 552.29)">
-                  57,5-58,5
-                </text>
-                <text class="cls-61" transform="translate(387.38 545.68)">
-                  56-57,5
-                </text>
-                <text class="cls-61" transform="translate(430.51 529.33)">
-                  53,5-54
-                </text>
-                <text class="cls-61" transform="translate(441.88 522.68)">
-                  52,5-53,5
-                </text>
-                <text class="cls-61" transform="translate(463.83 515.02)">
-                  51-52,5
-                </text>
-                <text class="cls-61" transform="translate(178 514.02)">
-                  68,5-69
-                </text>
-                <text class="cls-61" transform="translate(196.75 521.67)">
-                  67,5-68,5
-                </text>
-                <text class="cls-61" transform="translate(215.13 529.33)">
-                  66-67,5
-                </text>
-                <text class="cls-61" transform="translate(254.01 545.68)">
-                  63,5-64
-                </text>
-                <text class="cls-61" transform="translate(271.01 552.29)">
-                  62,5-63,5
-                </text>
-                <text class="cls-61" transform="translate(285.26 559.01)">
-                  61-62,5
-                </text>
-                <text class="cls-61" transform="translate(73.75 343.82)">
-                  78,5-79
-                </text>
-                <text class="cls-61" transform="translate(81.12 361.52)">
-                  77,5-78,5
-                </text>
-                <text class="cls-61" transform="translate(88.78 380.28)">
-                  76-77,5
-                </text>
-                <text class="cls-61" transform="translate(103.77 417.27)">
-                  73,5-74
-                </text>
-                <text class="cls-61" transform="translate(111.77 435.69)">
-                  72,5-73,5
-                </text>
-                <text class="cls-61" transform="translate(119.07 454.08)">
-                  71-72,5
-                </text>
-
-                <text
-                  class="cls-33 matrix-value-point"
-                  id="af2point"
-                  transform="translate(52 246) rotate(-67.5)"
-                >
-                  2
-                </text>
-                <text
-                  class="cls-33 matrix-value-point"
-                  id="af1point"
-                  transform="translate(60 227.5) rotate(-67.5)"
-                >
-                  3
-                </text>
-                <text
-                  class="cls-33 matrix-value-point"
-                  id="af3point"
-                  transform="translate(68 209) rotate(-67.5)"
-                >
-                  4
-                </text>
-                <text
-                  class="cls-33 matrix-value-point"
-                  id="afpoint"
-                  transform="translate(76 190.5) rotate(-67.5)"
-                >
-                  5
-                </text>
-                <text
-                  class="cls-33 matrix-value-point"
-                  id="af5point"
-                  transform="translate(82 172.5) rotate(-67.5)"
-                >
-                  6
-                </text>
-                <text
-                  class="cls-33 matrix-value-point"
-                  id="af4point"
-                  transform="translate(90 154) rotate(-67.5)"
-                >
-                  7
-                </text>
-                <text
-                  class="cls-33 matrix-value-point"
-                  id="af6point"
-                  transform="translate(98 135.5) rotate(-67.5)"
-                >
-                  9
-                </text>
-                <text
-                  class="cls-33 matrix-value-point"
-                  id="fb2point"
-                  transform="translate(169 63) rotate(-22.5)"
-                >
-                  22
-                </text>
-                <text
-                  class="cls-33 matrix-value-point"
-                  id="fb1point"
-                  transform="translate(188 55) rotate(-22.5)"
-                >
-                  23
-                </text>
-                <text
-                  class="cls-33 matrix-value-point"
-                  id="fb3point"
-                  transform="translate(206 47) rotate(-22.5)"
-                >
-                  24
-                </text>
-                <text
-                  class="cls-33 matrix-value-point"
-                  id="fbpoint"
-                  transform="translate(224 39) rotate(-22.5)"
-                >
-                  25
-                </text>
-                <text
-                  class="cls-33 matrix-value-point"
-                  id="fb5point"
-                  transform="translate(243 31) rotate(-22.5)"
-                >
-                  26
-                </text>
-                <text
-                  class="cls-33 matrix-value-point"
-                  id="fb4point"
-                  transform="translate(261 23.5) rotate(-22.5)"
-                >
-                  27
-                </text>
-                <text
-                  class="cls-33 matrix-value-point"
-                  id="fb6point"
-                  transform="translate(280 16) rotate(-22.5)"
-                >
-                  28
-                </text>
-                <text
-                  class="cls-33 matrix-value-point"
-                  id="bg2point"
-                  transform="translate(388 16) rotate(22.5)"
-                >
-                  22
-                </text>
-                <text
-                  class="cls-33 matrix-value-point"
-                  id="bg1point"
-                  transform="translate(407 24) rotate(22.5)"
-                >
-                  23
-                </text>
-                <text
-                  class="cls-33 matrix-value-point"
-                  id="bg3point"
-                  transform="translate(426 32) rotate(22.5)"
-                >
-                  24
-                </text>
-                <text
-                  class="cls-33 matrix-value-point"
-                  id="bgpoint"
-                  transform="translate(444 40) rotate(22.5)"
-                >
-                  25
-                </text>
-                <text
-                  class="cls-33 matrix-value-point"
-                  id="bg5point"
-                  transform="translate(463 48) rotate(22.5)"
-                >
-                  26
-                </text>
-                <text
-                  class="cls-33 matrix-value-point"
-                  id="bg4point"
-                  transform="translate(481 55) rotate(22.5)"
-                >
-                  27
-                </text>
-                <text
-                  class="cls-33 matrix-value-point"
-                  id="bg6point"
-                  transform="translate(500 63) rotate(22.5)"
-                >
-                  28
-                </text>
-                <text
-                  class="cls-33 matrix-value-point"
-                  id="gc2point"
-                  transform="translate(570 135) rotate(67.5)"
-                >
-                  22
-                </text>
-                <text
-                  class="cls-33 matrix-value-point"
-                  id="gc1point"
-                  transform="translate(578 153.5) rotate(67.5)"
-                >
-                  23
-                </text>
-                <text
-                  class="cls-33 matrix-value-point"
-                  id="gc3point"
-                  transform="translate(586 172) rotate(67.5)"
-                >
-                  24
-                </text>
-                <text
-                  class="cls-33 matrix-value-point"
-                  id="gcpoint"
-                  transform="translate(594 190.5) rotate(67.5)"
-                >
-                  25
-                </text>
-                <text
-                  class="cls-33 matrix-value-point"
-                  id="gc5point"
-                  transform="translate(602 209) rotate(67.5)"
-                >
-                  26
-                </text>
-                <text
-                  class="cls-33 matrix-value-point"
-                  id="gc4point"
-                  transform="translate(610 227.5) rotate(67.5)"
-                >
-                  27
-                </text>
-                <text
-                  class="cls-33 matrix-value-point"
-                  id="gc6point"
-                  transform="translate(618 246) rotate(67.5)"
-                >
-                  28
-                </text>
-                <text
-                  class="cls-33 matrix-value-point"
-                  id="ci2point"
-                  transform="translate(615 348) rotate(-67.5)"
-                >
-                  26
-                </text>
-                <text
-                  class="cls-33 matrix-value-point"
-                  id="ci1point"
-                  transform="translate(607 367) rotate(-67.5)"
-                >
-                  20
-                </text>
-                <text
-                  class="cls-33 matrix-value-point"
-                  id="ci3point"
-                  transform="translate(599 385.5) rotate(-67.5)"
-                >
-                  25
-                </text>
-                <text
-                  class="cls-33 matrix-value-point"
-                  id="cipoint"
-                  transform="translate(591 404) rotate(-67.5)"
-                >
-                  22
-                </text>
-                <text
-                  class="cls-33 matrix-value-point"
-                  id="ci5point"
-                  transform="translate(583 422.5) rotate(-67.5)"
-                >
-                  26
-                </text>
-                <text
-                  class="cls-33 matrix-value-point"
-                  id="ci4point"
-                  transform="translate(575 441) rotate(-67.5)"
-                >
-                  21
-                </text>
-                <text
-                  class="cls-33 matrix-value-point"
-                  id="ci6point"
-                  transform="translate(567 459.5) rotate(-67.5)"
-                >
-                  29
-                </text>
-                <text
-                  class="cls-33 matrix-value-point"
-                  id="id2point"
-                  transform="translate(496 532) rotate(-22.5)"
-                >
-                  22
-                </text>
-                <text
-                  class="cls-33 matrix-value-point"
-                  id="id1point"
-                  transform="translate(477.5 540) rotate(-22.5)"
-                >
-                  23
-                </text>
-                <text
-                  class="cls-33 matrix-value-point"
-                  id="id3point"
-                  transform="translate(459.5 548) rotate(-22.5)"
-                >
-                  24
-                </text>
-                <text
-                  class="cls-33 matrix-value-point"
-                  id="idpoint"
-                  transform="translate(441 555.5) rotate(-22.5)"
-                >
-                  25
-                </text>
-                <text
-                  class="cls-33 matrix-value-point"
-                  id="id5point"
-                  transform="translate(422.5 563) rotate(-22.5)"
-                >
-                  26
-                </text>
-                <text
-                  class="cls-33 matrix-value-point"
-                  id="id4point"
-                  transform="translate(404 571) rotate(-22.5)"
-                >
-                  27
-                </text>
-                <text
-                  class="cls-33 matrix-value-point"
-                  id="id6point"
-                  transform="translate(385 578.5) rotate(-22.5)"
-                >
-                  28
-                </text>
-                <text
-                  class="cls-33 matrix-value-point"
-                  id="dh2point"
-                  transform="translate(282 578.5) rotate(22.5)"
-                >
-                  22
-                </text>
-                <text
-                  class="cls-33 matrix-value-point"
-                  id="dh1point"
-                  transform="translate(263.5 571) rotate(22.5)"
-                >
-                  23
-                </text>
-                <text
-                  class="cls-33 matrix-value-point"
-                  id="dh3point"
-                  transform="translate(244.5 563) rotate(22.5)"
-                >
-                  24
-                </text>
-                <text
-                  class="cls-33 matrix-value-point"
-                  id="dhpoint"
-                  transform="translate(226 555.5) rotate(22.5)"
-                >
-                  25
-                </text>
-                <text
-                  class="cls-33 matrix-value-point"
-                  id="dh5point"
-                  transform="translate(207 548) rotate(22.5)"
-                >
-                  26
-                </text>
-                <text
-                  class="cls-33 matrix-value-point"
-                  id="dh4point"
-                  transform="translate(188.5 540) rotate(22.5)"
-                >
-                  27
-                </text>
-                <text
-                  class="cls-33 matrix-value-point"
-                  id="dh6point"
-                  transform="translate(170 532) rotate(22.5)"
-                >
-                  28
-                </text>
-                <text
-                  class="cls-33 matrix-value-point"
-                  id="ha2point"
-                  transform="translate(97 459) rotate(67.5)"
-                >
-                  22
-                </text>
-                <text
-                  class="cls-33 matrix-value-point"
-                  id="ha1point"
-                  transform="translate(89 441) rotate(67.5)"
-                >
-                  23
-                </text>
-                <text
-                  class="cls-33 matrix-value-point"
-                  id="ha3point"
-                  transform="translate(81 423) rotate(67.5)"
-                >
-                  24
-                </text>
-                <text
-                  class="cls-33 matrix-value-point"
-                  id="hapoint"
-                  transform="translate(73 405) rotate(67.5)"
-                >
-                  25
-                </text>
-                <text
-                  class="cls-33 matrix-value-point"
-                  id="ha5point"
-                  transform="translate(65 386.5) rotate(67.5)"
-                >
-                  26
-                </text>
-                <text
-                  class="cls-33 matrix-value-point"
-                  id="ha4point"
-                  transform="translate(57 368) rotate(67.5)"
-                >
-                  27
-                </text>
-                <text
-                  class="cls-33 matrix-value-point"
-                  id="ha6point"
-                  transform="translate(49 349.5) rotate(67.5)"
-                >
-                  28
-                </text>
-              </g>
-            </svg>
+                </td>
+                <td rowspan="2">
+                  <span id="perspurpose" class="base-circle">12</span>
+                </td>
+                <td></td>
+                <td>M:</td>
+                <td>
+                  <span id="malepoint" class="base-circle">21</span>
+                </td>
+                <td rowspan="2">
+                  <svg width="38" height="48" viewBox="0 0 38 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0V2H18V46H0V48H20V25H38V23H20V0H0Z" fill="white"></path>
+                  </svg>
+                </td>
+                <td rowspan="2">
+                  <span id="socialpurpose" class="base-circle">6</span>
+                </td>
+              </tr>
+              <tr class="font-size18">
+                <td>Earth:</td>
+                <td><span id="earthpoint" class="base-circle">21</span></td>
+                <td></td>
+                <td>F:</td>
+                <td><span id="femalepoint" class="base-circle">12</span></td>
+              </tr>
+              <tr>
+                <td style="height: 35px"></td>
+              </tr>
+              <tr class="purposes-top">
+                <td colspan="4" class="table-padding-top">
+                  <img src="./assets/img/compatibilityStar.svg" />
+                </td>
+                <td width="10%"></td>
+                <td colspan="4" class="table-padding-top">
+                  <img src="./assets/img/compatibilityStar.svg" />
+                </td>
+              </tr>
+              <tr class="smoky-white2">
+                <td colspan="4">
+                  <h3>General purpose for this lifetime:</h3>
+                </td>
+                <td></td>
+                <td colspan="4">
+                  <h3>Planetary purpose:</h3>
+                </td>
+              </tr>
+              <tr style="height: 5px">
+                <td></td>
+              </tr>
+              <tr class="trade">
+                <td colspan="4" class="table-padding font-size16">
+                  Spiritual path, global task, where is the divine in me?
+                </td>
+                <td></td>
+                <td colspan="4" class="table-padding">Global soul purpose</td>
+              </tr>
+              <tr>
+                <td colspan="9" style="height: 10px"></td>
+              </tr>
+              <tr class="font-size18">
+                <td colspan="4" id="blom" style="text-align: right">
+                  <span id="generalpurpose" class="base-circle">12</span>
+                </td>
+                <td></td>
+                <td colspan="4" id="blom2" style="text-align: right">
+                  <span id="planetarypurpose" class="base-circle">15</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="center center_container">
+          <div class="glow-btn__wrap">
+            <div class="glow-btn"></div>
           </div>
-          <div id="chakra_table">
-            <div class="glow__wrap" style="z-index: -1">
-              <div class="glow2"></div>
-            </div>
-            <table class="chakra-table">
-              <tr class="chakra-tr chakra-table-header">
-                <th class="chakra-name chakra-name__radius-left">
-                  Chakra name
-                </th>
-                <th class="chakra-td">Physics</th>
-                <th class="chakra-td">Energy</th>
-                <th class="chakra-td chakra-name__radius-right">Emotions</th>
-              </tr>
-              <tr class="chakra-tr">
-                <td class="chakra-name chakra-name-left">
-                  <span class="chakra-name-flex" id="circle-sahastrara"
-                    >Sahastrara</span
-                  >
-                </td>
-                <td class="chakra-td" id="sahphysics">Ячейка 1-2</td>
-                <td class="chakra-td" id="sahenergy">Ячейка 1-3</td>
-                <td class="chakra-td" id="sahemotions">Ячейка 1-4</td>
-              </tr>
-              <tr class="chakra-tr">
-                <td class="chakra-name chakra-name-left">
-                  <span class="chakra-name-flex" id="circle-ajna">Ajna</span>
-                </td>
-                <td class="chakra-td" id="ajphysics">Ячейка 2-2</td>
-                <td class="chakra-td" id="ajenergy">Ячейка 2-3</td>
-                <td class="chakra-td" id="ajemotions">Ячейка 2-4</td>
-              </tr>
-              <tr class="chakra-tr">
-                <td class="chakra-name chakra-name-left">
-                  <span class="chakra-name-flex" id="circle-vishuddha"
-                    >Vishuddha</span
-                  >
-                </td>
-                <td class="chakra-td" id="vishphysics">Ячейка 3-2</td>
-                <td class="chakra-td" id="vishenergy">Ячейка 3-3</td>
-                <td class="chakra-td" id="vishemotions">Ячейка 3-4</td>
-              </tr>
-              <tr class="chakra-tr">
-                <td class="chakra-name chakra-name-left">
-                  <span class="chakra-name-flex" id="circle-anahata"
-                    >Anahata</span
-                  >
-                </td>
-                <td class="chakra-td" id="anahphysics">Ячейка 4-2</td>
-                <td class="chakra-td" id="anahenergy">Ячейка 4-3</td>
-                <td class="chakra-td" id="anahemotions">Ячейка 4-4</td>
-              </tr>
-              <tr class="chakra-tr">
-                <td class="chakra-name chakra-name-left">
-                  <span class="chakra-name-flex" id="circle-manipura"
-                    >Manipura</span
-                  >
-                </td>
-                <td class="chakra-td" id="manphysics">Ячейка 5-2</td>
-                <td class="chakra-td" id="manenergy">Ячейка 5-3</td>
-                <td class="chakra-td" id="manemotions">Ячейка 5-4</td>
-              </tr>
-              <tr class="chakra-tr">
-                <td class="chakra-name chakra-name-left">
-                  <span class="chakra-name-flex" id="circle-svadhishtana"
-                    >Svadhishtana</span
-                  >
-                </td>
-                <td class="chakra-td" id="svadphysics">Ячейка 6-2</td>
-                <td class="chakra-td" id="svadenergy">Ячейка 6-3</td>
-                <td class="chakra-td" id="svademotions">Ячейка 6-4</td>
-              </tr>
-              <tr class="chakra-tr chakra-name__bottom">
-                <td
-                  class="chakra-name chakra-name-left"
-                  style="border-bottom-left-radius: 10px"
-                >
-                  <span class="chakra-name-flex" id="circle-muladhara"
-                    >Muladhara</span
-                  >
-                </td>
-                <td class="chakra-td" id="mulphysics">Ячейка 7-2</td>
-                <td class="chakra-td" id="mulenergy">Ячейка 7-3</td>
-                <td
-                  class="chakra-td chakra-name__radius-right-bottom2"
-                  id="mulemotions"
-                >
-                  Ячейка 7-4
-                </td>
-              </tr>
-              <tr style="height: 20px"></tr>
-              <tr class="chakra-tr chakra-name__bottom chakra-name__top">
-                <td class="chakra-name chakra-name__radius-left-bottom">
-                  Result:
-                </td>
-                <td class="chakra-td" id="resultphysics">Ячейка 8-2</td>
-                <td class="chakra-td" id="resultenergy">Ячейка 8-3</td>
-                <td
-                  class="chakra-td chakra-name__radius-right-bottom"
-                  id="resultemotions"
-                >
-                  Ячейка 8-4
-                </td>
-              </tr>
-            </table>
+          <button id="decode-matrix-btn">
+            Get your full Destiny Matrix reading
+          </button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="container">
+      <div class="footer">
+        <p>Find me on social media</p>
+      </div>
+      <div class="footer">
+        <div class="container__socialmedia">
+          <div class="socialmedia-item">
+            <img src="./assets/img/instagram.svg" alt="" />
           </div>
-          <div class="info-txt">
-            <table id="purposes">
-              <tbody>
-                <tr class="purposes-top">
-                  <td colspan="4" class="table-padding-top">
-                    <img src="./assets/img/compatibilityStar.svg" />
-                  </td>
-                  <td width="10%"></td>
-                  <td colspan="4" class="table-padding-top">
-                    <img src="./assets/img/compatibilityStar.svg" />
-                  </td>
-                </tr>
-                <tr class="smoky-white2">
-                  <td colspan="4">
-                    <h3><b>Personal purpose:</b></h3>
-                  </td>
-                  <td width="10%"></td>
-                  <td colspan="4">
-                    <h3><b>Purpose for society and genus:</b></h3>
-                  </td>
-                </tr>
-                <tr style="height: 0.375em">
-                  <td></td>
-                </tr>
-                <tr class="font-size16">
-                  <td colspan="4" class="table-padding">
-                    Soul searching, balance of feminine and masculine qualities,
-                    abilities, skills
-                  </td>
-                  <td width="6%"></td>
-                  <td colspan="4" class="table-padding">
-                    Tasks for genus, results and recognition in society
-                  </td>
-                </tr>
-                <tr style="height: 5px">
-                  <td></td>
-                </tr>
-                <tr class="font-size18" style="position: relative">
-                  <td>Sky:</td>
-                  <td>
-                    <span id="skypoint" class="base-circle">18</span>
-                  </td>
-                  <td rowspan="2">
-                    <svg
-                      width="38"
-                      height="48"
-                      viewBox="0 0 38 48"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M0 0V2H18V46H0V48H20V25H38V23H20V0H0Z"
-                        fill="white"
-                      ></path>
-                    </svg>
-                  </td>
-                  <td rowspan="2">
-                    <span id="perspurpose" class="base-circle">12</span>
-                  </td>
-                  <td></td>
-                  <td>M:</td>
-                  <td>
-                    <span id="malepoint" class="base-circle">21</span>
-                  </td>
-                  <td rowspan="2">
-                    <svg
-                      width="38"
-                      height="48"
-                      viewBox="0 0 38 48"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M0 0V2H18V46H0V48H20V25H38V23H20V0H0Z"
-                        fill="white"
-                      ></path>
-                    </svg>
-                  </td>
-                  <td rowspan="2">
-                    <span id="socialpurpose" class="base-circle">6</span>
-                  </td>
-                </tr>
-                <tr class="font-size18">
-                  <td>Earth:</td>
-                  <td><span id="earthpoint" class="base-circle">21</span></td>
-                  <td></td>
-                  <td>F:</td>
-                  <td><span id="femalepoint" class="base-circle">12</span></td>
-                </tr>
-                <tr>
-                  <td style="height: 35px"></td>
-                </tr>
-                <tr class="purposes-top">
-                  <td colspan="4" class="table-padding-top">
-                    <img src="./assets/img/compatibilityStar.svg" />
-                  </td>
-                  <td width="10%"></td>
-                  <td colspan="4" class="table-padding-top">
-                    <img src="./assets/img/compatibilityStar.svg" />
-                  </td>
-                </tr>
-                <tr class="smoky-white2">
-                  <td colspan="4">
-                    <h3>General purpose for this lifetime:</h3>
-                  </td>
-                  <td></td>
-                  <td colspan="4">
-                    <h3>Planetary purpose:</h3>
-                  </td>
-                </tr>
-                <tr style="height: 5px">
-                  <td></td>
-                </tr>
-                <tr class="trade">
-                  <td colspan="4" class="table-padding font-size16">
-                    Spiritual path, global task, where is the divine in me?
-                  </td>
-                  <td></td>
-                  <td colspan="4" class="table-padding">Global soul purpose</td>
-                </tr>
-                <tr>
-                  <td colspan="9" style="height: 10px"></td>
-                </tr>
-                <tr class="font-size18">
-                  <td colspan="4" id="blom" style="text-align: right">
-                    <span id="generalpurpose" class="base-circle">12</span>
-                  </td>
-                  <td></td>
-                  <td colspan="4" id="blom2" style="text-align: right">
-                    <span id="planetarypurpose" class="base-circle">15</span>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+          <div class="socialmedia-item">
+            <img src="./assets/img/pinterest.svg" />
           </div>
-          <div class="center center_container">
-            <div class="glow-btn__wrap">
-              <div class="glow-btn"></div>
-            </div>
-            <button id="decode-matrix-btn">
-              Get your full Destiny Matrix reading
-            </button>
+          <div class="socialmedia-item">
+            <img src="./assets/img/tiktok.svg" />
+          </div>
+          <div class="socialmedia-item">
+            <img src="./assets/img/youtube.svg" />
+          </div>
+          <div class="socialmedia-item">
+            <img src="./assets/img/whatsapp.svg" />
+          </div>
+          <div class="socialmedia-item">
+            <img src="./assets/img/viber.svg" />
           </div>
         </div>
       </div>
-    </main>
-    <footer>
-      <div class="container">
-        <div class="footer">
-          <p>Find me on social media</p>
-        </div>
-        <div class="footer">
-          <div class="container__socialmedia">
-            <div class="socialmedia-item">
-              <img src="./assets/img/instagram.svg" alt="" />
-            </div>
-            <div class="socialmedia-item">
-              <img src="./assets/img/pinterest.svg" />
-            </div>
-            <div class="socialmedia-item">
-              <img src="./assets/img/tiktok.svg" />
-            </div>
-            <div class="socialmedia-item">
-              <img src="./assets/img/youtube.svg" />
-            </div>
-            <div class="socialmedia-item">
-              <img src="./assets/img/whatsapp.svg" />
-            </div>
-            <div class="socialmedia-item">
-              <img src="./assets/img/viber.svg" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
+    </div>
+  </footer>
 
-    <script src="./src/code.js"></script>
-    <script src="./src/script_person.js"></script>
-    <!-- <script src="./src/inputs_perso.js"></script> -->
-  </body>
+  <script src="./src/code.js"></script>
+  <script src="./src/script_person.js"></script>
+  <!-- <script src="./src/inputs_perso.js"></script> -->
+</body>
+
 </html>
