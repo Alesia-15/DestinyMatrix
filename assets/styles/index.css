@@ -164,6 +164,7 @@ button {
 
 button:hover {
   opacity: 0.8;
+  cursor: pointer;
 }
 
 button:active {
@@ -271,7 +272,8 @@ button:active {
 .chakra-table {
   border-spacing: 0;
   border-radius: 10px;
-  width: 800px;
+  width: 100%;
+  max-width: 50em;
   display: block;
 }
 
@@ -300,10 +302,10 @@ button:active {
 }
 
 .chakra-name {
-  width: 260px;
-  height: 49px;
+  width: 16.25em;
+  height: 3.0625em;
   /* border: 1px solid rgb(255, 255, 255); */
-  padding: 5px;
+  padding: 0.3125em;
   text-align: left;
 }
 
@@ -312,128 +314,129 @@ button:active {
   justify-content: center;
   flex-direction: column-reverse;
   align-items: flex-start;
-  padding-left: 47px;
+  padding-left: 2.9375em;
 }
 
 .chakra-name-flex {
   display: flex;
+  align-items: baseline;
 }
 
 #circle-sahastrara:before {
   font-family: "GFS Didot";
-  font-size: 22px;
+  font-size: 1.375em;
   content: "7";
-  width: 20px;
+  width: 1.25em;
   border-radius: calc(50%);
-  height: 20px;
+  height: 1.25em;
   display: inline-flex;
   background: #b653f7;
   justify-content: center;
-  margin-right: 20px;
-  box-shadow: 0 0 10px 10px #b653f7;
+  margin-right: 1.25em;
+  box-shadow: 0 0 0.625em 0.625em #b653f7;
 }
 
 #circle-ajna:before {
   font-family: "GFS Didot";
-  font-size: 22px;
+  font-size: 1.375em;
   content: "6";
-  width: 20px;
+  width: 1.25em;
   border-radius: calc(50%);
-  height: 20px;
+  height: 1.25em;
   display: inline-flex;
   background: #3d54f5;
   justify-content: center;
-  margin-right: 20px;
-  box-shadow: 0 0 10px 10px #3d54f5;
+  margin-right: 1.25em;
+  box-shadow: 0 0 0.625em 0.625em #3d54f5;
 }
 
 #circle-vishuddha:before {
   font-family: "GFS Didot";
-  font-size: 22px;
+  font-size: 1.375em;
   content: "5";
-  width: 20px;
+  width: 1.25em;
   border-radius: calc(50%);
-  height: 20px;
+  height: 1.25em;
   display: inline-flex;
   color: #000000;
   background: #74e0f8;
   justify-content: center;
-  margin-right: 20px;
-  box-shadow: 0 0 10px 10px #74e0f8;
+  margin-right: 1.25em;
+  box-shadow: 0 0 0.625em 0.625em #74e0f8;
 }
 
 #circle-anahata:before {
   font-family: "GFS Didot";
-  font-size: 22px;
+  font-size: 1.375em;
   content: "4";
-  width: 20px;
+  width: 1.25em;
   border-radius: calc(50%);
-  height: 20px;
+  height: 1.25em;
   display: inline-flex;
   color: #000000;
   background: #b6fd57;
   justify-content: center;
-  margin-right: 20px;
-  box-shadow: 0 0 10px 10px #b6fd57;
+  margin-right: 1.25em;
+  box-shadow: 0 0 0.625em 0.625em #b6fd57;
 }
 
 #circle-manipura:before {
   font-family: "GFS Didot";
-  font-size: 22px;
+  font-size: 1.375em;
   content: "3";
-  width: 20px;
+  width: 1.25em;
   border-radius: calc(50%);
-  height: 20px;
+  height: 1.25em;
   display: inline-flex;
   color: #000000;
   background: #fbe49d;
   justify-content: center;
-  margin-right: 20px;
-  box-shadow: 0 0 10px 10px #fbe49d;
+  margin-right: 1.25em;
+  box-shadow: 0 0 0.625em 0.625em #fbe49d;
 }
 
 #circle-svadhishtana:before {
   font-family: "GFS Didot";
-  font-size: 22px;
+  font-size: 1.375em;
   content: "2";
-  width: 20px;
+  width: 1.25em;
   border-radius: calc(50%);
-  height: 20px;
+  height: 1.25em;
   display: inline-flex;
   color: #f5f5f5;
   background: #ed7233;
   justify-content: center;
-  margin-right: 20px;
-  box-shadow: 0 0 10px 10px #ed7233;
+  margin-right: 1.25em;
+  box-shadow: 0 0 0.625em 0.625em #ed7233;
 }
 
 #circle-muladhara:before {
   font-family: "GFS Didot";
-  font-size: 22px;
+  font-size: 1.375em;
   content: "1";
-  width: 20px;
+  width: 1.25em;
   border-radius: calc(50%);
-  height: 20px;
+  height: 1.25em;
   display: inline-flex;
   color: #f5f5f5;
   background: #ea4631;
   justify-content: center;
-  margin-right: 20px;
-  box-shadow: 0 0 10px 10px #ea4631;
+  margin-right: 1.25em;
+  box-shadow: 0 0 0.625em 0.625em #ea4631;
 }
 
 .chakra-td {
-  padding: 5px;
+  padding: 0.3125em;
   text-align: center;
-  width: 200px;
-  size: 16px;
+  width: 12.5em;
+  /* size: 16px; */
 }
 
 .chakra-tr {
   font-family: "Inter";
-  size: 20px;
+  /* size: 20px; */
   text-align-last: center;
-  padding: 5px;
+  padding: 0.3125em;
   text-align: center;
   background-color: #050215;
 }
@@ -479,7 +482,7 @@ button:active {
 
 .chakra-table-header {
   font-family: "Inter";
-  size: 20px;
+  /* size: 20px; */
   text-transform: uppercase;
 }
 
@@ -499,7 +502,7 @@ button:active {
 }
 
 .glow {
-  width: 49.775em;
+  width: 50em;
   height: 1.875em;
   background: #fff8db;
   filter: blur(4.6875em);
@@ -533,10 +536,10 @@ button:active {
 }
 
 .glow-btn {
-  width: 790px;
-  height: 30px;
+  width: 49.375em;
+  height: 1.875em;
   background: #fff8db;
-  filter: blur(75px);
+  filter: blur(4.6875em);
 }
 
 .personal-calculator {
@@ -611,7 +614,7 @@ button:active {
   margin: 10% 0 10% 0;
   width: 100%;
   max-width: 800px;
-  min-width: 375px;
+  min-width: 300px;
 }
 
 :not(svg) {
@@ -801,7 +804,7 @@ text {
 
 tbody {
   font-family: "Inter";
-  font-size: 20px;
+  font-size: 1.25em;
 }
 
 tr {
@@ -810,37 +813,41 @@ tr {
 
 .font-size16 {
   font-family: "Inter";
-  font-size: 16px;
+  font-size: 1em;
 }
 
 .table-padding {
-  padding-bottom: 20px;
+  padding-bottom: 1.25em;
 }
 
 .table-padding-top {
-  padding-top: 20px;
+  padding-top: 1.25em;
 }
 
 .font-size18 {
   font-family: "Inter";
-  font-size: 18px;
+  font-size: 1.125em;
 }
 
 #purposes {
   font-size: 70%;
-  margin-bottom: 20px;
+  margin-bottom: 1.25em;
 }
 
 #blom {
-  padding-right: 100px;
+  padding-right: 6.25em;
 }
 
 #blom2 {
-  padding-right: 100px;
+  padding-right: 6.25em;
 }
 
 .purposes-top {
   margin-top: 5em;
+}
+
+h3 {
+  text-transform: uppercase;
 }
 
 #chakra_table {
