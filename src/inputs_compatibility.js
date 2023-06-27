@@ -240,3 +240,9 @@ function valideDates(date1, date2) {
 
     return true;
 }
+
+const decodematrixbtn = document.querySelector("#decode-matrix-btn");
+
+decodematrixbtn.addEventListener("click", function () {
+  window.location.href = "http://krisuniverse.com/rates";
+});
