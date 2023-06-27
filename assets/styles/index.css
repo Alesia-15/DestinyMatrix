@@ -69,7 +69,7 @@ li {
   justify-content: center;
   align-items: center;
   font-family: "Inter";
-  margin-bottom: 10em;
+  margin-bottom: 5em;
 }
 
 .birthday-container p {
@@ -867,20 +867,20 @@ h3 {
   line-height: 2.5em;
 }
 
-.star__wrap9{
+.star__wrap9 {
   position: absolute;
   bottom: -2.65em;
   right: -2.05em;
 }
 
-.star__wrap10{
+.star__wrap10 {
   position: absolute;
   bottom: 4.9em;
   right: -10.5em;
   font-size: 1.25em;
 }
 
-.star__wrap11{
+.star__wrap11 {
   position: absolute;
   bottom: 11em;
   right: -4.625em;
@@ -888,14 +888,14 @@ h3 {
   opacity: 0.1;
 }
 
-.star__wrap12{
+.star__wrap12 {
   position: absolute;
   bottom: 23em;
   right: -6.4em;
   font-size: 1.25em;
 }
 
-.star__wrap13{
+.star__wrap13 {
   position: absolute;
   bottom: 34.813em;
   right: -10.5em;
@@ -903,21 +903,21 @@ h3 {
   opacity: 0.1;
 }
 
-.star__wrap14{
+.star__wrap14 {
   position: absolute;
   bottom: 36.813em;
   right: 2.5em;
   font-size: 1.25em;
 }
 
-.star__wrap15{
+.star__wrap15 {
   position: absolute;
   bottom: 27.813em;
   right: 48.5em;
   font-size: 1.25em;
 }
 
-.star__wrap16{
+.star__wrap16 {
   position: absolute;
   bottom: 21.5em;
   right: 43em;
@@ -925,14 +925,14 @@ h3 {
   opacity: 0.1;
 }
 
-.star__wrap17{
+.star__wrap17 {
   position: absolute;
   bottom: 8.5em;
   right: 47em;
   font-size: 1.25em;
 }
 
-.star__wrap18{
+.star__wrap18 {
   position: absolute;
   bottom: -4em;
   right: 42em;
@@ -940,7 +940,7 @@ h3 {
   opacity: 0.1;
 }
 
-.compatibility-table__adaptiv{
+.compatibility-table__adaptiv {
   display: none;
 }
 
