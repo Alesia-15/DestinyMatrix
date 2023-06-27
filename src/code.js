@@ -287,3 +287,9 @@ function clearInputs(firtsInput, secondInput) {
   firtsInput.value = "";
   secondInput.value = "";
 }
+
+// Кнопка GET YOUR FULL DESTINY MATRIX READING
+const decodematrixbtn = document.querySelector("#decode-matrix-btn");
+decodematrixbtn.addEventListener("click", function () {
+  window.location.href = "http://krisuniverse.com/rates";
+});
