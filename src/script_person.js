@@ -6,12 +6,6 @@ container.classList.add('display-none');
 
 const btnAnswer = document.getElementById('get_the_answer');
 
-const decodematrixbtn = document.querySelector("#decode-matrix-btn");
-
-decodematrixbtn.addEventListener("click", function () {
-  window.location.href = "http://krisuniverse.com/rates";
-});
-
 // ставит ограничитель в календаре на даты, которые не наступили
 let today = new Date();
 document.getElementById('date').setAttribute("max", today.toLocaleDateString("en-CA"));
