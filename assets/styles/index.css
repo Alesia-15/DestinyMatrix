@@ -1106,10 +1106,10 @@ h3 {
 
   .glow2 {
     position: absolute;
-    width: 86em;
-    height: 72em;
+    width: 49em;
+    height: 52em;
     background: #fff8db;
-    filter: blur(4.6875em);
+    filter: blur(14.6875em);
     z-index: -1;
   }
 
