@@ -37,7 +37,7 @@ function clearInputs(firtsInput, secondInput) {
 }
 
 function titleCase(str) {
-  return str.replace(/^[a-z]|[\- ][a-z]/g, function (a) { return a.toUpperCase(); })
+  return str.replace(/^[a-zа-яё]|[\- ][a-zа-яё]/g, function (a) { return a.toUpperCase(); })
 }
 
 btnAnswer.addEventListener('click', (evt) => {
@@ -76,7 +76,7 @@ btnAnswer.addEventListener('click', (evt) => {
 function valide(date, name) {
   /* проверка имени. Имя может содержать только буквы, тире или писаться через пробел (если несколько имён) */
   let errorMessage = '';
-  const nameValide = new RegExp("^[a-zA-Z\- ]*$");
+  const nameValide = new RegExp("^[а-яё\\- ]*[a-z\\- ]*$", "i");
 
   if(date === 'Invalid Date'){
     console.log('la date est invalide');
