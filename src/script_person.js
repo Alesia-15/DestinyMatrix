@@ -44,6 +44,7 @@ btnAnswer.addEventListener('click', (evt) => {
   evt.preventDefault();
 
   const date = new Date(document.getElementById('date').value);
+  const calculationDate = document.getElementById('date').value;
   const name = document.getElementById('name').value;
   const errorOutput = document.querySelector('.errorOutput');
   const output = document.querySelector('.output-personal-date');
@@ -52,16 +53,19 @@ btnAnswer.addEventListener('click', (evt) => {
   output.innerHTML = '';
   errorOutput.innerHTML = '';
 
+  const splitDate = calculationDate.split('-');
+  const fullDate = `${splitDate[2]}.${splitDate[1]}.${splitDate[0]}`
+
   if (response !== true) {
     output.innerHTML = '';
     errorOutput.innerHTML = response;
   } else {
-    output.innerHTML = titleCase(name) + ' ' + '<span class="gray">Date of Birth:</span>' + ' ' + date.toLocaleDateString("ru");
+    output.innerHTML = titleCase(name) + ' ' + '<span class="gray">Date of Birth:</span>' + ' ' + fullDate;
 
     container.classList.remove('display-none');
-    let apoint = reduceNumber(date.getDate()); // day of birth
-    let bpoint = date.getMonth()+1; // month of birth
-    let year = date.getFullYear(); //year of birth
+    let apoint = reduceNumber(+splitDate[2]); // day of birth
+    let bpoint = +splitDate[1]; // month of birth
+    let year = +splitDate[0]; //year of birth
     let cpoint = calculateYear(year); // c - year of birth
 
     createPerson(person, apoint, bpoint, cpoint);
