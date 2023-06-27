@@ -55,7 +55,7 @@ a {
   /* цвет ссылки равен цвету текста */
   outline: none;
   /* убираем подсветку при фокусировке */
-  cursor: default;
+  cursor: pointer;
 }
 
 li {
@@ -831,7 +831,7 @@ tr {
 }
 
 #purposes {
-  font-size: 70%;
+  /* font-size: 70%; */
   margin-bottom: 1.25em;
 }
 
