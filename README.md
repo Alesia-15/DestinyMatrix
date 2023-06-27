@@ -16,7 +16,7 @@ Destiny Matrix project includes two calculators that allow users to input their 
 
 To use the Destiny Matrix project, simply open the project in your web browser and navigate to the calculators. From there, input your birthdate and the calculators will automatically calculate your Destiny Matrix.
 
-[PERSONAL CALCULATION](https://berriestime.github.io/DestinyMatrix/)
+[PERSONAL CALCULATION](https://berriestime.github.io/DestinyMatrix/) |
 [YOUR COMPATIBILITY](https://nickel-ink-surgeon.glitch.me)
 
 # Contributors
