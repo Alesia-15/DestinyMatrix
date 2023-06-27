@@ -19,7 +19,7 @@ To use the Destiny Matrix project, simply open the project in your web browser a
 # Contributors
 
 - [Elena Koroleva](https://github.com/berriestime)
-- [EvgeniiaShirshikova](https://github.com/EvgeniiaShirshikova)
+- [Evgeniia Shirshikova](https://github.com/EvgeniiaShirshikova)
 - [Alesia](https://github.com/Alesia-15)
 - [Anastasia Goncharova](https://github.com/goncharovastacy)
 - [Aelita](https://github.com/aelita-dzhafarova)
