@@ -1072,11 +1072,10 @@ h3 {
     display: none;
   }
 
-  .glow,
-  .glow2,
-  .glow-btn {
+  /* .glow, */
+  /* .glow-btn {
     display: none;
-  }
+  } */
 
   #decode-matrix-btn {
     margin: 2.5em 0 2.5em 0;
@@ -1108,5 +1107,28 @@ h3 {
 
   #blom2 {
     padding-right: 2.625em;
+  }
+
+  .glow2 {
+    position: absolute;
+    width: 86em;
+    height: 72em;
+    background: #fff8db;
+    filter: blur(4.6875em);
+    z-index: -1;
+  }
+
+  .glow {
+    width: 50em;
+    height: 3.4em;
+    background: #fff8db;
+    filter: blur(4.6875em);
+  }
+
+  .glow-btn {
+    width: 60em;
+    height: 7.5em;
+    background: #fff8db;
+    filter: blur(4.6875em);
   }
 }
