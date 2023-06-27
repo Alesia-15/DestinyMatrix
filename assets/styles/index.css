@@ -176,6 +176,7 @@ button:hover {
 #createChart {
   grid-area: button;
   align-self: baseline;
+  cursor: pointer;
 }
 
 .star__wrap1 {
@@ -938,6 +939,10 @@ h3 {
   opacity: 0.1;
 }
 
+.compatibility-table__adaptiv{
+  display: none;
+}
+
 /*media desktop version */
 
 @media screen and (min-width: 1920px) {
@@ -1125,5 +1130,13 @@ h3 {
     height: 7.5em;
     background: #fff8db;
     filter: blur(4.6875em);
+  }
+
+  .compatibility-table {
+    display: none;
+  }
+
+  .compatibility-table__adaptiv {
+    display: block;
   }
 }
