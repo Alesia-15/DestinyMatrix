@@ -167,12 +167,9 @@ button {
 }
 
 button:hover {
-  opacity: 0.8;
-  cursor: pointer;
-}
-
-button:active {
-  background-color: #ffffff;
+  color: #fff8db;
+  background-color: #050215;
+  border: 1px #fff8db solid;
 }
 
 #get_the_answer,
@@ -514,8 +511,8 @@ button:active {
 
 .glow2 {
   position: absolute;
-  width: 51.063em;
-  height: 32.938em;
+  width: 45em;
+  height: 36em;
   background: #fff8db;
   filter: blur(4.6875em);
   z-index: -1;
@@ -858,6 +855,89 @@ h3 {
   position: relative;
 }
 
+.base-circle {
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 2.5em;
+  height: 2.5em;
+  display: inline-block;
+  text-align: center;
+  line-height: 2.5em;
+}
+
+.star__wrap9{
+  position: absolute;
+  bottom: -2.65em;
+  right: -2.05em;
+}
+
+.star__wrap10{
+  position: absolute;
+  bottom: 4.9em;
+  right: -10.5em;
+  font-size: 1.25em;
+}
+
+.star__wrap11{
+  position: absolute;
+  bottom: 11em;
+  right: -4.625em;
+  font-size: 1.25em;
+  opacity: 0.1;
+}
+
+.star__wrap12{
+  position: absolute;
+  bottom: 23em;
+  right: -6.4em;
+  font-size: 1.25em;
+}
+
+.star__wrap13{
+  position: absolute;
+  bottom: 34.813em;
+  right: -10.5em;
+  font-size: 1.25em;
+  opacity: 0.1;
+}
+
+.star__wrap14{
+  position: absolute;
+  bottom: 36.813em;
+  right: 2.5em;
+  font-size: 1.25em;
+}
+
+.star__wrap15{
+  position: absolute;
+  bottom: 27.813em;
+  right: 48.5em;
+  font-size: 1.25em;
+}
+
+.star__wrap16{
+  position: absolute;
+  bottom: 21.5em;
+  right: 43em;
+  font-size: 1.25em;
+  opacity: 0.1;
+}
+
+.star__wrap17{
+  position: absolute;
+  bottom: 8.5em;
+  right: 47em;
+  font-size: 1.25em;
+}
+
+.star__wrap18{
+  position: absolute;
+  bottom: -4em;
+  right: 42em;
+  font-size: 1.25em;
+  opacity: 0.1;
+}
+
 /*media desktop version */
 
 @media screen and (min-width: 1920px) {
@@ -978,7 +1058,17 @@ h3 {
   .star__wrap5,
   .star__wrap6,
   .star__wrap7,
-  .star__wrap8 {
+  .star__wrap8,
+  .star__wrap9,
+  .star__wrap10,
+  .star__wrap11,
+  .star__wrap12,
+  .star__wrap13,
+  .star__wrap14,
+  .star__wrap15,
+  .star__wrap16,
+  .star__wrap17,
+  .star__wrap18 {
     display: none;
   }
 
@@ -989,7 +1079,7 @@ h3 {
   }
 
   #decode-matrix-btn {
-    margin: 0 0 40px 0;
+    margin: 2.5em 0 2.5em 0;
     width: 300px;
     height: 70px;
     padding: 5px;
@@ -1011,128 +1101,12 @@ h3 {
   .cls-60 {
     font-size: 24px;
   }
-}
 
-/*корявые медиа запросы*/
-
-@media screen and (min-width: 1160px) {
-
-  /*  */
-  .t-rec {
-    word-break: normal !important;
-  }
-
-  #allrecords {
-    -webkit-font-smoothing: antialiased;
-    background-color: none;
-  }
-
-  .table {
-    justify-items: center;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    grid-column-start: 2;
-    grid-column-end: 2;
-  }
-
-  .compatibility-table {
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    width: 70em;
-  }
-
-  #table1 {
-    margin-top: 30px;
-    width: 100%;
-  }
-
-  .base-circle {
-    border: 2px solid white;
-    border-radius: 50%;
-    width: 34px;
-    height: 34px;
-    display: inline-block;
-    text-align: center;
-    line-height: 30px;
-  }
-
-  #purposes {
-    font-size: 70%;
-  }
-
-  #purposes {
-    margin-bottom: 20px;
-  }
-
-  element.style {
-    height: 5px;
-  }
-}
-
-/*media max-width 1160px */
-
-@media screen and (max-width: 1160px) {
   #blom {
-    padding-right: 42px;
+    padding-right: 2.625em;
   }
 
   #blom2 {
-    padding-right: 0px;
-  }
-
-  .t-rec {
-    word-break: normal !important;
-  }
-}
-
-/*media max-width 900px */
-
-@media screen and (max-width: 900px) {
-  #blom {
-    padding-right: 42px;
-  }
-
-  #blom2 {
-    padding-right: 0px;
-  }
-
-  .t-rec {
-    word-break: normal !important;
-  }
-
-  /* Modify the styles for mobile devices */
-
-  .table {
-    float: none;
-    margin-left: 25px !important;
-    margin-right: 10%;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    width: 100%;
-    grid-row: 3/3;
-    grid-column-start: auto;
-    grid-column-end: auto;
-    justify-items: center;
-    margin-bottom: 10px;
-    min-width: 530px;
-  }
-
-  .info-txt {
-    float: none;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    width: 100%;
-    grid-row: 2/3;
-    grid-column-start: auto;
-    grid-column-end: auto;
-  }
-
-  #table1 {
-    margin-top: 30px;
-    width: 100%;
+    padding-right: 2.625em;
   }
 }
