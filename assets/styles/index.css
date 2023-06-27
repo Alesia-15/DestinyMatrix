@@ -1053,7 +1053,7 @@ h3 {
 
   .star__wrap1,
   .star__wrap2,
-  .star__wrap3,
+  .star__wrap3,glow
   .star__wrap4,
   .star__wrap5,
   .star__wrap6,
@@ -1071,11 +1071,6 @@ h3 {
   .star__wrap18 {
     display: none;
   }
-
-  /* .glow, */
-  /* .glow-btn {
-    display: none;
-  } */
 
   #decode-matrix-btn {
     margin: 2.5em 0 2.5em 0;
