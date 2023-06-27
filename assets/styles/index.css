@@ -55,7 +55,7 @@ a {
   /* цвет ссылки равен цвету текста */
   outline: none;
   /* убираем подсветку при фокусировке */
-  cursor: default;
+  cursor: pointer;
 }
 
 li {
