@@ -167,12 +167,9 @@ button {
 }
 
 button:hover {
-  opacity: 0.8;
-  cursor: pointer;
-}
-
-button:active {
-  background-color: #ffffff;
+  color: #fff8db;
+  background-color: #050215;
+  border: 1px #fff8db solid;
 }
 
 #get_the_answer,
