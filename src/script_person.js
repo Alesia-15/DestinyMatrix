@@ -21,6 +21,7 @@ let person = {};
 let points = {};
 let purposes = {};
 let chartHeart = {};
+let years = {};
 
 //одна универсальная функция для каждой персоны
 function createPerson(per, apoint, bpoint, cpoint) {
@@ -28,12 +29,7 @@ function createPerson(per, apoint, bpoint, cpoint) {
   per.points = points;
   per.purposes = purposes;
   per.chartHeart = chartHeart;
-}
-
-// очищает инпуты
-function clearInputs(firtsInput, secondInput) {
-  firtsInput.value = "";
-  secondInput.value = "";
+  per.years = years;
 }
 
 function titleCase(str) {
@@ -72,7 +68,7 @@ btnAnswer.addEventListener('click', (evt) => {
     Points(person);
     ChartHeart();
     Purposes();
-
+    outputYears(person.years);
     clearInputs(dateInput, nameInput);
   }
 });
