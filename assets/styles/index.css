@@ -165,6 +165,7 @@ button {
   border: 1px #fff8db solid;
   z-index: 1;
   cursor: pointer;
+  color: #050215;
 }
 
 button:hover {
