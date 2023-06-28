@@ -200,7 +200,7 @@ btnChart.addEventListener('click', (evt) => {
         output2.innerHTML = '';
         wrongDate.innerHTML = response;
     } else {
-        output2.innerHTML = date1.toLocaleDateString("ru") + ' ' + '+' + ' ' + date2.toLocaleDateString("ru");
+        output2.innerHTML = fullDateFirst + ' ' + '+' + ' ' + fullDateSecond;
         // создаем два объекта со значениями
         let apoint = reduceNumber(+splitDateFirst[2]); // day of birth
         let bpoint = +splitDateFirst[1]; // month of birth

@@ -280,6 +280,9 @@ const calculatePoints = (aPoint, bPoint, cPoint) => {
     svademotions: reduceNumber(jpoint + npoint),
     mulemotions: reduceNumber(cPoint + dpoint),
   };
+
+  // const years = { 
+  // }
 };
 
 // очищает инпуты
