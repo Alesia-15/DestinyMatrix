@@ -1,5 +1,5 @@
-input {
-  all: unset;
+input[type="date"] {
+  -webkit-appearance: none;
 }
 
 body {
