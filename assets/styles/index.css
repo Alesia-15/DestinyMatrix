@@ -1,3 +1,7 @@
+input {
+  all: unset;
+}
+
 body {
   background-color: #050215;
   font-family: "GFS Didot";
@@ -98,10 +102,6 @@ li {
     "input1 input2 button";
   grid-column-gap: 1.875em;
   grid-row-gap: 0.3em;
-}
-
-.input1-wrap input {
-  width: 200px;
 }
 
 label {
