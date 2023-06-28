@@ -182,6 +182,8 @@ btnChart.addEventListener('click', (evt) => {
     evt.preventDefault();
     const date1 = new Date(document.getElementById('date_person1').value);
     const date2 = new Date(document.getElementById('date_person2').value);
+    const calculationDateFirst = document.getElementById('date_person1').value;
+    const calculationDateSecond = document.getElementById('date_person2').value;
     const wrongDate = document.querySelector('.wrongDate');
     const output2 = document.querySelector('.output2');
     const response = valideDates(date1, date2);
@@ -189,21 +191,26 @@ btnChart.addEventListener('click', (evt) => {
     output2.innerHTML = '';
     wrongDate.innerHTML = '';
 
+    const splitDateFirst = calculationDateFirst.split('-');
+    const splitDateSecond = calculationDateSecond.split('-');
+    const fullDateFirst = `${splitDateFirst[2]}.${splitDateFirst[1]}.${splitDateFirst[0]}`;
+    const fullDateSecond = `${splitDateSecond[2]}.${splitDateSecond[1]}.${splitDateSecond[0]}`;
+
     if (response !== true) {
         output2.innerHTML = '';
         wrongDate.innerHTML = response;
     } else {
         output2.innerHTML = date1.toLocaleDateString("ru") + ' ' + '+' + ' ' + date2.toLocaleDateString("ru");
         // создаем два объекта со значениями
-        let apoint = reduceNumber(date1.getDate()); // day of birth
-        let bpoint = date1.getMonth()+1; // month of birth
-        let year = date1.getFullYear(); //year of birth
+        let apoint = reduceNumber(+splitDateFirst[2]); // day of birth
+        let bpoint = +splitDateFirst[1]; // month of birth
+        let year = +splitDateFirst[0]; //year of birth
         let cpoint = calculateYear(year); // c - year of bir
         createPerson(person, apoint, bpoint, cpoint);
 
-        let secondApoint = reduceNumber(date2.getDate()); // day of birth
-        let secondBpoint = date2.getMonth()+1; // month of birth
-        let year2 = date2.getFullYear(); //year of birth
+        let secondApoint = reduceNumber(+splitDateSecond[2]); // day of birth
+        let secondBpoint = +splitDateSecond[1]; // month of birth
+        let year2 = +splitDateSecond[0]; //year of birth
         let secondCpoint = calculateYear(year2); // c - year of bir
         createPerson(person, apoint, bpoint, cpoint);
         createPerson(secondPerson, secondApoint, secondBpoint, secondCpoint);
