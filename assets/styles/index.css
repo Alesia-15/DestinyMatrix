@@ -977,6 +977,28 @@ h3 {
   }
 }
 
+@media screen and (max-width: 640px) {
+  .footer p {
+    margin-bottom: 30px;
+  }
+
+  .socialmedia-wrapper:first-child {
+    margin-bottom: 10px;
+  }
+
+  .socialmedia-wrapper_first .socialmedia-item img {
+    max-width: 35px;
+  }
+
+  #youtube {
+    max-width: 46px;
+  }
+
+  .socialmedia-wrapper_second .socialmedia-item img {
+    max-width: 31px;
+  }
+}
+
 @media screen and (max-width: 479px) {
   body {
     font-size: 4.79px;
