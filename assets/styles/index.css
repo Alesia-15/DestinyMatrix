@@ -770,6 +770,8 @@ text {
 .cls-24,
 .cls-25 {
   filter: blur(5px);
+  -webkit-filter: blur(5px);
+  -webkit-background-filter: blur(5px);
 }
 
 .cls-24,
