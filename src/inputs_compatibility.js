@@ -186,18 +186,18 @@ const fillMatrix = (person, secondPerson) => {
             id: "compatibilityUnion",
             value: reduceNumber(reduceNumber(person.purposes.malepoint + secondPerson.purposes.malepoint)+reduceNumber(person.purposes.femalepoint + secondPerson.purposes.femalepoint)),
         },
-        // {
-        //     id: "compatibility",
-        //     value: reduceNumber(),
-        // },
-        // {
-        //     id: "compatibility",
-        //     value: reduceNumber(),
-        // },
-        // {
-        //     id: "compatibility",
-        //     value: reduceNumber(),
-        // }
+        {
+            id: "compatibilityHarmony1",
+            value: reduceNumber(reduceNumber(person.purposes.skypoint + secondPerson.purposes.skypoint)+reduceNumber(person.purposes.earthpoint + secondPerson.purposes.earthpoint)),
+        },
+        {
+            id: "compatibilityHarmony2",
+            value: reduceNumber(reduceNumber(person.purposes.malepoint + secondPerson.purposes.malepoint)+reduceNumber(person.purposes.femalepoint + secondPerson.purposes.femalepoint)),
+        },
+        {
+            id: "compatibilityHarmony",
+            value: reduceNumber(reduceNumber(reduceNumber(person.purposes.skypoint + secondPerson.purposes.skypoint)+reduceNumber(person.purposes.earthpoint + secondPerson.purposes.earthpoint))+reduceNumber(reduceNumber(person.purposes.malepoint + secondPerson.purposes.malepoint)+reduceNumber(person.purposes.femalepoint + secondPerson.purposes.femalepoint))),
+        }
     ];
 }
 

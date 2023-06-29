@@ -40,6 +40,28 @@ footer {
   gap: 2.5em;
 }
 
+.hamburger {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+}
+
+.hamburger__span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  margin: 4px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #ffffff;
+}
+
+.logo {
+  display: none;
+}
+
 .footer {
   display: flex;
   justify-content: center;
@@ -1006,7 +1028,7 @@ h3 {
 
 @media screen and (max-width: 479px) {
   body {
-    font-size: 4.79px;
+    font-size: 14px;
   }
 
   header,
@@ -1014,6 +1036,57 @@ h3 {
   footer {
     padding-left: 20px;
     padding-right: 20px;
+  }
+
+  .hamburger {
+    display: block;
+    z-index: 3;
+  }
+
+  .hamburger.active .hamburger__span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .hamburger__span:nth-child(1) {
+    transform: translate(3px, -1.9px) rotate(45deg);
+  }
+
+  .hamburger.active .hamburger__span:nth-child(3) {
+    transform: translate(1.8px, 1.6px) rotate(-45deg);
+  }
+
+  .header-left {
+    display: none;
+  }
+
+  .logo {
+    display: block;
+  }
+
+  .header-right {
+    margin: 0;
+    padding-top: 45px;
+    position: fixed;
+    right: -100%;
+    top: 0;
+    gap: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: #050215;
+    width: 70%;
+    height: 100vh;
+    transition: 0.3s;
+    z-index: 2;
+
+  }
+
+  .header-right.active {
+    right: 0;
+  }
+
+  .header-right li {
+    margin: 10px 0;
   }
 
   .birthday-container__inputs-wrapper {

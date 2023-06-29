@@ -157,7 +157,7 @@ const calculateYear = (year) => {
 const calculatePoints = (aPoint, bPoint, cPoint) => {
 
   dpoint = reduceNumber(aPoint + bPoint + cPoint);
-  epoint = reduceNumber(dpoint + dpoint);
+  epoint = reduceNumber(aPoint + bPoint + cPoint + dpoint);
   fpoint = reduceNumber(aPoint + bPoint);
   gpoint = reduceNumber(bPoint + cPoint);
   hpoint = reduceNumber(dpoint + aPoint);
@@ -409,3 +409,16 @@ const decodematrixbtn = document.querySelector("#decode-matrix-btn");
 decodematrixbtn.addEventListener("click", function () {
   window.location.href = "http://krisuniverse.com/rates";
 });
+
+const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('.header-right');
+
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    navMenu.classList.toggle('active');
+})
+
+document.querySelectorAll('.header__link').forEach(link => link.addEventListener('click', () => {
+    hamburger.classList.remove('active');
+    navMenu.classList.remove('active');
+}))
