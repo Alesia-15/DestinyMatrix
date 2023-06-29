@@ -162,6 +162,42 @@ const fillMatrix = (person, secondPerson) => {
             id: "compatibilityH1point",
             value: reduceNumber(person.points.h1point + secondPerson.points.h1point),
         },
+        {
+            id: "compatibilitySkypoint",
+            value: reduceNumber(person.purposes.skypoint + secondPerson.purposes.skypoint),
+        },
+        {
+            id: "compatibilityEarthpoint",
+            value: reduceNumber(person.purposes.earthpoint + secondPerson.purposes.earthpoint),
+        },
+        {
+            id: "compatibilityRelationship",
+            value: reduceNumber(reduceNumber(person.purposes.skypoint + secondPerson.purposes.skypoint)+reduceNumber(person.purposes.earthpoint + secondPerson.purposes.earthpoint)),
+        },
+        {
+            id: "compatibilityMalepoint",
+            value: reduceNumber(person.purposes.malepoint + secondPerson.purposes.malepoint),
+        },
+        {
+            id: "compatibilityFemalepoint",
+            value: reduceNumber(person.purposes.femalepoint + secondPerson.purposes.femalepoint),
+        },
+        {
+            id: "compatibilityUnion",
+            value: reduceNumber(reduceNumber(person.purposes.malepoint + secondPerson.purposes.malepoint)+reduceNumber(person.purposes.femalepoint + secondPerson.purposes.femalepoint)),
+        },
+        // {
+        //     id: "compatibility",
+        //     value: reduceNumber(),
+        // },
+        // {
+        //     id: "compatibility",
+        //     value: reduceNumber(),
+        // },
+        // {
+        //     id: "compatibility",
+        //     value: reduceNumber(),
+        // }
     ];
 }
 
@@ -212,7 +248,6 @@ btnChart.addEventListener('click', (evt) => {
         let secondBpoint = +splitDateSecond[1]; // month of birth
         let year2 = +splitDateSecond[0]; //year of birth
         let secondCpoint = calculateYear(year2); // c - year of bir
-        createPerson(person, apoint, bpoint, cpoint);
         createPerson(secondPerson, secondApoint, secondBpoint, secondCpoint);
         fillMatrix(person, secondPerson);
         compatibilityContainer.classList.remove('display-none');

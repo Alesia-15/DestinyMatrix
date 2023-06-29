@@ -249,6 +249,14 @@ const calculatePoints = (aPoint, bPoint, cPoint) => {
   ha4point = reduceNumber(hapoint + aPoint);
   ha5point = reduceNumber(hapoint + ha4point);
   ha6point = reduceNumber(ha4point + aPoint);
+  skypoint = reduceNumber(bPoint + dpoint);
+  earthpoint = reduceNumber(aPoint + cPoint);
+  perspurpose = reduceNumber(skypoint + earthpoint);
+  femalepoint = reduceNumber(gpoint + hpoint);
+  malepoint = reduceNumber(fpoint + ipoint);
+  socialpurpose = reduceNumber(femalepoint + malepoint);
+  generalpurpose = reduceNumber(perspurpose + socialpurpose);
+  planetarypurpose = reduceNumber(socialpurpose + generalpurpose);
 
   years = {
     afpoint: afpoint,
@@ -344,34 +352,17 @@ const calculatePoints = (aPoint, bPoint, cPoint) => {
     h1point: h1point,
   };
 
-  skypoint = reduceNumber(bPoint + dpoint);
-  earthpoint = reduceNumber(aPoint + cPoint);
   purposes = {
-    skypoint: reduceNumber(bPoint + dpoint),
-    earthpoint: reduceNumber(aPoint + cPoint),
-    perspurpose: reduceNumber(skypoint + earthpoint),
+    skypoint: skypoint,
+    earthpoint: earthpoint,
+    perspurpose: perspurpose,
 
-    femalepoint: reduceNumber(gpoint + hpoint),
-    malepoint: reduceNumber(fpoint + ipoint),
-    socialpurpose: reduceNumber(gpoint + hpoint + fpoint + ipoint),
+    femalepoint: femalepoint,
+    malepoint: malepoint,
+    socialpurpose: socialpurpose,
 
-    generalpurpose: reduceNumber(
-      aPoint + bPoint + cPoint + dpoint + gpoint + hpoint + fpoint + ipoint
-    ),
-    planetarypurpose: reduceNumber(
-      aPoint +
-      bPoint +
-      cPoint +
-      dpoint +
-      gpoint +
-      hpoint +
-      fpoint +
-      ipoint +
-      gpoint +
-      hpoint +
-      fpoint +
-      ipoint
-    ),
+    generalpurpose: generalpurpose,
+    planetarypurpose: planetarypurpose
   };
 
   chartHeart = {
