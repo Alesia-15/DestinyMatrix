@@ -42,10 +42,6 @@ footer {
 
 .hamburger {
   display: none;
-  cursor: pointer;
-  position: absolute;
-  top: 25px;
-  right: 25px;
 }
 
 .hamburger__span {
@@ -1006,7 +1002,88 @@ h3 {
   }
 }
 
+@media screen and (max-width: 810px) {
+
+  .logo {
+    display: block;
+    margin-bottom: 10px;
+    font-family: 'GFS Didot', Arial, sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+  }
+
+  header,
+  main,
+  footer {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    position: fixed;
+    top: 25px;
+    right: 25px;
+    z-index: 10;
+  }
+
+  .hamburger.active {
+    top: 15px;
+    right: 15px;
+  }
+
+  .hamburger.active .hamburger__span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .hamburger__span:nth-child(1) {
+    transform: translate(3px, -1.9px) rotate(45deg);
+  }
+
+  .hamburger.active .hamburger__span:nth-child(3) {
+    transform: translate(1.8px, 1.6px) rotate(-45deg);
+  }
+
+  .header-left {
+    display: none;
+  }
+
+  .header-right {
+    margin: 0;
+    padding-top: 45px;
+    position: fixed;
+    right: -400px;
+    top: 0;
+    gap: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: #111111;
+    width: 300px;
+    height: 100vh;
+    transition: 0.4s;
+    z-index: 2;
+  }
+
+  .header-right.active {
+    right: 0;
+  }
+
+  .header-right li {
+    font-size: 14px;
+  }
+
+  .header-right li:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
 @media screen and (max-width: 640px) {
+  .header-right {
+    width: 250px;
+  }
+
   .footer p {
     margin-bottom: 30px;
   }
@@ -1030,65 +1107,11 @@ h3 {
 
 @media screen and (max-width: 479px) {
   body {
-    font-size: 14px;
-  }
-
-  header,
-  main,
-  footer {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  .hamburger {
-    display: block;
-    z-index: 3;
-  }
-
-  .hamburger.active .hamburger__span:nth-child(2) {
-    opacity: 0;
-  }
-
-  .hamburger.active .hamburger__span:nth-child(1) {
-    transform: translate(3px, -1.9px) rotate(45deg);
-  }
-
-  .hamburger.active .hamburger__span:nth-child(3) {
-    transform: translate(1.8px, 1.6px) rotate(-45deg);
-  }
-
-  .header-left {
-    display: none;
-  }
-
-  .logo {
-    display: block;
+    font-size: 4.79px;
   }
 
   .header-right {
-    margin: 0;
-    padding-top: 45px;
-    position: fixed;
-    right: -100%;
-    top: 0;
-    gap: 0;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    background-color: #050215;
-    width: 70%;
-    height: 100vh;
-    transition: 0.3s;
-    z-index: 2;
-
-  }
-
-  .header-right.active {
-    right: 0;
-  }
-
-  .header-right li {
-    margin: 10px 0;
+    width: 230px;
   }
 
   .birthday-container__inputs-wrapper {
