@@ -123,46 +123,6 @@ const fillMatrix = (person, secondPerson) => {
             value: reduceNumber(person.points.upoint + secondPerson.points.upoint),
         },
         {
-            id: "compatibilityWpoint",
-            value: reduceNumber(person.points.wpoint + secondPerson.points.wpoint),
-        },
-        {
-            id: "compatibilityXpoint",
-            value: reduceNumber(person.points.xpoint + secondPerson.points.xpoint),
-        },
-        {
-            id: "compatibilityF2point",
-            value: reduceNumber(person.points.f2point + secondPerson.points.f2point),
-        },
-        {
-            id: "compatibilityF1point",
-            value: reduceNumber(person.points.f1point + secondPerson.points.f1point),
-        },
-        {
-            id: "compatibilityG2point",
-            value: reduceNumber(person.points.g2point + secondPerson.points.g2point),
-        },
-        {
-            id: "compatibilityG1point",
-            value: reduceNumber(person.points.g1point + secondPerson.points.g1point),
-        },
-        {
-            id: "compatibilityI2point",
-            value: reduceNumber(person.points.i2point + secondPerson.points.i2point),
-        },
-        {
-            id: "compatibilityI1point",
-            value: reduceNumber(person.points.i1point + secondPerson.points.i1point),
-        },
-        {
-            id: "compatibilityH2point",
-            value: reduceNumber(person.points.h2point + secondPerson.points.h2point),
-        },
-        {
-            id: "compatibilityH1point",
-            value: reduceNumber(person.points.h1point + secondPerson.points.h1point),
-        },
-        {
             id: "compatibilitySkypoint",
             value: reduceNumber(person.purposes.skypoint + secondPerson.purposes.skypoint),
         },
