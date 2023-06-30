@@ -55,10 +55,12 @@ btnAnswer.addEventListener('click', (evt) => {
   if (response !== true) {
     output.innerHTML = '';
     errorOutput.innerHTML = response;
+    container.classList.add('display-none');
   } else {
     output.innerHTML = titleCase(name) + ' ' + '<span class="gray">Date of Birth:</span>' + ' ' + fullDate;
 
     container.classList.remove('display-none');
+    container.scrollIntoView({behavior: "smooth"});
     let apoint = reduceNumber(+splitDate[2]); // day of birth
     let bpoint = +splitDate[1]; // month of birth
     let year = +splitDate[0]; //year of birth

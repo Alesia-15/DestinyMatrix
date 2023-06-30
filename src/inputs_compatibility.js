@@ -195,6 +195,7 @@ btnChart.addEventListener('click', (evt) => {
     if (response !== true) {
         output2.innerHTML = '';
         wrongDate.innerHTML = response;
+        compatibilityContainer.classList.add('display-none');
     } else {
         output2.innerHTML = fullDateFirst + ' ' + '+' + ' ' + fullDateSecond;
         // создаем два объекта со значениями
@@ -211,6 +212,7 @@ btnChart.addEventListener('click', (evt) => {
         createPerson(secondPerson, secondApoint, secondBpoint, secondCpoint);
         fillMatrix(person, secondPerson);
         compatibilityContainer.classList.remove('display-none');
+        compatibilityContainer.scrollIntoView({behavior: "smooth"});
         outputCompatibilityMatrixValues();
         clearInputs(inputFirstDate, inputSecondDate);
     }
