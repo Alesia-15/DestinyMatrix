@@ -1021,16 +1021,20 @@ h3 {
 
   .hamburger {
     display: block;
+    padding: 13px 13px;
     cursor: pointer;
     position: fixed;
-    top: 25px;
-    right: 25px;
+    background-color: #13131394;
+    border-radius: 50%;
+    top: 15px;
+    right: 15px;
     z-index: 10;
   }
 
   .hamburger.active {
-    top: 15px;
-    right: 15px;
+    top: 5px;
+    right: 5px;
+    background-color: transparent;
   }
 
   .hamburger.active .hamburger__span:nth-child(2) {
