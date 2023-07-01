@@ -16,7 +16,7 @@ smallCircle.forEach(el => el.setAttribute('r', '17'));
 }
 
 if (isChrome){
-    bigCircle.forEach(el => el.setAttribute('r', '34.5'));
-mediumCircle.forEach(el => el.setAttribute('r', '25'));
-smallCircle.forEach(el => el.setAttribute('r', '22'));
+    bigCircle.forEach(el => el.setAttribute('r', '33.5'));
+mediumCircle.forEach(el => el.setAttribute('r', '24'));
+smallCircle.forEach(el => el.setAttribute('r', '21'));
 }
