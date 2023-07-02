@@ -123,45 +123,41 @@ const fillMatrix = (person, secondPerson) => {
             value: reduceNumber(person.points.upoint + secondPerson.points.upoint),
         },
         {
-            id: "compatibilityWpoint",
-            value: reduceNumber(person.points.wpoint + secondPerson.points.wpoint),
+            id: "compatibilitySkypoint",
+            value: reduceNumber(reduceNumber(person.points.bpoint + secondPerson.points.bpoint)+reduceNumber(person.points.dpoint + secondPerson.points.dpoint)),
         },
         {
-            id: "compatibilityXpoint",
-            value: reduceNumber(person.points.xpoint + secondPerson.points.xpoint),
+            id: "compatibilityEarthpoint",
+            value: reduceNumber(reduceNumber(person.points.apoint + secondPerson.points.apoint)+reduceNumber(person.points.cpoint + secondPerson.points.cpoint)),
         },
         {
-            id: "compatibilityF2point",
-            value: reduceNumber(person.points.f2point + secondPerson.points.f2point),
+            id: "compatibilityRelationship",
+            value: reduceNumber(reduceNumber(reduceNumber(person.points.bpoint + secondPerson.points.bpoint)+reduceNumber(person.points.dpoint + secondPerson.points.dpoint))+reduceNumber(reduceNumber(person.points.apoint + secondPerson.points.apoint)+reduceNumber(person.points.cpoint + secondPerson.points.cpoint))),
         },
         {
-            id: "compatibilityF1point",
-            value: reduceNumber(person.points.f1point + secondPerson.points.f1point),
+            id: "compatibilityMalepoint",
+            value: reduceNumber(reduceNumber(person.points.fpoint + secondPerson.points.fpoint)+reduceNumber(person.points.ipoint + secondPerson.points.ipoint)),
         },
         {
-            id: "compatibilityG2point",
-            value: reduceNumber(person.points.g2point + secondPerson.points.g2point),
+            id: "compatibilityFemalepoint",
+            value: reduceNumber(reduceNumber(person.points.gpoint + secondPerson.points.gpoint)+reduceNumber(person.points.hpoint + secondPerson.points.hpoint)),
         },
         {
-            id: "compatibilityG1point",
-            value: reduceNumber(person.points.g1point + secondPerson.points.g1point),
+            id: "compatibilityUnion",
+            value: reduceNumber(reduceNumber(reduceNumber(person.points.fpoint + secondPerson.points.fpoint)+reduceNumber(person.points.ipoint + secondPerson.points.ipoint))+reduceNumber(reduceNumber(person.points.gpoint + secondPerson.points.gpoint)+reduceNumber(person.points.hpoint + secondPerson.points.hpoint))),
         },
         {
-            id: "compatibilityI2point",
-            value: reduceNumber(person.points.i2point + secondPerson.points.i2point),
+            id: "compatibilityHarmony1",
+            value: reduceNumber(reduceNumber(reduceNumber(person.points.bpoint + secondPerson.points.bpoint)+reduceNumber(person.points.dpoint + secondPerson.points.dpoint))+reduceNumber(reduceNumber(person.points.apoint + secondPerson.points.apoint)+reduceNumber(person.points.cpoint + secondPerson.points.cpoint))),
         },
         {
-            id: "compatibilityI1point",
-            value: reduceNumber(person.points.i1point + secondPerson.points.i1point),
+            id: "compatibilityHarmony2",
+            value: reduceNumber(reduceNumber(reduceNumber(person.points.fpoint + secondPerson.points.fpoint)+reduceNumber(person.points.ipoint + secondPerson.points.ipoint))+reduceNumber(reduceNumber(person.points.gpoint + secondPerson.points.gpoint)+reduceNumber(person.points.hpoint + secondPerson.points.hpoint))),
         },
         {
-            id: "compatibilityH2point",
-            value: reduceNumber(person.points.h2point + secondPerson.points.h2point),
-        },
-        {
-            id: "compatibilityH1point",
-            value: reduceNumber(person.points.h1point + secondPerson.points.h1point),
-        },
+            id: "compatibilityHarmony",
+            value: reduceNumber(reduceNumber(reduceNumber(reduceNumber(person.points.bpoint + secondPerson.points.bpoint)+reduceNumber(person.points.dpoint + secondPerson.points.dpoint))+reduceNumber(reduceNumber(person.points.apoint + secondPerson.points.apoint)+reduceNumber(person.points.cpoint + secondPerson.points.cpoint)))+reduceNumber(reduceNumber(reduceNumber(person.points.fpoint + secondPerson.points.fpoint)+reduceNumber(person.points.ipoint + secondPerson.points.ipoint))+reduceNumber(reduceNumber(person.points.gpoint + secondPerson.points.gpoint)+reduceNumber(person.points.hpoint + secondPerson.points.hpoint)))),
+        }
     ];
 }
 
@@ -199,8 +195,9 @@ btnChart.addEventListener('click', (evt) => {
     if (response !== true) {
         output2.innerHTML = '';
         wrongDate.innerHTML = response;
+        compatibilityContainer.classList.add('display-none');
     } else {
-        output2.innerHTML = date1.toLocaleDateString("ru") + ' ' + '+' + ' ' + date2.toLocaleDateString("ru");
+        output2.innerHTML = fullDateFirst + ' ' + '+' + ' ' + fullDateSecond;
         // создаем два объекта со значениями
         let apoint = reduceNumber(+splitDateFirst[2]); // day of birth
         let bpoint = +splitDateFirst[1]; // month of birth
@@ -212,10 +209,10 @@ btnChart.addEventListener('click', (evt) => {
         let secondBpoint = +splitDateSecond[1]; // month of birth
         let year2 = +splitDateSecond[0]; //year of birth
         let secondCpoint = calculateYear(year2); // c - year of bir
-        createPerson(person, apoint, bpoint, cpoint);
         createPerson(secondPerson, secondApoint, secondBpoint, secondCpoint);
         fillMatrix(person, secondPerson);
         compatibilityContainer.classList.remove('display-none');
+        compatibilityContainer.scrollIntoView({behavior: "smooth"});
         outputCompatibilityMatrixValues();
         clearInputs(inputFirstDate, inputSecondDate);
     }

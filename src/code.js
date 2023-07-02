@@ -155,8 +155,9 @@ const calculateYear = (year) => {
 };
 
 const calculatePoints = (aPoint, bPoint, cPoint) => {
+
   dpoint = reduceNumber(aPoint + bPoint + cPoint);
-  epoint = reduceNumber(dpoint + dpoint);
+  epoint = reduceNumber(aPoint + bPoint + cPoint + dpoint);
   fpoint = reduceNumber(aPoint + bPoint);
   gpoint = reduceNumber(bPoint + cPoint);
   hpoint = reduceNumber(dpoint + aPoint);
@@ -189,6 +190,132 @@ const calculatePoints = (aPoint, bPoint, cPoint) => {
   i1point = reduceNumber(ipoint + i2point);
   h2point = reduceNumber(hpoint + upoint);
   h1point = reduceNumber(hpoint + h2point);
+
+  // года
+
+  afpoint = reduceNumber(aPoint + fpoint);
+  af1point = reduceNumber(aPoint + afpoint);
+  af2point = reduceNumber(aPoint + af1point);
+  af3point = reduceNumber(afpoint + af1point);
+  af4point = reduceNumber(afpoint + fpoint);
+  af5point = reduceNumber(afpoint + af4point);
+  af6point = reduceNumber(af4point + fpoint);
+  fbpoint = reduceNumber(fpoint + bPoint);
+  fb1point = reduceNumber(fpoint + fbpoint);
+  fb2point = reduceNumber(fpoint + fb1point);
+  fb3point = reduceNumber(fbpoint + fb1point);
+  fb4point = reduceNumber(fbpoint + bPoint);
+  fb5point = reduceNumber(fbpoint + fb4point);
+  fb6point = reduceNumber(fb4point + bPoint);
+  bgpoint = reduceNumber(bPoint + gpoint);
+  bg1point = reduceNumber(bPoint + bgpoint);
+  bg2point = reduceNumber(bgpoint + bg1point);
+  bg3point = reduceNumber(bgpoint + bg1point);
+  bg4point = reduceNumber(bgpoint + gpoint);
+  bg5point = reduceNumber(bgpoint + bg4point);
+  bg6point = reduceNumber(bg4point + gpoint);
+  gcpoint = reduceNumber(gpoint + cPoint);
+  gc1point = reduceNumber(gpoint + gcpoint);
+  gc2point = reduceNumber(gpoint + gc1point);
+  gc3point = reduceNumber(gcpoint + gc1point);
+  gc4point = reduceNumber(gcpoint + cPoint);
+  gc5point = reduceNumber(gcpoint + gc4point);
+  gc6point = reduceNumber(gc4point + cPoint);
+  cipoint = reduceNumber(cPoint + ipoint);
+  ci1point = reduceNumber(cPoint + cipoint);
+  ci2point = reduceNumber(cPoint + ci1point);
+  ci3point = reduceNumber(cipoint + ci1point);
+  ci4point = reduceNumber(cipoint + ipoint);
+  ci5point = reduceNumber(cipoint + ci4point);
+  ci6point = reduceNumber(ci4point + ipoint);
+  idpoint = reduceNumber(ipoint + dpoint);
+  id1point = reduceNumber(ipoint + idpoint);
+  id2point = reduceNumber(ipoint + id1point);
+  id3point = reduceNumber(idpoint + id1point);
+  id4point = reduceNumber(idpoint + dpoint);
+  id5point = reduceNumber(idpoint + id4point);
+  id6point = reduceNumber(id4point + dpoint);
+  dhpoint = reduceNumber(dpoint + hpoint);
+  dh1point = reduceNumber(dpoint + dhpoint);
+  dh2point = reduceNumber(dpoint + dh1point);
+  dh3point = reduceNumber(dhpoint + dh1point);
+  dh4point = reduceNumber(dhpoint + hpoint);
+  dh5point = reduceNumber(dhpoint + dh4point);
+  dh6point = reduceNumber(dh4point + hpoint);
+  hapoint = reduceNumber(hpoint + aPoint);
+  ha1point = reduceNumber(hpoint + hapoint);
+  ha2point = reduceNumber(hpoint + ha1point);
+  ha3point = reduceNumber(hapoint + ha1point);
+  ha4point = reduceNumber(hapoint + aPoint);
+  ha5point = reduceNumber(hapoint + ha4point);
+  ha6point = reduceNumber(ha4point + aPoint);
+  skypoint = reduceNumber(bPoint + dpoint);
+  earthpoint = reduceNumber(aPoint + cPoint);
+  perspurpose = reduceNumber(skypoint + earthpoint);
+  femalepoint = reduceNumber(gpoint + hpoint);
+  malepoint = reduceNumber(fpoint + ipoint);
+  socialpurpose = reduceNumber(femalepoint + malepoint);
+  generalpurpose = reduceNumber(perspurpose + socialpurpose);
+  planetarypurpose = reduceNumber(socialpurpose + generalpurpose);
+
+  years = {
+    afpoint: afpoint,
+    af1point: af1point,
+    af2point: af2point,
+    af3point: af3point,
+    af4point: af4point,
+    af5point: af5point,
+    af6point: af6point,
+    fbpoint: fbpoint,
+    fb1point: fb1point,
+    fb2point: fb2point,
+    fb3point: fb3point,
+    fb4point: fb4point,
+    fb5point: fb5point,
+    fb6point: fb6point,
+    bgpoint: bgpoint,
+    bg1point: bg1point,
+    bg2point: bg2point,
+    bg3point: bg3point,
+    bg4point: bg4point,
+    bg5point: bg5point,
+    bg6point: bg6point,
+    gcpoint: gcpoint,
+    gc1point: gc1point,
+    gc2point: gc2point,
+    gc3point: gc3point,
+    gc4point: gc4point,
+    gc5point: gc5point,
+    gc6point: gc6point,
+    cipoint: cipoint,
+    ci1point: ci1point,
+    ci2point: ci2point,
+    ci3point: ci3point,
+    ci4point: ci4point,
+    ci5point: ci5point,
+    ci6point: ci6point,
+    idpoint: idpoint,
+    id1point: id1point,
+    id2point: id2point,
+    id3point: id3point,
+    id4point: id4point,
+    id5point: id5point,
+    id6point: id6point,
+    dhpoint: dhpoint,
+    dh1point: dh1point,
+    dh2point: dh2point,
+    dh3point: dh3point,
+    dh4point: dh4point,
+    dh5point: dh5point,
+    dh6point: dh6point,
+    hapoint: hapoint,
+    ha1point: ha1point,
+    ha2point: ha2point,
+    ha3point: ha3point,
+    ha4point: ha4point,
+    ha5point: ha5point,
+    ha6point: ha6point
+  }
 
   points = {
     apoint: aPoint,
@@ -225,34 +352,17 @@ const calculatePoints = (aPoint, bPoint, cPoint) => {
     h1point: h1point,
   };
 
-  skypoint = reduceNumber(bPoint + dpoint);
-  earthpoint = reduceNumber(aPoint + cPoint);
   purposes = {
-    skypoint: reduceNumber(bPoint + dpoint),
-    earthpoint: reduceNumber(aPoint + cPoint),
-    perspurpose: reduceNumber(skypoint + earthpoint),
+    skypoint: skypoint,
+    earthpoint: earthpoint,
+    perspurpose: perspurpose,
 
-    femalepoint: reduceNumber(gpoint + hpoint),
-    malepoint: reduceNumber(fpoint + ipoint),
-    socialpurpose: reduceNumber(gpoint + hpoint + fpoint + ipoint),
+    femalepoint: femalepoint,
+    malepoint: malepoint,
+    socialpurpose: socialpurpose,
 
-    generalpurpose: reduceNumber(
-      aPoint + bPoint + cPoint + dpoint + gpoint + hpoint + fpoint + ipoint
-    ),
-    planetarypurpose: reduceNumber(
-      aPoint +
-      bPoint +
-      cPoint +
-      dpoint +
-      gpoint +
-      hpoint +
-      fpoint +
-      ipoint +
-      gpoint +
-      hpoint +
-      fpoint +
-      ipoint
-    ),
+    generalpurpose: generalpurpose,
+    planetarypurpose: planetarypurpose
   };
 
   chartHeart = {
@@ -288,8 +398,27 @@ function clearInputs(firtsInput, secondInput) {
   secondInput.value = "";
 }
 
+function outputYears(obj){
+  for (let key in obj){
+    document.getElementById(`${key}`).innerHTML = obj[key];
+  }
+}
+
 // Кнопка GET YOUR FULL DESTINY MATRIX READING
 const decodematrixbtn = document.querySelector("#decode-matrix-btn");
 decodematrixbtn.addEventListener("click", function () {
   window.location.href = "http://krisuniverse.com/rates";
 });
+
+const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('.header-right');
+
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    navMenu.classList.toggle('active');
+})
+
+document.querySelectorAll('.header__link').forEach(link => link.addEventListener('click', () => {
+    hamburger.classList.remove('active');
+    navMenu.classList.remove('active');
+}))
