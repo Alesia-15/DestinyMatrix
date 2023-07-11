@@ -209,7 +209,7 @@ const calculatePoints = (aPoint, bPoint, cPoint) => {
   fb6point = reduceNumber(fb4point + bPoint);
   bgpoint = reduceNumber(bPoint + gpoint);
   bg1point = reduceNumber(bPoint + bgpoint);
-  bg2point = reduceNumber(bgpoint + bg1point);
+  bg2point = reduceNumber(bPoint + bg1point);
   bg3point = reduceNumber(bgpoint + bg1point);
   bg4point = reduceNumber(bgpoint + gpoint);
   bg5point = reduceNumber(bgpoint + bg4point);
